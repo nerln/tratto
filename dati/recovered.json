@@ -1,0 +1,10966 @@
+{
+ "source": "github.com/nerln/Progetto-fondamenti-Nerelli",
+ "recovered_at": null,
+ "scales": {
+  "consistency_legacy": "0-5, 0 = peggiore. NON e' la scala di Bristol: nel modello originale il punteggio cresce monotonicamente con il valore.",
+  "discomfort_legacy": "0-5, 0 = migliore (nessun fastidio prima dell'evacuazione)."
+ },
+ "period": {
+  "from": "2020-05-02",
+  "to": "2020-07-08",
+  "calendar_days": 68
+ },
+ "foods": [
+  {
+   "id": "1",
+   "name": "fettina_pollo",
+   "key": "fettina_pollo"
+  },
+  {
+   "id": "2",
+   "name": "cosciotti_pollo",
+   "key": "cosciotti_pollo"
+  },
+  {
+   "id": "3",
+   "name": "pollo_allo_spiedo",
+   "key": "pollo_allo_spiedo"
+  },
+  {
+   "id": "4",
+   "name": "merluzzo",
+   "key": "merluzzo"
+  },
+  {
+   "id": "5",
+   "name": "pasta_mais",
+   "key": "pasta_mais"
+  },
+  {
+   "id": "6",
+   "name": "pasta",
+   "key": "pasta"
+  },
+  {
+   "id": "7",
+   "name": "pasta_integrale",
+   "key": "pasta_integrale"
+  },
+  {
+   "id": "8",
+   "name": "riso",
+   "key": "riso"
+  },
+  {
+   "id": "9",
+   "name": "pancarrè_integrale",
+   "key": "pancarre_integrale"
+  },
+  {
+   "id": "10",
+   "name": "pancarré",
+   "key": "pancarre"
+  },
+  {
+   "id": "11",
+   "name": "pancarré_senza_glutine",
+   "key": "pancarre_senza_glutine"
+  },
+  {
+   "id": "12",
+   "name": "mela",
+   "key": "mela"
+  },
+  {
+   "id": "13",
+   "name": "pera",
+   "key": "pera"
+  },
+  {
+   "id": "14",
+   "name": "carota",
+   "key": "carota"
+  },
+  {
+   "id": "15",
+   "name": "finocchio",
+   "key": "finocchio"
+  },
+  {
+   "id": "16",
+   "name": "uova",
+   "key": "uova"
+  },
+  {
+   "id": "17",
+   "name": "parmigiano",
+   "key": "parmigiano"
+  },
+  {
+   "id": "18",
+   "name": "sottilette_senza_lattosio",
+   "key": "sottilette_senza_lattosio"
+  },
+  {
+   "id": "19",
+   "name": "latte_senza_lattosio",
+   "key": "latte_senza_lattosio"
+  },
+  {
+   "id": "20",
+   "name": "coca_cola",
+   "key": "coca_cola"
+  },
+  {
+   "id": "21",
+   "name": "cioccolata_calda",
+   "key": "cioccolata_calda"
+  },
+  {
+   "id": "22",
+   "name": "caffè_orzo",
+   "key": "caffe_orzo"
+  },
+  {
+   "id": "23",
+   "name": "caffè",
+   "key": "caffe"
+  },
+  {
+   "id": "24",
+   "name": "cannellino",
+   "key": "cannellino"
+  },
+  {
+   "id": "25",
+   "name": "cioccolata_al_latte",
+   "key": "cioccolata_al_latte"
+  },
+  {
+   "id": "26",
+   "name": "cioccolata_fondente",
+   "key": "cioccolata_fondente"
+  },
+  {
+   "id": "27",
+   "name": "cioccolata_nocciolata",
+   "key": "cioccolata_nocciolata"
+  },
+  {
+   "id": "28",
+   "name": "involtini",
+   "key": "involtini"
+  },
+  {
+   "id": "29",
+   "name": "cotolette",
+   "key": "cotolette"
+  },
+  {
+   "id": "30",
+   "name": "polpette_tonno",
+   "key": "polpette_tonno"
+  },
+  {
+   "id": "31",
+   "name": "polpette_carne",
+   "key": "polpette_carne"
+  },
+  {
+   "id": "32",
+   "name": "polpette_carne_senza_glutine",
+   "key": "polpette_carne_senza_glutine"
+  },
+  {
+   "id": "33",
+   "name": "pane_senza_glutine",
+   "key": "pane_senza_glutine"
+  },
+  {
+   "id": "34",
+   "name": "cornetto_sammontana_no_lattosio",
+   "key": "cornetto_sammontana_no_lattosio"
+  },
+  {
+   "id": "35",
+   "name": "spezzatino",
+   "key": "spezzatino"
+  },
+  {
+   "id": "36",
+   "name": "pane_semola",
+   "key": "pane_semola"
+  },
+  {
+   "id": "37",
+   "name": "banana",
+   "key": "banana"
+  },
+  {
+   "id": "38",
+   "name": "tisana_frutti_bosco",
+   "key": "tisana_frutti_bosco"
+  },
+  {
+   "id": "39",
+   "name": "pane_noci_integrale_semola",
+   "key": "pane_noci_integrale_semola"
+  },
+  {
+   "id": "40",
+   "name": "torta_mele",
+   "key": "torta_mele"
+  },
+  {
+   "id": "41",
+   "name": "tortilla",
+   "key": "tortilla"
+  },
+  {
+   "id": "42",
+   "name": "gubana",
+   "key": "gubana"
+  },
+  {
+   "id": "43",
+   "name": "rotolo_speck_formaggio",
+   "key": "rotolo_speck_formaggio"
+  },
+  {
+   "id": "44",
+   "name": "patata",
+   "key": "patata"
+  },
+  {
+   "id": "45",
+   "name": "sedano",
+   "key": "sedano"
+  },
+  {
+   "id": "46",
+   "name": "canederli",
+   "key": "canederli"
+  },
+  {
+   "id": "47",
+   "name": "pane_olive_integrale_semola",
+   "key": "pane_olive_integrale_semola"
+  },
+  {
+   "id": "48",
+   "name": "hamburger",
+   "key": "hamburger"
+  },
+  {
+   "id": "49",
+   "name": "salsiccia",
+   "key": "salsiccia"
+  },
+  {
+   "id": "50",
+   "name": "gnocchi_integrali",
+   "key": "gnocchi_integrali"
+  },
+  {
+   "id": "51",
+   "name": "choco_cream",
+   "key": "choco_cream"
+  },
+  {
+   "id": "52",
+   "name": "pizza",
+   "key": "pizza"
+  },
+  {
+   "id": "53",
+   "name": "grissini",
+   "key": "grissini"
+  },
+  {
+   "id": "54",
+   "name": "gelato",
+   "key": "gelato"
+  },
+  {
+   "id": "55",
+   "name": "sushi",
+   "key": "sushi"
+  },
+  {
+   "id": "56",
+   "name": "galletta_riso",
+   "key": "galletta_riso"
+  },
+  {
+   "id": "57",
+   "name": "focaccia",
+   "key": "focaccia"
+  },
+  {
+   "id": "58",
+   "name": "panzerotto",
+   "key": "panzerotto"
+  },
+  {
+   "id": "59",
+   "name": "empanada_gallega",
+   "key": "empanada_gallega"
+  },
+  {
+   "id": "60",
+   "name": "tortelli",
+   "key": "tortelli"
+  },
+  {
+   "id": "61",
+   "name": "pollo tikka masala",
+   "key": "pollo_tikka_masala"
+  },
+  {
+   "id": "62",
+   "name": "yogurt",
+   "key": "yogurt"
+  },
+  {
+   "id": "63",
+   "name": "spiedini_maiale",
+   "key": "spiedini_maiale"
+  },
+  {
+   "id": "64",
+   "name": "salmone",
+   "key": "salmone"
+  },
+  {
+   "id": "65",
+   "name": "budino",
+   "key": "budino"
+  },
+  {
+   "id": "66",
+   "name": "cornetto_crema",
+   "key": "cornetto_crema"
+  },
+  {
+   "id": "67",
+   "name": "insalata",
+   "key": "insalata"
+  },
+  {
+   "id": "68",
+   "name": "erbazzone_reggiano",
+   "key": "erbazzone_reggiano"
+  },
+  {
+   "id": "69",
+   "name": "rustico",
+   "key": "rustico"
+  },
+  {
+   "id": "70",
+   "name": "latte_mandorla",
+   "key": "latte_mandorla"
+  },
+  {
+   "id": "71",
+   "name": "piadina_senza_glutine",
+   "key": "piadina_senza_glutine"
+  },
+  {
+   "id": "72",
+   "name": "te_pesca",
+   "key": "te_pesca"
+  },
+  {
+   "id": "73",
+   "name": "pasta_semola",
+   "key": "pasta_semola"
+  },
+  {
+   "id": "74",
+   "name": "pane_integrale_semola",
+   "key": "pane_integrale_semola"
+  },
+  {
+   "id": "75",
+   "name": "formaggio_senza_lattosio",
+   "key": "formaggio_senza_lattosio"
+  },
+  {
+   "id": "76",
+   "name": "gnocchi_di_sauris",
+   "key": "gnocchi_di_sauris"
+  },
+  {
+   "id": "77",
+   "name": "frico",
+   "key": "frico"
+  },
+  {
+   "id": "78",
+   "name": "polenta",
+   "key": "polenta"
+  },
+  {
+   "id": "79",
+   "name": "baccalà",
+   "key": "baccala"
+  },
+  {
+   "id": "80",
+   "name": "peperoni",
+   "key": "peperoni"
+  },
+  {
+   "id": "81",
+   "name": "krapfen",
+   "key": "krapfen"
+  },
+  {
+   "id": "82",
+   "name": "ceci",
+   "key": "ceci"
+  },
+  {
+   "id": "83",
+   "name": "tonno",
+   "key": "tonno"
+  }
+ ],
+ "condiments": [
+  {
+   "id": "CO1",
+   "name": "pesto_genovese",
+   "key": "pesto_genovese"
+  },
+  {
+   "id": "CO2",
+   "name": "pesto_ricotta_noci",
+   "key": "pesto_ricotta_noci"
+  },
+  {
+   "id": "CO3",
+   "name": "limone",
+   "key": "limone"
+  },
+  {
+   "id": "CO4",
+   "name": "olio",
+   "key": "olio"
+  },
+  {
+   "id": "CO5",
+   "name": "frutti_di_mare",
+   "key": "frutti_di_mare"
+  },
+  {
+   "id": "CO6",
+   "name": "gamberetti",
+   "key": "gamberetti"
+  },
+  {
+   "id": "CO7",
+   "name": "tonno",
+   "key": "tonno"
+  },
+  {
+   "id": "CO8",
+   "name": "speck",
+   "key": "speck"
+  },
+  {
+   "id": "CO9",
+   "name": "salame",
+   "key": "salame"
+  },
+  {
+   "id": "CO10",
+   "name": "prosciutto_crudo",
+   "key": "prosciutto_crudo"
+  },
+  {
+   "id": "CO11",
+   "name": "prosciutto_cotto",
+   "key": "prosciutto_cotto"
+  },
+  {
+   "id": "CO12",
+   "name": "mortadella",
+   "key": "mortadella"
+  },
+  {
+   "id": "CO13",
+   "name": "pancetta",
+   "key": "pancetta"
+  },
+  {
+   "id": "CO14",
+   "name": "carota",
+   "key": "carota"
+  },
+  {
+   "id": "CO15",
+   "name": "uova",
+   "key": "uova"
+  },
+  {
+   "id": "CO16",
+   "name": "asparagi",
+   "key": "asparagi"
+  },
+  {
+   "id": "CO17",
+   "name": "acciughine",
+   "key": "acciughine"
+  },
+  {
+   "id": "CO18",
+   "name": "pan_grattato",
+   "key": "pan_grattato"
+  },
+  {
+   "id": "CO19",
+   "name": "pan_grattato_senza_glutine",
+   "key": "pan_grattato_senza_glutine"
+  },
+  {
+   "id": "CO20",
+   "name": "spinaci",
+   "key": "spinaci"
+  },
+  {
+   "id": "CO21",
+   "name": "zafferano",
+   "key": "zafferano"
+  },
+  {
+   "id": "CO22",
+   "name": "zenzero",
+   "key": "zenzero"
+  },
+  {
+   "id": "CO23",
+   "name": "parmigiano",
+   "key": "parmigiano"
+  },
+  {
+   "id": "CO24",
+   "name": "salsa_pomodoro",
+   "key": "salsa_pomodoro"
+  },
+  {
+   "id": "CO25",
+   "name": "pomodoro",
+   "key": "pomodoro"
+  },
+  {
+   "id": "CO26",
+   "name": "lattuga",
+   "key": "lattuga"
+  },
+  {
+   "id": "CO27",
+   "name": "carne_trita",
+   "key": "carne_trita"
+  },
+  {
+   "id": "CO28",
+   "name": "zucchine",
+   "key": "zucchine"
+  },
+  {
+   "id": "CO29",
+   "name": "cipolla",
+   "key": "cipolla"
+  },
+  {
+   "id": "CO30",
+   "name": "aceto_di_vino",
+   "key": "aceto_di_vino"
+  },
+  {
+   "id": "CO31",
+   "name": "carne_pezzetti",
+   "key": "carne_pezzetti"
+  },
+  {
+   "id": "CO32",
+   "name": "origano",
+   "key": "origano"
+  },
+  {
+   "id": "CO33",
+   "name": "arancia",
+   "key": "arancia"
+  },
+  {
+   "id": "CO34",
+   "name": "corn_flakes",
+   "key": "corn_flakes"
+  },
+  {
+   "id": "CO35",
+   "name": "pollo_pezzetti",
+   "key": "pollo_pezzetti"
+  },
+  {
+   "id": "CO36",
+   "name": "finocchio",
+   "key": "finocchio"
+  },
+  {
+   "id": "CO37",
+   "name": "cantuccini_senza_glutine",
+   "key": "cantuccini_senza_glutine"
+  },
+  {
+   "id": "CO38",
+   "name": "burro",
+   "key": "burro"
+  },
+  {
+   "id": "CO39",
+   "name": "riso_soffiato",
+   "key": "riso_soffiato"
+  },
+  {
+   "id": "CO40",
+   "name": "insalata",
+   "key": "insalata"
+  },
+  {
+   "id": "CO41",
+   "name": "sedano",
+   "key": "sedano"
+  },
+  {
+   "id": "CO42",
+   "name": "erba_cipollina",
+   "key": "erba_cipollina"
+  },
+  {
+   "id": "CO43",
+   "name": "curry",
+   "key": "curry"
+  },
+  {
+   "id": "CO44",
+   "name": "mozzarella",
+   "key": "mozzarella"
+  },
+  {
+   "id": "CO45",
+   "name": "carciofo",
+   "key": "carciofo"
+  },
+  {
+   "id": "CO46",
+   "name": "pistacchio",
+   "key": "pistacchio"
+  },
+  {
+   "id": "CO47",
+   "name": "cioccolato",
+   "key": "cioccolato"
+  },
+  {
+   "id": "CO48",
+   "name": "salame_piccante",
+   "key": "salame_piccante"
+  },
+  {
+   "id": "CO49",
+   "name": "olive_nere",
+   "key": "olive_nere"
+  },
+  {
+   "id": "CO50",
+   "name": "olive_verdi",
+   "key": "olive_verdi"
+  },
+  {
+   "id": "CO51",
+   "name": "agnello",
+   "key": "agnello"
+  },
+  {
+   "id": "CO52",
+   "name": "basilico",
+   "key": "basilico"
+  },
+  {
+   "id": "CO53",
+   "name": "noccioline",
+   "key": "noccioline"
+  },
+  {
+   "id": "CO54",
+   "name": "choco_cream",
+   "key": "choco_cream"
+  },
+  {
+   "id": "CO55",
+   "name": "wurstel",
+   "key": "wurstel"
+  },
+  {
+   "id": "CO56",
+   "name": "patatine",
+   "key": "patatine"
+  },
+  {
+   "id": "CO57",
+   "name": "zuppa_inglese",
+   "key": "zuppa_inglese"
+  },
+  {
+   "id": "CO58",
+   "name": "foresta_nera",
+   "key": "foresta_nera"
+  },
+  {
+   "id": "CO59",
+   "name": "verdure_miste",
+   "key": "verdure_miste"
+  },
+  {
+   "id": "CO60",
+   "name": "cavolo_cappuccio",
+   "key": "cavolo_cappuccio"
+  },
+  {
+   "id": "CO61",
+   "name": "uovo",
+   "key": "uovo"
+  },
+  {
+   "id": "CO62",
+   "name": "semi_sesamo",
+   "key": "semi_sesamo"
+  },
+  {
+   "id": "CO63",
+   "name": "sgombro",
+   "key": "sgombro"
+  },
+  {
+   "id": "CO64",
+   "name": "pepe_nero",
+   "key": "pepe_nero"
+  },
+  {
+   "id": "CO65",
+   "name": "salmone_affumicato",
+   "key": "salmone_affumicato"
+  },
+  {
+   "id": "CO66",
+   "name": "panna_con_lattosio",
+   "key": "panna_con_lattosio"
+  },
+  {
+   "id": "CO67",
+   "name": "vaniglia",
+   "key": "vaniglia"
+  },
+  {
+   "id": "CO68",
+   "name": "latte_senza_lattosio",
+   "key": "latte_senza_lattosio"
+  },
+  {
+   "id": "CO69",
+   "name": "salsiccia",
+   "key": "salsiccia"
+  },
+  {
+   "id": "CO70",
+   "name": "panna_senza_lattosio",
+   "key": "panna_senza_lattosio"
+  },
+  {
+   "id": "CO71",
+   "name": "formaggio_senza_lattosio",
+   "key": "formaggio_senza_lattosio"
+  },
+  {
+   "id": "CO72",
+   "name": "salame_oca",
+   "key": "salame_oca"
+  },
+  {
+   "id": "CO73",
+   "name": "marmellata",
+   "key": "marmellata"
+  },
+  {
+   "id": "CO74",
+   "name": "tuorlo_uovo",
+   "key": "tuorlo_uovo"
+  },
+  {
+   "id": "CO75",
+   "name": "melanzane",
+   "key": "melanzane"
+  },
+  {
+   "id": "CO76",
+   "name": "peperoni",
+   "key": "peperoni"
+  },
+  {
+   "id": "CO77",
+   "name": "capperi",
+   "key": "capperi"
+  },
+  {
+   "id": "CO78",
+   "name": "salsa_soia",
+   "key": "salsa_soia"
+  },
+  {
+   "id": "CO79",
+   "name": "funghi",
+   "key": "funghi"
+  }
+ ],
+ "food_types": {
+  "mela": [
+   "Frutta"
+  ],
+  "finocchio": [
+   "Ortaggi"
+  ],
+  "banana": [
+   "Frutta"
+  ],
+  "salsiccia": [
+   "Carni_rosse"
+  ],
+  "pollo_allo_spiedo": [
+   "Carni_bianche"
+  ],
+  "patata": [
+   "Patate"
+  ],
+  "pasta_integrale": [
+   "Farina_integrale",
+   "Pasta"
+  ],
+  "pane_noci_integrale_semola": [
+   "Farina_integrale",
+   "Farina_semola",
+   "Pane"
+  ],
+  "parmigiano": [
+   "Formaggi",
+   "Latticini"
+  ],
+  "galletta_riso": [
+   "Riso"
+  ],
+  "carota": [
+   "Ortaggi"
+  ],
+  "pizza": [
+   "Altre_farine"
+  ],
+  "gubana": [
+   "Altre_farine",
+   "Dolci",
+   "Frutta"
+  ],
+  "tortilla": [
+   "Patate",
+   "Uova"
+  ],
+  "insalata": [
+   "Verdura"
+  ],
+  "cioccolata_nocciolata": [
+   "Cioccolato",
+   "Dolci",
+   "Frutta"
+  ],
+  "pane_integrale_semola": [
+   "Farina_integrale",
+   "Farina_semola",
+   "Pane"
+  ],
+  "tisana_frutti_bosco": [
+   "Dolci"
+  ],
+  "yogurt": [
+   "Latticini"
+  ],
+  "hamburger": [
+   "Carni_rosse"
+  ],
+  "focaccia": [
+   "Altre_farine"
+  ],
+  "panzerotto": [
+   "Altre_farine"
+  ],
+  "rotolo_speck_formaggio": [
+   "Altre_farine",
+   "Latticini",
+   "Salumi"
+  ],
+  "peperoni": [
+   "Ortaggi"
+  ],
+  "empanada_gallega": [
+   "Pesce",
+   "Uova",
+   "Verdura"
+  ],
+  "spiedini_maiale": [
+   "Carni_rosse"
+  ],
+  "spezzatino": [
+   "Carni_rosse"
+  ],
+  "canederli": [
+   "Altre_farine",
+   "Salumi",
+   "Uova"
+  ],
+  "sushi": [
+   "Riso"
+  ],
+  "krapfen": [
+   "Dolci"
+  ],
+  "cornetto_sammontana_no_lattosio": [
+   "Alimenti_senza_lattosio",
+   "Dolci"
+  ],
+  "grissini": [
+   "Altre_farine"
+  ],
+  "tortelli": [
+   "Altre_farine"
+  ],
+  "gnocchi_di_sauris": [
+   "Altre_farine",
+   "Salumi",
+   "Uova"
+  ],
+  "frico": [
+   "Formaggi",
+   "Latticini",
+   "Patate"
+  ],
+  "polenta": [
+   "Farina_mais"
+  ],
+  "baccala": [
+   "Pesce"
+  ],
+  "torta_mele": [
+   "Dolci",
+   "Frutta"
+  ],
+  "cioccolata_fondente": [
+   "Cioccolato",
+   "Dolci"
+  ],
+  "polpette_carne": [
+   "Altre_farine",
+   "Carni_rosse"
+  ],
+  "choco_cream": [
+   "Cioccolato",
+   "Dolci"
+  ],
+  "salmone": [
+   "Pesce"
+  ],
+  "cornetto_crema": [
+   "Dolci",
+   "Latticini"
+  ],
+  "gnocchi_integrali": [
+   "Farina_integrale",
+   "Patate"
+  ],
+  "polpette_carne_senza_glutine": [
+   "Carni_rosse",
+   "Farina_mais"
+  ],
+  "erbazzone_reggiano": [
+   "Altre_farine",
+   "Salumi",
+   "Verdura"
+  ],
+  "rustico": [
+   "Altre_farine"
+  ],
+  "pasta": [
+   "Altre_farine",
+   "Pasta"
+  ],
+  "uova": [
+   "Uova"
+  ],
+  "latte_mandorla": [
+   "Dolci"
+  ],
+  "tonno": [
+   "Pesce"
+  ],
+  "pane_olive_integrale_semola": [
+   "Farina_integrale",
+   "Farina_semola",
+   "Pane"
+  ],
+  "ceci": [
+   "Legumi"
+  ],
+  "budino": [
+   "Dolci",
+   "Latticini"
+  ],
+  "merluzzo": [
+   "Pesce"
+  ],
+  "pollo_tikka_masala": [
+   "Carni_bianche"
+  ],
+  "piadina_senza_glutine": [
+   "Altre_farine"
+  ],
+  "pasta_semola": [
+   "Farina_semola",
+   "Pasta"
+  ],
+  "pasta_mais": [
+   "Farina_mais",
+   "Pasta"
+  ],
+  "fettina_pollo": [
+   "Carni_bianche"
+  ],
+  "riso": [
+   "Riso"
+  ],
+  "gelato": [
+   "Dolci"
+  ],
+  "pane_semola": [
+   "Altre_farine",
+   "Pane"
+  ]
+ },
+ "condiment_groups": {
+  "PC1": [
+   "carota",
+   "carne_trita",
+   "zucchine"
+  ],
+  "PC2": [
+   "limone",
+   "olio"
+  ],
+  "PC3": [
+   "olio",
+   "aceto_di_vino"
+  ],
+  "PC4": [
+   "carota",
+   "zucchine",
+   "cipolla",
+   "carne_pezzetti",
+   "zenzero"
+  ],
+  "PC5": [
+   "olio",
+   "origano"
+  ],
+  "PC6": [
+   "carota",
+   "zenzero",
+   "parmigiano"
+  ],
+  "PC7": [
+   "arancia"
+  ],
+  "PC8": [
+   "olio"
+  ],
+  "PC9": [
+   "pomodoro"
+  ],
+  "PC10": [
+   "corn_flakes"
+  ],
+  "PC11": [
+   "pomodoro",
+   "zucchine",
+   "zenzero",
+   "tonno"
+  ],
+  "PC12": [
+   "carota",
+   "zenzero"
+  ],
+  "PC13": [
+   "zucchine",
+   "pomodoro",
+   "parmigiano",
+   "burro"
+  ],
+  "PC14": [
+   "corn_flakes"
+  ],
+  "PC15": [
+   "pomodoro",
+   "zucchine",
+   "zenzero",
+   "salame"
+  ],
+  "PC16": [
+   "arancia",
+   "pollo_pezzetti",
+   "cipolla"
+  ],
+  "PC17": [
+   "pancetta",
+   "finocchio"
+  ],
+  "PC18": [
+   "cantuccini_senza_glutine"
+  ],
+  "PC19": [
+   "riso_soffiato"
+  ],
+  "PC20": [
+   "spinaci"
+  ],
+  "PC21": [
+   "carota",
+   "zenzero"
+  ],
+  "PC22": [
+   "parmigiano"
+  ],
+  "PC23": [
+   "pomodoro",
+   "zucchine"
+  ],
+  "PC24": [
+   "limone"
+  ],
+  "PC25": [
+   "carota",
+   "zucchine",
+   "cipolla",
+   "zenzero"
+  ],
+  "PC26": [
+   "olio",
+   "parmigiano"
+  ],
+  "PC27": [
+   "olio"
+  ],
+  "PC28": [
+   "insalata",
+   "olio",
+   "origano",
+   "sedano"
+  ],
+  "PC29": [
+   "sedano",
+   "carota"
+  ],
+  "PC30": [
+   "insalata",
+   "cipolla"
+  ],
+  "PC31": [
+   "zucchine",
+   "cipolla",
+   "zenzero",
+   "erba_cipollina"
+  ],
+  "PC32": [
+   "olio",
+   "curry"
+  ],
+  "PC33": [
+   "mozzarella",
+   "carciofo",
+   "pomodoro",
+   "salame",
+   "pancetta"
+  ],
+  "PC34": [
+   "pistacchio",
+   "cioccolato"
+  ],
+  "PC35": [
+   "limone",
+   "olio",
+   "zucchine"
+  ],
+  "PC36": [
+   "pomodoro",
+   "salame_piccante",
+   "mortadella",
+   "olive_nere",
+   "olive_verdi"
+  ],
+  "PC37": [
+   "mozzarella",
+   "pomodoro"
+  ],
+  "PC38": [
+   "agnello",
+   "basilico"
+  ],
+  "PC39": [
+   "noccioline",
+   "cioccolato"
+  ],
+  "PC40": [
+   "choco_cream"
+  ],
+  "PC41": [
+   "burro",
+   "salame",
+   "carota"
+  ],
+  "PC42": [
+   "mozzarella",
+   "pomodoro",
+   "zucchine"
+  ],
+  "PC43": [
+   "olio",
+   "salame",
+   "olive_verdi"
+  ],
+  "PC44": [
+   "mozzarella",
+   "pomodoro",
+   "wurstel",
+   "patatine"
+  ],
+  "PC45": [
+   "zuppa_inglese",
+   "foresta_nera"
+  ],
+  "PC46": [
+   "verdure_miste"
+  ],
+  "PC47": [
+   "cavolo_cappuccio"
+  ],
+  "PC48": [
+   "uovo",
+   "cipolla",
+   "carota",
+   "zucchine",
+   "carne_trita",
+   "zenzero"
+  ],
+  "PC49": [
+   "insalata",
+   "limone",
+   "olio"
+  ],
+  "PC50": [
+   "zucchine",
+   "olive_verdi",
+   "pomodoro",
+   "semi_sesamo",
+   "sgombro",
+   "basilico"
+  ],
+  "PC51": [
+   "pistacchio"
+  ],
+  "PC52": [
+   "cipolla",
+   "carota",
+   "zucchine",
+   "basilico"
+  ],
+  "PC53": [
+   "pan_grattato_senza_glutine",
+   "acciughine",
+   "origano",
+   "pepe_nero"
+  ],
+  "PC54": [
+   "parmigiano",
+   "pomodoro",
+   "insalata",
+   "origano",
+   "olio"
+  ],
+  "PC55": [
+   "salmone_affumicato",
+   "panna_con_lattosio"
+  ],
+  "PC56": [
+   "pomodoro",
+   "insalata",
+   "origano",
+   "olio"
+  ],
+  "PC57": [
+   "carne_trita",
+   "carota",
+   "zucchine",
+   "zenzero",
+   "cipolla"
+  ],
+  "PC58": [
+   "pistacchio",
+   "vaniglia"
+  ],
+  "PC59": [
+   "latte_senza_lattosio"
+  ],
+  "PC60": [
+   "semi_sesamo",
+   "olive_verdi"
+  ],
+  "PC61": [
+   "semi_sesamo",
+   "olive_verdi",
+   "salsiccia",
+   "zucchine",
+   "pomodoro"
+  ],
+  "PC62": [
+   "pistacchio",
+   "panna_senza_lattosio",
+   "gamberetti"
+  ],
+  "PC63": [
+   "pomodoro",
+   "carciofo",
+   "carota",
+   "sedano",
+   "prosciutto_cotto",
+   "formaggio_senza_lattosio"
+  ],
+  "PC64": [
+   "salame_oca",
+   "pomodoro",
+   "mozzarella",
+   "insalata"
+  ],
+  "PC65": [
+   "carciofo",
+   "formaggio_senza_lattosio"
+  ],
+  "PC66": [
+   "olio",
+   "cipolla"
+  ],
+  "PC67": [
+   "pancetta",
+   "uova",
+   "parmigiano"
+  ],
+  "PC68": [
+   "marmellata"
+  ],
+  "PC69": [
+   "mozzarella",
+   "pomodoro",
+   "patatine"
+  ],
+  "PC70": [
+   "cioccolato",
+   "panna_con_lattosio"
+  ],
+  "PC71": [
+   "carota",
+   "zucchine",
+   "carne_trita",
+   "cipolla"
+  ],
+  "PC72": [
+   "zucchine",
+   "tonno",
+   "pomodoro",
+   "parmigiano",
+   "tuorlo_uovo"
+  ],
+  "PC73": [
+   "zucchine",
+   "melanzane",
+   "pomodoro",
+   "peperoni",
+   "olive_verdi",
+   "capperi"
+  ],
+  "PC74": [
+   "cipolla",
+   "zucchine",
+   "carota",
+   "insalata",
+   "gamberetti",
+   "salmone_affumicato",
+   "salsa_soia",
+   "pomodoro"
+  ],
+  "PC75": [
+   "cipolla",
+   "zucchine",
+   "carota",
+   "zenzero",
+   "gamberetti",
+   "salmone_affumicato",
+   "salsa_soia",
+   "pomodoro"
+  ],
+  "PC76": [
+   "tonno"
+  ],
+  "PC77": [
+   "salsa_soia",
+   "olio",
+   "limone",
+   "insalata"
+  ],
+  "PC78": [
+   "pistacchio",
+   "panna_senza_lattosio",
+   "salmone_affumicato"
+  ],
+  "PC79": [
+   "zucchine",
+   "capperi",
+   "olive_verdi"
+  ],
+  "PC80": [
+   "pan_grattato",
+   "tuorlo_uovo",
+   "parmigiano",
+   "limone"
+  ],
+  "PC81": [
+   "salsiccia",
+   "funghi"
+  ],
+  "PC82": [
+   "olio",
+   "limone",
+   "origano",
+   "pepe_nero"
+  ],
+  "PC83": [],
+  "PC84": [],
+  "PC85": [],
+  "PC86": [],
+  "PC87": [],
+  "PC88": []
+ },
+ "courses": {
+  "P1": [
+   {
+    "food": "pasta",
+    "food_key": "pasta",
+    "condiment_group": "PC1",
+    "condiments": [
+     "carota",
+     "carne_trita",
+     "zucchine"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P2": [
+   {
+    "food": "polpette_tonno",
+    "food_key": "polpette_tonno",
+    "condiment_group": "PC3",
+    "condiments": [
+     "olio",
+     "aceto_di_vino"
+    ]
+   },
+   {
+    "food": "carota",
+    "food_key": "carota",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P3": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC4",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "cipolla",
+     "carne_pezzetti",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "spezzatino",
+    "food_key": "spezzatino",
+    "condiment_group": "PC4",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "cipolla",
+     "carne_pezzetti",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "cornetto_sammontana_no_lattosio",
+    "food_key": "cornetto_sammontana_no_lattosio",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P4": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC4",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "cipolla",
+     "carne_pezzetti",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC5",
+    "condiments": [
+     "olio",
+     "origano"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P5": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC6",
+    "condiments": [
+     "carota",
+     "zenzero",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC7",
+    "condiments": [
+     "arancia"
+    ]
+   }
+  ],
+  "P6": [
+   {
+    "food": "uova",
+    "food_key": "uova",
+    "condiment_group": "PC8",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC9",
+    "condiments": [
+     "pomodoro"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P7": [
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC10",
+    "condiments": [
+     "corn_flakes"
+    ]
+   }
+  ],
+  "P8": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC11",
+    "condiments": [
+     "pomodoro",
+     "zucchine",
+     "zenzero",
+     "tonno"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P9": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC12",
+    "condiments": [
+     "carota",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "banana",
+    "food_key": "banana",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P10": [
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC14",
+    "condiments": [
+     "corn_flakes"
+    ]
+   }
+  ],
+  "P11": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC15",
+    "condiments": [
+     "pomodoro",
+     "zucchine",
+     "zenzero",
+     "salame"
+    ]
+   },
+   {
+    "food": "banana",
+    "food_key": "banana",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "cornetto_sammontana_no_lattosio",
+    "food_key": "cornetto_sammontana_no_lattosio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P12": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC16",
+    "condiments": [
+     "arancia",
+     "pollo_pezzetti",
+     "cipolla"
+    ]
+   }
+  ],
+  "P13": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC17",
+    "condiments": [
+     "pancetta",
+     "finocchio"
+    ]
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P14": [
+   {
+    "food": "tisana_frutti_bosco",
+    "food_key": "tisana_frutti_bosco",
+    "condiment_group": "PC18",
+    "condiments": [
+     "cantuccini_senza_glutine"
+    ]
+   }
+  ],
+  "P15": [
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC20",
+    "condiments": [
+     "spinaci"
+    ]
+   }
+  ],
+  "P16": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC6",
+    "condiments": [
+     "carota",
+     "zenzero",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "spezzatino",
+    "food_key": "spezzatino",
+    "condiment_group": "PC4",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "cipolla",
+     "carne_pezzetti",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P17": [
+   {
+    "food": "tisana_frutti_bosco",
+    "food_key": "tisana_frutti_bosco",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P18": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P19": [
+   {
+    "food": "tisana_frutti_bosco",
+    "food_key": "tisana_frutti_bosco",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC8",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P20": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC21",
+    "condiments": [
+     "carota",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P21": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC22",
+    "condiments": [
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P22": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC21",
+    "condiments": [
+     "carota",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC21",
+    "condiments": [
+     "carota",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P23": [
+   {
+    "food": "pasta",
+    "food_key": "pasta",
+    "condiment_group": "PC1",
+    "condiments": [
+     "carota",
+     "carne_trita",
+     "zucchine"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC22",
+    "condiments": [
+     "parmigiano"
+    ]
+   }
+  ],
+  "P24": [
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC5",
+    "condiments": [
+     "olio",
+     "origano"
+    ]
+   }
+  ],
+  "P25": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC23",
+    "condiments": [
+     "pomodoro",
+     "zucchine"
+    ]
+   },
+   {
+    "food": "polpette_tonno",
+    "food_key": "polpette_tonno",
+    "condiment_group": "PC24",
+    "condiments": [
+     "limone"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P26": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC12",
+    "condiments": [
+     "carota",
+     "zenzero"
+    ]
+   }
+  ],
+  "P27": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "polpette_carne_senza_glutine",
+    "food_key": "polpette_carne_senza_glutine",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P28": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "polpette_carne_senza_glutine",
+    "food_key": "polpette_carne_senza_glutine",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P29": [
+   {
+    "food": "pasta_mais",
+    "food_key": "pasta_mais",
+    "condiment_group": "PC26",
+    "condiments": [
+     "olio",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P30": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC13",
+    "condiments": [
+     "zucchine",
+     "pomodoro",
+     "parmigiano",
+     "burro"
+    ]
+   },
+   {
+    "food": "pane_noci_integrale_semola",
+    "food_key": "pane_noci_integrale_semola",
+    "condiment_group": "PC8",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "torta_mele",
+    "food_key": "torta_mele",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P31": [
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC19",
+    "condiments": [
+     "riso_soffiato"
+    ]
+   }
+  ],
+  "P32": [
+   {
+    "food": "pane_noci_integrale_semola",
+    "food_key": "pane_noci_integrale_semola",
+    "condiment_group": "PC26",
+    "condiments": [
+     "olio",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "banana",
+    "food_key": "banana",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P33": [
+   {
+    "food": "tortilla",
+    "food_key": "tortilla",
+    "condiment_group": "PC29",
+    "condiments": [
+     "sedano",
+     "carota"
+    ]
+   },
+   {
+    "food": "gubana",
+    "food_key": "gubana",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P34": [
+   {
+    "food": "pollo_allo_spiedo",
+    "food_key": "pollo_allo_spiedo",
+    "condiment_group": "PC30",
+    "condiments": [
+     "insalata",
+     "cipolla"
+    ]
+   },
+   {
+    "food": "rotolo_speck_formaggio",
+    "food_key": "rotolo_speck_formaggio",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "patata",
+    "food_key": "patata",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "gubana",
+    "food_key": "gubana",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P35": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC26",
+    "condiments": [
+     "olio",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "sedano",
+    "food_key": "sedano",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P36": [
+   {
+    "food": "canederli",
+    "food_key": "canederli",
+    "condiment_group": "PC25",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "cipolla",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "parmigiano",
+    "food_key": "parmigiano",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P37": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC26",
+    "condiments": [
+     "olio",
+     "parmigiano"
+    ]
+   }
+  ],
+  "P38": [
+   {
+    "food": "pane_olive_integrale_semola",
+    "food_key": "pane_olive_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_noci_integrale_semola",
+    "food_key": "pane_noci_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "hamburger",
+    "food_key": "hamburger",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P39": [
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC19",
+    "condiments": [
+     "riso_soffiato"
+    ]
+   },
+   {
+    "food": "pane_olive_integrale_semola",
+    "food_key": "pane_olive_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   }
+  ],
+  "P40": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC31",
+    "condiments": [
+     "zucchine",
+     "cipolla",
+     "zenzero",
+     "erba_cipollina"
+    ]
+   },
+   {
+    "food": "pane_olive_integrale_semola",
+    "food_key": "pane_olive_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_noci_integrale_semola",
+    "food_key": "pane_noci_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   }
+  ],
+  "P41": [
+   {
+    "food": "gnocchi_integrali",
+    "food_key": "gnocchi_integrali",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_noci_integrale_semola",
+    "food_key": "pane_noci_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   }
+  ],
+  "P42": [
+   {
+    "food": "rotolo_speck_formaggio",
+    "food_key": "rotolo_speck_formaggio",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "patata",
+    "food_key": "patata",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   }
+  ],
+  "P43": [
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC19",
+    "condiments": [
+     "riso_soffiato"
+    ]
+   },
+   {
+    "food": "torta_mele",
+    "food_key": "torta_mele",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P44": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC32",
+    "condiments": [
+     "olio",
+     "curry"
+    ]
+   }
+  ],
+  "P45": [
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_olive_integrale_semola",
+    "food_key": "pane_olive_integrale_semola",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_noci_integrale_semola",
+    "food_key": "pane_noci_integrale_semola",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   }
+  ],
+  "P46": [
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC19",
+    "condiments": [
+     "riso_soffiato"
+    ]
+   },
+   {
+    "food": "torta_mele",
+    "food_key": "torta_mele",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "choco_cream",
+    "food_key": "choco_cream",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P47": [
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC33",
+    "condiments": [
+     "mozzarella",
+     "carciofo",
+     "pomodoro",
+     "salame",
+     "pancetta"
+    ]
+   },
+   {
+    "food": "grissini",
+    "food_key": "grissini",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P48": [
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC34",
+    "condiments": [
+     "pistacchio",
+     "cioccolato"
+    ]
+   }
+  ],
+  "P49": [
+   {
+    "food": "sushi",
+    "food_key": "sushi",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P50": [
+   {
+    "food": "pane_olive_integrale_semola",
+    "food_key": "pane_olive_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "pane_noci_integrale_semola",
+    "food_key": "pane_noci_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "sushi",
+    "food_key": "sushi",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P51": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC32",
+    "condiments": [
+     "olio",
+     "curry"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P52": [
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "hamburger",
+    "food_key": "hamburger",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "patata",
+    "food_key": "patata",
+    "condiment_group": "PC35",
+    "condiments": [
+     "limone",
+     "olio",
+     "zucchine"
+    ]
+   },
+   {
+    "food": "galletta_riso",
+    "food_key": "galletta_riso",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P53": [
+   {
+    "food": "focaccia",
+    "food_key": "focaccia",
+    "condiment_group": "PC36",
+    "condiments": [
+     "pomodoro",
+     "salame_piccante",
+     "mortadella",
+     "olive_nere",
+     "olive_verdi"
+    ]
+   },
+   {
+    "food": "panzerotto",
+    "food_key": "panzerotto",
+    "condiment_group": "PC37",
+    "condiments": [
+     "mozzarella",
+     "pomodoro"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P54": [
+   {
+    "food": "pollo_allo_spiedo",
+    "food_key": "pollo_allo_spiedo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "empanada_gallega",
+    "food_key": "empanada_gallega",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "parmigiano",
+    "food_key": "parmigiano",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC5",
+    "condiments": [
+     "olio",
+     "origano"
+    ]
+   }
+  ],
+  "P55": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC32",
+    "condiments": [
+     "olio",
+     "curry"
+    ]
+   },
+   {
+    "food": "tortelli",
+    "food_key": "tortelli",
+    "condiment_group": "PC32",
+    "condiments": [
+     "olio",
+     "curry"
+    ]
+   }
+  ],
+  "P56": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC38",
+    "condiments": [
+     "agnello",
+     "basilico"
+    ]
+   },
+   {
+    "food": "pollo tikka masala",
+    "food_key": "pollo_tikka_masala",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P57": [
+   {
+    "food": "yogurt",
+    "food_key": "yogurt",
+    "condiment_group": "PC39",
+    "condiments": [
+     "noccioline",
+     "cioccolato"
+    ]
+   }
+  ],
+  "P58": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC32",
+    "condiments": [
+     "olio",
+     "curry"
+    ]
+   },
+   {
+    "food": "tortilla",
+    "food_key": "tortilla",
+    "condiment_group": "PC29",
+    "condiments": [
+     "sedano",
+     "carota"
+    ]
+   }
+  ],
+  "P59": [
+   {
+    "food": "spiedini_maiale",
+    "food_key": "spiedini_maiale",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "galletta_riso",
+    "food_key": "galletta_riso",
+    "condiment_group": "PC40",
+    "condiments": [
+     "choco_cream"
+    ]
+   }
+  ],
+  "P60": [
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC19",
+    "condiments": [
+     "riso_soffiato"
+    ]
+   },
+   {
+    "food": "galletta_riso",
+    "food_key": "galletta_riso",
+    "condiment_group": "PC40",
+    "condiments": [
+     "choco_cream"
+    ]
+   }
+  ],
+  "P61": [
+   {
+    "food": "polpette_carne",
+    "food_key": "polpette_carne",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "salmone",
+    "food_key": "salmone",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "galletta_riso",
+    "food_key": "galletta_riso",
+    "condiment_group": "PC40",
+    "condiments": [
+     "choco_cream"
+    ]
+   }
+  ],
+  "P62": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC41",
+    "condiments": [
+     "burro",
+     "salame",
+     "carota"
+    ]
+   }
+  ],
+  "P63": [
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC42",
+    "condiments": [
+     "mozzarella",
+     "pomodoro",
+     "zucchine"
+    ]
+   }
+  ],
+  "P64": [
+   {
+    "food": "budino",
+    "food_key": "budino",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC19",
+    "condiments": [
+     "riso_soffiato"
+    ]
+   }
+  ],
+  "P65": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC43",
+    "condiments": [
+     "olio",
+     "salame",
+     "olive_verdi"
+    ]
+   },
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC37",
+    "condiments": [
+     "mozzarella",
+     "pomodoro"
+    ]
+   }
+  ],
+  "P66": [
+   {
+    "food": "pollo_allo_spiedo",
+    "food_key": "pollo_allo_spiedo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC37",
+    "condiments": [
+     "mozzarella",
+     "pomodoro"
+    ]
+   }
+  ],
+  "P67": [
+   {
+    "food": "cornetto_crema",
+    "food_key": "cornetto_crema",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P68": [
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC44",
+    "condiments": [
+     "mozzarella",
+     "pomodoro",
+     "wurstel",
+     "patatine"
+    ]
+   }
+  ],
+  "P69": [
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC45",
+    "condiments": [
+     "zuppa_inglese",
+     "foresta_nera"
+    ]
+   }
+  ],
+  "P70": [
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": "PC8",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "insalata",
+    "food_key": "insalata",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P71": [
+   {
+    "food": "budino",
+    "food_key": "budino",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "latte_senza_lattosio",
+    "food_key": "latte_senza_lattosio",
+    "condiment_group": "PC19",
+    "condiments": [
+     "riso_soffiato"
+    ]
+   }
+  ],
+  "P72": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC46",
+    "condiments": [
+     "verdure_miste"
+    ]
+   },
+   {
+    "food": "budino",
+    "food_key": "budino",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P73": [
+   {
+    "food": "erbazzone_reggiano",
+    "food_key": "erbazzone_reggiano",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "rustico",
+    "food_key": "rustico",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P74": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC47",
+    "condiments": [
+     "cavolo_cappuccio"
+    ]
+   }
+  ],
+  "P75": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC48",
+    "condiments": [
+     "uovo",
+     "cipolla",
+     "carota",
+     "zucchine",
+     "carne_trita",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P76": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC48",
+    "condiments": [
+     "uovo",
+     "cipolla",
+     "carota",
+     "zucchine",
+     "carne_trita",
+     "zenzero"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC49",
+    "condiments": [
+     "insalata",
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "latte_mandorla",
+    "food_key": "latte_mandorla",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P77": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC50",
+    "condiments": [
+     "zucchine",
+     "olive_verdi",
+     "pomodoro",
+     "semi_sesamo",
+     "sgombro",
+     "basilico"
+    ]
+   },
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC51",
+    "condiments": [
+     "pistacchio"
+    ]
+   }
+  ],
+  "P78": [
+   {
+    "food": "pasta_mais",
+    "food_key": "pasta_mais",
+    "condiment_group": "PC52",
+    "condiments": [
+     "cipolla",
+     "carota",
+     "zucchine",
+     "basilico"
+    ]
+   },
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC51",
+    "condiments": [
+     "pistacchio"
+    ]
+   }
+  ],
+  "P79": [
+   {
+    "food": "pasta_mais",
+    "food_key": "pasta_mais",
+    "condiment_group": "PC53",
+    "condiments": [
+     "pan_grattato_senza_glutine",
+     "acciughine",
+     "origano",
+     "pepe_nero"
+    ]
+   },
+   {
+    "food": "piadina_senza_glutine",
+    "food_key": "piadina_senza_glutine",
+    "condiment_group": "PC54",
+    "condiments": [
+     "parmigiano",
+     "pomodoro",
+     "insalata",
+     "origano",
+     "olio"
+    ]
+   }
+  ],
+  "P80": [
+   {
+    "food": "pasta_mais",
+    "food_key": "pasta_mais",
+    "condiment_group": "PC55",
+    "condiments": [
+     "salmone_affumicato",
+     "panna_con_lattosio"
+    ]
+   }
+  ],
+  "P81": [
+   {
+    "food": "te_pesca",
+    "food_key": "te_pesca",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P82": [
+   {
+    "food": "piadina_senza_glutine",
+    "food_key": "piadina_senza_glutine",
+    "condiment_group": "PC56",
+    "condiments": [
+     "pomodoro",
+     "insalata",
+     "origano",
+     "olio"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P83": [
+   {
+    "food": "pasta_semola",
+    "food_key": "pasta_semola",
+    "condiment_group": "PC57",
+    "condiments": [
+     "carne_trita",
+     "carota",
+     "zucchine",
+     "zenzero",
+     "cipolla"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC22",
+    "condiments": [
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC58",
+    "condiments": [
+     "pistacchio",
+     "vaniglia"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P84": [
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC59",
+    "condiments": [
+     "latte_senza_lattosio"
+    ]
+   },
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC58",
+    "condiments": [
+     "pistacchio",
+     "vaniglia"
+    ]
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": "PC22",
+    "condiments": [
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P85": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC60",
+    "condiments": [
+     "semi_sesamo",
+     "olive_verdi"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P86": [
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   }
+  ],
+  "P87": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC61",
+    "condiments": [
+     "semi_sesamo",
+     "olive_verdi",
+     "salsiccia",
+     "zucchine",
+     "pomodoro"
+    ]
+   },
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P88": [
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P89": [
+   {
+    "food": "pasta_mais",
+    "food_key": "pasta_mais",
+    "condiment_group": "PC62",
+    "condiments": [
+     "pistacchio",
+     "panna_senza_lattosio",
+     "gamberetti"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P90": [
+   {
+    "food": "pane_integrale_semola",
+    "food_key": "pane_integrale_semola",
+    "condiment_group": "PC27",
+    "condiments": [
+     "olio"
+    ]
+   }
+  ],
+  "P91": [
+   {
+    "food": "pollo_allo_spiedo",
+    "food_key": "pollo_allo_spiedo",
+    "condiment_group": "PC8",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "patata",
+    "food_key": "patata",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P92": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC32",
+    "condiments": [
+     "olio",
+     "curry"
+    ]
+   },
+   {
+    "food": "formaggio_senza_lattosio",
+    "food_key": "formaggio_senza_lattosio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P93": [
+   {
+    "food": "salsiccia",
+    "food_key": "salsiccia",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "patata",
+    "food_key": "patata",
+    "condiment_group": "PC8",
+    "condiments": [
+     "olio"
+    ]
+   },
+   {
+    "food": "insalata",
+    "food_key": "insalata",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "pane_integrale_semola",
+    "food_key": "pane_integrale_semola",
+    "condiment_group": "PC40",
+    "condiments": [
+     "choco_cream"
+    ]
+   },
+   {
+    "food": "carota",
+    "food_key": "carota",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P94": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC63",
+    "condiments": [
+     "pomodoro",
+     "carciofo",
+     "carota",
+     "sedano",
+     "prosciutto_cotto",
+     "formaggio_senza_lattosio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P95": [
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC34",
+    "condiments": [
+     "pistacchio",
+     "cioccolato"
+    ]
+   }
+  ],
+  "P96": [
+   {
+    "food": "gnocchi_di_sauris",
+    "food_key": "gnocchi_di_sauris",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "frico",
+    "food_key": "frico",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "polenta",
+    "food_key": "polenta",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "baccalà",
+    "food_key": "baccala",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "gubana",
+    "food_key": "gubana",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P97": [
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC64",
+    "condiments": [
+     "salame_oca",
+     "pomodoro",
+     "mozzarella",
+     "insalata"
+    ]
+   }
+  ],
+  "P98": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC63",
+    "condiments": [
+     "pomodoro",
+     "carciofo",
+     "carota",
+     "sedano",
+     "prosciutto_cotto",
+     "formaggio_senza_lattosio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P99": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC65",
+    "condiments": [
+     "carciofo",
+     "formaggio_senza_lattosio"
+    ]
+   }
+  ],
+  "P100": [
+   {
+    "food": "pollo_allo_spiedo",
+    "food_key": "pollo_allo_spiedo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "peperoni",
+    "food_key": "peperoni",
+    "condiment_group": "PC66",
+    "condiments": [
+     "olio",
+     "cipolla"
+    ]
+   }
+  ],
+  "P101": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC67",
+    "condiments": [
+     "pancetta",
+     "uova",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "krapfen",
+    "food_key": "krapfen",
+    "condiment_group": "PC68",
+    "condiments": [
+     "marmellata"
+    ]
+   }
+  ],
+  "P102": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC38",
+    "condiments": [
+     "agnello",
+     "basilico"
+    ]
+   },
+   {
+    "food": "pollo tikka masala",
+    "food_key": "pollo_tikka_masala",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "patata",
+    "food_key": "patata",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "ceci",
+    "food_key": "ceci",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P103": [
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC69",
+    "condiments": [
+     "mozzarella",
+     "pomodoro",
+     "patatine"
+    ]
+   },
+   {
+    "food": "gelato",
+    "food_key": "gelato",
+    "condiment_group": "PC70",
+    "condiments": [
+     "cioccolato",
+     "panna_con_lattosio"
+    ]
+   }
+  ],
+  "P104": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC71",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "carne_trita",
+     "cipolla"
+    ]
+   },
+   {
+    "food": "polpette_carne_senza_glutine",
+    "food_key": "polpette_carne_senza_glutine",
+    "condiment_group": "PC24",
+    "condiments": [
+     "limone"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P105": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC71",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "carne_trita",
+     "cipolla"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC2",
+    "condiments": [
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "cioccolata_nocciolata",
+    "food_key": "cioccolata_nocciolata",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P106": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC71",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "carne_trita",
+     "cipolla"
+    ]
+   },
+   {
+    "food": "polpette_carne_senza_glutine",
+    "food_key": "polpette_carne_senza_glutine",
+    "condiment_group": "PC24",
+    "condiments": [
+     "limone"
+    ]
+   },
+   {
+    "food": "cioccolata_nocciolata",
+    "food_key": "cioccolata_nocciolata",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P107": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC71",
+    "condiments": [
+     "carota",
+     "zucchine",
+     "carne_trita",
+     "cipolla"
+    ]
+   },
+   {
+    "food": "pollo_allo_spiedo",
+    "food_key": "pollo_allo_spiedo",
+    "condiment_group": "PC30",
+    "condiments": [
+     "insalata",
+     "cipolla"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P108": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC72",
+    "condiments": [
+     "zucchine",
+     "tonno",
+     "pomodoro",
+     "parmigiano",
+     "tuorlo_uovo"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P109": [
+   {
+    "food": "cornetto_sammontana_no_lattosio",
+    "food_key": "cornetto_sammontana_no_lattosio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P110": [
+   {
+    "food": "finocchio",
+    "food_key": "finocchio",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P111": [
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P112": [
+   {
+    "food": "latte_mandorla",
+    "food_key": "latte_mandorla",
+    "condiment_group": "PC10",
+    "condiments": [
+     "corn_flakes"
+    ]
+   }
+  ],
+  "P113": [
+   {
+    "food": "merluzzo",
+    "food_key": "merluzzo",
+    "condiment_group": "PC73",
+    "condiments": [
+     "zucchine",
+     "melanzane",
+     "pomodoro",
+     "peperoni",
+     "olive_verdi",
+     "capperi"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P114": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC74",
+    "condiments": [
+     "cipolla",
+     "zucchine",
+     "carota",
+     "insalata",
+     "gamberetti",
+     "salmone_affumicato",
+     "salsa_soia",
+     "pomodoro"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "banana",
+    "food_key": "banana",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P115": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC75",
+    "condiments": [
+     "cipolla",
+     "zucchine",
+     "carota",
+     "zenzero",
+     "gamberetti",
+     "salmone_affumicato",
+     "salsa_soia",
+     "pomodoro"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P116": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC76",
+    "condiments": [
+     "tonno"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "cioccolata_nocciolata",
+    "food_key": "cioccolata_nocciolata",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "carota",
+    "food_key": "carota",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P117": [
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC77",
+    "condiments": [
+     "salsa_soia",
+     "olio",
+     "limone",
+     "insalata"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "latte_mandorla",
+    "food_key": "latte_mandorla",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "carota",
+    "food_key": "carota",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P118": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC78",
+    "condiments": [
+     "pistacchio",
+     "panna_senza_lattosio",
+     "salmone_affumicato"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P119": [
+   {
+    "food": "merluzzo",
+    "food_key": "merluzzo",
+    "condiment_group": "PC79",
+    "condiments": [
+     "zucchine",
+     "capperi",
+     "olive_verdi"
+    ]
+   }
+  ],
+  "P120": [
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC49",
+    "condiments": [
+     "insalata",
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "carota",
+    "food_key": "carota",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P121": [
+   {
+    "food": "tonno",
+    "food_key": "tonno",
+    "condiment_group": "PC80",
+    "condiments": [
+     "pan_grattato",
+     "tuorlo_uovo",
+     "parmigiano",
+     "limone"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P122": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC26",
+    "condiments": [
+     "olio",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P123": [
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC49",
+    "condiments": [
+     "insalata",
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "pane_semola",
+    "food_key": "pane_semola",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "latte_mandorla",
+    "food_key": "latte_mandorla",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P124": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC81",
+    "condiments": [
+     "salsiccia",
+     "funghi"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P125": [
+   {
+    "food": "merluzzo",
+    "food_key": "merluzzo",
+    "condiment_group": "PC82",
+    "condiments": [
+     "olio",
+     "limone",
+     "origano",
+     "pepe_nero"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "cioccolata_fondente",
+    "food_key": "cioccolata_fondente",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "parmigiano",
+    "food_key": "parmigiano",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P126": [
+   {
+    "food": "riso",
+    "food_key": "riso",
+    "condiment_group": "PC81",
+    "condiments": [
+     "salsiccia",
+     "funghi"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "banana",
+    "food_key": "banana",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P127": [
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC49",
+    "condiments": [
+     "insalata",
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "parmigiano",
+    "food_key": "parmigiano",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P128": [
+   {
+    "food": "pasta_integrale",
+    "food_key": "pasta_integrale",
+    "condiment_group": "PC26",
+    "condiments": [
+     "olio",
+     "parmigiano"
+    ]
+   },
+   {
+    "food": "fettina_pollo",
+    "food_key": "fettina_pollo",
+    "condiment_group": "PC49",
+    "condiments": [
+     "insalata",
+     "limone",
+     "olio"
+    ]
+   },
+   {
+    "food": "carota",
+    "food_key": "carota",
+    "condiment_group": null,
+    "condiments": []
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ],
+  "P129": [
+   {
+    "food": "pizza",
+    "food_key": "pizza",
+    "condiment_group": "PC37",
+    "condiments": [
+     "mozzarella",
+     "pomodoro"
+    ]
+   },
+   {
+    "food": "mela",
+    "food_key": "mela",
+    "condiment_group": null,
+    "condiments": []
+   }
+  ]
+ },
+ "meals": [
+  {
+   "date": "2020-05-02",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P1",
+   "foods": [
+    "pasta",
+    "fettina_pollo",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "pasta",
+    "fettina_pollo",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "limone",
+    "olio",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "pasta",
+     "food_key": "pasta",
+     "condiment_group": "PC1",
+     "condiments": [
+      "carota",
+      "carne_trita",
+      "zucchine"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-02",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P109",
+   "foods": [
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "food_keys": [
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "cornetto_sammontana_no_lattosio",
+     "food_key": "cornetto_sammontana_no_lattosio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-02",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P2",
+   "foods": [
+    "polpette_tonno",
+    "carota",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "polpette_tonno",
+    "carota",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [
+    "aceto_di_vino",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "polpette_tonno",
+     "food_key": "polpette_tonno",
+     "condiment_group": "PC3",
+     "condiments": [
+      "olio",
+      "aceto_di_vino"
+     ]
+    },
+    {
+     "food": "carota",
+     "food_key": "carota",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-05",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P3",
+   "foods": [
+    "riso",
+    "spezzatino",
+    "cornetto_sammontana_no_lattosio",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "spezzatino",
+    "cornetto_sammontana_no_lattosio",
+    "mela"
+   ],
+   "condiments": [
+    "carne_pezzetti",
+    "carota",
+    "cipolla",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC4",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "cipolla",
+      "carne_pezzetti",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "spezzatino",
+     "food_key": "spezzatino",
+     "condiment_group": "PC4",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "cipolla",
+      "carne_pezzetti",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "cornetto_sammontana_no_lattosio",
+     "food_key": "cornetto_sammontana_no_lattosio",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-05",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P4",
+   "foods": [
+    "riso",
+    "pane_semola",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "pane_semola",
+    "mela"
+   ],
+   "condiments": [
+    "carne_pezzetti",
+    "carota",
+    "cipolla",
+    "olio",
+    "origano",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC4",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "cipolla",
+      "carne_pezzetti",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC5",
+     "condiments": [
+      "olio",
+      "origano"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-06",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P5",
+   "foods": [
+    "riso",
+    "fettina_pollo"
+   ],
+   "food_keys": [
+    "riso",
+    "fettina_pollo"
+   ],
+   "condiments": [
+    "arancia",
+    "carota",
+    "parmigiano",
+    "zenzero"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC6",
+     "condiments": [
+      "carota",
+      "zenzero",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC7",
+     "condiments": [
+      "arancia"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-06",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P6",
+   "foods": [
+    "uova",
+    "pane_semola",
+    "mela"
+   ],
+   "food_keys": [
+    "uova",
+    "pane_semola",
+    "mela"
+   ],
+   "condiments": [
+    "olio",
+    "pomodoro"
+   ],
+   "components": [
+    {
+     "food": "uova",
+     "food_key": "uova",
+     "condiment_group": "PC8",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC9",
+     "condiments": [
+      "pomodoro"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-07",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P7",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "corn_flakes"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC10",
+     "condiments": [
+      "corn_flakes"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-07",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P8",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "pomodoro",
+    "tonno",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC11",
+     "condiments": [
+      "pomodoro",
+      "zucchine",
+      "zenzero",
+      "tonno"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-07",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P9",
+   "foods": [
+    "riso",
+    "fettina_pollo",
+    "pane_semola",
+    "mela",
+    "banana"
+   ],
+   "food_keys": [
+    "riso",
+    "fettina_pollo",
+    "pane_semola",
+    "mela",
+    "banana"
+   ],
+   "condiments": [
+    "carota",
+    "limone",
+    "olio",
+    "zenzero"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC12",
+     "condiments": [
+      "carota",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "banana",
+     "food_key": "banana",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-08",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P10",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "corn_flakes"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC14",
+     "condiments": [
+      "corn_flakes"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-08",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P11",
+   "foods": [
+    "riso",
+    "banana",
+    "mela",
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "food_keys": [
+    "riso",
+    "banana",
+    "mela",
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "condiments": [
+    "pomodoro",
+    "salame",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC15",
+     "condiments": [
+      "pomodoro",
+      "zucchine",
+      "zenzero",
+      "salame"
+     ]
+    },
+    {
+     "food": "banana",
+     "food_key": "banana",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "cornetto_sammontana_no_lattosio",
+     "food_key": "cornetto_sammontana_no_lattosio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-08",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P12",
+   "foods": [
+    "riso"
+   ],
+   "food_keys": [
+    "riso"
+   ],
+   "condiments": [
+    "arancia",
+    "cipolla",
+    "pollo_pezzetti"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC16",
+     "condiments": [
+      "arancia",
+      "pollo_pezzetti",
+      "cipolla"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-09",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P13",
+   "foods": [
+    "riso",
+    "finocchio",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "finocchio",
+    "mela"
+   ],
+   "condiments": [
+    "finocchio",
+    "pancetta"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC17",
+     "condiments": [
+      "pancetta",
+      "finocchio"
+     ]
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-09",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P14",
+   "foods": [
+    "tisana_frutti_bosco"
+   ],
+   "food_keys": [
+    "tisana_frutti_bosco"
+   ],
+   "condiments": [
+    "cantuccini_senza_glutine"
+   ],
+   "components": [
+    {
+     "food": "tisana_frutti_bosco",
+     "food_key": "tisana_frutti_bosco",
+     "condiment_group": "PC18",
+     "condiments": [
+      "cantuccini_senza_glutine"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-09",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P15",
+   "foods": [
+    "fettina_pollo",
+    "pane_semola"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "pane_semola"
+   ],
+   "condiments": [
+    "limone",
+    "olio",
+    "spinaci"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC20",
+     "condiments": [
+      "spinaci"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-10",
+   "slot": "Spuntino_mattina",
+   "slot_index": 1,
+   "course_id": "P110",
+   "foods": [
+    "finocchio"
+   ],
+   "food_keys": [
+    "finocchio"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-10",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P16",
+   "foods": [
+    "riso",
+    "spezzatino",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "riso",
+    "spezzatino",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [
+    "carne_pezzetti",
+    "carota",
+    "cipolla",
+    "parmigiano",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC6",
+     "condiments": [
+      "carota",
+      "zenzero",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "spezzatino",
+     "food_key": "spezzatino",
+     "condiment_group": "PC4",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "cipolla",
+      "carne_pezzetti",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-10",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P14",
+   "foods": [
+    "tisana_frutti_bosco"
+   ],
+   "food_keys": [
+    "tisana_frutti_bosco"
+   ],
+   "condiments": [
+    "cantuccini_senza_glutine"
+   ],
+   "components": [
+    {
+     "food": "tisana_frutti_bosco",
+     "food_key": "tisana_frutti_bosco",
+     "condiment_group": "PC18",
+     "condiments": [
+      "cantuccini_senza_glutine"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-10",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P18",
+   "foods": [
+    "riso",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "riso",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-11",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P19",
+   "foods": [
+    "tisana_frutti_bosco",
+    "pane_semola",
+    "finocchio"
+   ],
+   "food_keys": [
+    "tisana_frutti_bosco",
+    "pane_semola",
+    "finocchio"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "tisana_frutti_bosco",
+     "food_key": "tisana_frutti_bosco",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC8",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-11",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P20",
+   "foods": [
+    "riso",
+    "finocchio"
+   ],
+   "food_keys": [
+    "riso",
+    "finocchio"
+   ],
+   "condiments": [
+    "carota",
+    "zenzero"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC21",
+     "condiments": [
+      "carota",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-11",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P21",
+   "foods": [
+    "riso",
+    "finocchio",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "finocchio",
+    "mela"
+   ],
+   "condiments": [
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC22",
+     "condiments": [
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-12",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P22",
+   "foods": [
+    "riso",
+    "gelato",
+    "finocchio",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "gelato",
+    "finocchio",
+    "mela"
+   ],
+   "condiments": [
+    "carota",
+    "zenzero"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC21",
+     "condiments": [
+      "carota",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC21",
+     "condiments": [
+      "carota",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-12",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P23",
+   "foods": [
+    "pasta",
+    "pane_semola"
+   ],
+   "food_keys": [
+    "pasta",
+    "pane_semola"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "parmigiano",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "pasta",
+     "food_key": "pasta",
+     "condiment_group": "PC1",
+     "condiments": [
+      "carota",
+      "carne_trita",
+      "zucchine"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC22",
+     "condiments": [
+      "parmigiano"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-13",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P24",
+   "foods": [
+    "pane_semola"
+   ],
+   "food_keys": [
+    "pane_semola"
+   ],
+   "condiments": [
+    "olio",
+    "origano"
+   ],
+   "components": [
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC5",
+     "condiments": [
+      "olio",
+      "origano"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-13",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P25",
+   "foods": [
+    "riso",
+    "polpette_tonno",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "polpette_tonno",
+    "mela"
+   ],
+   "condiments": [
+    "limone",
+    "pomodoro",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC23",
+     "condiments": [
+      "pomodoro",
+      "zucchine"
+     ]
+    },
+    {
+     "food": "polpette_tonno",
+     "food_key": "polpette_tonno",
+     "condiment_group": "PC24",
+     "condiments": [
+      "limone"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-13",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P26",
+   "foods": [
+    "riso"
+   ],
+   "food_keys": [
+    "riso"
+   ],
+   "condiments": [
+    "carota",
+    "zenzero"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC12",
+     "condiments": [
+      "carota",
+      "zenzero"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-14",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P27",
+   "foods": [
+    "riso",
+    "polpette_carne_senza_glutine"
+   ],
+   "food_keys": [
+    "riso",
+    "polpette_carne_senza_glutine"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "polpette_carne_senza_glutine",
+     "food_key": "polpette_carne_senza_glutine",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-14",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P28",
+   "foods": [
+    "riso",
+    "polpette_carne_senza_glutine"
+   ],
+   "food_keys": [
+    "riso",
+    "polpette_carne_senza_glutine"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "polpette_carne_senza_glutine",
+     "food_key": "polpette_carne_senza_glutine",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-15",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P29",
+   "foods": [
+    "pasta_mais",
+    "fettina_pollo",
+    "finocchio"
+   ],
+   "food_keys": [
+    "pasta_mais",
+    "fettina_pollo",
+    "finocchio"
+   ],
+   "condiments": [
+    "limone",
+    "olio",
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "pasta_mais",
+     "food_key": "pasta_mais",
+     "condiment_group": "PC26",
+     "condiments": [
+      "olio",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-15",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P30",
+   "foods": [
+    "riso",
+    "pane_noci_integrale_semola",
+    "torta_mele"
+   ],
+   "food_keys": [
+    "riso",
+    "pane_noci_integrale_semola",
+    "torta_mele"
+   ],
+   "condiments": [
+    "burro",
+    "olio",
+    "parmigiano",
+    "pomodoro",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC13",
+     "condiments": [
+      "zucchine",
+      "pomodoro",
+      "parmigiano",
+      "burro"
+     ]
+    },
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC8",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "torta_mele",
+     "food_key": "torta_mele",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-16",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-16",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P32",
+   "foods": [
+    "pane_noci_integrale_semola",
+    "banana"
+   ],
+   "food_keys": [
+    "pane_noci_integrale_semola",
+    "banana"
+   ],
+   "condiments": [
+    "olio",
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC26",
+     "condiments": [
+      "olio",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "banana",
+     "food_key": "banana",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-17",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P33",
+   "foods": [
+    "tortilla",
+    "gubana"
+   ],
+   "food_keys": [
+    "tortilla",
+    "gubana"
+   ],
+   "condiments": [
+    "carota",
+    "sedano"
+   ],
+   "components": [
+    {
+     "food": "tortilla",
+     "food_key": "tortilla",
+     "condiment_group": "PC29",
+     "condiments": [
+      "sedano",
+      "carota"
+     ]
+    },
+    {
+     "food": "gubana",
+     "food_key": "gubana",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-17",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P34",
+   "foods": [
+    "pollo_allo_spiedo",
+    "rotolo_speck_formaggio",
+    "patata",
+    "gubana"
+   ],
+   "food_keys": [
+    "pollo_allo_spiedo",
+    "rotolo_speck_formaggio",
+    "patata",
+    "gubana"
+   ],
+   "condiments": [
+    "cipolla",
+    "insalata"
+   ],
+   "components": [
+    {
+     "food": "pollo_allo_spiedo",
+     "food_key": "pollo_allo_spiedo",
+     "condiment_group": "PC30",
+     "condiments": [
+      "insalata",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "rotolo_speck_formaggio",
+     "food_key": "rotolo_speck_formaggio",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "patata",
+     "food_key": "patata",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "gubana",
+     "food_key": "gubana",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-18",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-18",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P35",
+   "foods": [
+    "pasta_integrale",
+    "sedano",
+    "mela"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "sedano",
+    "mela"
+   ],
+   "condiments": [
+    "olio",
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC26",
+     "condiments": [
+      "olio",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "sedano",
+     "food_key": "sedano",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-18",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P36",
+   "foods": [
+    "canederli",
+    "parmigiano"
+   ],
+   "food_keys": [
+    "canederli",
+    "parmigiano"
+   ],
+   "condiments": [
+    "carota",
+    "cipolla",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "canederli",
+     "food_key": "canederli",
+     "condiment_group": "PC25",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "cipolla",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "parmigiano",
+     "food_key": "parmigiano",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-19",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-19",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P37",
+   "foods": [
+    "pasta_integrale"
+   ],
+   "food_keys": [
+    "pasta_integrale"
+   ],
+   "condiments": [
+    "olio",
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC26",
+     "condiments": [
+      "olio",
+      "parmigiano"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-19",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P38",
+   "foods": [
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola",
+    "fettina_pollo",
+    "hamburger",
+    "salsiccia"
+   ],
+   "food_keys": [
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola",
+    "fettina_pollo",
+    "hamburger",
+    "salsiccia"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pane_olive_integrale_semola",
+     "food_key": "pane_olive_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "hamburger",
+     "food_key": "hamburger",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-20",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P39",
+   "foods": [
+    "latte_senza_lattosio",
+    "pane_olive_integrale_semola"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio",
+    "pane_olive_integrale_semola"
+   ],
+   "condiments": [
+    "olio",
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    },
+    {
+     "food": "pane_olive_integrale_semola",
+     "food_key": "pane_olive_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-20",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P40",
+   "foods": [
+    "riso",
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola"
+   ],
+   "food_keys": [
+    "riso",
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola"
+   ],
+   "condiments": [
+    "cipolla",
+    "erba_cipollina",
+    "olio",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC31",
+     "condiments": [
+      "zucchine",
+      "cipolla",
+      "zenzero",
+      "erba_cipollina"
+     ]
+    },
+    {
+     "food": "pane_olive_integrale_semola",
+     "food_key": "pane_olive_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-20",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P17",
+   "foods": [
+    "tisana_frutti_bosco"
+   ],
+   "food_keys": [
+    "tisana_frutti_bosco"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "tisana_frutti_bosco",
+     "food_key": "tisana_frutti_bosco",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-20",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P40",
+   "foods": [
+    "riso",
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola"
+   ],
+   "food_keys": [
+    "riso",
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola"
+   ],
+   "condiments": [
+    "cipolla",
+    "erba_cipollina",
+    "olio",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC31",
+     "condiments": [
+      "zucchine",
+      "cipolla",
+      "zenzero",
+      "erba_cipollina"
+     ]
+    },
+    {
+     "food": "pane_olive_integrale_semola",
+     "food_key": "pane_olive_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-21",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-21",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P41",
+   "foods": [
+    "gnocchi_integrali",
+    "pane_noci_integrale_semola"
+   ],
+   "food_keys": [
+    "gnocchi_integrali",
+    "pane_noci_integrale_semola"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "gnocchi_integrali",
+     "food_key": "gnocchi_integrali",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-21",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P42",
+   "foods": [
+    "rotolo_speck_formaggio",
+    "patata"
+   ],
+   "food_keys": [
+    "rotolo_speck_formaggio",
+    "patata"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "rotolo_speck_formaggio",
+     "food_key": "rotolo_speck_formaggio",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "patata",
+     "food_key": "patata",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-22",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P43",
+   "foods": [
+    "latte_senza_lattosio",
+    "torta_mele"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio",
+    "torta_mele"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    },
+    {
+     "food": "torta_mele",
+     "food_key": "torta_mele",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-22",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P44",
+   "foods": [
+    "pasta_integrale"
+   ],
+   "food_keys": [
+    "pasta_integrale"
+   ],
+   "condiments": [
+    "curry",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC32",
+     "condiments": [
+      "olio",
+      "curry"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-22",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P45",
+   "foods": [
+    "salsiccia",
+    "fettina_pollo",
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola"
+   ],
+   "food_keys": [
+    "salsiccia",
+    "fettina_pollo",
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola"
+   ],
+   "condiments": [
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_olive_integrale_semola",
+     "food_key": "pane_olive_integrale_semola",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-23",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P46",
+   "foods": [
+    "latte_senza_lattosio",
+    "torta_mele",
+    "choco_cream"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio",
+    "torta_mele",
+    "choco_cream"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    },
+    {
+     "food": "torta_mele",
+     "food_key": "torta_mele",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "choco_cream",
+     "food_key": "choco_cream",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-23",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P47",
+   "foods": [
+    "pizza",
+    "grissini"
+   ],
+   "food_keys": [
+    "pizza",
+    "grissini"
+   ],
+   "condiments": [
+    "carciofo",
+    "mozzarella",
+    "pancetta",
+    "pomodoro",
+    "salame"
+   ],
+   "components": [
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC33",
+     "condiments": [
+      "mozzarella",
+      "carciofo",
+      "pomodoro",
+      "salame",
+      "pancetta"
+     ]
+    },
+    {
+     "food": "grissini",
+     "food_key": "grissini",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-23",
+   "slot": "Spuntino_cena",
+   "slot_index": 5,
+   "course_id": "P48",
+   "foods": [
+    "gelato"
+   ],
+   "food_keys": [
+    "gelato"
+   ],
+   "condiments": [
+    "cioccolato",
+    "pistacchio"
+   ],
+   "components": [
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC34",
+     "condiments": [
+      "pistacchio",
+      "cioccolato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-24",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P49",
+   "foods": [
+    "sushi"
+   ],
+   "food_keys": [
+    "sushi"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "sushi",
+     "food_key": "sushi",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-24",
+   "slot": "Spuntino_cena",
+   "slot_index": 5,
+   "course_id": "P50",
+   "foods": [
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola",
+    "sushi"
+   ],
+   "food_keys": [
+    "pane_olive_integrale_semola",
+    "pane_noci_integrale_semola",
+    "sushi"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pane_olive_integrale_semola",
+     "food_key": "pane_olive_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "pane_noci_integrale_semola",
+     "food_key": "pane_noci_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "sushi",
+     "food_key": "sushi",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-25",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-25",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P51",
+   "foods": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "condiments": [
+    "curry",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC32",
+     "condiments": [
+      "olio",
+      "curry"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-25",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P52",
+   "foods": [
+    "fettina_pollo",
+    "hamburger",
+    "salsiccia",
+    "patata",
+    "galletta_riso"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "hamburger",
+    "salsiccia",
+    "patata",
+    "galletta_riso"
+   ],
+   "condiments": [
+    "limone",
+    "olio",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "hamburger",
+     "food_key": "hamburger",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "patata",
+     "food_key": "patata",
+     "condiment_group": "PC35",
+     "condiments": [
+      "limone",
+      "olio",
+      "zucchine"
+     ]
+    },
+    {
+     "food": "galletta_riso",
+     "food_key": "galletta_riso",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-26",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-26",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P53",
+   "foods": [
+    "focaccia",
+    "panzerotto",
+    "pane_semola"
+   ],
+   "food_keys": [
+    "focaccia",
+    "panzerotto",
+    "pane_semola"
+   ],
+   "condiments": [
+    "mortadella",
+    "mozzarella",
+    "olive_nere",
+    "olive_verdi",
+    "pomodoro",
+    "salame_piccante"
+   ],
+   "components": [
+    {
+     "food": "focaccia",
+     "food_key": "focaccia",
+     "condiment_group": "PC36",
+     "condiments": [
+      "pomodoro",
+      "salame_piccante",
+      "mortadella",
+      "olive_nere",
+      "olive_verdi"
+     ]
+    },
+    {
+     "food": "panzerotto",
+     "food_key": "panzerotto",
+     "condiment_group": "PC37",
+     "condiments": [
+      "mozzarella",
+      "pomodoro"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-26",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P54",
+   "foods": [
+    "pollo_allo_spiedo",
+    "empanada_gallega",
+    "parmigiano",
+    "pane_semola"
+   ],
+   "food_keys": [
+    "pollo_allo_spiedo",
+    "empanada_gallega",
+    "parmigiano",
+    "pane_semola"
+   ],
+   "condiments": [
+    "limone",
+    "olio",
+    "origano"
+   ],
+   "components": [
+    {
+     "food": "pollo_allo_spiedo",
+     "food_key": "pollo_allo_spiedo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "empanada_gallega",
+     "food_key": "empanada_gallega",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "parmigiano",
+     "food_key": "parmigiano",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC5",
+     "condiments": [
+      "olio",
+      "origano"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-27",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-27",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P55",
+   "foods": [
+    "pasta_integrale",
+    "tortelli"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "tortelli"
+   ],
+   "condiments": [
+    "curry",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC32",
+     "condiments": [
+      "olio",
+      "curry"
+     ]
+    },
+    {
+     "food": "tortelli",
+     "food_key": "tortelli",
+     "condiment_group": "PC32",
+     "condiments": [
+      "olio",
+      "curry"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-27",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P56",
+   "foods": [
+    "riso",
+    "pollo tikka masala"
+   ],
+   "food_keys": [
+    "riso",
+    "pollo_tikka_masala"
+   ],
+   "condiments": [
+    "agnello",
+    "basilico"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC38",
+     "condiments": [
+      "agnello",
+      "basilico"
+     ]
+    },
+    {
+     "food": "pollo tikka masala",
+     "food_key": "pollo_tikka_masala",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-27",
+   "slot": "Spuntino_cena",
+   "slot_index": 5,
+   "course_id": "P57",
+   "foods": [
+    "yogurt"
+   ],
+   "food_keys": [
+    "yogurt"
+   ],
+   "condiments": [
+    "cioccolato",
+    "noccioline"
+   ],
+   "components": [
+    {
+     "food": "yogurt",
+     "food_key": "yogurt",
+     "condiment_group": "PC39",
+     "condiments": [
+      "noccioline",
+      "cioccolato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-28",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-28",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P58",
+   "foods": [
+    "pasta_integrale",
+    "tortilla"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "tortilla"
+   ],
+   "condiments": [
+    "carota",
+    "curry",
+    "olio",
+    "sedano"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC32",
+     "condiments": [
+      "olio",
+      "curry"
+     ]
+    },
+    {
+     "food": "tortilla",
+     "food_key": "tortilla",
+     "condiment_group": "PC29",
+     "condiments": [
+      "sedano",
+      "carota"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-28",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P59",
+   "foods": [
+    "spiedini_maiale",
+    "galletta_riso"
+   ],
+   "food_keys": [
+    "spiedini_maiale",
+    "galletta_riso"
+   ],
+   "condiments": [
+    "choco_cream"
+   ],
+   "components": [
+    {
+     "food": "spiedini_maiale",
+     "food_key": "spiedini_maiale",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "galletta_riso",
+     "food_key": "galletta_riso",
+     "condiment_group": "PC40",
+     "condiments": [
+      "choco_cream"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-29",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P60",
+   "foods": [
+    "latte_senza_lattosio",
+    "galletta_riso"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio",
+    "galletta_riso"
+   ],
+   "condiments": [
+    "choco_cream",
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    },
+    {
+     "food": "galletta_riso",
+     "food_key": "galletta_riso",
+     "condiment_group": "PC40",
+     "condiments": [
+      "choco_cream"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-29",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P111",
+   "foods": [
+    "mela"
+   ],
+   "food_keys": [
+    "mela"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-05-29",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P61",
+   "foods": [
+    "polpette_carne",
+    "salmone",
+    "galletta_riso"
+   ],
+   "food_keys": [
+    "polpette_carne",
+    "salmone",
+    "galletta_riso"
+   ],
+   "condiments": [
+    "choco_cream",
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "polpette_carne",
+     "food_key": "polpette_carne",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "salmone",
+     "food_key": "salmone",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "galletta_riso",
+     "food_key": "galletta_riso",
+     "condiment_group": "PC40",
+     "condiments": [
+      "choco_cream"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-30",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-30",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P62",
+   "foods": [
+    "riso"
+   ],
+   "food_keys": [
+    "riso"
+   ],
+   "condiments": [
+    "burro",
+    "carota",
+    "salame"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC41",
+     "condiments": [
+      "burro",
+      "salame",
+      "carota"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-30",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P63",
+   "foods": [
+    "pizza"
+   ],
+   "food_keys": [
+    "pizza"
+   ],
+   "condiments": [
+    "mozzarella",
+    "pomodoro",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC42",
+     "condiments": [
+      "mozzarella",
+      "pomodoro",
+      "zucchine"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-31",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P64",
+   "foods": [
+    "budino",
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "budino",
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "budino",
+     "food_key": "budino",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-31",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P65",
+   "foods": [
+    "pasta_integrale",
+    "pizza"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "pizza"
+   ],
+   "condiments": [
+    "mozzarella",
+    "olio",
+    "olive_verdi",
+    "pomodoro",
+    "salame"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC43",
+     "condiments": [
+      "olio",
+      "salame",
+      "olive_verdi"
+     ]
+    },
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC37",
+     "condiments": [
+      "mozzarella",
+      "pomodoro"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-05-31",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P66",
+   "foods": [
+    "pollo_allo_spiedo",
+    "pizza"
+   ],
+   "food_keys": [
+    "pollo_allo_spiedo",
+    "pizza"
+   ],
+   "condiments": [
+    "limone",
+    "mozzarella",
+    "olio",
+    "pomodoro"
+   ],
+   "components": [
+    {
+     "food": "pollo_allo_spiedo",
+     "food_key": "pollo_allo_spiedo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC37",
+     "condiments": [
+      "mozzarella",
+      "pomodoro"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-01",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P67",
+   "foods": [
+    "cornetto_crema"
+   ],
+   "food_keys": [
+    "cornetto_crema"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "cornetto_crema",
+     "food_key": "cornetto_crema",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-01",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P68",
+   "foods": [
+    "pizza"
+   ],
+   "food_keys": [
+    "pizza"
+   ],
+   "condiments": [
+    "mozzarella",
+    "patatine",
+    "pomodoro",
+    "wurstel"
+   ],
+   "components": [
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC44",
+     "condiments": [
+      "mozzarella",
+      "pomodoro",
+      "wurstel",
+      "patatine"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-01",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P69",
+   "foods": [
+    "gelato"
+   ],
+   "food_keys": [
+    "gelato"
+   ],
+   "condiments": [
+    "foresta_nera",
+    "zuppa_inglese"
+   ],
+   "components": [
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC45",
+     "condiments": [
+      "zuppa_inglese",
+      "foresta_nera"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-01",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P70",
+   "foods": [
+    "salsiccia",
+    "insalata"
+   ],
+   "food_keys": [
+    "salsiccia",
+    "insalata"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": "PC8",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "insalata",
+     "food_key": "insalata",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-02",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P71",
+   "foods": [
+    "budino",
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "budino",
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "budino",
+     "food_key": "budino",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-02",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P72",
+   "foods": [
+    "pasta_integrale",
+    "budino"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "budino"
+   ],
+   "condiments": [
+    "verdure_miste"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC46",
+     "condiments": [
+      "verdure_miste"
+     ]
+    },
+    {
+     "food": "budino",
+     "food_key": "budino",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-02",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P73",
+   "foods": [
+    "erbazzone_reggiano",
+    "rustico"
+   ],
+   "food_keys": [
+    "erbazzone_reggiano",
+    "rustico"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "erbazzone_reggiano",
+     "food_key": "erbazzone_reggiano",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "rustico",
+     "food_key": "rustico",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-03",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P71",
+   "foods": [
+    "budino",
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "budino",
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "budino",
+     "food_key": "budino",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-03",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P74",
+   "foods": [
+    "riso"
+   ],
+   "food_keys": [
+    "riso"
+   ],
+   "condiments": [
+    "cavolo_cappuccio"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC47",
+     "condiments": [
+      "cavolo_cappuccio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-03",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P75",
+   "foods": [
+    "riso",
+    "pane_semola"
+   ],
+   "food_keys": [
+    "riso",
+    "pane_semola"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "uovo",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC48",
+     "condiments": [
+      "uovo",
+      "cipolla",
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-04",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P76",
+   "foods": [
+    "riso",
+    "pane_semola",
+    "fettina_pollo",
+    "latte_mandorla"
+   ],
+   "food_keys": [
+    "riso",
+    "pane_semola",
+    "fettina_pollo",
+    "latte_mandorla"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "insalata",
+    "limone",
+    "olio",
+    "uovo",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC48",
+     "condiments": [
+      "uovo",
+      "cipolla",
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "zenzero"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC49",
+     "condiments": [
+      "insalata",
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "latte_mandorla",
+     "food_key": "latte_mandorla",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-04",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P77",
+   "foods": [
+    "riso",
+    "gelato"
+   ],
+   "food_keys": [
+    "riso",
+    "gelato"
+   ],
+   "condiments": [
+    "basilico",
+    "olive_verdi",
+    "pistacchio",
+    "pomodoro",
+    "semi_sesamo",
+    "sgombro",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC50",
+     "condiments": [
+      "zucchine",
+      "olive_verdi",
+      "pomodoro",
+      "semi_sesamo",
+      "sgombro",
+      "basilico"
+     ]
+    },
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC51",
+     "condiments": [
+      "pistacchio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-05",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P78",
+   "foods": [
+    "pasta_mais",
+    "gelato"
+   ],
+   "food_keys": [
+    "pasta_mais",
+    "gelato"
+   ],
+   "condiments": [
+    "basilico",
+    "carota",
+    "cipolla",
+    "pistacchio",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "pasta_mais",
+     "food_key": "pasta_mais",
+     "condiment_group": "PC52",
+     "condiments": [
+      "cipolla",
+      "carota",
+      "zucchine",
+      "basilico"
+     ]
+    },
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC51",
+     "condiments": [
+      "pistacchio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-05",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P79",
+   "foods": [
+    "pasta_mais",
+    "piadina_senza_glutine"
+   ],
+   "food_keys": [
+    "pasta_mais",
+    "piadina_senza_glutine"
+   ],
+   "condiments": [
+    "acciughine",
+    "insalata",
+    "olio",
+    "origano",
+    "pan_grattato_senza_glutine",
+    "parmigiano",
+    "pepe_nero",
+    "pomodoro"
+   ],
+   "components": [
+    {
+     "food": "pasta_mais",
+     "food_key": "pasta_mais",
+     "condiment_group": "PC53",
+     "condiments": [
+      "pan_grattato_senza_glutine",
+      "acciughine",
+      "origano",
+      "pepe_nero"
+     ]
+    },
+    {
+     "food": "piadina_senza_glutine",
+     "food_key": "piadina_senza_glutine",
+     "condiment_group": "PC54",
+     "condiments": [
+      "parmigiano",
+      "pomodoro",
+      "insalata",
+      "origano",
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-06",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P80",
+   "foods": [
+    "pasta_mais"
+   ],
+   "food_keys": [
+    "pasta_mais"
+   ],
+   "condiments": [
+    "panna_con_lattosio",
+    "salmone_affumicato"
+   ],
+   "components": [
+    {
+     "food": "pasta_mais",
+     "food_key": "pasta_mais",
+     "condiment_group": "PC55",
+     "condiments": [
+      "salmone_affumicato",
+      "panna_con_lattosio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-06",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P81",
+   "foods": [
+    "te_pesca"
+   ],
+   "food_keys": [
+    "te_pesca"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "te_pesca",
+     "food_key": "te_pesca",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-06",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P82",
+   "foods": [
+    "piadina_senza_glutine",
+    "fettina_pollo",
+    "mela"
+   ],
+   "food_keys": [
+    "piadina_senza_glutine",
+    "fettina_pollo",
+    "mela"
+   ],
+   "condiments": [
+    "insalata",
+    "limone",
+    "olio",
+    "origano",
+    "pomodoro"
+   ],
+   "components": [
+    {
+     "food": "piadina_senza_glutine",
+     "food_key": "piadina_senza_glutine",
+     "condiment_group": "PC56",
+     "condiments": [
+      "pomodoro",
+      "insalata",
+      "origano",
+      "olio"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-07",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P83",
+   "foods": [
+    "pasta_semola",
+    "pane_semola",
+    "gelato",
+    "mela"
+   ],
+   "food_keys": [
+    "pasta_semola",
+    "pane_semola",
+    "gelato",
+    "mela"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "parmigiano",
+    "pistacchio",
+    "vaniglia",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "pasta_semola",
+     "food_key": "pasta_semola",
+     "condiment_group": "PC57",
+     "condiments": [
+      "carne_trita",
+      "carota",
+      "zucchine",
+      "zenzero",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC22",
+     "condiments": [
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC58",
+     "condiments": [
+      "pistacchio",
+      "vaniglia"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-07",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P84",
+   "foods": [
+    "fettina_pollo",
+    "gelato",
+    "pane_semola",
+    "mela"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "gelato",
+    "pane_semola",
+    "mela"
+   ],
+   "condiments": [
+    "latte_senza_lattosio",
+    "parmigiano",
+    "pistacchio",
+    "vaniglia"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC59",
+     "condiments": [
+      "latte_senza_lattosio"
+     ]
+    },
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC58",
+     "condiments": [
+      "pistacchio",
+      "vaniglia"
+     ]
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": "PC22",
+     "condiments": [
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-08",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P85",
+   "foods": [
+    "riso",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "riso",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [
+    "olive_verdi",
+    "semi_sesamo"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC60",
+     "condiments": [
+      "semi_sesamo",
+      "olive_verdi"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-08",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P86",
+   "foods": [
+    "salsiccia",
+    "fettina_pollo"
+   ],
+   "food_keys": [
+    "salsiccia",
+    "fettina_pollo"
+   ],
+   "condiments": [
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-09",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P87",
+   "foods": [
+    "riso",
+    "salsiccia",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "riso",
+    "salsiccia",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [
+    "olive_verdi",
+    "pomodoro",
+    "salsiccia",
+    "semi_sesamo",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC61",
+     "condiments": [
+      "semi_sesamo",
+      "olive_verdi",
+      "salsiccia",
+      "zucchine",
+      "pomodoro"
+     ]
+    },
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-09",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P88",
+   "foods": [
+    "salsiccia",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "salsiccia",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-10",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P89",
+   "foods": [
+    "pasta_mais",
+    "mela",
+    "finocchio"
+   ],
+   "food_keys": [
+    "pasta_mais",
+    "mela",
+    "finocchio"
+   ],
+   "condiments": [
+    "gamberetti",
+    "panna_senza_lattosio",
+    "pistacchio"
+   ],
+   "components": [
+    {
+     "food": "pasta_mais",
+     "food_key": "pasta_mais",
+     "condiment_group": "PC62",
+     "condiments": [
+      "pistacchio",
+      "panna_senza_lattosio",
+      "gamberetti"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "finocchio",
+     "food_key": "finocchio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-10",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P90",
+   "foods": [
+    "pane_integrale_semola"
+   ],
+   "food_keys": [
+    "pane_integrale_semola"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pane_integrale_semola",
+     "food_key": "pane_integrale_semola",
+     "condiment_group": "PC27",
+     "condiments": [
+      "olio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-11",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P57",
+   "foods": [
+    "yogurt"
+   ],
+   "food_keys": [
+    "yogurt"
+   ],
+   "condiments": [
+    "cioccolato",
+    "noccioline"
+   ],
+   "components": [
+    {
+     "food": "yogurt",
+     "food_key": "yogurt",
+     "condiment_group": "PC39",
+     "condiments": [
+      "noccioline",
+      "cioccolato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-11",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P91",
+   "foods": [
+    "pollo_allo_spiedo",
+    "patata"
+   ],
+   "food_keys": [
+    "pollo_allo_spiedo",
+    "patata"
+   ],
+   "condiments": [
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pollo_allo_spiedo",
+     "food_key": "pollo_allo_spiedo",
+     "condiment_group": "PC8",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "patata",
+     "food_key": "patata",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-12",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P92",
+   "foods": [
+    "pasta_integrale",
+    "formaggio_senza_lattosio"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "formaggio_senza_lattosio"
+   ],
+   "condiments": [
+    "curry",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC32",
+     "condiments": [
+      "olio",
+      "curry"
+     ]
+    },
+    {
+     "food": "formaggio_senza_lattosio",
+     "food_key": "formaggio_senza_lattosio",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-12",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P93",
+   "foods": [
+    "salsiccia",
+    "patata",
+    "insalata",
+    "pane_integrale_semola",
+    "carota"
+   ],
+   "food_keys": [
+    "salsiccia",
+    "patata",
+    "insalata",
+    "pane_integrale_semola",
+    "carota"
+   ],
+   "condiments": [
+    "choco_cream",
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "salsiccia",
+     "food_key": "salsiccia",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "patata",
+     "food_key": "patata",
+     "condiment_group": "PC8",
+     "condiments": [
+      "olio"
+     ]
+    },
+    {
+     "food": "insalata",
+     "food_key": "insalata",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "pane_integrale_semola",
+     "food_key": "pane_integrale_semola",
+     "condiment_group": "PC40",
+     "condiments": [
+      "choco_cream"
+     ]
+    },
+    {
+     "food": "carota",
+     "food_key": "carota",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-13",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P94",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "pomodoro",
+    "prosciutto_cotto",
+    "sedano"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC63",
+     "condiments": [
+      "pomodoro",
+      "carciofo",
+      "carota",
+      "sedano",
+      "prosciutto_cotto",
+      "formaggio_senza_lattosio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-13",
+   "slot": "Spuntino_pomeriggio",
+   "slot_index": 3,
+   "course_id": "P95",
+   "foods": [
+    "gelato"
+   ],
+   "food_keys": [
+    "gelato"
+   ],
+   "condiments": [
+    "cioccolato",
+    "pistacchio"
+   ],
+   "components": [
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC34",
+     "condiments": [
+      "pistacchio",
+      "cioccolato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-13",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P96",
+   "foods": [
+    "gnocchi_di_sauris",
+    "frico",
+    "polenta",
+    "baccalà",
+    "gubana"
+   ],
+   "food_keys": [
+    "gnocchi_di_sauris",
+    "frico",
+    "polenta",
+    "baccala",
+    "gubana"
+   ],
+   "condiments": [],
+   "components": [
+    {
+     "food": "gnocchi_di_sauris",
+     "food_key": "gnocchi_di_sauris",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "frico",
+     "food_key": "frico",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "polenta",
+     "food_key": "polenta",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "baccalà",
+     "food_key": "baccala",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "gubana",
+     "food_key": "gubana",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-14",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-14",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P97",
+   "foods": [
+    "pizza"
+   ],
+   "food_keys": [
+    "pizza"
+   ],
+   "condiments": [
+    "insalata",
+    "mozzarella",
+    "pomodoro",
+    "salame_oca"
+   ],
+   "components": [
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC64",
+     "condiments": [
+      "salame_oca",
+      "pomodoro",
+      "mozzarella",
+      "insalata"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-14",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P98",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "pomodoro",
+    "prosciutto_cotto",
+    "sedano"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC63",
+     "condiments": [
+      "pomodoro",
+      "carciofo",
+      "carota",
+      "sedano",
+      "prosciutto_cotto",
+      "formaggio_senza_lattosio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-15",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P31",
+   "foods": [
+    "latte_senza_lattosio"
+   ],
+   "food_keys": [
+    "latte_senza_lattosio"
+   ],
+   "condiments": [
+    "riso_soffiato"
+   ],
+   "components": [
+    {
+     "food": "latte_senza_lattosio",
+     "food_key": "latte_senza_lattosio",
+     "condiment_group": "PC19",
+     "condiments": [
+      "riso_soffiato"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-15",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P98",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "pomodoro",
+    "prosciutto_cotto",
+    "sedano"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC63",
+     "condiments": [
+      "pomodoro",
+      "carciofo",
+      "carota",
+      "sedano",
+      "prosciutto_cotto",
+      "formaggio_senza_lattosio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-15",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P99",
+   "foods": [
+    "riso"
+   ],
+   "food_keys": [
+    "riso"
+   ],
+   "condiments": [
+    "carciofo",
+    "formaggio_senza_lattosio"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC65",
+     "condiments": [
+      "carciofo",
+      "formaggio_senza_lattosio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-16",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P100",
+   "foods": [
+    "pollo_allo_spiedo",
+    "peperoni"
+   ],
+   "food_keys": [
+    "pollo_allo_spiedo",
+    "peperoni"
+   ],
+   "condiments": [
+    "cipolla",
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "pollo_allo_spiedo",
+     "food_key": "pollo_allo_spiedo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "peperoni",
+     "food_key": "peperoni",
+     "condiment_group": "PC66",
+     "condiments": [
+      "olio",
+      "cipolla"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-16",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P101",
+   "foods": [
+    "pasta_integrale",
+    "krapfen"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "krapfen"
+   ],
+   "condiments": [
+    "marmellata",
+    "pancetta",
+    "parmigiano",
+    "uova"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC67",
+     "condiments": [
+      "pancetta",
+      "uova",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "krapfen",
+     "food_key": "krapfen",
+     "condiment_group": "PC68",
+     "condiments": [
+      "marmellata"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-23",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P102",
+   "foods": [
+    "riso",
+    "pollo tikka masala",
+    "patata",
+    "ceci"
+   ],
+   "food_keys": [
+    "riso",
+    "pollo_tikka_masala",
+    "patata",
+    "ceci"
+   ],
+   "condiments": [
+    "agnello",
+    "basilico"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC38",
+     "condiments": [
+      "agnello",
+      "basilico"
+     ]
+    },
+    {
+     "food": "pollo tikka masala",
+     "food_key": "pollo_tikka_masala",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "patata",
+     "food_key": "patata",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "ceci",
+     "food_key": "ceci",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-24",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P103",
+   "foods": [
+    "pizza",
+    "gelato"
+   ],
+   "food_keys": [
+    "pizza",
+    "gelato"
+   ],
+   "condiments": [
+    "cioccolato",
+    "mozzarella",
+    "panna_con_lattosio",
+    "patatine",
+    "pomodoro"
+   ],
+   "components": [
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC69",
+     "condiments": [
+      "mozzarella",
+      "pomodoro",
+      "patatine"
+     ]
+    },
+    {
+     "food": "gelato",
+     "food_key": "gelato",
+     "condiment_group": "PC70",
+     "condiments": [
+      "cioccolato",
+      "panna_con_lattosio"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-24",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P104",
+   "foods": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "mela"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC71",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "polpette_carne_senza_glutine",
+     "food_key": "polpette_carne_senza_glutine",
+     "condiment_group": "PC24",
+     "condiments": [
+      "limone"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-25",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P105",
+   "foods": [
+    "riso",
+    "fettina_pollo",
+    "mela",
+    "cioccolata_nocciolata"
+   ],
+   "food_keys": [
+    "riso",
+    "fettina_pollo",
+    "mela",
+    "cioccolata_nocciolata"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "olio",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC71",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC2",
+     "condiments": [
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "cioccolata_nocciolata",
+     "food_key": "cioccolata_nocciolata",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-25",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P104",
+   "foods": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "mela"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC71",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "polpette_carne_senza_glutine",
+     "food_key": "polpette_carne_senza_glutine",
+     "condiment_group": "PC24",
+     "condiments": [
+      "limone"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-26",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P104",
+   "foods": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "mela"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC71",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "polpette_carne_senza_glutine",
+     "food_key": "polpette_carne_senza_glutine",
+     "condiment_group": "PC24",
+     "condiments": [
+      "limone"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-26",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P106",
+   "foods": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "cioccolata_nocciolata",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "polpette_carne_senza_glutine",
+    "cioccolata_nocciolata",
+    "mela"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC71",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "polpette_carne_senza_glutine",
+     "food_key": "polpette_carne_senza_glutine",
+     "condiment_group": "PC24",
+     "condiments": [
+      "limone"
+     ]
+    },
+    {
+     "food": "cioccolata_nocciolata",
+     "food_key": "cioccolata_nocciolata",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-27",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P107",
+   "foods": [
+    "riso",
+    "pollo_allo_spiedo",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "pollo_allo_spiedo",
+    "mela"
+   ],
+   "condiments": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "insalata",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC71",
+     "condiments": [
+      "carota",
+      "zucchine",
+      "carne_trita",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "pollo_allo_spiedo",
+     "food_key": "pollo_allo_spiedo",
+     "condiment_group": "PC30",
+     "condiments": [
+      "insalata",
+      "cipolla"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-27",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P108",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "parmigiano",
+    "pomodoro",
+    "tonno",
+    "tuorlo_uovo",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC72",
+     "condiments": [
+      "zucchine",
+      "tonno",
+      "pomodoro",
+      "parmigiano",
+      "tuorlo_uovo"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-28",
+   "slot": "Colazione",
+   "slot_index": 0,
+   "course_id": "P112",
+   "foods": [
+    "latte_mandorla"
+   ],
+   "food_keys": [
+    "latte_mandorla"
+   ],
+   "condiments": [
+    "corn_flakes"
+   ],
+   "components": [
+    {
+     "food": "latte_mandorla",
+     "food_key": "latte_mandorla",
+     "condiment_group": "PC10",
+     "condiments": [
+      "corn_flakes"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-06-28",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P108",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "parmigiano",
+    "pomodoro",
+    "tonno",
+    "tuorlo_uovo",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC72",
+     "condiments": [
+      "zucchine",
+      "tonno",
+      "pomodoro",
+      "parmigiano",
+      "tuorlo_uovo"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-28",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P113",
+   "foods": [
+    "merluzzo",
+    "mela"
+   ],
+   "food_keys": [
+    "merluzzo",
+    "mela"
+   ],
+   "condiments": [
+    "capperi",
+    "melanzane",
+    "olive_verdi",
+    "peperoni",
+    "pomodoro",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "merluzzo",
+     "food_key": "merluzzo",
+     "condiment_group": "PC73",
+     "condiments": [
+      "zucchine",
+      "melanzane",
+      "pomodoro",
+      "peperoni",
+      "olive_verdi",
+      "capperi"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-29",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P114",
+   "foods": [
+    "riso",
+    "mela",
+    "banana"
+   ],
+   "food_keys": [
+    "riso",
+    "mela",
+    "banana"
+   ],
+   "condiments": [
+    "carota",
+    "cipolla",
+    "gamberetti",
+    "insalata",
+    "pomodoro",
+    "salmone_affumicato",
+    "salsa_soia",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC74",
+     "condiments": [
+      "cipolla",
+      "zucchine",
+      "carota",
+      "insalata",
+      "gamberetti",
+      "salmone_affumicato",
+      "salsa_soia",
+      "pomodoro"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "banana",
+     "food_key": "banana",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-29",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P115",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "carota",
+    "cipolla",
+    "gamberetti",
+    "pomodoro",
+    "salmone_affumicato",
+    "salsa_soia",
+    "zenzero",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC75",
+     "condiments": [
+      "cipolla",
+      "zucchine",
+      "carota",
+      "zenzero",
+      "gamberetti",
+      "salmone_affumicato",
+      "salsa_soia",
+      "pomodoro"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-30",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P116",
+   "foods": [
+    "riso",
+    "mela",
+    "cioccolata_nocciolata",
+    "carota"
+   ],
+   "food_keys": [
+    "riso",
+    "mela",
+    "cioccolata_nocciolata",
+    "carota"
+   ],
+   "condiments": [
+    "tonno"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC76",
+     "condiments": [
+      "tonno"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "cioccolata_nocciolata",
+     "food_key": "cioccolata_nocciolata",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "carota",
+     "food_key": "carota",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-06-30",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P117",
+   "foods": [
+    "fettina_pollo",
+    "mela",
+    "latte_mandorla",
+    "carota",
+    "pane_semola"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "mela",
+    "latte_mandorla",
+    "carota",
+    "pane_semola"
+   ],
+   "condiments": [
+    "insalata",
+    "limone",
+    "olio",
+    "salsa_soia"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC77",
+     "condiments": [
+      "salsa_soia",
+      "olio",
+      "limone",
+      "insalata"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "latte_mandorla",
+     "food_key": "latte_mandorla",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "carota",
+     "food_key": "carota",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-01",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P118",
+   "foods": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "condiments": [
+    "panna_senza_lattosio",
+    "pistacchio",
+    "salmone_affumicato"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC78",
+     "condiments": [
+      "pistacchio",
+      "panna_senza_lattosio",
+      "salmone_affumicato"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-01",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P119",
+   "foods": [
+    "merluzzo"
+   ],
+   "food_keys": [
+    "merluzzo"
+   ],
+   "condiments": [
+    "capperi",
+    "olive_verdi",
+    "zucchine"
+   ],
+   "components": [
+    {
+     "food": "merluzzo",
+     "food_key": "merluzzo",
+     "condiment_group": "PC79",
+     "condiments": [
+      "zucchine",
+      "capperi",
+      "olive_verdi"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2020-07-02",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P120",
+   "foods": [
+    "fettina_pollo",
+    "mela",
+    "carota"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "mela",
+    "carota"
+   ],
+   "condiments": [
+    "insalata",
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC49",
+     "condiments": [
+      "insalata",
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "carota",
+     "food_key": "carota",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-02",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P121",
+   "foods": [
+    "tonno",
+    "mela",
+    "pane_semola"
+   ],
+   "food_keys": [
+    "tonno",
+    "mela",
+    "pane_semola"
+   ],
+   "condiments": [
+    "limone",
+    "pan_grattato",
+    "parmigiano",
+    "tuorlo_uovo"
+   ],
+   "components": [
+    {
+     "food": "tonno",
+     "food_key": "tonno",
+     "condiment_group": "PC80",
+     "condiments": [
+      "pan_grattato",
+      "tuorlo_uovo",
+      "parmigiano",
+      "limone"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-03",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P122",
+   "foods": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "condiments": [
+    "olio",
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC26",
+     "condiments": [
+      "olio",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-03",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P123",
+   "foods": [
+    "fettina_pollo",
+    "mela",
+    "pane_semola",
+    "latte_mandorla"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "mela",
+    "pane_semola",
+    "latte_mandorla"
+   ],
+   "condiments": [
+    "insalata",
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC49",
+     "condiments": [
+      "insalata",
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "pane_semola",
+     "food_key": "pane_semola",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "latte_mandorla",
+     "food_key": "latte_mandorla",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-04",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P124",
+   "foods": [
+    "riso",
+    "mela"
+   ],
+   "food_keys": [
+    "riso",
+    "mela"
+   ],
+   "condiments": [
+    "funghi",
+    "salsiccia"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC81",
+     "condiments": [
+      "salsiccia",
+      "funghi"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-04",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P125",
+   "foods": [
+    "merluzzo",
+    "mela",
+    "cioccolata_fondente",
+    "parmigiano"
+   ],
+   "food_keys": [
+    "merluzzo",
+    "mela",
+    "cioccolata_fondente",
+    "parmigiano"
+   ],
+   "condiments": [
+    "limone",
+    "olio",
+    "origano",
+    "pepe_nero"
+   ],
+   "components": [
+    {
+     "food": "merluzzo",
+     "food_key": "merluzzo",
+     "condiment_group": "PC82",
+     "condiments": [
+      "olio",
+      "limone",
+      "origano",
+      "pepe_nero"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "cioccolata_fondente",
+     "food_key": "cioccolata_fondente",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "parmigiano",
+     "food_key": "parmigiano",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-05",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P126",
+   "foods": [
+    "riso",
+    "mela",
+    "banana"
+   ],
+   "food_keys": [
+    "riso",
+    "mela",
+    "banana"
+   ],
+   "condiments": [
+    "funghi",
+    "salsiccia"
+   ],
+   "components": [
+    {
+     "food": "riso",
+     "food_key": "riso",
+     "condiment_group": "PC81",
+     "condiments": [
+      "salsiccia",
+      "funghi"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "banana",
+     "food_key": "banana",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-05",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P127",
+   "foods": [
+    "fettina_pollo",
+    "mela",
+    "parmigiano"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "mela",
+    "parmigiano"
+   ],
+   "condiments": [
+    "insalata",
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC49",
+     "condiments": [
+      "insalata",
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "parmigiano",
+     "food_key": "parmigiano",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-06",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P122",
+   "foods": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "mela"
+   ],
+   "condiments": [
+    "olio",
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC26",
+     "condiments": [
+      "olio",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-06",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P127",
+   "foods": [
+    "fettina_pollo",
+    "mela",
+    "parmigiano"
+   ],
+   "food_keys": [
+    "fettina_pollo",
+    "mela",
+    "parmigiano"
+   ],
+   "condiments": [
+    "insalata",
+    "limone",
+    "olio"
+   ],
+   "components": [
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC49",
+     "condiments": [
+      "insalata",
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "parmigiano",
+     "food_key": "parmigiano",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-07",
+   "slot": "Pranzo",
+   "slot_index": 2,
+   "course_id": "P128",
+   "foods": [
+    "pasta_integrale",
+    "fettina_pollo",
+    "carota",
+    "mela"
+   ],
+   "food_keys": [
+    "pasta_integrale",
+    "fettina_pollo",
+    "carota",
+    "mela"
+   ],
+   "condiments": [
+    "insalata",
+    "limone",
+    "olio",
+    "parmigiano"
+   ],
+   "components": [
+    {
+     "food": "pasta_integrale",
+     "food_key": "pasta_integrale",
+     "condiment_group": "PC26",
+     "condiments": [
+      "olio",
+      "parmigiano"
+     ]
+    },
+    {
+     "food": "fettina_pollo",
+     "food_key": "fettina_pollo",
+     "condiment_group": "PC49",
+     "condiments": [
+      "insalata",
+      "limone",
+      "olio"
+     ]
+    },
+    {
+     "food": "carota",
+     "food_key": "carota",
+     "condiment_group": null,
+     "condiments": []
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  },
+  {
+   "date": "2020-07-07",
+   "slot": "Cena",
+   "slot_index": 4,
+   "course_id": "P129",
+   "foods": [
+    "pizza",
+    "mela"
+   ],
+   "food_keys": [
+    "pizza",
+    "mela"
+   ],
+   "condiments": [
+    "mozzarella",
+    "pomodoro"
+   ],
+   "components": [
+    {
+     "food": "pizza",
+     "food_key": "pizza",
+     "condiment_group": "PC37",
+     "condiments": [
+      "mozzarella",
+      "pomodoro"
+     ]
+    },
+    {
+     "food": "mela",
+     "food_key": "mela",
+     "condiment_group": null,
+     "condiments": []
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "id": "C1",
+   "date": "2020-05-02",
+   "time": "09:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C2",
+   "date": "2020-05-02",
+   "time": "10:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C3",
+   "date": "2020-05-02",
+   "time": "12:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C4",
+   "date": "2020-05-03",
+   "time": "00:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C6",
+   "date": "2020-05-05",
+   "time": "02:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C5",
+   "date": "2020-05-05",
+   "time": "09:30",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C7",
+   "date": "2020-05-06",
+   "time": "22:45",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C8",
+   "date": "2020-05-07",
+   "time": "00:00",
+   "consistency_legacy": 0.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C9",
+   "date": "2020-05-07",
+   "time": "16:10",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C10",
+   "date": "2020-05-08",
+   "time": "15:20",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C11",
+   "date": "2020-05-08",
+   "time": "18:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C12",
+   "date": "2020-05-10",
+   "time": "00:20",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C13",
+   "date": "2020-05-11",
+   "time": "00:20",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C14",
+   "date": "2020-05-11",
+   "time": "13:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C15",
+   "date": "2020-05-11",
+   "time": "15:10",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C16",
+   "date": "2020-05-11",
+   "time": "19:55",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C17",
+   "date": "2020-05-11",
+   "time": "23:40",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C18",
+   "date": "2020-05-12",
+   "time": "08:40",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C19",
+   "date": "2020-05-12",
+   "time": "17:40",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C20",
+   "date": "2020-05-12",
+   "time": "23:59",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C21",
+   "date": "2020-05-13",
+   "time": "11:20",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C22",
+   "date": "2020-05-13",
+   "time": "22:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C23",
+   "date": "2020-05-14",
+   "time": "00:29",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C24",
+   "date": "2020-05-14",
+   "time": "09:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C25",
+   "date": "2020-05-15",
+   "time": "01:05",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C26",
+   "date": "2020-05-15",
+   "time": "09:35",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C28",
+   "date": "2020-05-15",
+   "time": "10:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C27",
+   "date": "2020-05-15",
+   "time": "16:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C29",
+   "date": "2020-05-16",
+   "time": "23:45",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C30",
+   "date": "2020-05-17",
+   "time": "07:50",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C31",
+   "date": "2020-05-17",
+   "time": "14:50",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C32",
+   "date": "2020-05-17",
+   "time": "21:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C33",
+   "date": "2020-05-17",
+   "time": "23:40",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C34",
+   "date": "2020-05-18",
+   "time": "06:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C35",
+   "date": "2020-05-18",
+   "time": "17:15",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C36",
+   "date": "2020-05-18",
+   "time": "22:34",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C37",
+   "date": "2020-05-19",
+   "time": "22:00",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C38",
+   "date": "2020-05-20",
+   "time": "16:05",
+   "consistency_legacy": null,
+   "discomfort_legacy": null
+  },
+  {
+   "id": "C39",
+   "date": "2020-05-21",
+   "time": "08:50",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C40",
+   "date": "2020-05-21",
+   "time": "17:50",
+   "consistency_legacy": null,
+   "discomfort_legacy": null
+  },
+  {
+   "id": "C41",
+   "date": "2020-05-21",
+   "time": "22:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C42",
+   "date": "2020-05-22",
+   "time": "17:00",
+   "consistency_legacy": null,
+   "discomfort_legacy": null
+  },
+  {
+   "id": "C43",
+   "date": "2020-05-24",
+   "time": "00:20",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C44",
+   "date": "2020-05-25",
+   "time": "15:00",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C45",
+   "date": "2020-05-25",
+   "time": "20:00",
+   "consistency_legacy": null,
+   "discomfort_legacy": null
+  },
+  {
+   "id": "C46",
+   "date": "2020-05-26",
+   "time": "15:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C47",
+   "date": "2020-05-26",
+   "time": "19:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C48",
+   "date": "2020-05-26",
+   "time": "23:10",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C49",
+   "date": "2020-05-27",
+   "time": "10:10",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C50",
+   "date": "2020-05-27",
+   "time": "23:40",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C51",
+   "date": "2020-05-28",
+   "time": "07:05",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C52",
+   "date": "2020-05-29",
+   "time": "08:05",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C53",
+   "date": "2020-05-29",
+   "time": "17:40",
+   "consistency_legacy": null,
+   "discomfort_legacy": null
+  },
+  {
+   "id": "C54",
+   "date": "2020-05-29",
+   "time": "22:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C55",
+   "date": "2020-05-30",
+   "time": "18:25",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C56",
+   "date": "2020-05-31",
+   "time": "10:25",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C57",
+   "date": "2020-06-01",
+   "time": "07:25",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C58",
+   "date": "2020-06-01",
+   "time": "10:40",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C59",
+   "date": "2020-06-01",
+   "time": "22:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C60",
+   "date": "2020-06-02",
+   "time": "00:40",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C61",
+   "date": "2020-06-02",
+   "time": "12:20",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C62",
+   "date": "2020-06-02",
+   "time": "20:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C63",
+   "date": "2020-06-03",
+   "time": "09:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C64",
+   "date": "2020-06-04",
+   "time": "17:50",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C65",
+   "date": "2020-06-05",
+   "time": "23:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C66",
+   "date": "2020-06-06",
+   "time": "10:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C67",
+   "date": "2020-06-06",
+   "time": "11:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C68",
+   "date": "2020-06-07",
+   "time": "23:20",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C69",
+   "date": "2020-06-08",
+   "time": "08:00",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C70",
+   "date": "2020-06-08",
+   "time": "09:00",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C71",
+   "date": "2020-06-10",
+   "time": "11:10",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C72",
+   "date": "2020-06-11",
+   "time": "11:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C73",
+   "date": "2020-06-12",
+   "time": "11:00",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C74",
+   "date": "2020-06-13",
+   "time": "15:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C75",
+   "date": "2020-06-13",
+   "time": "21:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C76",
+   "date": "2020-06-14",
+   "time": "16:30",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C77",
+   "date": "2020-06-14",
+   "time": "17:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C78",
+   "date": "2020-06-14",
+   "time": "18:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C79",
+   "date": "2020-06-15",
+   "time": "10:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C80",
+   "date": "2020-06-15",
+   "time": "16:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C81",
+   "date": "2020-06-15",
+   "time": "18:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C82",
+   "date": "2020-06-16",
+   "time": "22:30",
+   "consistency_legacy": 5.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C83",
+   "date": "2020-06-23",
+   "time": "23:40",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C84",
+   "date": "2020-06-24",
+   "time": "22:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C85",
+   "date": "2020-06-25",
+   "time": "23:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C86",
+   "date": "2020-06-26",
+   "time": "23:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C87",
+   "date": "2020-06-28",
+   "time": "00:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C88",
+   "date": "2020-06-28",
+   "time": "23:00",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C89",
+   "date": "2020-06-29",
+   "time": "10:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C90",
+   "date": "2020-06-30",
+   "time": "01:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C91",
+   "date": "2020-06-30",
+   "time": "10:40",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C92",
+   "date": "2020-06-30",
+   "time": "16:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C93",
+   "date": "2020-07-02",
+   "time": "00:37",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 4.0
+  },
+  {
+   "id": "C94",
+   "date": "2020-07-02",
+   "time": "22:30",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C95",
+   "date": "2020-07-03",
+   "time": "01:20",
+   "consistency_legacy": 1.0,
+   "discomfort_legacy": 3.0
+  },
+  {
+   "id": "C96",
+   "date": "2020-07-03",
+   "time": "23:20",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C97",
+   "date": "2020-07-04",
+   "time": "11:35",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C98",
+   "date": "2020-07-05",
+   "time": "01:35",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C99",
+   "date": "2020-07-05",
+   "time": "11:35",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C100",
+   "date": "2020-07-06",
+   "time": "10:30",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C101",
+   "date": "2020-07-06",
+   "time": "13:30",
+   "consistency_legacy": 4.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C102",
+   "date": "2020-07-06",
+   "time": "19:00",
+   "consistency_legacy": 3.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C103",
+   "date": "2020-07-07",
+   "time": "01:00",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C104",
+   "date": "2020-07-07",
+   "time": "08:35",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C105",
+   "date": "2020-07-07",
+   "time": "11:55",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 2.0
+  },
+  {
+   "id": "C106",
+   "date": "2020-07-07",
+   "time": "14:40",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 1.0
+  },
+  {
+   "id": "C107",
+   "date": "2020-07-08",
+   "time": "08:10",
+   "consistency_legacy": 2.0,
+   "discomfort_legacy": 3.0
+  }
+ ],
+ "issues": [
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: cosciotti_pollo"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: pancarrè_integrale"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: pancarré"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: pancarré_senza_glutine"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: pera"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: sottilette_senza_lattosio"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: latte_senza_lattosio"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: coca_cola"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: cioccolata_calda"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: caffè_orzo"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: caffè"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: cannellino"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: cioccolata_al_latte"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: involtini"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: cotolette"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: polpette_tonno"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: pane_senza_glutine"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: sedano"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: te_pesca"
+  },
+  {
+   "kind": "missing_type",
+   "msg": "alimento senza categoria: formaggio_senza_lattosio"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C38 (2020-05-20): Consistenza mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C38 (2020-05-20): Fastidio antecedente mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C40 (2020-05-21): Consistenza mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C40 (2020-05-21): Fastidio antecedente mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C42 (2020-05-22): Consistenza mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C42 (2020-05-22): Fastidio antecedente mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C45 (2020-05-25): Consistenza mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C45 (2020-05-25): Fastidio antecedente mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C53 (2020-05-29): Consistenza mancante"
+  },
+  {
+   "kind": "missing_value",
+   "msg": "C53 (2020-05-29): Fastidio antecedente mancante"
+  },
+  {
+   "kind": "empty_event",
+   "msg": "evento C108 senza data: riga scartata"
+  },
+  {
+   "kind": "empty_event",
+   "msg": "evento C109 senza data: riga scartata"
+  }
+ ]
+}

@@ -1,0 +1,3283 @@
+{
+ "versione": 1,
+ "titolo": "Archivio 2020",
+ "sottotitolo": "Progetto di Fondamenti di Data Science, maggio-luglio 2020",
+ "avviso": "Questi dati usano scale diverse da quelle di oggi e non sono confrontabili. La «consistenza» va da 0 a 5 con 0 come valore peggiore e cresce in modo monotono: non è la scala a sette livelli usata adesso, che ha l'ottimo al centro. Non viene convertita, non entra in nessun calcolo e non si somma ai dati nuovi. Il periodo cade inoltre nei mesi successivi al lockdown, con orari, dieta e stress difficilmente ripetibili.",
+ "periodo": {
+  "from": "2020-05-02",
+  "to": "2020-07-08",
+  "calendar_days": 68
+ },
+ "conteggi": {
+  "giorniDiCalendario": 68,
+  "giorniCoperti": 61,
+  "pasti": 149,
+  "eventi": 107,
+  "alimenti": 83,
+  "condimenti": 79,
+  "portate": 129
+ },
+ "qualita": [
+  {
+   "tipo": "empty_event",
+   "conteggio": 2
+  },
+  {
+   "tipo": "missing_type",
+   "conteggio": 20
+  },
+  {
+   "tipo": "missing_value",
+   "conteggio": 10
+  }
+ ],
+ "pasti": [
+  {
+   "giorno": "2020-05-02",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "fettina_pollo",
+    "finocchio",
+    "limone",
+    "mela",
+    "olio",
+    "pasta",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "finocchio",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "pasta_di_grano",
+    "pollo",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-02",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "canonici": [
+    "gelato_senza_lattosio"
+   ]
+  },
+  {
+   "giorno": "2020-05-02",
+   "fascia": "Cena",
+   "termini": [
+    "aceto_di_vino",
+    "carota",
+    "finocchio",
+    "mela",
+    "olio",
+    "polpette_tonno"
+   ],
+   "canonici": [
+    "aceto_di_vino",
+    "carota",
+    "finocchio",
+    "mela",
+    "olio_di_oliva",
+    "polpette_di_tonno"
+   ]
+  },
+  {
+   "giorno": "2020-05-05",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_pezzetti",
+    "carota",
+    "cipolla",
+    "cornetto_sammontana_no_lattosio",
+    "mela",
+    "riso",
+    "spezzatino",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_a_pezzi",
+    "carota",
+    "cipolla",
+    "gelato_senza_lattosio",
+    "mela",
+    "riso",
+    "spezzatino",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-05",
+   "fascia": "Cena",
+   "termini": [
+    "carne_pezzetti",
+    "carota",
+    "cipolla",
+    "mela",
+    "olio",
+    "origano",
+    "pane_semola",
+    "riso",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_a_pezzi",
+    "carota",
+    "cipolla",
+    "mela",
+    "olio_di_oliva",
+    "origano",
+    "pane_di_semola",
+    "riso",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-06",
+   "fascia": "Pranzo",
+   "termini": [
+    "arancia",
+    "carota",
+    "fettina_pollo",
+    "parmigiano",
+    "riso",
+    "zenzero"
+   ],
+   "canonici": [
+    "arancia",
+    "carota",
+    "parmigiano",
+    "pollo",
+    "riso",
+    "zenzero"
+   ]
+  },
+  {
+   "giorno": "2020-05-06",
+   "fascia": "Cena",
+   "termini": [
+    "mela",
+    "olio",
+    "pane_semola",
+    "pomodoro",
+    "uova"
+   ],
+   "canonici": [
+    "mela",
+    "olio_di_oliva",
+    "pane_di_semola",
+    "pomodoro",
+    "uovo"
+   ]
+  },
+  {
+   "giorno": "2020-05-07",
+   "fascia": "Colazione",
+   "termini": [
+    "corn_flakes",
+    "latte_senza_lattosio"
+   ],
+   "canonici": [
+    "corn_flakes",
+    "latte_senza_lattosio"
+   ]
+  },
+  {
+   "giorno": "2020-05-07",
+   "fascia": "Pranzo",
+   "termini": [
+    "mela",
+    "pomodoro",
+    "riso",
+    "tonno",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "mela",
+    "pomodoro",
+    "riso",
+    "tonno",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-07",
+   "fascia": "Cena",
+   "termini": [
+    "banana",
+    "carota",
+    "fettina_pollo",
+    "limone",
+    "mela",
+    "olio",
+    "pane_semola",
+    "riso",
+    "zenzero"
+   ],
+   "canonici": [
+    "banana",
+    "carota",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "pane_di_semola",
+    "pollo",
+    "riso",
+    "zenzero"
+   ]
+  },
+  {
+   "giorno": "2020-05-08",
+   "fascia": "Colazione",
+   "termini": [
+    "corn_flakes",
+    "latte_senza_lattosio"
+   ],
+   "canonici": [
+    "corn_flakes",
+    "latte_senza_lattosio"
+   ]
+  },
+  {
+   "giorno": "2020-05-08",
+   "fascia": "Pranzo",
+   "termini": [
+    "banana",
+    "cornetto_sammontana_no_lattosio",
+    "mela",
+    "pomodoro",
+    "riso",
+    "salame",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "banana",
+    "gelato_senza_lattosio",
+    "mela",
+    "pomodoro",
+    "riso",
+    "salame",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-08",
+   "fascia": "Cena",
+   "termini": [
+    "arancia",
+    "cipolla",
+    "pollo_pezzetti",
+    "riso"
+   ],
+   "canonici": [
+    "arancia",
+    "cipolla",
+    "pollo",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-05-09",
+   "fascia": "Pranzo",
+   "termini": [
+    "finocchio",
+    "mela",
+    "pancetta",
+    "riso"
+   ],
+   "canonici": [
+    "finocchio",
+    "mela",
+    "pancetta",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-05-09",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "cantuccini_senza_glutine",
+    "tisana_frutti_bosco"
+   ],
+   "canonici": [
+    "cantuccini_senza_glutine",
+    "tisana"
+   ]
+  },
+  {
+   "giorno": "2020-05-09",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "limone",
+    "olio",
+    "pane_semola",
+    "spinaci"
+   ],
+   "canonici": [
+    "limone",
+    "olio_di_oliva",
+    "pane_di_semola",
+    "pollo",
+    "spinaci"
+   ]
+  },
+  {
+   "giorno": "2020-05-10",
+   "fascia": "Spuntino_mattina",
+   "termini": [
+    "finocchio"
+   ],
+   "canonici": [
+    "finocchio"
+   ]
+  },
+  {
+   "giorno": "2020-05-10",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_pezzetti",
+    "carota",
+    "cipolla",
+    "finocchio",
+    "mela",
+    "parmigiano",
+    "riso",
+    "spezzatino",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_a_pezzi",
+    "carota",
+    "cipolla",
+    "finocchio",
+    "mela",
+    "parmigiano",
+    "riso",
+    "spezzatino",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-10",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "cantuccini_senza_glutine",
+    "tisana_frutti_bosco"
+   ],
+   "canonici": [
+    "cantuccini_senza_glutine",
+    "tisana"
+   ]
+  },
+  {
+   "giorno": "2020-05-10",
+   "fascia": "Cena",
+   "termini": [
+    "finocchio",
+    "mela",
+    "riso"
+   ],
+   "canonici": [
+    "finocchio",
+    "mela",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-05-11",
+   "fascia": "Colazione",
+   "termini": [
+    "finocchio",
+    "olio",
+    "pane_semola",
+    "tisana_frutti_bosco"
+   ],
+   "canonici": [
+    "finocchio",
+    "olio_di_oliva",
+    "pane_di_semola",
+    "tisana"
+   ]
+  },
+  {
+   "giorno": "2020-05-11",
+   "fascia": "Pranzo",
+   "termini": [
+    "carota",
+    "finocchio",
+    "riso",
+    "zenzero"
+   ],
+   "canonici": [
+    "carota",
+    "finocchio",
+    "riso",
+    "zenzero"
+   ]
+  },
+  {
+   "giorno": "2020-05-11",
+   "fascia": "Cena",
+   "termini": [
+    "finocchio",
+    "mela",
+    "parmigiano",
+    "riso"
+   ],
+   "canonici": [
+    "finocchio",
+    "mela",
+    "parmigiano",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-05-12",
+   "fascia": "Pranzo",
+   "termini": [
+    "carota",
+    "finocchio",
+    "gelato",
+    "mela",
+    "riso",
+    "zenzero"
+   ],
+   "canonici": [
+    "carota",
+    "finocchio",
+    "gelato",
+    "mela",
+    "riso",
+    "zenzero"
+   ]
+  },
+  {
+   "giorno": "2020-05-12",
+   "fascia": "Cena",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "pane_semola",
+    "parmigiano",
+    "pasta",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "pane_di_semola",
+    "parmigiano",
+    "pasta_di_grano",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-13",
+   "fascia": "Colazione",
+   "termini": [
+    "olio",
+    "origano",
+    "pane_semola"
+   ],
+   "canonici": [
+    "olio_di_oliva",
+    "origano",
+    "pane_di_semola"
+   ]
+  },
+  {
+   "giorno": "2020-05-13",
+   "fascia": "Pranzo",
+   "termini": [
+    "limone",
+    "mela",
+    "polpette_tonno",
+    "pomodoro",
+    "riso",
+    "zucchine"
+   ],
+   "canonici": [
+    "limone",
+    "mela",
+    "polpette_di_tonno",
+    "pomodoro",
+    "riso",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-13",
+   "fascia": "Cena",
+   "termini": [
+    "carota",
+    "riso",
+    "zenzero"
+   ],
+   "canonici": [
+    "carota",
+    "riso",
+    "zenzero"
+   ]
+  },
+  {
+   "giorno": "2020-05-14",
+   "fascia": "Pranzo",
+   "termini": [
+    "polpette_carne_senza_glutine",
+    "riso"
+   ],
+   "canonici": [
+    "polpette_di_carne_senza_glutine",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-05-14",
+   "fascia": "Cena",
+   "termini": [
+    "polpette_carne_senza_glutine",
+    "riso"
+   ],
+   "canonici": [
+    "polpette_di_carne_senza_glutine",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-05-15",
+   "fascia": "Pranzo",
+   "termini": [
+    "fettina_pollo",
+    "finocchio",
+    "limone",
+    "olio",
+    "parmigiano",
+    "pasta_mais"
+   ],
+   "canonici": [
+    "finocchio",
+    "limone",
+    "olio_di_oliva",
+    "parmigiano",
+    "pasta_di_mais",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-05-15",
+   "fascia": "Cena",
+   "termini": [
+    "burro",
+    "olio",
+    "pane_noci_integrale_semola",
+    "parmigiano",
+    "pomodoro",
+    "riso",
+    "torta_mele",
+    "zucchine"
+   ],
+   "canonici": [
+    "burro",
+    "olio_di_oliva",
+    "pane_alle_noci",
+    "parmigiano",
+    "pomodoro",
+    "riso",
+    "torta_di_mele",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-16",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-16",
+   "fascia": "Pranzo",
+   "termini": [
+    "banana",
+    "olio",
+    "pane_noci_integrale_semola",
+    "parmigiano"
+   ],
+   "canonici": [
+    "banana",
+    "olio_di_oliva",
+    "pane_alle_noci",
+    "parmigiano"
+   ]
+  },
+  {
+   "giorno": "2020-05-17",
+   "fascia": "Pranzo",
+   "termini": [
+    "carota",
+    "gubana",
+    "sedano",
+    "tortilla"
+   ],
+   "canonici": [
+    "carota",
+    "gubana",
+    "sedano",
+    "tortilla_di_patate"
+   ]
+  },
+  {
+   "giorno": "2020-05-17",
+   "fascia": "Cena",
+   "termini": [
+    "cipolla",
+    "gubana",
+    "insalata",
+    "patata",
+    "pollo_allo_spiedo",
+    "rotolo_speck_formaggio"
+   ],
+   "canonici": [
+    "cipolla",
+    "gubana",
+    "insalata",
+    "patata",
+    "pollo",
+    "rotolo_speck_formaggio"
+   ]
+  },
+  {
+   "giorno": "2020-05-18",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-18",
+   "fascia": "Pranzo",
+   "termini": [
+    "mela",
+    "olio",
+    "parmigiano",
+    "pasta_integrale",
+    "sedano"
+   ],
+   "canonici": [
+    "mela",
+    "olio_di_oliva",
+    "parmigiano",
+    "pasta_integrale",
+    "sedano"
+   ]
+  },
+  {
+   "giorno": "2020-05-18",
+   "fascia": "Cena",
+   "termini": [
+    "canederli",
+    "carota",
+    "cipolla",
+    "parmigiano",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "canederli",
+    "carota",
+    "cipolla",
+    "parmigiano",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-19",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-19",
+   "fascia": "Pranzo",
+   "termini": [
+    "olio",
+    "parmigiano",
+    "pasta_integrale"
+   ],
+   "canonici": [
+    "olio_di_oliva",
+    "parmigiano",
+    "pasta_integrale"
+   ]
+  },
+  {
+   "giorno": "2020-05-19",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "hamburger",
+    "olio",
+    "pane_noci_integrale_semola",
+    "pane_olive_integrale_semola",
+    "salsiccia"
+   ],
+   "canonici": [
+    "hamburger",
+    "olio_di_oliva",
+    "pane_alle_noci",
+    "pane_alle_olive",
+    "pollo",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-05-20",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "olio",
+    "pane_olive_integrale_semola",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "olio_di_oliva",
+    "pane_alle_olive",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-20",
+   "fascia": "Pranzo",
+   "termini": [
+    "cipolla",
+    "erba_cipollina",
+    "olio",
+    "pane_noci_integrale_semola",
+    "pane_olive_integrale_semola",
+    "riso",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "cipolla",
+    "erba_cipollina",
+    "olio_di_oliva",
+    "pane_alle_noci",
+    "pane_alle_olive",
+    "riso",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-20",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "tisana_frutti_bosco"
+   ],
+   "canonici": [
+    "tisana"
+   ]
+  },
+  {
+   "giorno": "2020-05-20",
+   "fascia": "Cena",
+   "termini": [
+    "cipolla",
+    "erba_cipollina",
+    "olio",
+    "pane_noci_integrale_semola",
+    "pane_olive_integrale_semola",
+    "riso",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "cipolla",
+    "erba_cipollina",
+    "olio_di_oliva",
+    "pane_alle_noci",
+    "pane_alle_olive",
+    "riso",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-21",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-21",
+   "fascia": "Pranzo",
+   "termini": [
+    "gnocchi_integrali",
+    "olio",
+    "pane_noci_integrale_semola"
+   ],
+   "canonici": [
+    "gnocchi_integrali",
+    "olio_di_oliva",
+    "pane_alle_noci"
+   ]
+  },
+  {
+   "giorno": "2020-05-21",
+   "fascia": "Cena",
+   "termini": [
+    "olio",
+    "patata",
+    "rotolo_speck_formaggio"
+   ],
+   "canonici": [
+    "olio_di_oliva",
+    "patata",
+    "rotolo_speck_formaggio"
+   ]
+  },
+  {
+   "giorno": "2020-05-22",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato",
+    "torta_mele"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato",
+    "torta_di_mele"
+   ]
+  },
+  {
+   "giorno": "2020-05-22",
+   "fascia": "Pranzo",
+   "termini": [
+    "curry",
+    "olio",
+    "pasta_integrale"
+   ],
+   "canonici": [
+    "curry",
+    "olio_di_oliva",
+    "pasta_integrale"
+   ]
+  },
+  {
+   "giorno": "2020-05-22",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "limone",
+    "olio",
+    "pane_noci_integrale_semola",
+    "pane_olive_integrale_semola",
+    "salsiccia"
+   ],
+   "canonici": [
+    "limone",
+    "olio_di_oliva",
+    "pane_alle_noci",
+    "pane_alle_olive",
+    "pollo",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-05-23",
+   "fascia": "Colazione",
+   "termini": [
+    "choco_cream",
+    "latte_senza_lattosio",
+    "riso_soffiato",
+    "torta_mele"
+   ],
+   "canonici": [
+    "crema_di_nocciole",
+    "latte_senza_lattosio",
+    "riso_soffiato",
+    "torta_di_mele"
+   ]
+  },
+  {
+   "giorno": "2020-05-23",
+   "fascia": "Cena",
+   "termini": [
+    "carciofo",
+    "grissini",
+    "mozzarella",
+    "pancetta",
+    "pizza",
+    "pomodoro",
+    "salame"
+   ],
+   "canonici": [
+    "carciofo",
+    "grissini",
+    "mozzarella",
+    "pancetta",
+    "pizza",
+    "pomodoro",
+    "salame"
+   ]
+  },
+  {
+   "giorno": "2020-05-23",
+   "fascia": "Spuntino_cena",
+   "termini": [
+    "cioccolato",
+    "gelato",
+    "pistacchio"
+   ],
+   "canonici": [
+    "cioccolato_al_latte",
+    "gelato",
+    "pistacchio"
+   ]
+  },
+  {
+   "giorno": "2020-05-24",
+   "fascia": "Pranzo",
+   "termini": [
+    "sushi"
+   ],
+   "canonici": [
+    "sushi"
+   ]
+  },
+  {
+   "giorno": "2020-05-24",
+   "fascia": "Spuntino_cena",
+   "termini": [
+    "olio",
+    "pane_noci_integrale_semola",
+    "pane_olive_integrale_semola",
+    "sushi"
+   ],
+   "canonici": [
+    "olio_di_oliva",
+    "pane_alle_noci",
+    "pane_alle_olive",
+    "sushi"
+   ]
+  },
+  {
+   "giorno": "2020-05-25",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-25",
+   "fascia": "Pranzo",
+   "termini": [
+    "curry",
+    "mela",
+    "olio",
+    "pasta_integrale"
+   ],
+   "canonici": [
+    "curry",
+    "mela",
+    "olio_di_oliva",
+    "pasta_integrale"
+   ]
+  },
+  {
+   "giorno": "2020-05-25",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "galletta_riso",
+    "hamburger",
+    "limone",
+    "olio",
+    "patata",
+    "salsiccia",
+    "zucchine"
+   ],
+   "canonici": [
+    "galletta_di_riso",
+    "hamburger",
+    "limone",
+    "olio_di_oliva",
+    "patata",
+    "pollo",
+    "salsiccia",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-26",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-26",
+   "fascia": "Pranzo",
+   "termini": [
+    "focaccia",
+    "mortadella",
+    "mozzarella",
+    "olive_nere",
+    "olive_verdi",
+    "pane_semola",
+    "panzerotto",
+    "pomodoro",
+    "salame_piccante"
+   ],
+   "canonici": [
+    "focaccia",
+    "mortadella",
+    "mozzarella",
+    "olive_nere",
+    "olive_verdi",
+    "pane_di_semola",
+    "panzerotto",
+    "pomodoro",
+    "salame_piccante"
+   ]
+  },
+  {
+   "giorno": "2020-05-26",
+   "fascia": "Cena",
+   "termini": [
+    "empanada_gallega",
+    "limone",
+    "olio",
+    "origano",
+    "pane_semola",
+    "parmigiano",
+    "pollo_allo_spiedo"
+   ],
+   "canonici": [
+    "empanada",
+    "limone",
+    "olio_di_oliva",
+    "origano",
+    "pane_di_semola",
+    "parmigiano",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-05-27",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-27",
+   "fascia": "Pranzo",
+   "termini": [
+    "curry",
+    "olio",
+    "pasta_integrale",
+    "tortelli"
+   ],
+   "canonici": [
+    "curry",
+    "olio_di_oliva",
+    "pasta_integrale",
+    "tortelli"
+   ]
+  },
+  {
+   "giorno": "2020-05-27",
+   "fascia": "Cena",
+   "termini": [
+    "agnello",
+    "basilico",
+    "pollo_tikka_masala",
+    "riso"
+   ],
+   "canonici": [
+    "agnello",
+    "basilico",
+    "pollo_tikka_masala",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-05-27",
+   "fascia": "Spuntino_cena",
+   "termini": [
+    "cioccolato",
+    "noccioline",
+    "yogurt"
+   ],
+   "canonici": [
+    "arachidi",
+    "cioccolato_al_latte",
+    "yogurt"
+   ]
+  },
+  {
+   "giorno": "2020-05-28",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-28",
+   "fascia": "Pranzo",
+   "termini": [
+    "carota",
+    "curry",
+    "olio",
+    "pasta_integrale",
+    "sedano",
+    "tortilla"
+   ],
+   "canonici": [
+    "carota",
+    "curry",
+    "olio_di_oliva",
+    "pasta_integrale",
+    "sedano",
+    "tortilla_di_patate"
+   ]
+  },
+  {
+   "giorno": "2020-05-28",
+   "fascia": "Cena",
+   "termini": [
+    "choco_cream",
+    "galletta_riso",
+    "spiedini_maiale"
+   ],
+   "canonici": [
+    "crema_di_nocciole",
+    "galletta_di_riso",
+    "spiedini_di_maiale"
+   ]
+  },
+  {
+   "giorno": "2020-05-29",
+   "fascia": "Colazione",
+   "termini": [
+    "choco_cream",
+    "galletta_riso",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "crema_di_nocciole",
+    "galletta_di_riso",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-29",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "mela"
+   ],
+   "canonici": [
+    "mela"
+   ]
+  },
+  {
+   "giorno": "2020-05-29",
+   "fascia": "Cena",
+   "termini": [
+    "choco_cream",
+    "galletta_riso",
+    "limone",
+    "olio",
+    "polpette_carne",
+    "salmone"
+   ],
+   "canonici": [
+    "crema_di_nocciole",
+    "galletta_di_riso",
+    "limone",
+    "olio_di_oliva",
+    "polpette_di_carne",
+    "salmone"
+   ]
+  },
+  {
+   "giorno": "2020-05-30",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-30",
+   "fascia": "Pranzo",
+   "termini": [
+    "burro",
+    "carota",
+    "riso",
+    "salame"
+   ],
+   "canonici": [
+    "burro",
+    "carota",
+    "riso",
+    "salame"
+   ]
+  },
+  {
+   "giorno": "2020-05-30",
+   "fascia": "Cena",
+   "termini": [
+    "mozzarella",
+    "pizza",
+    "pomodoro",
+    "zucchine"
+   ],
+   "canonici": [
+    "mozzarella",
+    "pizza",
+    "pomodoro",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-05-31",
+   "fascia": "Colazione",
+   "termini": [
+    "budino",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "budino",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-05-31",
+   "fascia": "Pranzo",
+   "termini": [
+    "mozzarella",
+    "olio",
+    "olive_verdi",
+    "pasta_integrale",
+    "pizza",
+    "pomodoro",
+    "salame"
+   ],
+   "canonici": [
+    "mozzarella",
+    "olio_di_oliva",
+    "olive_verdi",
+    "pasta_integrale",
+    "pizza",
+    "pomodoro",
+    "salame"
+   ]
+  },
+  {
+   "giorno": "2020-05-31",
+   "fascia": "Cena",
+   "termini": [
+    "limone",
+    "mozzarella",
+    "olio",
+    "pizza",
+    "pollo_allo_spiedo",
+    "pomodoro"
+   ],
+   "canonici": [
+    "limone",
+    "mozzarella",
+    "olio_di_oliva",
+    "pizza",
+    "pollo",
+    "pomodoro"
+   ]
+  },
+  {
+   "giorno": "2020-06-01",
+   "fascia": "Colazione",
+   "termini": [
+    "cornetto_crema"
+   ],
+   "canonici": [
+    "cornetto_alla_crema"
+   ]
+  },
+  {
+   "giorno": "2020-06-01",
+   "fascia": "Pranzo",
+   "termini": [
+    "mozzarella",
+    "patatine",
+    "pizza",
+    "pomodoro",
+    "wurstel"
+   ],
+   "canonici": [
+    "mozzarella",
+    "patatine_fritte",
+    "pizza",
+    "pomodoro",
+    "wurstel"
+   ]
+  },
+  {
+   "giorno": "2020-06-01",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "foresta_nera",
+    "gelato",
+    "zuppa_inglese"
+   ],
+   "canonici": [
+    "gelato",
+    "torta_foresta_nera",
+    "zuppa_inglese"
+   ]
+  },
+  {
+   "giorno": "2020-06-01",
+   "fascia": "Cena",
+   "termini": [
+    "insalata",
+    "olio",
+    "salsiccia"
+   ],
+   "canonici": [
+    "insalata",
+    "olio_di_oliva",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-06-02",
+   "fascia": "Colazione",
+   "termini": [
+    "budino",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "budino",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-06-02",
+   "fascia": "Pranzo",
+   "termini": [
+    "budino",
+    "pasta_integrale",
+    "verdure_miste"
+   ],
+   "canonici": [
+    "budino",
+    "pasta_integrale",
+    "verdure_miste"
+   ]
+  },
+  {
+   "giorno": "2020-06-02",
+   "fascia": "Cena",
+   "termini": [
+    "erbazzone_reggiano",
+    "rustico"
+   ],
+   "canonici": [
+    "erbazzone",
+    "rustico"
+   ]
+  },
+  {
+   "giorno": "2020-06-03",
+   "fascia": "Colazione",
+   "termini": [
+    "budino",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "budino",
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-06-03",
+   "fascia": "Pranzo",
+   "termini": [
+    "cavolo_cappuccio",
+    "riso"
+   ],
+   "canonici": [
+    "cavolo_cappuccio",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-06-03",
+   "fascia": "Cena",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "pane_semola",
+    "riso",
+    "uovo",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "pane_di_semola",
+    "riso",
+    "uovo",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-04",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "fettina_pollo",
+    "insalata",
+    "latte_mandorla",
+    "limone",
+    "olio",
+    "pane_semola",
+    "riso",
+    "uovo",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "insalata",
+    "latte_di_mandorla",
+    "limone",
+    "olio_di_oliva",
+    "pane_di_semola",
+    "pollo",
+    "riso",
+    "uovo",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-04",
+   "fascia": "Cena",
+   "termini": [
+    "basilico",
+    "gelato",
+    "olive_verdi",
+    "pistacchio",
+    "pomodoro",
+    "riso",
+    "semi_sesamo",
+    "sgombro",
+    "zucchine"
+   ],
+   "canonici": [
+    "basilico",
+    "gelato",
+    "olive_verdi",
+    "pistacchio",
+    "pomodoro",
+    "riso",
+    "semi_di_sesamo",
+    "sgombro",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-05",
+   "fascia": "Pranzo",
+   "termini": [
+    "basilico",
+    "carota",
+    "cipolla",
+    "gelato",
+    "pasta_mais",
+    "pistacchio",
+    "zucchine"
+   ],
+   "canonici": [
+    "basilico",
+    "carota",
+    "cipolla",
+    "gelato",
+    "pasta_di_mais",
+    "pistacchio",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-05",
+   "fascia": "Cena",
+   "termini": [
+    "acciughine",
+    "insalata",
+    "olio",
+    "origano",
+    "pan_grattato_senza_glutine",
+    "parmigiano",
+    "pasta_mais",
+    "pepe_nero",
+    "piadina_senza_glutine",
+    "pomodoro"
+   ],
+   "canonici": [
+    "acciughe",
+    "insalata",
+    "olio_di_oliva",
+    "origano",
+    "pangrattato_senza_glutine",
+    "parmigiano",
+    "pasta_di_mais",
+    "pepe_nero",
+    "piadina_senza_glutine",
+    "pomodoro"
+   ]
+  },
+  {
+   "giorno": "2020-06-06",
+   "fascia": "Pranzo",
+   "termini": [
+    "panna_con_lattosio",
+    "pasta_mais",
+    "salmone_affumicato"
+   ],
+   "canonici": [
+    "panna",
+    "pasta_di_mais",
+    "salmone_affumicato"
+   ]
+  },
+  {
+   "giorno": "2020-06-06",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "te_pesca"
+   ],
+   "canonici": [
+    "te_alla_pesca"
+   ]
+  },
+  {
+   "giorno": "2020-06-06",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "insalata",
+    "limone",
+    "mela",
+    "olio",
+    "origano",
+    "piadina_senza_glutine",
+    "pomodoro"
+   ],
+   "canonici": [
+    "insalata",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "origano",
+    "piadina_senza_glutine",
+    "pollo",
+    "pomodoro"
+   ]
+  },
+  {
+   "giorno": "2020-06-07",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "gelato",
+    "mela",
+    "pane_semola",
+    "parmigiano",
+    "pasta_semola",
+    "pistacchio",
+    "vaniglia",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "gelato",
+    "mela",
+    "pane_di_semola",
+    "parmigiano",
+    "pasta_di_semola",
+    "pistacchio",
+    "vaniglia",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-07",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "gelato",
+    "latte_senza_lattosio",
+    "mela",
+    "pane_semola",
+    "parmigiano",
+    "pistacchio",
+    "vaniglia"
+   ],
+   "canonici": [
+    "gelato",
+    "latte_senza_lattosio",
+    "mela",
+    "pane_di_semola",
+    "parmigiano",
+    "pistacchio",
+    "pollo",
+    "vaniglia"
+   ]
+  },
+  {
+   "giorno": "2020-06-08",
+   "fascia": "Pranzo",
+   "termini": [
+    "finocchio",
+    "mela",
+    "olive_verdi",
+    "riso",
+    "semi_sesamo"
+   ],
+   "canonici": [
+    "finocchio",
+    "mela",
+    "olive_verdi",
+    "riso",
+    "semi_di_sesamo"
+   ]
+  },
+  {
+   "giorno": "2020-06-08",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "limone",
+    "olio",
+    "salsiccia"
+   ],
+   "canonici": [
+    "limone",
+    "olio_di_oliva",
+    "pollo",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-06-09",
+   "fascia": "Pranzo",
+   "termini": [
+    "finocchio",
+    "mela",
+    "olive_verdi",
+    "pomodoro",
+    "riso",
+    "salsiccia",
+    "semi_sesamo",
+    "zucchine"
+   ],
+   "canonici": [
+    "finocchio",
+    "mela",
+    "olive_verdi",
+    "pomodoro",
+    "riso",
+    "salsiccia",
+    "semi_di_sesamo",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-09",
+   "fascia": "Cena",
+   "termini": [
+    "finocchio",
+    "limone",
+    "mela",
+    "olio",
+    "salsiccia"
+   ],
+   "canonici": [
+    "finocchio",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-06-10",
+   "fascia": "Pranzo",
+   "termini": [
+    "finocchio",
+    "gamberetti",
+    "mela",
+    "panna_senza_lattosio",
+    "pasta_mais",
+    "pistacchio"
+   ],
+   "canonici": [
+    "finocchio",
+    "gamberetti",
+    "mela",
+    "panna_senza_lattosio",
+    "pasta_di_mais",
+    "pistacchio"
+   ]
+  },
+  {
+   "giorno": "2020-06-10",
+   "fascia": "Cena",
+   "termini": [
+    "olio",
+    "pane_integrale_semola"
+   ],
+   "canonici": [
+    "olio_di_oliva",
+    "pane_integrale"
+   ]
+  },
+  {
+   "giorno": "2020-06-11",
+   "fascia": "Colazione",
+   "termini": [
+    "cioccolato",
+    "noccioline",
+    "yogurt"
+   ],
+   "canonici": [
+    "arachidi",
+    "cioccolato_al_latte",
+    "yogurt"
+   ]
+  },
+  {
+   "giorno": "2020-06-11",
+   "fascia": "Cena",
+   "termini": [
+    "olio",
+    "patata",
+    "pollo_allo_spiedo"
+   ],
+   "canonici": [
+    "olio_di_oliva",
+    "patata",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-06-12",
+   "fascia": "Pranzo",
+   "termini": [
+    "curry",
+    "formaggio_senza_lattosio",
+    "olio",
+    "pasta_integrale"
+   ],
+   "canonici": [
+    "curry",
+    "formaggio_senza_lattosio",
+    "olio_di_oliva",
+    "pasta_integrale"
+   ]
+  },
+  {
+   "giorno": "2020-06-12",
+   "fascia": "Cena",
+   "termini": [
+    "carota",
+    "choco_cream",
+    "insalata",
+    "limone",
+    "olio",
+    "pane_integrale_semola",
+    "patata",
+    "salsiccia"
+   ],
+   "canonici": [
+    "carota",
+    "crema_di_nocciole",
+    "insalata",
+    "limone",
+    "olio_di_oliva",
+    "pane_integrale",
+    "patata",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-06-13",
+   "fascia": "Pranzo",
+   "termini": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "mela",
+    "pomodoro",
+    "prosciutto_cotto",
+    "riso",
+    "sedano"
+   ],
+   "canonici": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "mela",
+    "pomodoro",
+    "prosciutto_cotto",
+    "riso",
+    "sedano"
+   ]
+  },
+  {
+   "giorno": "2020-06-13",
+   "fascia": "Spuntino_pomeriggio",
+   "termini": [
+    "cioccolato",
+    "gelato",
+    "pistacchio"
+   ],
+   "canonici": [
+    "cioccolato_al_latte",
+    "gelato",
+    "pistacchio"
+   ]
+  },
+  {
+   "giorno": "2020-06-13",
+   "fascia": "Cena",
+   "termini": [
+    "baccala",
+    "frico",
+    "gnocchi_di_sauris",
+    "gubana",
+    "polenta"
+   ],
+   "canonici": [
+    "baccala",
+    "frico",
+    "gnocchi_di_sauris",
+    "gubana",
+    "polenta"
+   ]
+  },
+  {
+   "giorno": "2020-06-14",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-06-14",
+   "fascia": "Pranzo",
+   "termini": [
+    "insalata",
+    "mozzarella",
+    "pizza",
+    "pomodoro",
+    "salame_oca"
+   ],
+   "canonici": [
+    "insalata",
+    "mozzarella",
+    "pizza",
+    "pomodoro",
+    "salame_d_oca"
+   ]
+  },
+  {
+   "giorno": "2020-06-14",
+   "fascia": "Cena",
+   "termini": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "mela",
+    "pomodoro",
+    "prosciutto_cotto",
+    "riso",
+    "sedano"
+   ],
+   "canonici": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "mela",
+    "pomodoro",
+    "prosciutto_cotto",
+    "riso",
+    "sedano"
+   ]
+  },
+  {
+   "giorno": "2020-06-15",
+   "fascia": "Colazione",
+   "termini": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ],
+   "canonici": [
+    "latte_senza_lattosio",
+    "riso_soffiato"
+   ]
+  },
+  {
+   "giorno": "2020-06-15",
+   "fascia": "Pranzo",
+   "termini": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "mela",
+    "pomodoro",
+    "prosciutto_cotto",
+    "riso",
+    "sedano"
+   ],
+   "canonici": [
+    "carciofo",
+    "carota",
+    "formaggio_senza_lattosio",
+    "mela",
+    "pomodoro",
+    "prosciutto_cotto",
+    "riso",
+    "sedano"
+   ]
+  },
+  {
+   "giorno": "2020-06-15",
+   "fascia": "Cena",
+   "termini": [
+    "carciofo",
+    "formaggio_senza_lattosio",
+    "riso"
+   ],
+   "canonici": [
+    "carciofo",
+    "formaggio_senza_lattosio",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-06-16",
+   "fascia": "Pranzo",
+   "termini": [
+    "cipolla",
+    "limone",
+    "olio",
+    "peperoni",
+    "pollo_allo_spiedo"
+   ],
+   "canonici": [
+    "cipolla",
+    "limone",
+    "olio_di_oliva",
+    "peperone",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-06-16",
+   "fascia": "Cena",
+   "termini": [
+    "krapfen",
+    "marmellata",
+    "pancetta",
+    "parmigiano",
+    "pasta_integrale",
+    "uova"
+   ],
+   "canonici": [
+    "krapfen",
+    "marmellata",
+    "pancetta",
+    "parmigiano",
+    "pasta_integrale",
+    "uovo"
+   ]
+  },
+  {
+   "giorno": "2020-06-23",
+   "fascia": "Cena",
+   "termini": [
+    "agnello",
+    "basilico",
+    "ceci",
+    "patata",
+    "pollo_tikka_masala",
+    "riso"
+   ],
+   "canonici": [
+    "agnello",
+    "basilico",
+    "ceci",
+    "patata",
+    "pollo_tikka_masala",
+    "riso"
+   ]
+  },
+  {
+   "giorno": "2020-06-24",
+   "fascia": "Pranzo",
+   "termini": [
+    "cioccolato",
+    "gelato",
+    "mozzarella",
+    "panna_con_lattosio",
+    "patatine",
+    "pizza",
+    "pomodoro"
+   ],
+   "canonici": [
+    "cioccolato_al_latte",
+    "gelato",
+    "mozzarella",
+    "panna",
+    "patatine_fritte",
+    "pizza",
+    "pomodoro"
+   ]
+  },
+  {
+   "giorno": "2020-06-24",
+   "fascia": "Cena",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "mela",
+    "polpette_carne_senza_glutine",
+    "riso",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "mela",
+    "polpette_di_carne_senza_glutine",
+    "riso",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-25",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cioccolata_nocciolata",
+    "cipolla",
+    "fettina_pollo",
+    "limone",
+    "mela",
+    "olio",
+    "riso",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "crema_di_nocciole",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "pollo",
+    "riso",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-25",
+   "fascia": "Cena",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "mela",
+    "polpette_carne_senza_glutine",
+    "riso",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "mela",
+    "polpette_di_carne_senza_glutine",
+    "riso",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-26",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "mela",
+    "polpette_carne_senza_glutine",
+    "riso",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "limone",
+    "mela",
+    "polpette_di_carne_senza_glutine",
+    "riso",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-26",
+   "fascia": "Cena",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cioccolata_nocciolata",
+    "cipolla",
+    "limone",
+    "mela",
+    "polpette_carne_senza_glutine",
+    "riso",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "crema_di_nocciole",
+    "limone",
+    "mela",
+    "polpette_di_carne_senza_glutine",
+    "riso",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-27",
+   "fascia": "Pranzo",
+   "termini": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "insalata",
+    "mela",
+    "pollo_allo_spiedo",
+    "riso",
+    "zucchine"
+   ],
+   "canonici": [
+    "carne_trita",
+    "carota",
+    "cipolla",
+    "insalata",
+    "mela",
+    "pollo",
+    "riso",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-27",
+   "fascia": "Cena",
+   "termini": [
+    "mela",
+    "parmigiano",
+    "pomodoro",
+    "riso",
+    "tonno",
+    "tuorlo_uovo",
+    "zucchine"
+   ],
+   "canonici": [
+    "mela",
+    "parmigiano",
+    "pomodoro",
+    "riso",
+    "tonno",
+    "tuorlo",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-28",
+   "fascia": "Colazione",
+   "termini": [
+    "corn_flakes",
+    "latte_mandorla"
+   ],
+   "canonici": [
+    "corn_flakes",
+    "latte_di_mandorla"
+   ]
+  },
+  {
+   "giorno": "2020-06-28",
+   "fascia": "Pranzo",
+   "termini": [
+    "mela",
+    "parmigiano",
+    "pomodoro",
+    "riso",
+    "tonno",
+    "tuorlo_uovo",
+    "zucchine"
+   ],
+   "canonici": [
+    "mela",
+    "parmigiano",
+    "pomodoro",
+    "riso",
+    "tonno",
+    "tuorlo",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-28",
+   "fascia": "Cena",
+   "termini": [
+    "capperi",
+    "mela",
+    "melanzane",
+    "merluzzo",
+    "olive_verdi",
+    "peperoni",
+    "pomodoro",
+    "zucchine"
+   ],
+   "canonici": [
+    "capperi",
+    "mela",
+    "melanzana",
+    "merluzzo",
+    "olive_verdi",
+    "peperone",
+    "pomodoro",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-29",
+   "fascia": "Pranzo",
+   "termini": [
+    "banana",
+    "carota",
+    "cipolla",
+    "gamberetti",
+    "insalata",
+    "mela",
+    "pomodoro",
+    "riso",
+    "salmone_affumicato",
+    "salsa_soia",
+    "zucchine"
+   ],
+   "canonici": [
+    "banana",
+    "carota",
+    "cipolla",
+    "gamberetti",
+    "insalata",
+    "mela",
+    "pomodoro",
+    "riso",
+    "salmone_affumicato",
+    "salsa_di_soia",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-29",
+   "fascia": "Cena",
+   "termini": [
+    "carota",
+    "cipolla",
+    "gamberetti",
+    "mela",
+    "pomodoro",
+    "riso",
+    "salmone_affumicato",
+    "salsa_soia",
+    "zenzero",
+    "zucchine"
+   ],
+   "canonici": [
+    "carota",
+    "cipolla",
+    "gamberetti",
+    "mela",
+    "pomodoro",
+    "riso",
+    "salmone_affumicato",
+    "salsa_di_soia",
+    "zenzero",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-06-30",
+   "fascia": "Pranzo",
+   "termini": [
+    "carota",
+    "cioccolata_nocciolata",
+    "mela",
+    "riso",
+    "tonno"
+   ],
+   "canonici": [
+    "carota",
+    "crema_di_nocciole",
+    "mela",
+    "riso",
+    "tonno"
+   ]
+  },
+  {
+   "giorno": "2020-06-30",
+   "fascia": "Cena",
+   "termini": [
+    "carota",
+    "fettina_pollo",
+    "insalata",
+    "latte_mandorla",
+    "limone",
+    "mela",
+    "olio",
+    "pane_semola",
+    "salsa_soia"
+   ],
+   "canonici": [
+    "carota",
+    "insalata",
+    "latte_di_mandorla",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "pane_di_semola",
+    "pollo",
+    "salsa_di_soia"
+   ]
+  },
+  {
+   "giorno": "2020-07-01",
+   "fascia": "Pranzo",
+   "termini": [
+    "mela",
+    "panna_senza_lattosio",
+    "pasta_integrale",
+    "pistacchio",
+    "salmone_affumicato"
+   ],
+   "canonici": [
+    "mela",
+    "panna_senza_lattosio",
+    "pasta_integrale",
+    "pistacchio",
+    "salmone_affumicato"
+   ]
+  },
+  {
+   "giorno": "2020-07-01",
+   "fascia": "Cena",
+   "termini": [
+    "capperi",
+    "merluzzo",
+    "olive_verdi",
+    "zucchine"
+   ],
+   "canonici": [
+    "capperi",
+    "merluzzo",
+    "olive_verdi",
+    "zucchina"
+   ]
+  },
+  {
+   "giorno": "2020-07-02",
+   "fascia": "Pranzo",
+   "termini": [
+    "carota",
+    "fettina_pollo",
+    "insalata",
+    "limone",
+    "mela",
+    "olio"
+   ],
+   "canonici": [
+    "carota",
+    "insalata",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-07-02",
+   "fascia": "Cena",
+   "termini": [
+    "limone",
+    "mela",
+    "pan_grattato",
+    "pane_semola",
+    "parmigiano",
+    "tonno",
+    "tuorlo_uovo"
+   ],
+   "canonici": [
+    "limone",
+    "mela",
+    "pane_di_semola",
+    "pangrattato",
+    "parmigiano",
+    "tonno",
+    "tuorlo"
+   ]
+  },
+  {
+   "giorno": "2020-07-03",
+   "fascia": "Pranzo",
+   "termini": [
+    "mela",
+    "olio",
+    "parmigiano",
+    "pasta_integrale"
+   ],
+   "canonici": [
+    "mela",
+    "olio_di_oliva",
+    "parmigiano",
+    "pasta_integrale"
+   ]
+  },
+  {
+   "giorno": "2020-07-03",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "insalata",
+    "latte_mandorla",
+    "limone",
+    "mela",
+    "olio",
+    "pane_semola"
+   ],
+   "canonici": [
+    "insalata",
+    "latte_di_mandorla",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "pane_di_semola",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-07-04",
+   "fascia": "Pranzo",
+   "termini": [
+    "funghi",
+    "mela",
+    "riso",
+    "salsiccia"
+   ],
+   "canonici": [
+    "funghi",
+    "mela",
+    "riso",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-07-04",
+   "fascia": "Cena",
+   "termini": [
+    "cioccolata_fondente",
+    "limone",
+    "mela",
+    "merluzzo",
+    "olio",
+    "origano",
+    "parmigiano",
+    "pepe_nero"
+   ],
+   "canonici": [
+    "cioccolato_fondente",
+    "limone",
+    "mela",
+    "merluzzo",
+    "olio_di_oliva",
+    "origano",
+    "parmigiano",
+    "pepe_nero"
+   ]
+  },
+  {
+   "giorno": "2020-07-05",
+   "fascia": "Pranzo",
+   "termini": [
+    "banana",
+    "funghi",
+    "mela",
+    "riso",
+    "salsiccia"
+   ],
+   "canonici": [
+    "banana",
+    "funghi",
+    "mela",
+    "riso",
+    "salsiccia"
+   ]
+  },
+  {
+   "giorno": "2020-07-05",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "insalata",
+    "limone",
+    "mela",
+    "olio",
+    "parmigiano"
+   ],
+   "canonici": [
+    "insalata",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "parmigiano",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-07-06",
+   "fascia": "Pranzo",
+   "termini": [
+    "mela",
+    "olio",
+    "parmigiano",
+    "pasta_integrale"
+   ],
+   "canonici": [
+    "mela",
+    "olio_di_oliva",
+    "parmigiano",
+    "pasta_integrale"
+   ]
+  },
+  {
+   "giorno": "2020-07-06",
+   "fascia": "Cena",
+   "termini": [
+    "fettina_pollo",
+    "insalata",
+    "limone",
+    "mela",
+    "olio",
+    "parmigiano"
+   ],
+   "canonici": [
+    "insalata",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "parmigiano",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-07-07",
+   "fascia": "Pranzo",
+   "termini": [
+    "carota",
+    "fettina_pollo",
+    "insalata",
+    "limone",
+    "mela",
+    "olio",
+    "parmigiano",
+    "pasta_integrale"
+   ],
+   "canonici": [
+    "carota",
+    "insalata",
+    "limone",
+    "mela",
+    "olio_di_oliva",
+    "parmigiano",
+    "pasta_integrale",
+    "pollo"
+   ]
+  },
+  {
+   "giorno": "2020-07-07",
+   "fascia": "Cena",
+   "termini": [
+    "mela",
+    "mozzarella",
+    "pizza",
+    "pomodoro"
+   ],
+   "canonici": [
+    "mela",
+    "mozzarella",
+    "pizza",
+    "pomodoro"
+   ]
+  }
+ ],
+ "eventi": [
+  {
+   "quando": "2020-05-02T09:30:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-02T10:30:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-02T12:00:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-03T00:00:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-05T02:00:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-05T09:30:00",
+   "consistenza": 4.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-06T22:45:00",
+   "consistenza": 1.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-05-07T00:00:00",
+   "consistenza": 0.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-07T16:10:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-08T15:20:00",
+   "consistenza": 1.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-08T18:30:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-10T00:20:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-11T00:20:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-11T13:30:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-11T15:10:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-11T19:55:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-11T23:40:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-12T08:40:00",
+   "consistenza": 1.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-12T17:40:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-12T23:59:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-13T11:20:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-13T22:00:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-14T00:29:00",
+   "consistenza": 1.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-14T09:30:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-15T01:05:00",
+   "consistenza": 1.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-15T09:35:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-15T10:00:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-15T16:00:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-16T23:45:00",
+   "consistenza": 4.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-17T07:50:00",
+   "consistenza": 4.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-17T14:50:00",
+   "consistenza": 4.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-17T21:00:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-17T23:40:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-18T06:30:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-18T17:15:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-18T22:34:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-19T22:00:00",
+   "consistenza": 4.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-20T16:05:00",
+   "consistenza": null,
+   "fastidio": null
+  },
+  {
+   "quando": "2020-05-21T08:50:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-21T17:50:00",
+   "consistenza": null,
+   "fastidio": null
+  },
+  {
+   "quando": "2020-05-21T22:00:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-22T17:00:00",
+   "consistenza": null,
+   "fastidio": null
+  },
+  {
+   "quando": "2020-05-24T00:20:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-25T15:00:00",
+   "consistenza": 4.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-25T20:00:00",
+   "consistenza": null,
+   "fastidio": null
+  },
+  {
+   "quando": "2020-05-26T15:30:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-26T19:00:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-26T23:10:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-27T10:10:00",
+   "consistenza": 4.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-27T23:40:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-28T07:05:00",
+   "consistenza": 4.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-29T08:05:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-05-29T17:40:00",
+   "consistenza": null,
+   "fastidio": null
+  },
+  {
+   "quando": "2020-05-29T22:00:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-05-30T18:25:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-05-31T10:25:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-01T07:25:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-01T10:40:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-01T22:00:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-02T00:40:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-02T12:20:00",
+   "consistenza": 4.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-02T20:30:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-03T09:00:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-04T17:50:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-05T23:30:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-06T10:30:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-06T11:30:00",
+   "consistenza": 2.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-06-07T23:20:00",
+   "consistenza": 1.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-06-08T08:00:00",
+   "consistenza": 1.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-06-08T09:00:00",
+   "consistenza": 1.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-06-10T11:10:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-11T11:00:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-06-12T11:00:00",
+   "consistenza": 4.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-06-13T15:30:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-06-13T21:30:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-06-14T16:30:00",
+   "consistenza": 4.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-14T17:30:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-14T18:30:00",
+   "consistenza": 3.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-06-15T10:30:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-15T16:30:00",
+   "consistenza": 3.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-15T18:30:00",
+   "consistenza": 3.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-06-16T22:30:00",
+   "consistenza": 5.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-06-23T23:40:00",
+   "consistenza": 1.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-06-24T22:00:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-25T23:30:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-06-26T23:00:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-06-28T00:30:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-28T23:00:00",
+   "consistenza": 4.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-29T10:00:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-06-30T01:00:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-30T10:40:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-06-30T16:00:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-02T00:37:00",
+   "consistenza": 1.0,
+   "fastidio": 4.0
+  },
+  {
+   "quando": "2020-07-02T22:30:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-03T01:20:00",
+   "consistenza": 1.0,
+   "fastidio": 3.0
+  },
+  {
+   "quando": "2020-07-03T23:20:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-04T11:35:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-07-05T01:35:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-05T11:35:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-06T10:30:00",
+   "consistenza": 3.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-07-06T13:30:00",
+   "consistenza": 4.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-07-06T19:00:00",
+   "consistenza": 3.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-07T01:00:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-07-07T08:35:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-07T11:55:00",
+   "consistenza": 2.0,
+   "fastidio": 2.0
+  },
+  {
+   "quando": "2020-07-07T14:40:00",
+   "consistenza": 2.0,
+   "fastidio": 1.0
+  },
+  {
+   "quando": "2020-07-08T08:10:00",
+   "consistenza": 2.0,
+   "fastidio": 3.0
+  }
+ ]
+}

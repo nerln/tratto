@@ -1,0 +1,1967 @@
+{
+ "versione": 1,
+ "origine": "Progetto-fondamenti-Nerelli (2020), anagrafiche Pasti + Condimenti unificate",
+ "nota": "Il campo `gruppi` contiene solo etichette di conoscenza comune (lattosio, glutine, caffeina). Non e' un dato clinico e non deriva da nessuna tabella FODMAP: quelle di Monash non sono utilizzabili legalmente. Va trattato come ipotesi modificabile dall'utente.",
+ "ingredienti": [
+  {
+   "id": "caffe",
+   "nome": "Caffè",
+   "categoria": "Bevande",
+   "gruppi": [
+    "caffeina"
+   ],
+   "sinonimi": [
+    "caffè"
+   ],
+   "terminiLegacy2020": [
+    "caffe"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "caffe_d_orzo",
+   "nome": "Caffè d'orzo",
+   "categoria": "Bevande",
+   "gruppi": [],
+   "sinonimi": [
+    "caffè_orzo"
+   ],
+   "terminiLegacy2020": [
+    "caffe_orzo"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "cioccolata_calda",
+   "nome": "Cioccolata calda",
+   "categoria": "Bevande",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "cioccolata_calda"
+   ],
+   "terminiLegacy2020": [
+    "cioccolata_calda"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "coca_cola",
+   "nome": "Coca-Cola",
+   "categoria": "Bevande",
+   "gruppi": [
+    "caffeina"
+   ],
+   "sinonimi": [
+    "coca_cola"
+   ],
+   "terminiLegacy2020": [
+    "coca_cola"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "latte_di_mandorla",
+   "nome": "Latte di mandorla",
+   "categoria": "Bevande",
+   "gruppi": [],
+   "sinonimi": [
+    "latte_mandorla"
+   ],
+   "terminiLegacy2020": [
+    "latte_mandorla"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "tisana",
+   "nome": "Tisana",
+   "categoria": "Bevande",
+   "gruppi": [],
+   "sinonimi": [
+    "tisana_frutti_bosco"
+   ],
+   "terminiLegacy2020": [
+    "tisana_frutti_bosco"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "te_alla_pesca",
+   "nome": "Tè alla pesca",
+   "categoria": "Bevande",
+   "gruppi": [
+    "caffeina"
+   ],
+   "sinonimi": [
+    "te_pesca"
+   ],
+   "terminiLegacy2020": [
+    "te_pesca"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "pollo",
+   "nome": "Pollo",
+   "categoria": "Carne bianca",
+   "gruppi": [],
+   "sinonimi": [
+    "cosciotti_pollo",
+    "fettina_pollo",
+    "pollo_allo_spiedo",
+    "pollo_pezzetti"
+   ],
+   "terminiLegacy2020": [
+    "cosciotti_pollo",
+    "fettina_pollo",
+    "pollo_allo_spiedo",
+    "pollo_pezzetti"
+   ],
+   "esposizioni2020": 26
+  },
+  {
+   "id": "agnello",
+   "nome": "Agnello",
+   "categoria": "Carne rossa",
+   "gruppi": [],
+   "sinonimi": [
+    "agnello"
+   ],
+   "terminiLegacy2020": [
+    "agnello"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "carne_a_pezzi",
+   "nome": "Carne a pezzi",
+   "categoria": "Carne rossa",
+   "gruppi": [],
+   "sinonimi": [
+    "carne_pezzetti"
+   ],
+   "terminiLegacy2020": [
+    "carne_pezzetti"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "carne_trita",
+   "nome": "Carne trita",
+   "categoria": "Carne rossa",
+   "gruppi": [],
+   "sinonimi": [
+    "carne_trita"
+   ],
+   "terminiLegacy2020": [
+    "carne_trita"
+   ],
+   "esposizioni2020": 11
+  },
+  {
+   "id": "salsiccia",
+   "nome": "Salsiccia",
+   "categoria": "Carne rossa",
+   "gruppi": [],
+   "sinonimi": [
+    "salsiccia"
+   ],
+   "terminiLegacy2020": [
+    "salsiccia"
+   ],
+   "esposizioni2020": 10
+  },
+  {
+   "id": "spiedini_di_maiale",
+   "nome": "Spiedini di maiale",
+   "categoria": "Carne rossa",
+   "gruppi": [],
+   "sinonimi": [
+    "spiedini_maiale"
+   ],
+   "terminiLegacy2020": [
+    "spiedini_maiale"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "corn_flakes",
+   "nome": "Corn flakes",
+   "categoria": "Cereali",
+   "gruppi": [],
+   "sinonimi": [
+    "corn_flakes"
+   ],
+   "terminiLegacy2020": [
+    "corn_flakes"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "galletta_di_riso",
+   "nome": "Gallette di riso",
+   "categoria": "Cereali",
+   "gruppi": [],
+   "sinonimi": [
+    "galletta_riso"
+   ],
+   "terminiLegacy2020": [
+    "galletta_riso"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "pangrattato",
+   "nome": "Pangrattato",
+   "categoria": "Cereali",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pan_grattato"
+   ],
+   "terminiLegacy2020": [
+    "pan_grattato"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "pangrattato_senza_glutine",
+   "nome": "Pangrattato senza glutine",
+   "categoria": "Cereali",
+   "gruppi": [],
+   "sinonimi": [
+    "pan_grattato_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "pan_grattato_senza_glutine"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "polenta",
+   "nome": "Polenta",
+   "categoria": "Cereali",
+   "gruppi": [],
+   "sinonimi": [
+    "polenta"
+   ],
+   "terminiLegacy2020": [
+    "polenta"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "riso",
+   "nome": "Riso",
+   "categoria": "Cereali",
+   "gruppi": [],
+   "sinonimi": [
+    "riso"
+   ],
+   "terminiLegacy2020": [
+    "riso"
+   ],
+   "esposizioni2020": 46
+  },
+  {
+   "id": "riso_soffiato",
+   "nome": "Riso soffiato",
+   "categoria": "Cereali",
+   "gruppi": [],
+   "sinonimi": [
+    "riso_soffiato"
+   ],
+   "terminiLegacy2020": [
+    "riso_soffiato"
+   ],
+   "esposizioni2020": 18
+  },
+  {
+   "id": "aceto_di_vino",
+   "nome": "Aceto di vino",
+   "categoria": "Condimenti",
+   "gruppi": [],
+   "sinonimi": [
+    "aceto_di_vino"
+   ],
+   "terminiLegacy2020": [
+    "aceto_di_vino"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "capperi",
+   "nome": "Capperi",
+   "categoria": "Condimenti",
+   "gruppi": [],
+   "sinonimi": [
+    "capperi"
+   ],
+   "terminiLegacy2020": [
+    "capperi"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "marmellata",
+   "nome": "Marmellata",
+   "categoria": "Condimenti",
+   "gruppi": [],
+   "sinonimi": [
+    "marmellata"
+   ],
+   "terminiLegacy2020": [
+    "marmellata"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "olive_nere",
+   "nome": "Olive nere",
+   "categoria": "Condimenti",
+   "gruppi": [],
+   "sinonimi": [
+    "olive_nere"
+   ],
+   "terminiLegacy2020": [
+    "olive_nere"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "olive_verdi",
+   "nome": "Olive verdi",
+   "categoria": "Condimenti",
+   "gruppi": [],
+   "sinonimi": [
+    "olive_verdi"
+   ],
+   "terminiLegacy2020": [
+    "olive_verdi"
+   ],
+   "esposizioni2020": 7
+  },
+  {
+   "id": "pesto_genovese",
+   "nome": "Pesto genovese",
+   "categoria": "Condimenti",
+   "gruppi": [],
+   "sinonimi": [
+    "pesto_genovese"
+   ],
+   "terminiLegacy2020": [
+    "pesto_genovese"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "pesto_ricotta_noci",
+   "nome": "Pesto ricotta e noci",
+   "categoria": "Condimenti",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "pesto_ricotta_noci"
+   ],
+   "terminiLegacy2020": [
+    "pesto_ricotta_noci"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "salsa_di_pomodoro",
+   "nome": "Salsa di pomodoro",
+   "categoria": "Condimenti",
+   "gruppi": [],
+   "sinonimi": [
+    "salsa_pomodoro"
+   ],
+   "terminiLegacy2020": [
+    "salsa_pomodoro"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "salsa_di_soia",
+   "nome": "Salsa di soia",
+   "categoria": "Condimenti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "salsa_soia"
+   ],
+   "terminiLegacy2020": [
+    "salsa_soia"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "budino",
+   "nome": "Budino",
+   "categoria": "Dolci",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "budino"
+   ],
+   "terminiLegacy2020": [
+    "budino"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "cantuccini_senza_glutine",
+   "nome": "Cantuccini senza glutine",
+   "categoria": "Dolci",
+   "gruppi": [],
+   "sinonimi": [
+    "cantuccini_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "cantuccini_senza_glutine"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "cioccolato_al_latte",
+   "nome": "Cioccolato al latte",
+   "categoria": "Dolci",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "cioccolata_al_latte",
+    "cioccolato"
+   ],
+   "terminiLegacy2020": [
+    "cioccolata_al_latte",
+    "cioccolato"
+   ],
+   "esposizioni2020": 5
+  },
+  {
+   "id": "cioccolato_fondente",
+   "nome": "Cioccolato fondente",
+   "categoria": "Dolci",
+   "gruppi": [],
+   "sinonimi": [
+    "cioccolata_fondente"
+   ],
+   "terminiLegacy2020": [
+    "cioccolata_fondente"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "cornetto_alla_crema",
+   "nome": "Cornetto alla crema",
+   "categoria": "Dolci",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "cornetto_crema"
+   ],
+   "terminiLegacy2020": [
+    "cornetto_crema"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "crema_di_nocciole",
+   "nome": "Crema di nocciole",
+   "categoria": "Dolci",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "choco_cream",
+    "cioccolata_nocciolata"
+   ],
+   "terminiLegacy2020": [
+    "choco_cream",
+    "cioccolata_nocciolata"
+   ],
+   "esposizioni2020": 8
+  },
+  {
+   "id": "gelato",
+   "nome": "Gelato",
+   "categoria": "Dolci",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "gelato"
+   ],
+   "terminiLegacy2020": [
+    "gelato"
+   ],
+   "esposizioni2020": 9
+  },
+  {
+   "id": "gelato_senza_lattosio",
+   "nome": "Gelato senza lattosio",
+   "categoria": "Dolci",
+   "gruppi": [],
+   "sinonimi": [
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "gubana",
+   "nome": "Gubana",
+   "categoria": "Dolci",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "gubana"
+   ],
+   "terminiLegacy2020": [
+    "gubana"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "krapfen",
+   "nome": "Krapfen",
+   "categoria": "Dolci",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "krapfen"
+   ],
+   "terminiLegacy2020": [
+    "krapfen"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "torta_di_mele",
+   "nome": "Torta di mele",
+   "categoria": "Dolci",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "torta_mele"
+   ],
+   "terminiLegacy2020": [
+    "torta_mele"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "torta_foresta_nera",
+   "nome": "Torta foresta nera",
+   "categoria": "Dolci",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "foresta_nera"
+   ],
+   "terminiLegacy2020": [
+    "foresta_nera"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "zuppa_inglese",
+   "nome": "Zuppa inglese",
+   "categoria": "Dolci",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "zuppa_inglese"
+   ],
+   "terminiLegacy2020": [
+    "zuppa_inglese"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "basilico",
+   "nome": "Basilico",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "basilico"
+   ],
+   "terminiLegacy2020": [
+    "basilico"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "curry",
+   "nome": "Curry",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "curry"
+   ],
+   "terminiLegacy2020": [
+    "curry"
+   ],
+   "esposizioni2020": 5
+  },
+  {
+   "id": "erba_cipollina",
+   "nome": "Erba cipollina",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "erba_cipollina"
+   ],
+   "terminiLegacy2020": [
+    "erba_cipollina"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "origano",
+   "nome": "Origano",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "origano"
+   ],
+   "terminiLegacy2020": [
+    "origano"
+   ],
+   "esposizioni2020": 6
+  },
+  {
+   "id": "pepe_nero",
+   "nome": "Pepe nero",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "pepe_nero"
+   ],
+   "terminiLegacy2020": [
+    "pepe_nero"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "vaniglia",
+   "nome": "Vaniglia",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "vaniglia"
+   ],
+   "terminiLegacy2020": [
+    "vaniglia"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "zafferano",
+   "nome": "Zafferano",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "zafferano"
+   ],
+   "terminiLegacy2020": [
+    "zafferano"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "zenzero",
+   "nome": "Zenzero",
+   "categoria": "Erbe e spezie",
+   "gruppi": [],
+   "sinonimi": [
+    "zenzero"
+   ],
+   "terminiLegacy2020": [
+    "zenzero"
+   ],
+   "esposizioni2020": 17
+  },
+  {
+   "id": "formaggio_senza_lattosio",
+   "nome": "Formaggio senza lattosio",
+   "categoria": "Formaggi",
+   "gruppi": [],
+   "sinonimi": [
+    "formaggio_senza_lattosio",
+    "sottilette_senza_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "formaggio_senza_lattosio",
+    "sottilette_senza_lattosio"
+   ],
+   "esposizioni2020": 5
+  },
+  {
+   "id": "mozzarella",
+   "nome": "Mozzarella",
+   "categoria": "Formaggi",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "mozzarella"
+   ],
+   "terminiLegacy2020": [
+    "mozzarella"
+   ],
+   "esposizioni2020": 9
+  },
+  {
+   "id": "parmigiano",
+   "nome": "Parmigiano",
+   "categoria": "Formaggi",
+   "gruppi": [],
+   "sinonimi": [
+    "parmigiano"
+   ],
+   "terminiLegacy2020": [
+    "parmigiano"
+   ],
+   "esposizioni2020": 24
+  },
+  {
+   "id": "arancia",
+   "nome": "Arancia",
+   "categoria": "Frutta",
+   "gruppi": [],
+   "sinonimi": [
+    "arancia"
+   ],
+   "terminiLegacy2020": [
+    "arancia"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "banana",
+   "nome": "Banana",
+   "categoria": "Frutta",
+   "gruppi": [],
+   "sinonimi": [
+    "banana"
+   ],
+   "terminiLegacy2020": [
+    "banana"
+   ],
+   "esposizioni2020": 5
+  },
+  {
+   "id": "limone",
+   "nome": "Limone",
+   "categoria": "Frutta",
+   "gruppi": [],
+   "sinonimi": [
+    "limone"
+   ],
+   "terminiLegacy2020": [
+    "limone"
+   ],
+   "esposizioni2020": 29
+  },
+  {
+   "id": "mela",
+   "nome": "Mela",
+   "categoria": "Frutta",
+   "gruppi": [],
+   "sinonimi": [
+    "mela"
+   ],
+   "terminiLegacy2020": [
+    "mela"
+   ],
+   "esposizioni2020": 53
+  },
+  {
+   "id": "pera",
+   "nome": "Pera",
+   "categoria": "Frutta",
+   "gruppi": [],
+   "sinonimi": [
+    "pera"
+   ],
+   "terminiLegacy2020": [
+    "pera"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "arachidi",
+   "nome": "Arachidi",
+   "categoria": "Frutta secca",
+   "gruppi": [],
+   "sinonimi": [
+    "noccioline"
+   ],
+   "terminiLegacy2020": [
+    "noccioline"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "pistacchio",
+   "nome": "Pistacchio",
+   "categoria": "Frutta secca",
+   "gruppi": [],
+   "sinonimi": [
+    "pistacchio"
+   ],
+   "terminiLegacy2020": [
+    "pistacchio"
+   ],
+   "esposizioni2020": 8
+  },
+  {
+   "id": "burro",
+   "nome": "Burro",
+   "categoria": "Grassi",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "burro"
+   ],
+   "terminiLegacy2020": [
+    "burro"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "olio_di_oliva",
+   "nome": "Olio d'oliva",
+   "categoria": "Grassi",
+   "gruppi": [],
+   "sinonimi": [
+    "olio"
+   ],
+   "terminiLegacy2020": [
+    "olio"
+   ],
+   "esposizioni2020": 51
+  },
+  {
+   "id": "latte_senza_lattosio",
+   "nome": "Latte senza lattosio",
+   "categoria": "Latticini",
+   "gruppi": [],
+   "sinonimi": [
+    "latte_senza_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "latte_senza_lattosio"
+   ],
+   "esposizioni2020": 21
+  },
+  {
+   "id": "panna",
+   "nome": "Panna",
+   "categoria": "Latticini",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "panna_con_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "panna_con_lattosio"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "panna_senza_lattosio",
+   "nome": "Panna senza lattosio",
+   "categoria": "Latticini",
+   "gruppi": [],
+   "sinonimi": [
+    "panna_senza_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "panna_senza_lattosio"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "yogurt",
+   "nome": "Yogurt",
+   "categoria": "Latticini",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "yogurt"
+   ],
+   "terminiLegacy2020": [
+    "yogurt"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "ceci",
+   "nome": "Ceci",
+   "categoria": "Legumi",
+   "gruppi": [],
+   "sinonimi": [
+    "ceci"
+   ],
+   "terminiLegacy2020": [
+    "ceci"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "fagioli_cannellini",
+   "nome": "Fagioli cannellini",
+   "categoria": "Legumi",
+   "gruppi": [],
+   "sinonimi": [
+    "cannellino"
+   ],
+   "terminiLegacy2020": [
+    "cannellino"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "focaccia",
+   "nome": "Focaccia",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "focaccia"
+   ],
+   "terminiLegacy2020": [
+    "focaccia"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "grissini",
+   "nome": "Grissini",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "grissini"
+   ],
+   "terminiLegacy2020": [
+    "grissini"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "pancarre",
+   "nome": "Pancarré",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pancarré"
+   ],
+   "terminiLegacy2020": [
+    "pancarre"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "pancarre_integrale",
+   "nome": "Pancarré integrale",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pancarrè_integrale"
+   ],
+   "terminiLegacy2020": [
+    "pancarre_integrale"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "pancarre_senza_glutine",
+   "nome": "Pancarré senza glutine",
+   "categoria": "Pane",
+   "gruppi": [],
+   "sinonimi": [
+    "pancarré_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "pancarre_senza_glutine"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "pane_alle_noci",
+   "nome": "Pane alle noci",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_noci_integrale_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_noci_integrale_semola"
+   ],
+   "esposizioni2020": 8
+  },
+  {
+   "id": "pane_alle_olive",
+   "nome": "Pane alle olive",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_olive_integrale_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_olive_integrale_semola"
+   ],
+   "esposizioni2020": 6
+  },
+  {
+   "id": "pane_di_semola",
+   "nome": "Pane di semola",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_semola"
+   ],
+   "esposizioni2020": 16
+  },
+  {
+   "id": "pane_integrale",
+   "nome": "Pane integrale",
+   "categoria": "Pane",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_integrale_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_integrale_semola"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "pane_senza_glutine",
+   "nome": "Pane senza glutine",
+   "categoria": "Pane",
+   "gruppi": [],
+   "sinonimi": [
+    "pane_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "pane_senza_glutine"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "piadina_senza_glutine",
+   "nome": "Piadina senza glutine",
+   "categoria": "Pane",
+   "gruppi": [],
+   "sinonimi": [
+    "piadina_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "piadina_senza_glutine"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "gnocchi_integrali",
+   "nome": "Gnocchi integrali",
+   "categoria": "Pasta",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "gnocchi_integrali"
+   ],
+   "terminiLegacy2020": [
+    "gnocchi_integrali"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "pasta_di_grano",
+   "nome": "Pasta",
+   "categoria": "Pasta",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pasta"
+   ],
+   "terminiLegacy2020": [
+    "pasta"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "pasta_di_mais",
+   "nome": "Pasta di mais",
+   "categoria": "Pasta",
+   "gruppi": [],
+   "sinonimi": [
+    "pasta_mais"
+   ],
+   "terminiLegacy2020": [
+    "pasta_mais"
+   ],
+   "esposizioni2020": 5
+  },
+  {
+   "id": "pasta_di_semola",
+   "nome": "Pasta di semola",
+   "categoria": "Pasta",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pasta_semola"
+   ],
+   "terminiLegacy2020": [
+    "pasta_semola"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "pasta_integrale",
+   "nome": "Pasta integrale",
+   "categoria": "Pasta",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pasta_integrale"
+   ],
+   "terminiLegacy2020": [
+    "pasta_integrale"
+   ],
+   "esposizioni2020": 14
+  },
+  {
+   "id": "tortelli",
+   "nome": "Tortelli",
+   "categoria": "Pasta ripiena",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "tortelli"
+   ],
+   "terminiLegacy2020": [
+    "tortelli"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "acciughe",
+   "nome": "Acciughe",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "acciughine"
+   ],
+   "terminiLegacy2020": [
+    "acciughine"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "baccala",
+   "nome": "Baccalà",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "baccalà"
+   ],
+   "terminiLegacy2020": [
+    "baccala"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "frutti_di_mare",
+   "nome": "Frutti di mare",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "frutti_di_mare"
+   ],
+   "terminiLegacy2020": [
+    "frutti_di_mare"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "gamberetti",
+   "nome": "Gamberetti",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "gamberetti"
+   ],
+   "terminiLegacy2020": [
+    "gamberetti"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "merluzzo",
+   "nome": "Merluzzo",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "merluzzo"
+   ],
+   "terminiLegacy2020": [
+    "merluzzo"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "salmone",
+   "nome": "Salmone",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "salmone"
+   ],
+   "terminiLegacy2020": [
+    "salmone"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "salmone_affumicato",
+   "nome": "Salmone affumicato",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "salmone_affumicato"
+   ],
+   "terminiLegacy2020": [
+    "salmone_affumicato"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "sgombro",
+   "nome": "Sgombro",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "sgombro"
+   ],
+   "terminiLegacy2020": [
+    "sgombro"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "tonno",
+   "nome": "Tonno",
+   "categoria": "Pesce",
+   "gruppi": [],
+   "sinonimi": [
+    "tonno"
+   ],
+   "terminiLegacy2020": [
+    "tonno"
+   ],
+   "esposizioni2020": 5
+  },
+  {
+   "id": "canederli",
+   "nome": "Canederli",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "canederli"
+   ],
+   "terminiLegacy2020": [
+    "canederli"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "cotoletta",
+   "nome": "Cotoletta",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "cotolette"
+   ],
+   "terminiLegacy2020": [
+    "cotolette"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "empanada",
+   "nome": "Empanada",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "empanada_gallega"
+   ],
+   "terminiLegacy2020": [
+    "empanada_gallega"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "erbazzone",
+   "nome": "Erbazzone",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "erbazzone_reggiano"
+   ],
+   "terminiLegacy2020": [
+    "erbazzone_reggiano"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "frico",
+   "nome": "Frico",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "frico"
+   ],
+   "terminiLegacy2020": [
+    "frico"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "gnocchi_di_sauris",
+   "nome": "Gnocchi di Sauris",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "gnocchi_di_sauris"
+   ],
+   "terminiLegacy2020": [
+    "gnocchi_di_sauris"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "hamburger",
+   "nome": "Hamburger",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "hamburger"
+   ],
+   "terminiLegacy2020": [
+    "hamburger"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "involtini",
+   "nome": "Involtini",
+   "categoria": "Piatti composti",
+   "gruppi": [],
+   "sinonimi": [
+    "involtini"
+   ],
+   "terminiLegacy2020": [
+    "involtini"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "panzerotto",
+   "nome": "Panzerotto",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "panzerotto"
+   ],
+   "terminiLegacy2020": [
+    "panzerotto"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "patatine_fritte",
+   "nome": "Patatine fritte",
+   "categoria": "Piatti composti",
+   "gruppi": [],
+   "sinonimi": [
+    "patatine"
+   ],
+   "terminiLegacy2020": [
+    "patatine"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "pizza",
+   "nome": "Pizza",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pizza"
+   ],
+   "terminiLegacy2020": [
+    "pizza"
+   ],
+   "esposizioni2020": 8
+  },
+  {
+   "id": "pollo_tikka_masala",
+   "nome": "Pollo tikka masala",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "pollo tikka masala"
+   ],
+   "terminiLegacy2020": [
+    "pollo_tikka_masala"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "polpette_di_carne",
+   "nome": "Polpette di carne",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "polpette_carne"
+   ],
+   "terminiLegacy2020": [
+    "polpette_carne"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "polpette_di_carne_senza_glutine",
+   "nome": "Polpette di carne senza glutine",
+   "categoria": "Piatti composti",
+   "gruppi": [],
+   "sinonimi": [
+    "polpette_carne_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "polpette_carne_senza_glutine"
+   ],
+   "esposizioni2020": 6
+  },
+  {
+   "id": "polpette_di_tonno",
+   "nome": "Polpette di tonno",
+   "categoria": "Piatti composti",
+   "gruppi": [],
+   "sinonimi": [
+    "polpette_tonno"
+   ],
+   "terminiLegacy2020": [
+    "polpette_tonno"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "rotolo_speck_formaggio",
+   "nome": "Rotolo speck e formaggio",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "rotolo_speck_formaggio"
+   ],
+   "terminiLegacy2020": [
+    "rotolo_speck_formaggio"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "rustico",
+   "nome": "Rustico",
+   "categoria": "Piatti composti",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "rustico"
+   ],
+   "terminiLegacy2020": [
+    "rustico"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "spezzatino",
+   "nome": "Spezzatino",
+   "categoria": "Piatti composti",
+   "gruppi": [],
+   "sinonimi": [
+    "spezzatino"
+   ],
+   "terminiLegacy2020": [
+    "spezzatino"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "sushi",
+   "nome": "Sushi",
+   "categoria": "Piatti composti",
+   "gruppi": [],
+   "sinonimi": [
+    "sushi"
+   ],
+   "terminiLegacy2020": [
+    "sushi"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "tortilla_di_patate",
+   "nome": "Tortilla di patate",
+   "categoria": "Piatti composti",
+   "gruppi": [],
+   "sinonimi": [
+    "tortilla"
+   ],
+   "terminiLegacy2020": [
+    "tortilla"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "mortadella",
+   "nome": "Mortadella",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "mortadella"
+   ],
+   "terminiLegacy2020": [
+    "mortadella"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "pancetta",
+   "nome": "Pancetta",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "pancetta"
+   ],
+   "terminiLegacy2020": [
+    "pancetta"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "prosciutto_cotto",
+   "nome": "Prosciutto cotto",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "prosciutto_cotto"
+   ],
+   "terminiLegacy2020": [
+    "prosciutto_cotto"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "prosciutto_crudo",
+   "nome": "Prosciutto crudo",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "prosciutto_crudo"
+   ],
+   "terminiLegacy2020": [
+    "prosciutto_crudo"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "salame",
+   "nome": "Salame",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "salame"
+   ],
+   "terminiLegacy2020": [
+    "salame"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "salame_d_oca",
+   "nome": "Salame d'oca",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "salame_oca"
+   ],
+   "terminiLegacy2020": [
+    "salame_oca"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "salame_piccante",
+   "nome": "Salame piccante",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "salame_piccante"
+   ],
+   "terminiLegacy2020": [
+    "salame_piccante"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "speck",
+   "nome": "Speck",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "speck"
+   ],
+   "terminiLegacy2020": [
+    "speck"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "wurstel",
+   "nome": "Wurstel",
+   "categoria": "Salumi",
+   "gruppi": [],
+   "sinonimi": [
+    "wurstel"
+   ],
+   "terminiLegacy2020": [
+    "wurstel"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "semi_di_sesamo",
+   "nome": "Semi di sesamo",
+   "categoria": "Semi",
+   "gruppi": [],
+   "sinonimi": [
+    "semi_sesamo"
+   ],
+   "terminiLegacy2020": [
+    "semi_sesamo"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "patata",
+   "nome": "Patata",
+   "categoria": "Tuberi",
+   "gruppi": [],
+   "sinonimi": [
+    "patata"
+   ],
+   "terminiLegacy2020": [
+    "patata"
+   ],
+   "esposizioni2020": 6
+  },
+  {
+   "id": "tuorlo",
+   "nome": "Tuorlo",
+   "categoria": "Uova",
+   "gruppi": [],
+   "sinonimi": [
+    "tuorlo_uovo"
+   ],
+   "terminiLegacy2020": [
+    "tuorlo_uovo"
+   ],
+   "esposizioni2020": 3
+  },
+  {
+   "id": "uovo",
+   "nome": "Uovo",
+   "categoria": "Uova",
+   "gruppi": [],
+   "sinonimi": [
+    "uova",
+    "uovo"
+   ],
+   "terminiLegacy2020": [
+    "uova",
+    "uovo"
+   ],
+   "esposizioni2020": 4
+  },
+  {
+   "id": "asparagi",
+   "nome": "Asparagi",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "asparagi"
+   ],
+   "terminiLegacy2020": [
+    "asparagi"
+   ],
+   "esposizioni2020": 0
+  },
+  {
+   "id": "carciofo",
+   "nome": "Carciofo",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "carciofo"
+   ],
+   "terminiLegacy2020": [
+    "carciofo"
+   ],
+   "esposizioni2020": 5
+  },
+  {
+   "id": "carota",
+   "nome": "Carota",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "carota"
+   ],
+   "terminiLegacy2020": [
+    "carota"
+   ],
+   "esposizioni2020": 35
+  },
+  {
+   "id": "cavolo_cappuccio",
+   "nome": "Cavolo cappuccio",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "cavolo_cappuccio"
+   ],
+   "terminiLegacy2020": [
+    "cavolo_cappuccio"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "cipolla",
+   "nome": "Cipolla",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "cipolla"
+   ],
+   "terminiLegacy2020": [
+    "cipolla"
+   ],
+   "esposizioni2020": 21
+  },
+  {
+   "id": "finocchio",
+   "nome": "Finocchio",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "finocchio"
+   ],
+   "terminiLegacy2020": [
+    "finocchio"
+   ],
+   "esposizioni2020": 15
+  },
+  {
+   "id": "funghi",
+   "nome": "Funghi",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "funghi"
+   ],
+   "terminiLegacy2020": [
+    "funghi"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "insalata",
+   "nome": "Insalata",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "insalata",
+    "lattuga"
+   ],
+   "terminiLegacy2020": [
+    "insalata",
+    "lattuga"
+   ],
+   "esposizioni2020": 15
+  },
+  {
+   "id": "melanzana",
+   "nome": "Melanzana",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "melanzane"
+   ],
+   "terminiLegacy2020": [
+    "melanzane"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "peperone",
+   "nome": "Peperone",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "peperoni"
+   ],
+   "terminiLegacy2020": [
+    "peperoni"
+   ],
+   "esposizioni2020": 2
+  },
+  {
+   "id": "pomodoro",
+   "nome": "Pomodoro",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "pomodoro"
+   ],
+   "terminiLegacy2020": [
+    "pomodoro"
+   ],
+   "esposizioni2020": 26
+  },
+  {
+   "id": "sedano",
+   "nome": "Sedano",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "sedano"
+   ],
+   "terminiLegacy2020": [
+    "sedano"
+   ],
+   "esposizioni2020": 6
+  },
+  {
+   "id": "spinaci",
+   "nome": "Spinaci",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "spinaci"
+   ],
+   "terminiLegacy2020": [
+    "spinaci"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "verdure_miste",
+   "nome": "Verdure miste",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "verdure_miste"
+   ],
+   "terminiLegacy2020": [
+    "verdure_miste"
+   ],
+   "esposizioni2020": 1
+  },
+  {
+   "id": "zucchina",
+   "nome": "Zucchina",
+   "categoria": "Verdura",
+   "gruppi": [],
+   "sinonimi": [
+    "zucchine"
+   ],
+   "terminiLegacy2020": [
+    "zucchine"
+   ],
+   "esposizioni2020": 32
+  }
+ ]
+}
