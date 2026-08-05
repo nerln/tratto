@@ -11,6 +11,7 @@ struct TrattoApp: App {
             Ingrediente.self, Pasto.self, VoceDiPasto.self,
             EventoIntestinale.self, EsitoGiornaliero.self,
             ContestoGiornaliero.self, Impostazioni.self,
+            Sfida.self, BloccoSfida.self,
         ])
         // Nessun CloudKit: i dati restano sul dispositivo e passano fra Mac e
         // telefono solo come file, quando lo decide l'utente.
@@ -58,17 +59,17 @@ struct TrattoApp: App {
 // MARK: - Radice
 
 enum Scheda: String, CaseIterable, Identifiable, Hashable {
-    case adesso, giornata, raccolta, archivio, esporta
+    case adesso, giornata, raccolta, sfide, esporta
 
     var id: String { rawValue }
 
-    var titolo: String {
+    var titolo: LocalizedStringKey {
         switch self {
-        case .adesso: "Adesso"
-        case .giornata: "Giornata"
-        case .raccolta: "Raccolta"
-        case .archivio: "Archivio 2020"
-        case .esporta: "Esporta"
+        case .adesso: "Now"
+        case .giornata: "Day"
+        case .raccolta: "Collected"
+        case .sfide: "Comparisons"
+        case .esporta: "Export"
         }
     }
 
@@ -77,7 +78,7 @@ enum Scheda: String, CaseIterable, Identifiable, Hashable {
         case .adesso: "plus.circle.fill"
         case .giornata: "list.bullet.rectangle"
         case .raccolta: "chart.bar.xaxis"
-        case .archivio: "archivebox"
+        case .sfide: "arrow.left.arrow.right"
         case .esporta: "square.and.arrow.up"
         }
     }
@@ -88,13 +89,22 @@ struct ContenutoView: View {
     @State private var scheda: Scheda = .adesso
     @State private var erroreAvvio: String?
 
+    /// Il cambio di lingua passa da qui. È stato verificato che
+    /// `.environment(\.locale)` cambi davvero le stringhe cercate da `Text`
+    /// in SwiftUI, e non soltanto il formato di numeri e date.
+    @AppStorage(Lingua.chiavePreferenza) private var linguaGrezza = Lingua.sistema.rawValue
+
+    private var lingua: Lingua { Lingua(rawValue: linguaGrezza) ?? .sistema }
+
     var body: some View {
         Gruppo
+            .environment(\.lingua, lingua)
+            .environment(\.locale, lingua.locale ?? Locale.autoupdatingCurrent)
             .task { prepara() }
-            .alert("Avvio non completato", isPresented: .constant(erroreAvvio != nil)) {
-                Button("Va bene") { erroreAvvio = nil }
+            .alert("Could not finish starting up", isPresented: .constant(erroreAvvio != nil)) {
+                Button("OK") { erroreAvvio = nil }
             } message: {
-                Text(erroreAvvio ?? "")
+                Text(verbatim: erroreAvvio ?? "")
             }
     }
 
@@ -126,7 +136,7 @@ struct ContenutoView: View {
         case .adesso: AdessoView()
         case .giornata: GiornataView()
         case .raccolta: RaccoltaView()
-        case .archivio: ArchivioView()
+        case .sfide: SfideView()
         case .esporta: EsportaView()
         }
     }

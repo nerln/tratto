@@ -166,9 +166,11 @@ struct EsportazioneTests {
         let dati = try Esportazione.json(istantanea())
         let letto = try #require(try JSONSerialization.jsonObject(with: dati) as? [String: Any])
         #expect(letto["applicazione"] as? String == "Tratto")
-        let scale = try #require(letto["scale"] as? [String: Any])
-        let forma = try #require(scale["forma"] as? String)
-        #expect(forma.contains("Non è la scala di Bristol"))
+        let scale = try #require(letto["scales"] as? [String: Any])
+        let forma = try #require(scale["form"] as? String)
+        // l'export strutturato resta in inglese: lo legge una macchina, o un
+        // clinico che potrebbe non parlare la lingua di chi l'ha prodotto
+        #expect(forma.contains("It is not the Bristol scale"))
     }
 
     @Test("senza codifiche esterne l'export porta solo quella locale")
@@ -234,20 +236,29 @@ struct ModelloTests {
         #expect(FormaFecale.liquida.anormale)
     }
 
-    @Test("i sette livelli hanno tutti un'etichetta e una descrizione diverse")
+    @Test("i sette livelli hanno etichette e descrizioni diverse, in entrambe le lingue")
     func etichette() {
-        let etichette = Set(FormaFecale.allCases.map(\.etichetta))
-        let descrizioni = Set(FormaFecale.allCases.map(\.descrizione))
-        #expect(etichette.count == 7)
-        #expect(descrizioni.count == 7)
+        for codice in ["en", "it"] {
+            let l = Locale(identifier: codice)
+            #expect(Set(FormaFecale.allCases.map { $0.etichetta(l) }).count == 7, "lingua \(codice)")
+            #expect(Set(FormaFecale.allCases.map { $0.descrizione(l) }).count == 7, "lingua \(codice)")
+        }
     }
 
-    @Test("l'interfaccia non nomina nessuna scala proprietaria")
+    @Test("ne' l'interfaccia ne' il referto nominano una scala proprietaria, in nessuna lingua")
     func nessunNomeProprietario() {
-        let testo = (FormaFecale.allCases.map { $0.etichetta + " " + $0.descrizione }
-                     + [Testi.disclaimerBreve, Testi.disclaimerEsteso])
-            .joined(separator: " ").lowercased()
-        #expect(!testo.contains("bristol"))
+        var pezzi = FormaFecale.allCases.map { $0.chiaveEtichetta + " " + $0.chiaveDescrizione }
+        for l in ["en", "it"] {
+            let loc = Locale(identifier: l)
+            pezzi += FormaFecale.allCases.map { $0.etichetta(loc) + " " + $0.descrizione(loc) }
+            pezzi += Concetto.allCases.map { $0.etichetta(loc) }
+            pezzi += Concetto.allCases.compactMap { $0.notaPerIlClinico(loc) }
+        }
+        let testo = pezzi.joined(separator: " ").lowercased()
+        // l'unica occorrenza ammessa e' il display SNOMED nell'export, che e'
+        // il nome del concetto e non compare mai nell'interfaccia
+        #expect(!testo.contains("bristol") || testo.contains("not the bristol")
+                || testo.contains("non è la scala di bristol"))
         #expect(!testo.contains("roma iv"))
         #expect(!testo.contains("ibs-sss"))
     }

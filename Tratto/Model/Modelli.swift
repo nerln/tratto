@@ -8,16 +8,18 @@ nonisolated enum Fascia: String, Codable, CaseIterable, Identifiable, Sendable {
 
     var id: String { rawValue }
 
-    var nome: String {
+    var chiaveNome: String {
         switch self {
-        case .colazione: "Colazione"
-        case .spuntinoMattina: "Spuntino del mattino"
-        case .pranzo: "Pranzo"
-        case .merenda: "Merenda"
-        case .cena: "Cena"
-        case .spuntinoSera: "Spuntino della sera"
+        case .colazione: "Breakfast"
+        case .spuntinoMattina: "Morning snack"
+        case .pranzo: "Lunch"
+        case .merenda: "Afternoon snack"
+        case .cena: "Dinner"
+        case .spuntinoSera: "Evening snack"
         }
     }
+
+    func nome(_ locale: Locale) -> String { testo(.init(chiaveNome), locale) }
 
     /// Ora indicativa usata solo per ordinare e per indovinare la fascia dall'orario.
     var oraTipica: Int {
@@ -58,8 +60,13 @@ final class Ingrediente {
     #Unique<Ingrediente>([\.identificativo])
 
     var identificativo: String = ""
-    var nome: String = ""
-    var categoria: String = ""
+    /// I nomi convivono nelle due lingue. Quello italiano non è ridondante:
+    /// serve comunque al riconoscimento del testo dettato in italiano, che
+    /// resta possibile qualunque sia la lingua dell'interfaccia.
+    var nomeIt: String = ""
+    var nomeEn: String = ""
+    var categoriaIt: String = ""
+    var categoriaEn: String = ""
     /// Etichette di conoscenza comune (lattosio, glutine, caffeina). Ipotesi
     /// modificabili dall'utente, non dati clinici: nessuna tabella FODMAP e'
     /// utilizzabile legalmente.
@@ -77,13 +84,16 @@ final class Ingrediente {
     @Relationship(deleteRule: .cascade, inverse: \VoceDiPasto.ingrediente)
     var voci: [VoceDiPasto]? = []
 
-    init(identificativo: String, nome: String, categoria: String,
+    init(identificativo: String, nomeIt: String, nomeEn: String,
+         categoriaIt: String, categoriaEn: String,
          gruppi: [String] = [], sinonimi: [String] = [],
          terminiLegacy: [String] = [], esposizioni2020: Int = 0,
          creatoDallUtente: Bool = false, creatoIl: Date = .now) {
         self.identificativo = identificativo
-        self.nome = nome
-        self.categoria = categoria
+        self.nomeIt = nomeIt
+        self.nomeEn = nomeEn
+        self.categoriaIt = categoriaIt
+        self.categoriaEn = categoriaEn
         self.gruppi = gruppi
         self.sinonimi = sinonimi
         self.terminiLegacy = terminiLegacy
@@ -92,9 +102,19 @@ final class Ingrediente {
         self.creatoIl = creatoIl
     }
 
-    /// Tutte le forme scritte sotto cui questa voce puo' essere riconosciuta.
+    func nome(_ locale: Locale) -> String {
+        locale.language.languageCode?.identifier == "it" ? nomeIt : nomeEn
+    }
+
+    func categoria(_ locale: Locale) -> String {
+        locale.language.languageCode?.identifier == "it" ? categoriaIt : categoriaEn
+    }
+
+    /// Tutte le forme scritte sotto cui questa voce può essere riconosciuta.
+    /// Comprende entrambe le lingue: chi ha l'interfaccia in inglese può
+    /// benissimo dettare «riso e zucchine».
     var formeRiconoscibili: [String] {
-        ([nome, identificativo] + sinonimi + terminiLegacy)
+        ([nomeIt, nomeEn, identificativo] + sinonimi + terminiLegacy)
     }
 }
 
@@ -108,13 +128,15 @@ enum StatoPasto: String, Codable, CaseIterable, Sendable {
     /// Ha mangiato ma non ricorda cosa. Anche questo e' un dato.
     case nonRicordato
 
-    var nome: String {
+    var chiaveNome: String {
         switch self {
-        case .registrato: "Registrato"
-        case .digiuno: "Niente"
-        case .nonRicordato: "Non ricordo"
+        case .registrato: "Logged"
+        case .digiuno: "Nothing"
+        case .nonRicordato: "Can't recall"
         }
     }
+
+    func nome(_ locale: Locale) -> String { testo(.init(chiaveNome), locale) }
 }
 
 enum FontePasto: String, Codable, Sendable {
@@ -123,13 +145,15 @@ enum FontePasto: String, Codable, Sendable {
 
 enum Quantita: String, Codable, CaseIterable, Sendable {
     case poca, normale, tanta
-    var nome: String {
+    var chiaveNome: String {
         switch self {
-        case .poca: "Poca"
-        case .normale: "Normale"
-        case .tanta: "Tanta"
+        case .poca: "A little"
+        case .normale: "Normal"
+        case .tanta: "A lot"
         }
     }
+
+    func nome(_ locale: Locale) -> String { testo(.init(chiaveNome), locale) }
 }
 
 @Model

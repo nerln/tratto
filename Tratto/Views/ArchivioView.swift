@@ -8,9 +8,6 @@ import Charts
 /// monotono, con lo 0 come valore peggiore; quella di oggi ha sette livelli e
 /// l'ottimo al centro. Non esiste una conversione fra le due, e inventarne una
 /// produrrebbe una serie storica che sembra continua senza esserlo.
-///
-/// Serve a due cose: aver recuperato quel lavoro, e aver seminato il catalogo
-/// degli ingredienti con quello che mangiava davvero.
 struct ArchivioView: View {
     private let archivio = Archivio2020.daBundle()
 
@@ -19,7 +16,7 @@ struct ArchivioView: View {
             if let a = archivio {
                 VStack(alignment: .leading, spacing: 20) {
                     intestazione(a)
-                    avviso(a)
+                    Nota(colore: .orange, testo: Text("These numbers use different scales from the ones in use now and are not comparable. «Consistency» ran from 0 to 5 with 0 as the worst value and rose monotonically: it is not the seven-level scale used today, whose best value sits in the middle. It is not converted, it enters no calculation, and it is never added to new data. The period also falls in the months right after lockdown, with hours, diet and stress that are hard to repeat."))
                     numeri(a)
                     consistenza(a)
                     fastidio(a)
@@ -31,15 +28,15 @@ struct ArchivioView: View {
                 .frame(maxWidth: 720)
                 .frame(maxWidth: .infinity)
             } else {
-                Text("Archivio non disponibile.").foregroundStyle(.secondary).padding()
+                Text("Archive not available.").foregroundStyle(.secondary).padding()
             }
         }
-        .navigationTitle("Archivio 2020")
+        .navigationTitle("2020 archive")
     }
 
     private func intestazione(_ a: Archivio2020) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(a.sottotitolo).font(.headline)
+            Text("Data Science coursework, May–July 2020").font(.headline)
             if let periodo = periodoLeggibile(a) {
                 Text(periodo).font(.subheadline).foregroundStyle(.secondary)
             }
@@ -54,113 +51,99 @@ struct ArchivioView: View {
         iso.locale = Locale(identifier: "en_US_POSIX")
         guard let da = a.periodo.from.flatMap(iso.date(from:)),
               let al = a.periodo.to.flatMap(iso.date(from:)) else { return nil }
-        let stile = Date.FormatStyle(date: .long, time: .omitted).locale(Formati.italiano)
-        return "dal \(da.formatted(stile)) al \(al.formatted(stile))"
-    }
-
-    private func avviso(_ a: Archivio2020) -> some View {
-        Nota(colore: .orange, testo: a.avviso)
+        return String(localized: "from \(da.formatted(date: .long, time: .omitted)) to \(al.formatted(date: .long, time: .omitted))")
     }
 
     private func numeri(_ a: Archivio2020) -> some View {
-        Sezione("In cifre") {
+        Sezione("In numbers") {
             let c = a.conteggi
             HStack(spacing: 10) {
-                Pillola(valore: "\(c.giorniCoperti)", etichetta: "giorni su \(c.giorniDiCalendario)")
-                Pillola(valore: "\(c.eventi)", etichetta: "eventi")
-                Pillola(valore: "\(c.pasti)", etichetta: "pasti")
+                Pillola(valore: "\(c.giorniCoperti)", etichetta: "days of \(c.giorniDiCalendario)")
+                Pillola(valore: "\(c.eventi)", etichetta: "events")
+                Pillola(valore: "\(c.pasti)", etichetta: "meals")
             }
             HStack(spacing: 10) {
-                Pillola(valore: "\(c.alimenti)", etichetta: "alimenti")
-                Pillola(valore: "\(c.condimenti)", etichetta: "condimenti")
-                Pillola(valore: "\(c.portate)", etichetta: "portate")
+                Pillola(valore: "\(c.alimenti)", etichetta: "foods")
+                Pillola(valore: "\(c.condimenti)", etichetta: "condiments")
+                Pillola(valore: "\(c.portate)", etichetta: "courses")
             }
-            Text("Le due anagrafiche erano separate ma si sovrapponevano: carota, tonno, "
-                 + "parmigiano, finocchio, salsiccia e uova comparivano in tutte e due. "
-                 + "Nel catalogo di oggi sono una voce sola.")
+            Text("The two lists were kept separate but overlapped: carrot, tuna, parmesan, fennel, sausage and eggs appeared in both. In today's catalogue they are a single entry.")
                 .font(.caption).foregroundStyle(.secondary)
         }
     }
 
     private func consistenza(_ a: Archivio2020) -> some View {
-        Sezione("Consistenza, scala 0-5 del 2020") {
+        Sezione("Consistency, the 0-5 scale of 2020") {
             let d = a.distribuzioneConsistenza
             Chart(0...5, id: \.self) { livello in
-                BarMark(x: .value("Livello", "\(livello)"),
-                        y: .value("Volte", d[livello] ?? 0))
+                BarMark(x: .value("Level", "\(livello)"),
+                        y: .value("Times", d[livello] ?? 0))
                 .foregroundStyle(Color.brown.opacity(0.8))
                 .cornerRadius(3)
             }
             .frame(height: 130)
-            Text("Lo 0 era il valore peggiore e il 5 il migliore. Tre quarti delle osservazioni "
-                 + "stanno su due livelli vicini: la scala veniva usata poco più che a metà.")
+            Text("0 was the worst value and 5 the best. Three quarters of the observations sit on two adjacent levels: the scale was used little more than halfway.")
                 .font(.caption).foregroundStyle(.secondary)
         }
     }
 
     private func fastidio(_ a: Archivio2020) -> some View {
-        Sezione("Fastidio prima dell'evacuazione, scala 0-5 del 2020") {
+        Sezione("Discomfort before a bowel movement, the 0-5 scale of 2020") {
             let d = a.distribuzioneFastidio
             Chart(0...5, id: \.self) { livello in
-                BarMark(x: .value("Livello", "\(livello)"),
-                        y: .value("Volte", d[livello] ?? 0))
+                BarMark(x: .value("Level", "\(livello)"),
+                        y: .value("Times", d[livello] ?? 0))
                 .foregroundStyle(Color.orange.opacity(0.75))
                 .cornerRadius(3)
             }
             .frame(height: 130)
-            Text("Qui lo 0 era il valore migliore: le due scale del 2020 andavano in direzioni opposte.")
+            Text("Here 0 was the best value: the two scales of 2020 ran in opposite directions.")
                 .font(.caption).foregroundStyle(.secondary)
         }
     }
 
     private func fasce(_ a: Archivio2020) -> some View {
-        Sezione("Quali pasti venivano registrati") {
-            Chart(a.pastiPerFascia, id: \.0) { fascia, n in
-                BarMark(x: .value("Volte", n), y: .value("Fascia", fascia))
+        Sezione("Which meals actually got recorded") {
+            Chart(a.pastiPerFascia, id: \.chiave) { voce in
+                BarMark(x: .value("Times", voce.conteggio),
+                        y: .value("Slot", voce.etichetta))
                     .foregroundStyle(Color.accentColor.opacity(0.8))
                     .cornerRadius(3)
             }
             .frame(height: 170)
-            Text("Su 59 giorni, la colazione compare 25 volte e lo spuntino del mattino una sola. "
-                 + "Non è disattenzione: un evento in bagno si ricorda, una colazione uguale a tutte "
-                 + "le altre no. È il motivo per cui oggi si può rispondere «niente» con un tocco.")
+            Text("Over 59 days, breakfast appears 25 times and the morning snack once. That is not carelessness: a trip to the bathroom is memorable, a breakfast identical to every other one is not. It is why today you can answer «nothing» with one tap.")
                 .font(.caption).foregroundStyle(.secondary)
         }
     }
 
     private func qualita(_ a: Archivio2020) -> some View {
-        Sezione("Cosa è emerso rileggendo i dati") {
+        Sezione("What came up on re-reading the data") {
             ForEach(a.qualita) { q in
                 HStack {
-                    Text(q.descrizione).font(.callout)
+                    Text(LocalizedStringKey(q.chiaveDescrizione)).font(.callout)
                     Spacer()
-                    Text("\(q.conteggio)").font(.callout.monospacedDigit()).foregroundStyle(.secondary)
+                    Text(verbatim: "\(q.conteggio)")
+                        .font(.callout.monospacedDigit()).foregroundStyle(.secondary)
                 }
             }
         }
     }
 
     private var metodo: some View {
-        Sezione("Perché quei risultati non reggevano") {
+        Sezione("Why those results did not hold") {
             VStack(alignment: .leading, spacing: 10) {
-                Riga("Il punteggio giornaliero veniva assegnato a tutti gli alimenti mangiati "
-                     + "quel giorno. Due cibi mangiati sempre insieme non si possono distinguere "
-                     + "in nessun modo, con nessun calcolo.")
-                Riga("Il punteggio veniva poi «validato» correlandolo con la consistenza media e "
-                     + "con il fastidio medio. Ma era calcolato proprio a partire da quei due "
-                     + "numeri: la correlazione di 0,84 era il punteggio che correlava con sé stesso.")
-                Riga("Ottantatré alimenti venivano confrontati senza nessuna correzione per il "
-                     + "numero dei confronti, e solo sette di loro comparivano in almeno dieci pasti.")
-                Riga("Solo 26 giorni su 68 avevano almeno tre pasti registrati. Negli altri, "
-                     + "l'alimentazione era in gran parte ignota.")
+                Riga(Text("The daily score was assigned to every food eaten that day. Two foods always eaten together cannot be told apart, by any calculation."))
+                Riga(Text("The score was then «validated» by correlating it with mean consistency and mean discomfort. But it was computed from those two numbers: the correlation of 0.84 was the score correlating with itself."))
+                Riga(Text("Eighty-three foods were compared with no correction for the number of comparisons, and only seven of them appeared in at least ten meals."))
+                Riga(Text("Only 26 days out of 68 had at least three meals recorded. On the rest, what was eaten was largely unknown."))
             }
         }
     }
 
-    private func Riga(_ t: String) -> some View {
+    private func Riga(_ t: Text) -> some View {
         HStack(alignment: .top, spacing: 8) {
             Circle().fill(Color.secondary.opacity(0.5)).frame(width: 5, height: 5).padding(.top, 7)
-            Text(t).font(.callout).fixedSize(horizontal: false, vertical: true)
+            t.font(.callout).fixedSize(horizontal: false, vertical: true)
         }
     }
 }

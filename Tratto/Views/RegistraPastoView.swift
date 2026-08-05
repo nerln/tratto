@@ -11,11 +11,12 @@ import SwiftData
 struct RegistraPastoView: View {
     @Environment(\.modelContext) private var contesto
     @Environment(\.dismiss) private var chiudi
+    @Environment(\.locale) private var locale
 
     var testoIniziale: String = ""
     var pastoDaModificare: Pasto?
 
-    @Query(sort: \Ingrediente.nome) private var ingredienti: [Ingrediente]
+    @Query(sort: \Ingrediente.nomeEn) private var ingredienti: [Ingrediente]
 
     @State private var testo = ""
     @State private var quando: Date = .now
@@ -43,20 +44,20 @@ struct RegistraPastoView: View {
                 .frame(maxWidth: 560)
                 .frame(maxWidth: .infinity)
             }
-            .navigationTitle(pastoDaModificare == nil ? "Pasto" : "Modifica pasto")
+            .navigationTitle(pastoDaModificare == nil ? "Meal" : "Edit meal")
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
             #endif
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("Annulla") { chiudi() } }
+                ToolbarItem(placement: .cancellationAction) { Button("Cancel") { chiudi() } }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Salva") { salva() }
+                    Button("Save") { salva() }
                         .disabled(scelti.isEmpty && testo.trimmingCharacters(in: .whitespaces).isEmpty)
                 }
             }
             .sheet(isPresented: $mostraCatalogo) {
                 CatalogoIngredientiView(giaScelti: Set(scelti.map(\.identificativo))) { voce in
-                    aggiungi(identificativo: voce.identificativo, nome: voce.nome, testo: voce.nome)
+                    aggiungi(identificativo: voce.identificativo, nome: voce.nome(locale), testo: voce.nome(locale))
                 }
             }
             .task { await preparaIniziale() }
@@ -70,7 +71,7 @@ struct RegistraPastoView: View {
 
     private var campoTesto: some View {
         VStack(alignment: .leading, spacing: 8) {
-            TextField("Che cosa hai mangiato?", text: $testo, axis: .vertical)
+            TextField("What did you eat?", text: $testo, axis: .vertical)
                 .textFieldStyle(.plain)
                 .font(.title3)
                 .lineLimit(2...5)
@@ -81,7 +82,7 @@ struct RegistraPastoView: View {
                 Button {
                     Task { await analizza() }
                 } label: {
-                    Label("Riconosci", systemImage: "sparkles")
+                    Label("Recognise", systemImage: "sparkles")
                 }
                 .buttonStyle(.bordered)
                 .disabled(testo.trimmingCharacters(in: .whitespaces).isEmpty || inAnalisi)
@@ -89,7 +90,7 @@ struct RegistraPastoView: View {
                 Button {
                     mostraCatalogo = true
                 } label: {
-                    Label("Dal catalogo", systemImage: "list.bullet")
+                    Label("From catalogue", systemImage: "list.bullet")
                 }
                 .buttonStyle(.bordered)
                 Spacer()
@@ -99,14 +100,14 @@ struct RegistraPastoView: View {
 
     private var etichette: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Ingredienti").font(.subheadline.weight(.semibold))
+            Text("Ingredients").font(.subheadline.weight(.semibold))
             FlussoEtichette(scelti) { r in
                 Menu {
                     ForEach(Quantita.allCases, id: \.self) { q in
-                        Button(q.nome) { quantita[r.identificativo] = q }
+                        Button(String(localized: .init(q.chiaveNome), locale: locale)) { quantita[r.identificativo] = q }
                     }
                     Divider()
-                    Button("Togli", role: .destructive) {
+                    Button("Remove", role: .destructive) {
                         scelti.removeAll { $0.identificativo == r.identificativo }
                         quantita[r.identificativo] = nil
                     }
@@ -114,7 +115,7 @@ struct RegistraPastoView: View {
                     HStack(spacing: 5) {
                         Text(r.nome).font(.callout)
                         if let q = quantita[r.identificativo], q != .normale {
-                            Text(q.nome.lowercased()).font(.caption2).foregroundStyle(.secondary)
+                            Text(q.nome(locale).lowercased()).font(.caption2).foregroundStyle(.secondary)
                         }
                         if r.tipo == .approssimata {
                             Image(systemName: "questionmark.circle").font(.caption2)
@@ -128,7 +129,7 @@ struct RegistraPastoView: View {
                 .fixedSize()
             }
             if scelti.contains(where: { $0.tipo == .approssimata }) {
-                Text("Il punto interrogativo segna le voci riconosciute per somiglianza: controllale.")
+                Text("The question mark marks entries matched by similarity: check them.")
                     .font(.caption2).foregroundStyle(.secondary)
             }
         }
@@ -136,7 +137,7 @@ struct RegistraPastoView: View {
 
     private var nuoviIngredienti: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Non sono nel catalogo").font(.subheadline.weight(.semibold))
+            Text("Not in the catalogue").font(.subheadline.weight(.semibold))
             FlussoEtichette(candidati.map { IdentificabileTesto(testo: $0) }) { c in
                 Button {
                     creaIngrediente(c.testo)
@@ -150,24 +151,23 @@ struct RegistraPastoView: View {
                 }
                 .buttonStyle(.plain)
             }
-            Text("Tocca per aggiungerli al tuo catalogo. Quello che non aggiungi resta comunque "
-                 + "scritto nel testo del pasto.")
+            Text("Tap to add them to your catalogue. Whatever you skip still stays in the text of the meal.")
                 .font(.caption2).foregroundStyle(.secondary)
         }
     }
 
     private var dettagli: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Picker("Fascia", selection: $fascia) {
-                ForEach(Fascia.allCases) { f in Text(f.nome).tag(f) }
+            Picker("Meal slot", selection: $fascia) {
+                ForEach(Fascia.allCases) { f in Text(LocalizedStringKey(f.chiaveNome)).tag(f) }
             }
             .pickerStyle(.menu)
 
             DisclosureGroup(isExpanded: $correggiOra) {
-                DatePicker("Ora", selection: $quando).labelsHidden().datePickerStyle(.compact)
+                DatePicker("Time", selection: $quando).labelsHidden().datePickerStyle(.compact)
             } label: {
                 HStack {
-                    Text("Ora")
+                    Text("Time")
                     Spacer()
                     Text(quando.formatted(date: .omitted, time: .shortened)).foregroundStyle(.secondary)
                 }
@@ -178,7 +178,7 @@ struct RegistraPastoView: View {
     }
 
     private func notaModello(_ motivo: String) -> some View {
-        Text("\(motivo) Il riconoscimento funziona lo stesso, confrontando il testo con il catalogo.")
+        Text("\(motivo) Recognition still works by matching your text against the catalogue.")
             .font(.caption2).foregroundStyle(.secondary)
     }
 
@@ -189,7 +189,7 @@ struct RegistraPastoView: View {
         let voci = ingredienti
             .filter { !$0.archiviato }
             .map { Corrispondenza.Voce(identificativo: $0.identificativo,
-                                       nome: $0.nome,
+                                       nome: $0.nome(locale),
                                        forme: $0.formeRiconoscibili) }
             .sorted { a, b in
                 let la = a.forme.map(\.count).max() ?? 0
@@ -207,7 +207,7 @@ struct RegistraPastoView: View {
             scelti = p.vociOrdinate.compactMap { v in
                 guard let i = v.ingrediente else { return nil }
                 quantita[i.identificativo] = v.quantita
-                return Corrispondenza.Riconosciuto(identificativo: i.identificativo, nome: i.nome,
+                return Corrispondenza.Riconosciuto(identificativo: i.identificativo, nome: i.nome(locale),
                                                    testoOriginale: v.testoOriginale, tipo: .esatta)
             }
         } else if !testoIniziale.isEmpty {
@@ -242,13 +242,13 @@ struct RegistraPastoView: View {
     private func creaIngrediente(_ testoVoce: String) {
         let id = "utente_" + Corrispondenza.normalizza(testoVoce)
         guard !ingredienti.contains(where: { $0.identificativo == id }) else { return }
-        let nuovo = Ingrediente(identificativo: id,
-                                nome: testoVoce.prefix(1).uppercased() + testoVoce.dropFirst(),
-                                categoria: "Aggiunti da me",
+        let etichetta = testoVoce.prefix(1).uppercased() + testoVoce.dropFirst()
+        let nuovo = Ingrediente(identificativo: id, nomeIt: etichetta, nomeEn: etichetta,
+                                categoriaIt: "Aggiunti da me", categoriaEn: "Added by me",
                                 creatoDallUtente: true)
         contesto.insert(nuovo)
         try? contesto.save()
-        aggiungi(identificativo: id, nome: nuovo.nome, testo: testoVoce)
+        aggiungi(identificativo: id, nome: etichetta, testo: testoVoce)
         candidati.removeAll { $0 == testoVoce }
     }
 
@@ -347,7 +347,8 @@ struct DisposizioneAFlusso: Layout {
 /// ha davvero mangiato.
 struct CatalogoIngredientiView: View {
     @Environment(\.dismiss) private var chiudi
-    @Query(sort: \Ingrediente.nome) private var ingredienti: [Ingrediente]
+    @Environment(\.locale) private var locale
+    @Query(sort: \Ingrediente.nomeEn) private var ingredienti: [Ingrediente]
 
     let giaScelti: Set<String>
     let scelto: (Ingrediente) -> Void
@@ -361,8 +362,9 @@ struct CatalogoIngredientiView: View {
             let q = Corrispondenza.normalizza(ricerca)
             return i.formeRiconoscibili.contains { Corrispondenza.normalizza($0).contains(q) }
         }
-        return Dictionary(grouping: filtrati, by: \.categoria)
-            .map { ($0.key, $0.value.sorted { ($0.esposizioni2020, $1.nome) > ($1.esposizioni2020, $0.nome) }) }
+        return Dictionary(grouping: filtrati, by: { $0.categoria(locale) })
+            .map { ($0.key, $0.value.sorted {
+                ($0.esposizioni2020, $1.nome(locale)) > ($1.esposizioni2020, $0.nome(locale)) }) }
             .sorted { $0.0 < $1.0 }
     }
 
@@ -376,7 +378,7 @@ struct CatalogoIngredientiView: View {
                                 scelto(i); chiudi()
                             } label: {
                                 HStack {
-                                    Text(i.nome)
+                                    Text(i.nome(locale))
                                     Spacer()
                                     if i.esposizioni2020 > 0 {
                                         Text("\(i.esposizioni2020)")
@@ -393,9 +395,9 @@ struct CatalogoIngredientiView: View {
                     }
                 }
             }
-            .searchable(text: $ricerca, prompt: "Cerca un ingrediente")
-            .navigationTitle("Catalogo")
-            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Chiudi") { chiudi() } } }
+            .searchable(text: $ricerca, prompt: "Search an ingredient")
+            .navigationTitle("Catalogue")
+            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Close") { chiudi() } } }
         }
         #if os(macOS)
         .frame(minWidth: 420, minHeight: 520)

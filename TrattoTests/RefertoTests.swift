@@ -41,12 +41,12 @@ struct RefertoTests {
                 let salta = intero(1...100) > 82
                 pastiRiep.append((quando, fascia, !salta))
                 if salta {
-                    pasti.append(.init(quando: quando, fascia: fascia.nome, stato: "digiuno",
+                    pasti.append(.init(quando: quando, fascia: fascia.chiaveNome, stato: "digiuno",
                                        ingredienteId: "", ingredienteNome: "", categoria: "",
                                        quantita: "", testoGrezzo: ""))
                 } else {
                     for (id, nome, cat) in [("riso", "Riso", "Cereali"), ("olio_di_oliva", "Olio d'oliva", "Grassi")] {
-                        pasti.append(.init(quando: quando, fascia: fascia.nome, stato: "registrato",
+                        pasti.append(.init(quando: quando, fascia: fascia.chiaveNome, stato: "registrato",
                                            ingredienteId: id, ingredienteNome: nome, categoria: cat,
                                            quantita: "normale", testoGrezzo: "riso e olio"))
                         vociRiep.append((quando, id, nome, cat))

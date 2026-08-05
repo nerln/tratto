@@ -45,6 +45,9 @@ nonisolated enum Esportazione {
         var giorni: [Giorno]
         var riepilogo: Riepilogo
         var codificheEsterne: Bool
+        /// La lingua con cui è stato prodotto il referto. L'export strutturato
+        /// resta in inglese; il PDF, che lo legge una persona, segue questa.
+        var locale: Locale = Locale(identifier: "en")
     }
 
     /// I formattatori di Foundation non sono condivisibili fra thread, quindi
@@ -150,9 +153,9 @@ nonisolated enum Esportazione {
         let radice: [String: Any] = [
             "applicazione": "Tratto",
             "versioneFormato": 1,
-            "scale": [
-                "forma": Concetto.formaFecale.notaPerIlClinico ?? "",
-                "dolore": Concetto.dolorePeggiore24h.notaPerIlClinico ?? "",
+            "scales": [
+                "form": Concetto.formaFecale.notaPerIlClinico(Locale(identifier: "en")) ?? "",
+                "pain": Concetto.dolorePeggiore24h.notaPerIlClinico(Locale(identifier: "en")) ?? "",
             ],
             "eventi": eventi, "pasti": pasti, "giorni": giorni,
         ]
@@ -167,10 +170,13 @@ nonisolated enum Esportazione {
     /// aggiungono solo se l'utente le ha attivate, perché SNOMED CT non è
     /// libero in Italia.
     static func fhir(_ i: Istantanea) throws -> Data {
+        // L'export strutturato è sempre in inglese: lo legge una macchina, o
+        // un clinico che potrebbe non parlare la lingua di chi l'ha prodotto.
+        let inglese = Locale(identifier: "en")
         func code(_ c: Concetto) -> [String: Any] {
             ["coding": c.codifiche(includiEsterne: i.codificheEsterne).map {
                 ["system": $0.sistema, "code": $0.codice, "display": $0.etichetta]
-            }, "text": c.etichetta]
+            }, "text": c.etichetta(inglese)]
         }
         var voci: [[String: Any]] = []
 
@@ -184,7 +190,7 @@ nonisolated enum Esportazione {
                 "effectiveDateTime": iso.string(from: e.quando),
                 "valueInteger": e.forma,
             ]
-            if let nota = Concetto.formaFecale.notaPerIlClinico {
+            if let nota = Concetto.formaFecale.notaPerIlClinico(Locale(identifier: "en")) {
                 risorsa["note"] = [["text": nota]]
             }
             var componenti: [[String: Any]] = []

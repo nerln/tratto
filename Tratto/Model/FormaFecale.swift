@@ -2,14 +2,14 @@ import Foundation
 
 /// Scala ordinale locale a 7 livelli per la forma delle feci.
 ///
-/// Perche' locale e non una scala nota: la scala clinica a 7 livelli piu' diffusa
-/// e' materiale con copyright, e la titolarita' e' per giunta contesa fra piu'
+/// Perché locale e non una scala nota: la scala clinica a 7 livelli più diffusa
+/// è materiale con copyright, e la titolarità è per giunta contesa fra più
 /// soggetti. Le etichette qui sotto sono scritte ex novo, i disegni sono
 /// vettoriali e propri (vedi `DisegnoForma`), e nell'interfaccia non compare
 /// il nome di nessuno strumento proprietario.
 ///
-/// L'ordinamento 1-7 (da piu' compatta a liquida) e' una descrizione fisica
-/// ovvia, non un'opera: e' cio' che rende il dato comunque leggibile da un
+/// L'ordinamento 1-7 (da più compatta a liquida) è una descrizione fisica
+/// ovvia, non un'opera: è ciò che rende il dato comunque leggibile da un
 /// clinico e mappabile in fase di esportazione.
 nonisolated enum FormaFecale: Int, CaseIterable, Identifiable, Codable, Sendable {
     case pallineDure = 1
@@ -22,29 +22,34 @@ nonisolated enum FormaFecale: Int, CaseIterable, Identifiable, Codable, Sendable
 
     var id: Int { rawValue }
 
-    var etichetta: String {
+    /// La chiave è il testo inglese: è la convenzione dei cataloghi di stringhe
+    /// e rende leggibile il codice senza dover aprire il catalogo.
+    var chiaveEtichetta: String {
         switch self {
-        case .pallineDure: "Palline dure"
-        case .grumosa: "Grumosa"
-        case .conCrepe: "Con crepe"
-        case .liscia: "Liscia"
-        case .pezziMorbidi: "Pezzi morbidi"
-        case .poltiglia: "Poltiglia"
-        case .liquida: "Liquida"
+        case .pallineDure: "Hard pellets"
+        case .grumosa: "Lumpy"
+        case .conCrepe: "Cracked"
+        case .liscia: "Smooth"
+        case .pezziMorbidi: "Soft pieces"
+        case .poltiglia: "Mushy"
+        case .liquida: "Liquid"
         }
     }
 
-    var descrizione: String {
+    var chiaveDescrizione: String {
         switch self {
-        case .pallineDure: "Palline separate e dure, difficili da espellere"
-        case .grumosa: "Un unico pezzo compatto, con la superficie a grumi"
-        case .conCrepe: "Un unico pezzo allungato, con delle crepe sopra"
-        case .liscia: "Un unico pezzo allungato, liscio e morbido"
-        case .pezziMorbidi: "Pezzi morbidi con i bordi ben definiti"
-        case .poltiglia: "Pezzi sfrangiati, consistenza di poltiglia"
-        case .liquida: "Liquida, senza pezzi solidi"
+        case .pallineDure: "Separate hard pellets, hard to pass"
+        case .grumosa: "One compact piece with a lumpy surface"
+        case .conCrepe: "One long piece with cracks on the surface"
+        case .liscia: "One long piece, smooth and soft"
+        case .pezziMorbidi: "Soft pieces with clear-cut edges"
+        case .poltiglia: "Ragged pieces, mushy texture"
+        case .liquida: "Liquid, with no solid pieces"
         }
     }
+
+    func etichetta(_ locale: Locale) -> String { testo(.init(chiaveEtichetta), locale) }
+    func descrizione(_ locale: Locale) -> String { testo(.init(chiaveDescrizione), locale) }
 
     /// Raggruppamento grossolano, usato solo per i colori e per i riepiloghi.
     enum Zona: String, Sendable { case compatta, centrale, molle }
@@ -58,7 +63,7 @@ nonisolated enum FormaFecale: Int, CaseIterable, Identifiable, Codable, Sendable
     }
 
     /// Fuori dall'intervallo centrale. Alimenta l'esito secondario binario
-    /// "giorno anormale", che sopravvive alla compressione della scala perche'
-    /// e' una soglia e non una media.
+    /// "giornata anormale", che sopravvive alla compressione della scala perché
+    /// è una soglia e non una media.
     var anormale: Bool { zona != .centrale }
 }

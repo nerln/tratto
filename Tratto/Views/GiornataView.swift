@@ -6,6 +6,7 @@ import SwiftData
 /// e quello che e' successo dopo.
 struct GiornataView: View {
     @Environment(\.modelContext) private var contesto
+    @Environment(\.locale) private var locale
 
     @Query(sort: \EventoIntestinale.quando, order: .reverse) private var eventi: [EventoIntestinale]
     @Query(sort: \Pasto.quando, order: .reverse) private var pasti: [Pasto]
@@ -43,7 +44,7 @@ struct GiornataView: View {
             .frame(maxWidth: 640)
             .frame(maxWidth: .infinity)
         }
-        .navigationTitle("Giornata")
+        .navigationTitle("Day")
         .sheet(item: $eventoDaModificare) { RegistraEventoView(evento: $0) }
         .sheet(item: $pastoDaModificare) { RegistraPastoView(pastoDaModificare: $0) }
         .sheet(isPresented: $mostraEsito) { EsitoSeraView(giorno: giorno) }
@@ -54,7 +55,7 @@ struct GiornataView: View {
             Button { sposta(-1) } label: { Image(systemName: "chevron.left") }
                 .buttonStyle(.bordered)
             Spacer()
-            DatePicker("", selection: $giorno, displayedComponents: .date)
+            DatePicker("Day", selection: $giorno, displayedComponents: .date)
                 .labelsHidden()
             Spacer()
             Button { sposta(1) } label: { Image(systemName: "chevron.right") }
@@ -65,12 +66,12 @@ struct GiornataView: View {
 
     private var intestazione: some View {
         HStack(spacing: 10) {
-            Pillola(valore: "\(eventiDelGiorno.count)", etichetta: "eventi")
+            Pillola(valore: "\(eventiDelGiorno.count)", etichetta: "events")
             Pillola(valore: "\(Set(pastiDelGiorno.filter(\.risolto).map(\.fascia)).intersection(Fascia.attese).count)/\(Fascia.attese.count)",
-                    etichetta: "fasce")
+                    etichetta: "meals answered")
             Button { mostraEsito = true } label: {
                 Pillola(valore: esitoDelGiorno?.dolorePeggiore.map { "\($0)" } ?? "—",
-                        etichetta: "dolore")
+                        etichetta: "pain")
             }
             .buttonStyle(.plain)
         }
@@ -79,9 +80,9 @@ struct GiornataView: View {
     private var vuoto: some View {
         VStack(spacing: 8) {
             Image(systemName: "tray").font(.largeTitle).foregroundStyle(.secondary)
-            Text("Nessuna registrazione in questo giorno.")
+            Text("Nothing recorded on this day.")
                 .foregroundStyle(.secondary)
-            Text("Un giorno senza niente resta un giorno senza niente: non viene contato come osservato.")
+            Text("A day with nothing in it stays a day with nothing in it: it does not count as observed.")
                 .font(.caption).foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
         }
@@ -150,13 +151,13 @@ struct GiornataView: View {
         for e in eventiDelGiorno {
             let forma = FormaFecale(rawValue: e.forma)
             var dettagli: [String] = []
-            if let u = e.urgenza { dettagli.append("urgenza \(u)") }
-            if let d = e.dolore { dettagli.append("dolore \(d)") }
-            if e.sangue { dettagli.append("sangue") }
+            if let u = e.urgenza { dettagli.append(String(localized: "urgency \(u)", locale: locale)) }
+            if let d = e.dolore { dettagli.append(String(localized: "pain \(d)", locale: locale)) }
+            if e.sangue { dettagli.append(String(localized: "blood", locale: locale)) }
             if !e.note.isEmpty { dettagli.append(e.note) }
             v.append(Voce(chiave: "e\(e.identificativo)", quando: e.quando,
                           ora: e.quando.formatted(f),
-                          titolo: forma?.etichetta ?? "Evento",
+                          titolo: forma?.etichetta(locale) ?? "",
                           sottotitolo: dettagli.joined(separator: " · "),
                           forma: forma, simbolo: "toilet",
                           apri: { eventoDaModificare = e }))
@@ -165,11 +166,11 @@ struct GiornataView: View {
             let titolo: String
             var sotto: String?
             switch p.stato {
-            case .digiuno: titolo = "\(p.fascia.nome): niente"
-            case .nonRicordato: titolo = "\(p.fascia.nome): non ricordato"
+            case .digiuno, .nonRicordato:
+                titolo = "\(p.fascia.nome(locale)): \(p.stato.nome(locale).lowercased())"
             case .registrato:
-                titolo = p.fascia.nome
-                let nomi = p.vociOrdinate.compactMap { $0.ingrediente?.nome }
+                titolo = p.fascia.nome(locale)
+                let nomi = p.vociOrdinate.compactMap { $0.ingrediente?.nome(locale) }
                 sotto = nomi.isEmpty ? p.testoGrezzo : nomi.joined(separator: ", ")
             }
             v.append(Voce(chiave: "p\(p.identificativo)", quando: p.quando,

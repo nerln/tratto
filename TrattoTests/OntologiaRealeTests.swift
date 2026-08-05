@@ -20,8 +20,9 @@ struct OntologiaRealeTests {
 
     private func motore(_ seed: SeedOntologia) -> Corrispondenza {
         let voci = seed.ingredienti
-            .map { Corrispondenza.Voce(identificativo: $0.id, nome: $0.nome,
-                                       forme: [$0.nome, $0.id] + $0.sinonimi + $0.terminiLegacy2020) }
+            .map { Corrispondenza.Voce(identificativo: $0.id, nome: $0.nomeEn,
+                                       forme: [$0.nomeIt, $0.nomeEn, $0.id]
+                                              + $0.sinonimi + $0.terminiLegacy2020) }
             .sorted { ($0.forme.map(\.count).max() ?? 0) > ($1.forme.map(\.count).max() ?? 0) }
         return Corrispondenza(voci: voci)
     }
@@ -30,7 +31,12 @@ struct OntologiaRealeTests {
     func caricamento() throws {
         let seed = try #require(Self.seed, "seed-ontologia.json non trovato nel bundle")
         #expect(seed.ingredienti.count > 120)
-        #expect(seed.ingredienti.allSatisfy { !$0.id.isEmpty && !$0.nome.isEmpty && !$0.categoria.isEmpty })
+        #expect(seed.ingredienti.allSatisfy {
+            !$0.id.isEmpty && !$0.nomeIt.isEmpty && !$0.nomeEn.isEmpty
+            && !$0.categoriaIt.isEmpty && !$0.categoriaEn.isEmpty })
+        // i nomi inglesi devono essere distinti fra loro, altrimenti il
+        // catalogo mostra due voci identiche
+        #expect(Set(seed.ingredienti.map(\.nomeEn)).count == seed.ingredienti.count)
         // gli identificativi devono essere unici, altrimenti l'indice perde voci
         #expect(Set(seed.ingredienti.map(\.id)).count == seed.ingredienti.count)
     }
@@ -86,6 +92,24 @@ struct OntologiaRealeTests {
              ["salsiccia", "zucchina", "cipolla"]),
             ("pane di semola con il prosciutto crudo",
              ["pane_di_semola", "prosciutto_crudo"]),
+        ]
+        for (frase, attesi) in casi {
+            let trovati = Set(m.analizza(frase).riconosciuti.map(\.identificativo))
+            #expect(trovati.isSuperset(of: attesi),
+                    "«\(frase)» → \(trovati.sorted()), mancano \(attesi.subtracting(trovati).sorted())")
+        }
+    }
+
+    @Test("le stesse frasi funzionano anche in inglese")
+    func frasiInglesi() throws {
+        let seed = try #require(Self.seed)
+        let m = motore(seed)
+        let casi: [(String, Set<String>)] = [
+            ("rice with a drizzle of olive oil", ["riso", "olio_di_oliva"]),
+            ("wholewheat pasta with tomato and parmesan",
+             ["pasta_integrale", "pomodoro", "parmigiano"]),
+            ("an apple and two rice cakes", ["mela", "galletta_di_riso"]),
+            ("sausage with courgette and onion", ["salsiccia", "zucchina", "cipolla"]),
         ]
         for (frase, attesi) in casi {
             let trovati = Set(m.analizza(frase).riconosciuti.map(\.identificativo))

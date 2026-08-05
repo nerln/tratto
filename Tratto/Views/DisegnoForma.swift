@@ -129,6 +129,7 @@ struct DisegnoForma: View {
 /// La striscia di scelta: e' il secondo dei tre tocchi necessari a registrare
 /// un evento, quindi non ha titoli, spiegazioni o conferme.
 struct StrisciaForme: View {
+    @Environment(\.locale) private var locale
     @Binding var scelta: FormaFecale?
     var compatta: Bool = false
 
@@ -145,10 +146,10 @@ struct StrisciaForme: View {
                         DisegnoForma(forma: forma, altezza: compatta ? 26 : 34)
                             .frame(width: compatta ? 66 : 88)
                         VStack(alignment: .leading, spacing: 1) {
-                            Text(forma.etichetta)
+                            Text(LocalizedStringKey(forma.chiaveEtichetta))
                                 .font(compatta ? .subheadline : .headline)
                             if !compatta {
-                                Text(forma.descrizione)
+                                Text(LocalizedStringKey(forma.chiaveDescrizione))
                                     .font(.caption)
                                     .foregroundStyle(.secondary)
                                     .fixedSize(horizontal: false, vertical: true)
@@ -173,7 +174,7 @@ struct StrisciaForme: View {
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
-                .accessibilityLabel(Text("\(forma.etichetta). \(forma.descrizione)"))
+                .accessibilityLabel(Text(verbatim: "\(forma.etichetta(locale)). \(forma.descrizione(locale))"))
                 .accessibilityAddTraits(scelta == forma ? [.isSelected, .isButton] : .isButton)
             }
         }

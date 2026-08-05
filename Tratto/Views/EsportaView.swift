@@ -3,6 +3,7 @@ import SwiftData
 
 struct EsportaView: View {
     @Environment(\.modelContext) private var contesto
+    @Environment(\.locale) private var locale
 
     @Query private var eventi: [EventoIntestinale]
     @Query private var pasti: [Pasto]
@@ -17,30 +18,19 @@ struct EsportaView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Sezione("Che cosa produce") {
-                    Voce("Referto PDF", "Una pagina sola: periodo coperto, quante evacuazioni, "
-                         + "come si distribuiscono le forme, l'andamento del dolore, e la nota "
-                         + "che dice quale scala è stata usata. Nessuna conclusione: è il documento "
-                         + "da portare a una visita.")
-                    Voce("Tre CSV", "Eventi, pasti espansi una riga per ingrediente, e un file "
-                         + "giornaliero con esiti, contesto e copertura. È la strada verso R.")
-                    Voce("JSON", "Tutto, per il backup e per passare i dati fra Mac e telefono "
-                         + "come file: non c'è nessuna sincronizzazione automatica.")
-                    Voce("FHIR", "Un bundle con una osservazione per evento. Ogni codice porta "
-                         + "sempre la codifica locale.")
+                Sezione("What it produces") {
+                    Voce("PDF report", "One page: period covered, how many bowel movements, how the forms are distributed, how pain went, and the note that says which scale was used. No conclusions: this is the document to bring to an appointment.")
+                    Voce("Three CSV files", "Events, meals expanded one row per ingredient, and a daily file with outcomes, context and coverage. This is the road to R.")
+                    Voce("JSON", "Everything, for backup and for moving data between Mac and phone as a file: there is no automatic sync.")
+                    Voce("FHIR", "A bundle with one observation per event. Every code always carries the local coding.")
                 }
 
                 if let i = impostazioni.first {
-                    Sezione("Codifiche esterne") {
-                        Toggle("Aggiungi SNOMED CT e LOINC all'export",
+                    Sezione("External codings") {
+                        Toggle("Add SNOMED CT and LOINC to the export",
                                isOn: Binding(get: { i.codificheEsterneNellExport },
                                              set: { i.codificheEsterneNellExport = $0; try? contesto.save() }))
-                        Text("Spento di default. La forma delle feci ha un concetto SNOMED CT ma "
-                             + "nessun codice LOINC (l'unico «Bristol» presente in LOINC è una marca "
-                             + "di sigarette); il dolore da 0 a 10 ha invece un codice LOINC pubblico. "
-                             + "SNOMED CT però non è libero in Italia, che non è fra i paesi membri: "
-                             + "per questo la codifica locale c'è sempre e quelle esterne si aggiungono "
-                             + "solo se le vuoi.")
+                        Text("Off by default. Stool form has a SNOMED CT concept but no LOINC code at all (the only «Bristol» in LOINC is a cigarette brand); pain from 0 to 10 does have a public LOINC code. SNOMED CT, however, is not free in Italy, which is not a member country: this is why the local coding is always there and the external ones are added only if you want them.")
                             .font(.caption).foregroundStyle(.secondary)
                     }
                 }
@@ -48,7 +38,7 @@ struct EsportaView: View {
                 Button {
                     Task { await genera() }
                 } label: {
-                    Label(inCorso ? "Genero…" : "Genera i file", systemImage: "square.and.arrow.up")
+                    Label(inCorso ? "Generating…" : "Generate the files", systemImage: "square.and.arrow.up")
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
@@ -56,7 +46,7 @@ struct EsportaView: View {
                 .disabled(inCorso)
 
                 if !generati.isEmpty {
-                    Sezione("File pronti") {
+                    Sezione("Files ready") {
                         ForEach(generati, id: \.self) { url in
                             HStack {
                                 Image(systemName: simbolo(url))
@@ -65,12 +55,12 @@ struct EsportaView: View {
                                 ShareLink(item: url) { Image(systemName: "square.and.arrow.up") }
                             }
                         }
-                        Text("Sono nella cartella temporanea dell'app: condividili o salvali dove vuoi.")
+                        Text("They are in the app's temporary folder: share them or save them wherever you like.")
                             .font(.caption).foregroundStyle(.secondary)
                     }
                 }
 
-                if let e = errore { Nota(colore: .red, testo: e) }
+                if let e = errore { Nota(colore: .red, testo: Text(verbatim: e)) }
 
                 Text(Testi.disclaimerEsteso).font(.caption2).foregroundStyle(.secondary)
             }
@@ -78,10 +68,10 @@ struct EsportaView: View {
             .frame(maxWidth: 700)
             .frame(maxWidth: .infinity)
         }
-        .navigationTitle("Esporta")
+        .navigationTitle("Export")
     }
 
-    private func Voce(_ titolo: String, _ testo: String) -> some View {
+    private func Voce(_ titolo: LocalizedStringKey, _ testo: LocalizedStringKey) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(titolo).font(.callout.weight(.semibold))
             Text(testo).font(.caption).foregroundStyle(.secondary)
@@ -105,7 +95,7 @@ struct EsportaView: View {
             vociPasto: pasti.flatMap { p in
                 p.vociOrdinate.compactMap { v in
                     guard let i = v.ingrediente else { return nil }
-                    return (p.quando, i.identificativo, i.nome, i.categoria)
+                    return (p.quando, i.identificativo, i.nome(locale), i.categoria(locale))
                 }
             },
             esiti: esiti.map { ($0.giorno, $0.dolorePeggiore) }))
@@ -113,16 +103,16 @@ struct EsportaView: View {
         var vociPasto: [Esportazione.Istantanea.VocePasto] = []
         for p in pasti {
             if p.stato != .registrato || (p.voci ?? []).isEmpty {
-                vociPasto.append(.init(quando: p.quando, fascia: p.fascia.nome,
+                vociPasto.append(.init(quando: p.quando, fascia: p.fascia.chiaveNome,
                                        stato: p.stato.rawValue, ingredienteId: "",
                                        ingredienteNome: "", categoria: "", quantita: "",
                                        testoGrezzo: p.testoGrezzo))
             } else {
                 for v in p.vociOrdinate {
                     guard let i = v.ingrediente else { continue }
-                    vociPasto.append(.init(quando: p.quando, fascia: p.fascia.nome,
+                    vociPasto.append(.init(quando: p.quando, fascia: p.fascia.chiaveNome,
                                            stato: p.stato.rawValue, ingredienteId: i.identificativo,
-                                           ingredienteNome: i.nome, categoria: i.categoria,
+                                           ingredienteNome: i.nomeEn, categoria: i.categoriaEn,
                                            quantita: v.quantita.rawValue, testoGrezzo: p.testoGrezzo))
                 }
             }
@@ -151,7 +141,8 @@ struct EsportaView: View {
             eventi: eventi.map { .init(quando: $0.quando, forma: $0.forma, urgenza: $0.urgenza,
                                        dolore: $0.dolore, sangue: $0.sangue, note: $0.note) },
             pasti: vociPasto, giorni: giorni, riepilogo: riepilogo,
-            codificheEsterne: impostazioni.first?.codificheEsterneNellExport ?? false)
+            codificheEsterne: impostazioni.first?.codificheEsterneNellExport ?? false,
+            locale: locale)
     }
 
     @MainActor
@@ -180,7 +171,7 @@ struct EsportaView: View {
             try scrivi("tratto-fhir.json", Esportazione.fhir(dati))
             generati = prodotti
         } catch {
-            errore = "Non sono riuscito a scrivere i file: \(error.localizedDescription)"
+            errore = String(localized: "Could not write the files: \(error.localizedDescription)", locale: locale)
         }
     }
 }
@@ -194,7 +185,8 @@ enum Referto {
 
     @MainActor
     static func pdf(_ dati: Esportazione.Istantanea) -> Data? {
-        let renderizzatore = ImageRenderer(content: RefertoView(dati: dati))
+        let renderizzatore = ImageRenderer(content:
+            RefertoView(dati: dati).environment(\.locale, dati.locale))
         renderizzatore.proposedSize = ProposedViewSize(width: 595, height: 842) // A4 a 72 dpi
         var risultato: Data?
         let mutabile = NSMutableData()
@@ -217,69 +209,72 @@ struct RefertoView: View {
     let dati: Esportazione.Istantanea
 
     private var r: Riepilogo { dati.riepilogo }
+    private var locale: Locale { dati.locale }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             VStack(alignment: .leading, spacing: 2) {
-                Text("Diario intestinale e alimentare").font(.title2.weight(.semibold))
+                Text("Bowel and food diary").font(.title2.weight(.semibold))
                 if let p = r.periodo {
-                    Text("Periodo osservato: dal \(p.inizio.formatted(date: .numeric, time: .omitted)) "
-                         + "al \(p.fine.formatted(date: .numeric, time: .omitted))")
+                    Text("Period observed: \(p.inizio.formatted(date: .numeric, time: .omitted)) to \(p.fine.formatted(date: .numeric, time: .omitted))")
                         .font(.footnote)
                 }
-                Text("Prodotto da Tratto, diario compilato dal paziente. Dati non verificati da terzi.")
+                Text("Produced by Tratto, a diary kept by the patient. Data not verified by a third party.")
                     .font(.caption2).foregroundStyle(.secondary)
             }
 
             Divider()
 
             griglia([
-                ("Giorni con registrazioni", "\(r.giornate.filter { $0.eventi > 0 || $0.fasceRisolte > 0 }.count)"),
-                ("Giorni completi", "\(r.giorniCompletiTotali)"),
-                ("Evacuazioni totali", "\(r.eventiTotali)"),
-                ("Evacuazioni al giorno (media)", r.evacuazioniPerGiorno.media.map { Formati.decimale($0) } ?? "—"),
+                (Text("Days with entries"), "\(r.giornate.filter { $0.eventi > 0 || $0.fasceRisolte > 0 }.count)"),
+                (Text("Complete days"), "\(r.giorniCompletiTotali)"),
+                (Text("Total bowel movements"), "\(r.eventiTotali)"),
+                (Text("Bowel movements per day (mean)"),
+                 r.evacuazioniPerGiorno.media.map { Formati.decimale($0) } ?? "—"),
             ])
 
-            blocco("Distribuzione della forma delle feci") {
+            blocco("Distribution of stool form") {
                 ForEach(FormaFecale.allCases) { f in
                     let n = r.distribuzioneForme[f.rawValue] ?? 0
                     let tot = max(1, r.eventiTotali)
                     HStack(spacing: 8) {
-                        Text("\(f.rawValue)").font(.caption.monospacedDigit()).frame(width: 12)
-                        Text(f.etichetta).font(.caption).frame(width: 110, alignment: .leading)
+                        Text(verbatim: "\(f.rawValue)").font(.caption.monospacedDigit()).frame(width: 12)
+                        Text(verbatim: f.etichetta(locale)).font(.caption)
+                            .frame(width: 116, alignment: .leading)
                         GeometryReader { geo in
                             RoundedRectangle(cornerRadius: 2)
                                 .fill(Color.gray.opacity(0.75))
                                 .frame(width: geo.size.width * CGFloat(n) / CGFloat(tot))
                         }
                         .frame(height: 9)
-                        Text("\(n)").font(.caption.monospacedDigit()).frame(width: 26, alignment: .trailing)
+                        Text(verbatim: "\(n)").font(.caption.monospacedDigit())
+                            .frame(width: 26, alignment: .trailing)
                     }
                 }
                 let (a, o) = r.giorniAnormaliSuOsservati
                 if o > 0 {
-                    Text("Giornate con almeno un'evacuazione fuori dall'intervallo centrale (1-2 o 6-7): \(a) su \(o).")
+                    Text("Days with at least one bowel movement outside the middle range (1-2 or 6-7): \(a) of \(o).")
                         .font(.caption).padding(.top, 2)
                 }
             }
 
-            blocco("Dolore addominale, peggiore nelle ultime 24 ore (0-10)") {
+            blocco("Abdominal pain, worst in the last 24 hours (0-10)") {
                 griglia([
-                    ("Giorni con la voce compilata", "\(r.dolore.osservazioni)"),
-                    ("Mediana", r.dolore.mediana.map { Formati.decimale($0) } ?? "—"),
-                    ("Minimo e massimo",
-                     (r.dolore.minimo.map { Formati.decimale($0, cifre: 0) } ?? "—") + " – "
+                    (Text("Days with the entry filled in"), "\(r.dolore.osservazioni)"),
+                    (Text("Median"), r.dolore.mediana.map { Formati.decimale($0) } ?? "—"),
+                    (Text("Minimum and maximum"),
+                     (r.dolore.minimo.map { Formati.decimale($0, cifre: 0) } ?? "—") + " / "
                      + (r.dolore.massimo.map { Formati.decimale($0, cifre: 0) } ?? "—")),
-                    ("Oscillazione tipica (DS)", r.dolore.deviazioneStandard.map { Formati.decimale($0) } ?? "—"),
+                    (Text("Typical swing (SD)"),
+                     r.dolore.deviazioneStandard.map { Formati.decimale($0) } ?? "—"),
                 ])
             }
 
-            blocco("Completezza del diario alimentare") {
-                Text("Copertura media delle fasce attese (colazione, pranzo, cena) negli ultimi 7 giorni: "
-                     + "\(Int((r.finestra7.frazioneMedia * 100).rounded()))%.")
+            blocco("Completeness of the food diary") {
+                Text("Mean coverage of the expected slots (breakfast, lunch, dinner) over the last 7 days: \(Formati.percentuale(r.finestra7.frazioneMedia)).")
                     .font(.caption)
                 if !r.finestra7.analizzabile {
-                    Text("Sotto il 70% l'alimentazione della maggior parte delle giornate non è nota.")
+                    Text("Below 70%, what was eaten on most days is not known.")
                         .font(.caption).foregroundStyle(.secondary)
                 }
             }
@@ -288,15 +283,13 @@ struct RefertoView: View {
 
             Divider()
             VStack(alignment: .leading, spacing: 4) {
-                Text("Nota sulle scale").font(.caption.weight(.semibold))
-                if let n = Concetto.formaFecale.notaPerIlClinico {
-                    Text(n).font(.caption2).foregroundStyle(.secondary)
+                Text("Note on the scales").font(.caption.weight(.semibold))
+                if let n = Concetto.formaFecale.notaPerIlClinico(locale) {
+                    Text(verbatim: n).font(.caption2).foregroundStyle(.secondary)
                 }
-                Text("Il dolore è raccolto su scala numerica 0-10 auto-riferita, una volta al giorno.")
+                Text("Pain is collected on a self-reported 0-10 numeric scale, once a day.")
                     .font(.caption2).foregroundStyle(.secondary)
-                Text("Questo documento riporta soltanto quello che è stato registrato. Non contiene "
-                     + "correlazioni fra alimenti e sintomi, non formula ipotesi diagnostiche e non "
-                     + "è prodotto da un dispositivo medico.")
+                Text("This document reports only what was recorded. It contains no correlations between foods and symptoms, makes no diagnostic hypotheses, and is not produced by a medical device.")
                     .font(.caption2).foregroundStyle(.secondary)
             }
         }
@@ -306,19 +299,19 @@ struct RefertoView: View {
         .environment(\.colorScheme, .light)
     }
 
-    private func griglia(_ voci: [(String, String)]) -> some View {
+    private func griglia(_ voci: [(Text, String)]) -> some View {
         VStack(spacing: 3) {
-            ForEach(voci, id: \.0) { k, v in
+            ForEach(Array(voci.enumerated()), id: \.offset) { _, voce in
                 HStack {
-                    Text(k).font(.caption)
+                    voce.0.font(.caption)
                     Spacer()
-                    Text(v).font(.caption.monospacedDigit().weight(.medium))
+                    Text(verbatim: voce.1).font(.caption.monospacedDigit().weight(.medium))
                 }
             }
         }
     }
 
-    private func blocco<C: View>(_ titolo: String, @ViewBuilder contenuto: () -> C) -> some View {
+    private func blocco<C: View>(_ titolo: LocalizedStringKey, @ViewBuilder contenuto: () -> C) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(titolo).font(.footnote.weight(.semibold))
             contenuto()

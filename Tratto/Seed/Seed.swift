@@ -6,8 +6,10 @@ import SwiftData
 struct SeedOntologia: Decodable, Sendable {
     struct Voce: Decodable, Sendable {
         var id: String
-        var nome: String
-        var categoria: String
+        var nomeIt: String
+        var nomeEn: String
+        var categoriaIt: String
+        var categoriaEn: String
         var gruppi: [String]
         var sinonimi: [String]
         var terminiLegacy2020: [String]
@@ -28,9 +30,12 @@ struct SeedOntologia: Decodable, Sendable {
 // MARK: - Archivio 2020, sola lettura
 
 /// Il diario del 2020 non entra nel database dell'app e non ha nessuna
-/// relazione con le entita' nuove. Vive qui, in strutture immutabili caricate
-/// dal bundle, cosi' la sola lettura e' garantita dal tipo e non dalla
+/// relazione con le entità nuove. Vive qui, in strutture immutabili caricate
+/// dal bundle, così la sola lettura è garantita dal tipo e non dalla
 /// disciplina di chi scrive il codice.
+///
+/// Il file contiene solo numeri e date: la prosa che li accompagna sta nelle
+/// stringhe localizzate, perché deve poter cambiare lingua.
 struct Archivio2020: Decodable, Sendable {
     struct Pasto: Decodable, Sendable, Identifiable {
         var giorno: String
@@ -64,25 +69,29 @@ struct Archivio2020: Decodable, Sendable {
         var conteggio: Int
         var id: String { tipo }
 
-        var descrizione: String {
+        var chiaveDescrizione: String {
             switch tipo {
-            case "missing_type": "alimenti senza categoria"
-            case "missing_value": "valori mancanti negli eventi"
-            case "empty_event": "righe di evento vuote, scartate"
-            case "dup": "voci duplicate in anagrafica"
+            case "missing_type": "foods with no category"
+            case "missing_value": "missing values in events"
+            case "empty_event": "empty event rows, discarded"
+            case "dup": "duplicate entries in the lists"
             case "orphan_cond", "orphan_food", "orphan_group", "orphan_course":
-                "riferimenti a voci inesistenti"
-            case "bad_date": "date non interpretabili"
-            case "bad_num": "valori non numerici"
+                "references to entries that do not exist"
+            case "bad_date": "dates that could not be read"
+            case "bad_num": "non-numeric values"
             default: tipo
             }
         }
     }
 
+    struct VoceFascia: Identifiable, Sendable {
+        var chiave: String
+        var etichetta: String
+        var conteggio: Int
+        var id: String { chiave }
+    }
+
     var versione: Int
-    var titolo: String
-    var sottotitolo: String
-    var avviso: String
     var periodo: Periodo
     var conteggi: Conteggi
     var qualita: [Qualita]
@@ -108,12 +117,21 @@ struct Archivio2020: Decodable, Sendable {
         return d
     }
 
-    var pastiPerFascia: [(String, Int)] {
-        let ordine = ["Colazione", "Spuntino_mattina", "Pranzo",
-                      "Spuntino_pomeriggio", "Cena", "Spuntino_cena"]
-        var d: [String: Int] = [:]
-        for p in pasti { d[p.fascia, default: 0] += 1 }
-        return ordine.compactMap { f in d[f].map { (f.replacingOccurrences(of: "_", with: " "), $0) } }
+    /// Le fasce del 2020 avevano nomi italiani nel foglio di calcolo. Qui si
+    /// mappano sulle fasce di oggi, così l'etichetta segue la lingua scelta.
+    @MainActor
+    var pastiPerFascia: [VoceFascia] {
+        let mappa: [String: Fascia] = [
+            "Colazione": .colazione, "Spuntino_mattina": .spuntinoMattina,
+            "Pranzo": .pranzo, "Spuntino_pomeriggio": .merenda,
+            "Cena": .cena, "Spuntino_cena": .spuntinoSera,
+        ]
+        var conteggi: [Fascia: Int] = [:]
+        for p in pasti { if let f = mappa[p.fascia] { conteggi[f, default: 0] += 1 } }
+        let locale = LinguaCorrente.locale
+        return Fascia.allCases.compactMap { f in
+            conteggi[f].map { VoceFascia(chiave: f.rawValue, etichetta: f.nome(locale), conteggio: $0) }
+        }
     }
 }
 
@@ -123,28 +141,32 @@ struct Archivio2020: Decodable, Sendable {
 enum Avvio {
 
     /// Popola l'ontologia al primo avvio e la aggiorna se il file del bundle
-    /// e' piu' recente. Non tocca mai le voci create dall'utente.
+    /// è più recente. Non tocca mai le voci create dall'utente.
     static func preparaSeServe(contesto: ModelContext) throws {
         let impostazioni = try impostazioniCorrenti(contesto: contesto)
         guard let seed = SeedOntologia.daBundle() else { return }
         guard impostazioni.versioneSeed < seed.versione else { return }
 
         let esistenti = try contesto.fetch(FetchDescriptor<Ingrediente>())
-        var perId = Dictionary(uniqueKeysWithValues: esistenti.map { ($0.identificativo, $0) })
+        var perId = Dictionary(esistenti.map { ($0.identificativo, $0) }, uniquingKeysWith: { a, _ in a })
 
         for voce in seed.ingredienti {
             if let g = perId[voce.id] {
                 guard !g.creatoDallUtente else { continue }
-                g.nome = voce.nome
-                g.categoria = voce.categoria
+                g.nomeIt = voce.nomeIt
+                g.nomeEn = voce.nomeEn
+                g.categoriaIt = voce.categoriaIt
+                g.categoriaEn = voce.categoriaEn
                 g.gruppi = voce.gruppi
                 g.sinonimi = voce.sinonimi
                 g.terminiLegacy = voce.terminiLegacy2020
                 g.esposizioni2020 = voce.esposizioni2020
             } else {
-                let nuovo = Ingrediente(identificativo: voce.id, nome: voce.nome,
-                                        categoria: voce.categoria, gruppi: voce.gruppi,
-                                        sinonimi: voce.sinonimi,
+                let nuovo = Ingrediente(identificativo: voce.id,
+                                        nomeIt: voce.nomeIt, nomeEn: voce.nomeEn,
+                                        categoriaIt: voce.categoriaIt,
+                                        categoriaEn: voce.categoriaEn,
+                                        gruppi: voce.gruppi, sinonimi: voce.sinonimi,
                                         terminiLegacy: voce.terminiLegacy2020,
                                         esposizioni2020: voce.esposizioni2020)
                 contesto.insert(nuovo)

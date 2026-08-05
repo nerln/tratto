@@ -5,8 +5,33 @@ progetto [Progetto-fondamenti-Nerelli](https://github.com/nerln/Progetto-fondame
 il diario che correlava cibo e funzione intestinale, tenuto dal 2 maggio all'8
 luglio 2020 per l'esame di Fondamenti di Data Science.
 
-L'app fa una cosa sola e la fa per intero: **registra**. Non mette in relazione
-gli alimenti con i sintomi, e non lo farà.
+Interfaccia in inglese, con l'italiano selezionabile dalle impostazioni e senza
+riavviare l'app.
+
+La fase 1 fa una cosa sola e la fa per intero: **registra**. Non mette in
+relazione gli alimenti con i sintomi, e non lo farà. La fase 2 aggiunge l'unica
+cosa che quella relazione la può davvero produrre: un **confronto programmato**,
+con il piano congelato prima di iniziare.
+
+## A chi serve
+
+La domanda con cui il progetto è nato, «quali cibi mi fanno male», è quella a
+cui un diario personale quasi mai riesce a rispondere. Le ragioni per tenerlo
+comunque sono altre, e sono quelle per cui un diario intestinale viene chiesto
+davvero:
+
+- prima di una visita gastroenterologica, dove serve quello che è successo e non
+  quello che si ricorda;
+- dentro un percorso di eliminazione e reintroduzione seguito da un dietista,
+  dove il diario è il registro del protocollo;
+- quando il colpevole è già noto, per esempio una celiachia, e conta l'aderenza;
+- prima e dopo una terapia, dove interessa il cambiamento e non la causa.
+
+In tutti questi casi una registrazione fedele è tutto il lavoro. Il valore non è
+l'inferenza: è che il dato porta un orario vero invece di essere ricostruito la
+sera prima. Su questo la letteratura è netta: con il diario cartaceo l'aderenza
+dichiarata è del 90% e quella reale dell'11%, contro il 94% del diario
+elettronico (Stone 2002).
 
 ---
 
@@ -94,19 +119,96 @@ utilizzabile per le sette classi: il migliore risultato in letteratura è 81,7%
 di accuratezza bilanciata con telecamera fissa, l'unico modello scaricabile è
 binario e senza dataset documentato.
 
+## La fase 2: confronti programmati
+
+L'osservazione passiva non produce quello che servirebbe. Nel 2020 solo 19
+ingredienti su 142 arrivavano a dieci esposizioni, e quelle esposizioni erano
+quando capitava, insieme ad altri cibi, senza dose. Un confronto programmato
+forza l'esposizione a un bersaglio scelto, in blocchi alternati.
+
+**La struttura viene da protocolli pubblicati e citabili** (Whelan 2018;
+Lomer 2023, CC BY): un bersaglio per volta, blocchi consecutivi, una pausa fra
+l'uno e l'altro, nessuna reintroduzione stabile finché tutti i confronti non
+sono chiusi.
+
+**Le durate no.** In clinica il blocco è di 3 giorni; qui è più lungo, per due
+ragioni indipendenti. L'autocorrelazione di questa persona è +0,51 a un giorno,
++0,16 a tre e +0,05 a quattro, quindi una pausa di 3 giorni lascia dentro l'eco
+del blocco precedente. E nel challenge in cieco pubblicato i sintomi da lattosio
+compaiono al terzo giorno, quindi un blocco di 3 giorni è troncato prima di
+poterli vedere.
+
+**Il numero che l'app mostra prima di lasciarti iniziare non è l'effetto minimo:
+è la potenza.** Con sei coppie e ipotesi bilaterale il test richiede l'unanimità,
+quindi la potenza è p⁶. Anche se il bersaglio peggiorasse davvero i sintomi in
+otto coppie su dieci, la probabilità di arrivare a un risultato significativo è
+del **26%**. Con cinque coppie o meno nessun risultato può essere significativo,
+qualunque cosa succeda, e l'app lo dice invece di lasciartelo scoprire dopo due
+mesi. Nove coppie sono la prima dimensione che tollera una sola discordanza.
+
+**Il piano si congela.** Ipotesi, esito, regola di decisione e sequenza dei
+blocchi entrano in un testo canonico di cui si calcola uno SHA-256. Se qualcosa
+cambia dopo, l'analisi si rifiuta di girare. È l'unico modo per rendere
+credibile una preregistrazione fatta da chi è insieme sperimentatore e soggetto.
+
+**Non c'è un placebo, e viene detto.** Gli alimenti interi non si possono
+accecare. Il blocco di confronto usa un ingrediente che non si sospetta: non
+elimina l'aspettativa, le dà qualcosa contro cui essere misurata. Il motivo per
+cui serve è un numero: nel challenge in cieco di Van den Houte il **glucosio di
+controllo ha «scatenato» sintomi nel 26%** dei pazienti, più del sorbitolo.
+
+**La statistica è esatta, non approssimata.** Test dei segni sulla binomiale e
+Wilcoxon dei ranghi con segno, con la distribuzione nulla costruita per
+permutazione dei segni sui ranghi *osservati*. Con gli ex aequo e con la
+convenzione di Pratt questo non coincide con la tavola classica, e la tavola
+sbaglia: `scipy.stats.wilcoxon(mode="exact")` usa la tavola e su quei casi dà un
+valore diverso. L'oracolo dei test è l'enumerazione di tutti i 2ⁿ assegnamenti
+di segno.
+
+**I pareggi sono il problema numero uno.** Ogni differenza nulla toglie una
+coppia: sei coppie con due pareggi diventano quattro, e il p minimo sale a
+0,125. L'esperimento è morto prima di cominciare, e l'app mostra quel numero.
+
+L'intervallo di Hodges-Lehmann viene mostrato con il livello di confidenza
+**effettivo**: a sei coppie il 95% non esiste, esistono il 96,875% e il 93,75%.
+
+## Lingua
+
+L'app nasce in inglese; l'italiano è una traduzione completa (319 stringhe) che
+si attiva dalle impostazioni senza riavviare. Il meccanismo è stato verificato
+invece che assunto:
+
+| meccanismo | cambia la lingua delle stringhe? |
+|---|---|
+| `.environment(\.locale)` in SwiftUI | **sì** |
+| `String(localized:locale:)` | **no**, restituisce sempre quella del bundle |
+| `LocalizedStringResource(_, locale:)` | **sì** |
+
+Quindi le viste passano dall'ambiente e tutto il resto (referto, export, modelli)
+da `LocalizedStringResource`. Le chiavi risolte a runtime, come le etichette
+degli enum, non vengono estratte da Xcode e sono dichiarate a mano nel catalogo:
+un test di regressione legge i `.strings` **compilati** nei due `lproj` e fallisce
+se una chiave inglese non ha la sua traduzione, se un segnaposto è cambiato di
+numero o di ordine, o se una stringa italiana è rimasta identica all'inglese.
+
+L'export strutturato (CSV, JSON, FHIR) resta sempre in inglese: lo legge una
+macchina, o un clinico che potrebbe non parlare la lingua di chi l'ha prodotto.
+Il referto PDF invece segue la lingua scelta, perché lo legge una persona.
+
 ## Struttura
 
 ```
 Tratto/
   App/        avvio, navigazione, notifiche, imbragatura di anteprima (solo DEBUG)
   Model/      entità SwiftData, scala della forma, codifiche
-  Analisi/    statistica descrittiva, copertura, riepilogo   ← nessun test di ipotesi, per scelta
+  Analisi/    statistica descrittiva, copertura, riepilogo, test esatti, motore dei confronti
   Parsing/    riconoscimento deterministico + suggeritore on-device
   Export/     CSV, JSON, FHIR
   Views/      schermate, disegni della scala, referto PDF
-  Resources/  seed-ontologia.json (142 voci), archivio-2020.json (sola lettura)
-TrattoTests/  71 prove
-Strumenti/    etl.py, ontologia.py, varianza.py — il recupero dei dati del 2020
+  Resources/  seed-ontologia.json (142 voci, bilingue), archivio-2020.json (sola lettura),
+              Localizable.xcstrings (319 chiavi)
+TrattoTests/  119 prove
+Strumenti/    etl.py, ontologia.py, nomi_en.py, varianza.py, chiavi.py, traduci.py
 dati/         recovered.json, l'originale normalizzato
 ```
 
@@ -118,9 +220,12 @@ dati/         recovered.json, l'originale normalizzato
 3. **Raccolta** — copertura, distribuzione delle forme, andamento del dolore,
    quanto oscillano i numeri, quante volte hai mangiato che cosa. Un conteggio,
    mai una classifica.
-4. **Archivio 2020** — il diario originale in sola lettura, con l'avviso che
-   quella scala non è confrontabile con questa.
+4. **Confronti** — la fase 2: programmazione dei blocchi, congelamento del
+   piano, e il quadro di potenza da leggere prima di impegnarsi.
 5. **Esporta** — referto PDF di una pagina, tre CSV, JSON, bundle FHIR.
+
+Dentro le impostazioni: la lingua, i pasti ricorrenti, i promemoria, la
+schermata «A che cosa serve Tratto», e l'**Archivio 2020** in sola lettura.
 
 ## L'esportazione
 

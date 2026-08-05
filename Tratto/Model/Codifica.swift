@@ -41,20 +41,24 @@ nonisolated enum Concetto: String, CaseIterable, Sendable {
     case gonfiore
     case giornoAnormale
 
-    var etichetta: String {
+    var chiaveEtichetta: String {
         switch self {
-        case .formaFecale: "Forma delle feci (scala locale 1-7)"
-        case .frequenzaEvacuazioni: "Numero di evacuazioni al giorno"
-        case .dolorePeggiore24h: "Peggior dolore addominale nelle ultime 24 ore (0-10)"
-        case .urgenza: "Urgenza percepita (0-10)"
-        case .gonfiore: "Gonfiore percepito (0-10)"
-        case .giornoAnormale: "Giornata con almeno un'evacuazione fuori dall'intervallo centrale"
+        case .formaFecale: "Stool form (local 1-7 scale)"
+        case .frequenzaEvacuazioni: "Bowel movements per day"
+        case .dolorePeggiore24h: "Worst abdominal pain in the last 24 hours (0-10)"
+        case .urgenza: "Perceived urgency (0-10)"
+        case .gonfiore: "Perceived bloating (0-10)"
+        case .giornoAnormale: "Day with at least one bowel movement outside the middle range"
         }
     }
 
+    func etichetta(_ locale: Locale) -> String { testo(.init(chiaveEtichetta), locale) }
+
     /// Sempre presente, sempre nostra, sempre esportata.
+    /// L'etichetta dell'export resta in inglese: è il documento che può finire
+    /// in mano a qualcuno che non parla la lingua di chi l'ha prodotto.
     var codificaLocale: Codifica {
-        .locale(rawValue, etichetta)
+        .locale(rawValue, testo(.init(chiaveEtichetta), Locale(identifier: "en")))
     }
 
     /// Aggiunte solo se l'utente attiva le codifiche esterne. Nessun codice qui
@@ -81,16 +85,19 @@ nonisolated enum Concetto: String, CaseIterable, Sendable {
         includiEsterne ? [codificaLocale] + codificheEsterne : [codificaLocale]
     }
 
-    /// Nota da stampare accanto al dato quando si esporta, perche' chi legge
+    /// La nota da stampare accanto al dato nel referto, nella lingua scelta.
+    func notaPerIlClinico(_ locale: Locale) -> String? {
+        chiaveNotaPerIlClinico.map { testo(.init($0), locale) }
+    }
+
+    /// Nota da stampare accanto al dato quando si esporta, perché chi legge
     /// sappia che scala ha in mano.
-    var notaPerIlClinico: String? {
+    var chiaveNotaPerIlClinico: String? {
         switch self {
         case .formaFecale:
-            "Scala ordinale a 7 livelli con etichette e illustrazioni proprie, "
-            + "ordinata dalla forma più compatta (1) alla liquida (7). "
-            + "Non è la scala di Bristol e i valori non vanno letti come tali."
+            "A 7-level ordinal scale with its own labels and illustrations, ordered from the most compact form (1) to liquid (7). It is not the Bristol scale and the values must not be read as such."
         case .dolorePeggiore24h:
-            "Scala numerica 0-10 auto-riferita, una rilevazione al giorno."
+            "Self-reported 0-10 numeric scale, recorded once a day."
         default:
             nil
         }

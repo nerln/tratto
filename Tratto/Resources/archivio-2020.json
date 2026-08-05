@@ -1,8 +1,5 @@
 {
- "versione": 1,
- "titolo": "Archivio 2020",
- "sottotitolo": "Progetto di Fondamenti di Data Science, maggio-luglio 2020",
- "avviso": "Questi dati usano scale diverse da quelle di oggi e non sono confrontabili. La «consistenza» va da 0 a 5 con 0 come valore peggiore e cresce in modo monotono: non è la scala a sette livelli usata adesso, che ha l'ottimo al centro. Non viene convertita, non entra in nessun calcolo e non si somma ai dati nuovi. Il periodo cade inoltre nei mesi successivi al lockdown, con orari, dieta e stress difficilmente ripetibili.",
+ "versione": 2,
  "periodo": {
   "from": "2020-05-02",
   "to": "2020-07-08",

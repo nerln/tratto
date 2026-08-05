@@ -4,7 +4,7 @@ import SwiftData
 /// Tre tocchi: aprire, scegliere la forma, salvare.
 ///
 /// Urgenza e dolore restano sotto, opzionali, e non bloccano mai il
-/// salvataggio: un campo obbligatorio in piu' e' il modo piu' rapido per far
+/// salvataggio: un campo obbligatorio in più è il modo più rapido per far
 /// smettere di registrare.
 struct RegistraEventoView: View {
     @Environment(\.modelContext) private var contesto
@@ -29,12 +29,12 @@ struct RegistraEventoView: View {
                     StrisciaForme(scelta: $forma)
 
                     DisclosureGroup(isExpanded: $correggiOra) {
-                        DatePicker("Ora", selection: $quando)
+                        DatePicker("Time", selection: $quando)
                             .labelsHidden()
                             .datePickerStyle(.compact)
                     } label: {
                         HStack {
-                            Text("Ora")
+                            Text("Time")
                             Spacer()
                             Text(quando.formatted(date: .omitted, time: .shortened))
                                 .foregroundStyle(.secondary)
@@ -49,16 +49,16 @@ struct RegistraEventoView: View {
                 .frame(maxWidth: 560)
                 .frame(maxWidth: .infinity)
             }
-            .navigationTitle(evento == nil ? "Bagno" : "Modifica")
+            .navigationTitle(evento == nil ? "Bathroom" : "Edit")
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
             #endif
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Annulla") { chiudi() }
+                    Button("Cancel") { chiudi() }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Salva") { salva() }.disabled(forma == nil)
+                    Button("Save") { salva() }.disabled(forma == nil)
                 }
             }
             .onAppear(perform: carica)
@@ -70,15 +70,15 @@ struct RegistraEventoView: View {
 
     private var facoltativi: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Facoltativo").font(.caption.weight(.semibold)).foregroundStyle(.secondary)
+            Text("Optional").font(.caption.weight(.semibold)).foregroundStyle(.secondary)
 
-            Slider0a10(titolo: "Urgenza", attivo: $usaUrgenza, valore: $urgenza)
-            Slider0a10(titolo: "Dolore in quel momento", attivo: $usaDolore, valore: $dolore)
+            Slider0a10(titolo: "Urgency", attivo: $usaUrgenza, valore: $urgenza)
+            Slider0a10(titolo: "Pain at the time", attivo: $usaDolore, valore: $dolore)
 
-            Toggle("Ho notato del sangue", isOn: $sangue)
+            Toggle("I noticed blood", isOn: $sangue)
                 .font(.callout)
 
-            TextField("Note", text: $note, axis: .vertical)
+            TextField("Notes", text: $note, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
                 .lineLimit(1...3)
         }
@@ -88,9 +88,7 @@ struct RegistraEventoView: View {
 
     private var avvisoSangue: some View {
         Label {
-            Text("Il sangue nelle feci è una cosa da far vedere a un medico, "
-                 + "anche se succede una volta sola e anche se hai già una spiegazione. "
-                 + "Tratto lo annota e basta.")
+            Text("Blood in your stool is something to show a doctor, even if it happens only once and even if you already have an explanation. Tratto just records it.")
         } icon: {
             Image(systemName: "exclamationmark.triangle.fill")
         }
@@ -131,7 +129,7 @@ struct RegistraEventoView: View {
 }
 
 struct Slider0a10: View {
-    let titolo: String
+    let titolo: LocalizedStringKey
     @Binding var attivo: Bool
     @Binding var valore: Double
 
@@ -140,9 +138,14 @@ struct Slider0a10: View {
             HStack {
                 Text(titolo).font(.callout)
                 Spacer()
-                Text(attivo ? "\(Int(valore.rounded()))" : "non indicato")
-                    .font(.callout.monospacedDigit())
-                    .foregroundStyle(attivo ? .primary : .secondary)
+                if attivo {
+                    Text("\(Int(valore.rounded()))")
+                        .font(.callout.monospacedDigit())
+                } else {
+                    Text("not set")
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                }
             }
             Slider(value: $valore, in: 0...10, step: 1) { modifica in
                 if modifica { attivo = true }
@@ -156,8 +159,8 @@ struct Slider0a10: View {
 
 /// L'esito primario: una sola domanda, una volta al giorno.
 ///
-/// E' il dolore e non la forma perche' nel diario del 2020 il dolore, in questa
-/// forma, non e' mai stato misurato: e' l'unica variabile su cui non si sa gia'
+/// È il dolore e non la forma perché nel diario del 2020 il dolore, in questa
+/// forma, non è mai stato misurato: è l'unica variabile su cui non si sa già
 /// come si distribuisce. Ha anche l'unico codice pubblico e libero fra tutte
 /// quelle in gioco (LOINC 72514-3).
 struct EsitoSeraView: View {
@@ -182,35 +185,36 @@ struct EsitoSeraView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Il peggior dolore alla pancia nelle ultime 24 ore") {
-                    Slider0a10(titolo: "Da 0 a 10", attivo: $usaDolore, valore: $dolore)
-                    Text("0 vuol dire nessun dolore, 10 il peggiore che riesci a immaginare.")
+                Section("Worst abdominal pain in the last 24 hours") {
+                    Slider0a10(titolo: "From 0 to 10", attivo: $usaDolore, valore: $dolore)
+                    Text("0 means no pain at all, 10 the worst you can imagine.")
                         .font(.caption).foregroundStyle(.secondary)
                 }
-                Section("Gonfiore") {
-                    Slider0a10(titolo: "Da 0 a 10", attivo: $usaGonfiore, valore: $gonfiore)
+                Section("Bloating") {
+                    Slider0a10(titolo: "From 0 to 10", attivo: $usaGonfiore, valore: $gonfiore)
                 }
-                Section("Com'è andata la giornata") {
+                Section("How the day went") {
                     Slider0a10(titolo: "Stress", attivo: $usaStress, valore: $stress)
                     VStack(alignment: .leading) {
                         HStack {
-                            Text("Ore di sonno")
+                            Text("Hours of sleep")
                             Spacer()
-                            Text(usaSonno ? Formati.decimale(oreSonno) : "non indicate")
-                                .foregroundStyle(usaSonno ? .primary : .secondary)
+                            if usaSonno {
+                                Text(Formati.decimale(oreSonno))
+                            } else {
+                                Text("not set").foregroundStyle(.secondary)
+                            }
                         }
                         Slider(value: $oreSonno, in: 0...12, step: 0.5)
                             .onChange(of: oreSonno) { usaSonno = true }
                     }
-                    Stepper("Caffè: \(caffe)", value: $caffe, in: 0...10)
-                    Toggle("Ho bevuto alcol", isOn: $alcol)
-                    Toggle("Ho fatto attività fisica", isOn: $esercizio)
-                    Toggle("Giornata fuori dal solito", isOn: $atipica)
+                    Stepper("Coffees: \(caffe)", value: $caffe, in: 0...10)
+                    Toggle("I drank alcohol", isOn: $alcol)
+                    Toggle("I exercised", isOn: $esercizio)
+                    Toggle("Unusual day", isOn: $atipica)
                 }
                 Section {
-                    Text("Queste voci non servono a spiegare i sintomi. Servono a sapere "
-                         + "che cos'altro stava succedendo, perché in un diario di una persona "
-                         + "sola sonno, stress e caffè muovono i numeri quanto il cibo.")
+                    Text("These entries are not here to explain your symptoms. They are here to record what else was going on, because in a diary kept by one person sleep, stress and coffee move the numbers as much as food does.")
                         .font(.caption).foregroundStyle(.secondary)
                 }
             }
@@ -220,8 +224,8 @@ struct EsitoSeraView: View {
             .navigationBarTitleDisplayMode(.inline)
             #endif
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("Annulla") { chiudi() } }
-                ToolbarItem(placement: .confirmationAction) { Button("Salva") { salva() } }
+                ToolbarItem(placement: .cancellationAction) { Button("Cancel") { chiudi() } }
+                ToolbarItem(placement: .confirmationAction) { Button("Save") { salva() } }
             }
             .onAppear(perform: carica)
         }

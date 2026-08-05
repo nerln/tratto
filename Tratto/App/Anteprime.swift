@@ -94,10 +94,10 @@ enum Anteprime {
                 let risolti = voci.compactMap { perId[$0] }
                 let pasto = Pasto(quando: quando, fascia: fascia, stato: .registrato,
                                   fonte: .dettatura,
-                                  testoGrezzo: risolti.map(\.nome).joined(separator: ", ").lowercased())
+                                  testoGrezzo: risolti.map(\.nomeEn).joined(separator: ", ").lowercased())
                 contesto.insert(pasto)
                 for i in risolti {
-                    let v = VoceDiPasto(ingrediente: i, quantita: .normale, testoOriginale: i.nome)
+                    let v = VoceDiPasto(ingrediente: i, quantita: .normale, testoOriginale: i.nomeEn)
                     v.pasto = pasto
                     contesto.insert(v)
                 }

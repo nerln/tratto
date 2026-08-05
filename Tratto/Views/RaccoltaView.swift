@@ -9,10 +9,11 @@ import Charts
 /// quanto oscilla l'esito da un giorno all'altro, sarebbe inventato. Il numero
 /// vero compare qui sotto solo quando la serie è abbastanza lunga da produrlo.
 struct RaccoltaView: View {
+    @Environment(\.locale) private var locale
+
     @Query private var eventi: [EventoIntestinale]
     @Query private var pasti: [Pasto]
     @Query private var esiti: [EsitoGiornaliero]
-    @Query private var ingredienti: [Ingrediente]
 
     @State private var riepilogo: Riepilogo = .vuoto
 
@@ -33,7 +34,7 @@ struct RaccoltaView: View {
             .frame(maxWidth: 720)
             .frame(maxWidth: .infinity)
         }
-        .navigationTitle("Raccolta")
+        .navigationTitle("Collected")
         .onAppear(perform: ricalcola)
         .onChange(of: eventi.count) { ricalcola() }
         .onChange(of: pasti.count) { ricalcola() }
@@ -43,16 +44,17 @@ struct RaccoltaView: View {
     // MARK: - Copertura
 
     private var copertura: some View {
-        Sezione("Copertura") {
+        Sezione("Coverage") {
             HStack(spacing: 10) {
-                Pillola(valore: "\(riepilogo.giorniCompletiTotali)", etichetta: "giorni completi")
-                Pillola(valore: percentuale(riepilogo.finestra7.frazioneMedia), etichetta: "ultimi 7 giorni")
-                Pillola(valore: "\(riepilogo.eventiTotali)", etichetta: "eventi")
+                Pillola(valore: "\(riepilogo.giorniCompletiTotali)", etichetta: "complete days")
+                Pillola(valore: Formati.percentuale(riepilogo.finestra7.frazioneMedia),
+                        etichetta: "last 7 days")
+                Pillola(valore: "\(riepilogo.eventiTotali)", etichetta: "events")
             }
             if !riepilogo.giornate.isEmpty {
                 Chart(riepilogo.giornate.suffix(42)) { g in
-                    BarMark(x: .value("Giorno", g.giorno, unit: .day),
-                            y: .value("Copertura", g.frazione))
+                    BarMark(x: .value("Day", g.giorno, unit: .day),
+                            y: .value("Coverage", g.frazione))
                     .foregroundStyle(g.completa ? Color.accentColor : Color.orange.opacity(0.75))
                     .cornerRadius(2)
                 }
@@ -60,19 +62,19 @@ struct RaccoltaView: View {
                 .chartYAxis {
                     AxisMarks(values: [0, 0.5, 1]) { v in
                         AxisGridLine()
-                        AxisValueLabel { if let d = v.as(Double.self) { Text(percentuale(d)) } }
+                        AxisValueLabel {
+                            if let d = v.as(Double.self) { Text(verbatim: Formati.percentuale(d)) }
+                        }
                     }
                 }
                 .frame(height: 110)
             }
             if riepilogo.giornate.isEmpty {
-                Text("Non c'è ancora niente da mostrare. Registra il primo evento o il primo pasto.")
+                Text("Nothing to show yet. Record your first event or your first meal.")
                     .font(.callout).foregroundStyle(.secondary)
             } else if !riepilogo.finestra7.analizzabile {
                 Nota(colore: .orange,
-                     testo: "Negli ultimi 7 giorni la copertura è \(percentuale(riepilogo.finestra7.frazioneMedia)): "
-                          + "sotto il 70% un periodo non è analizzabile, perché la maggior parte delle "
-                          + "giornate non è osservata ma solo parzialmente nota.")
+                     testo: Text("Coverage over the last 7 days is \(Formati.percentuale(riepilogo.finestra7.frazioneMedia)). Below 70% a period is not analysable, because most days are not observed but only partly known."))
             }
         }
     }
@@ -80,19 +82,19 @@ struct RaccoltaView: View {
     // MARK: - Forme
 
     private var distribuzioneForme: some View {
-        Sezione("Forma delle feci") {
+        Sezione("Stool form") {
             Chart(FormaFecale.allCases) { forma in
-                BarMark(x: .value("Volte", riepilogo.distribuzioneForme[forma.rawValue] ?? 0),
-                        y: .value("Forma", forma.etichetta))
+                BarMark(x: .value("Times", riepilogo.distribuzioneForme[forma.rawValue] ?? 0),
+                        y: .value("Form", forma.etichetta(locale)))
                 .foregroundStyle(DisegnoForma.colore(forma))
                 .cornerRadius(3)
                 .annotation(position: .trailing) {
-                    Text("\(riepilogo.distribuzioneForme[forma.rawValue] ?? 0)")
+                    Text(verbatim: "\(riepilogo.distribuzioneForme[forma.rawValue] ?? 0)")
                         .font(.caption2.monospacedDigit())
                         .foregroundStyle(.secondary)
                 }
             }
-            .chartYScale(domain: FormaFecale.allCases.map(\.etichetta))
+            .chartYScale(domain: FormaFecale.allCases.map { $0.etichetta(locale) })
             .chartYAxis {
                 AxisMarks(preset: .aligned, position: .leading) {
                     AxisValueLabel(horizontalSpacing: 6).font(.caption2)
@@ -104,13 +106,11 @@ struct RaccoltaView: View {
 
             let (anormali, osservati) = riepilogo.giorniAnormaliSuOsservati
             if osservati > 0 {
-                Text("Giornate con almeno un'evacuazione fuori dall'intervallo centrale: "
-                     + "\(anormali) su \(osservati) osservate.")
+                Text("Days with at least one bowel movement outside the middle range: \(anormali) of \(osservati) observed.")
                     .font(.callout)
             }
             if let e = riepilogo.formaPerEvento.entropiaNormalizzata {
-                Text(descriviEntropia(e, cosa: "la forma"))
-                    .font(.caption).foregroundStyle(.secondary)
+                descriviEntropia(e).font(.caption).foregroundStyle(.secondary)
             }
         }
     }
@@ -118,20 +118,20 @@ struct RaccoltaView: View {
     // MARK: - Dolore
 
     private var andamentoDolore: some View {
-        Sezione("Dolore, giorno per giorno") {
+        Sezione("Pain, day by day") {
             let serie = esiti.compactMap { e -> (Date, Int)? in
                 e.dolorePeggiore.map { (Calendar.current.startOfDay(for: e.giorno), $0) }
             }.sorted { $0.0 < $1.0 }
 
             Chart {
                 ForEach(serie, id: \.0) { g, v in
-                    LineMark(x: .value("Giorno", g, unit: .day), y: .value("Dolore", v))
+                    LineMark(x: .value("Day", g, unit: .day), y: .value("Pain", v))
                         .interpolationMethod(.monotone)
-                    PointMark(x: .value("Giorno", g, unit: .day), y: .value("Dolore", v))
+                    PointMark(x: .value("Day", g, unit: .day), y: .value("Pain", v))
                         .symbolSize(22)
                 }
                 if let m = riepilogo.dolore.media {
-                    RuleMark(y: .value("Media", m))
+                    RuleMark(y: .value("Mean", m))
                         .lineStyle(StrokeStyle(lineWidth: 1, dash: [4, 3]))
                         .foregroundStyle(.secondary)
                 }
@@ -140,8 +140,7 @@ struct RaccoltaView: View {
             .frame(height: 150)
 
             if let m = riepilogo.dolore.mediana, let sd = riepilogo.dolore.deviazioneStandard {
-                Text("Mediana \(numero(m)), oscillazione tipica ±\(numero(sd)) punti "
-                     + "su \(Formati.giorni(riepilogo.dolore.osservazioni)).")
+                Text("Median \(Formati.decimale(m)), typical swing ±\(Formati.decimale(sd)) points over \(riepilogo.dolore.osservazioni) days.")
                     .font(.callout)
             }
         }
@@ -150,24 +149,19 @@ struct RaccoltaView: View {
     // MARK: - Variabilità
 
     private var variabilita: some View {
-        Sezione("Quanto oscillano i numeri") {
+        Sezione("How much the numbers move on their own") {
             if riepilogo.dolore.osservazioni < Riepilogo.giorniMinimiPerStimareIlRumore {
-                Text("Servono almeno \(Formati.giorni(Riepilogo.giorniMinimiPerStimareIlRumore)) con il dolore "
-                     + "segnato per stimare quanto oscilla da solo. Finora sono "
-                     + "\(riepilogo.dolore.osservazioni).")
+                Text("At least \(Riepilogo.giorniMinimiPerStimareIlRumore) days with pain recorded are needed to estimate how much it swings by itself. So far there are \(riepilogo.dolore.osservazioni).")
                     .font(.callout).foregroundStyle(.secondary)
             } else if let sd = riepilogo.dolore.deviazioneStandard {
-                Text("Il dolore cambia di circa \(numero(sd)) punti da un giorno all'altro "
-                     + "senza che sia successo niente di particolare. Serve saperlo prima di "
-                     + "poter dire se qualcosa lo cambia davvero.")
+                Text("Your pain moves by about \(Formati.decimale(sd)) points from one day to the next with nothing in particular happening. That is worth knowing before you can say whether anything changes it.")
                     .font(.callout)
             }
 
             if let c = riepilogo.componentiForma {
-                Text("Della variabilità della forma, \(Formati.percentualeConArticolo(c.icc)) sta fra "
-                     + "giorni diversi e il resto fra evacuazioni dello stesso giorno.")
+                Text("Of the variation in stool form, \(Formati.percentuale(c.icc)) sits between different days and the rest between bowel movements on the same day.")
                     .font(.callout)
-                Text("Quando la quota fra giorni è bassa, la media di una giornata è per lo più rumore.")
+                Text("When the between-days share is low, a daily average is mostly noise.")
                     .font(.caption).foregroundStyle(.secondary)
             }
 
@@ -176,7 +170,8 @@ struct RaccoltaView: View {
             if acf.contains(where: { $0.r != nil }) {
                 Chart(acf, id: \.ritardo) { a in
                     if let r = a.r {
-                        BarMark(x: .value("Distanza", "\(a.ritardo)g"), y: .value("Somiglianza", r))
+                        BarMark(x: .value("Distance", "\(a.ritardo)d"),
+                                y: .value("Similarity", r))
                             .foregroundStyle(abs(r) >= 0.2 ? Color.orange : Color.accentColor)
                             .cornerRadius(2)
                     }
@@ -185,13 +180,10 @@ struct RaccoltaView: View {
                 .frame(height: 110)
 
                 if let pausa = riepilogo.pausaSuggerita {
-                    Text("Due giorni distanti \(Formati.giorni(pausa)) non si somigliano più in modo "
-                         + "apprezzabile. È il primo numero che, un domani, direbbe quanto deve durare "
-                         + "una pausa fra due condizioni da confrontare.")
+                    Text("Two days \(pausa) days apart no longer resemble each other appreciably. That is the number a washout between two conditions would have to respect.")
                         .font(.caption).foregroundStyle(.secondary)
                 } else {
-                    Text("I giorni vicini si somigliano ancora troppo perché si possano trattare "
-                         + "come osservazioni indipendenti.")
+                    Text("Nearby days still resemble each other too much to be treated as independent observations.")
                         .font(.caption).foregroundStyle(.secondary)
                 }
             }
@@ -203,21 +195,19 @@ struct RaccoltaView: View {
     @ViewBuilder
     private var rilevabilita: some View {
         if !riepilogo.rilevabilita.isEmpty {
-            Sezione("Quanto dovrebbe essere grande un effetto per potersi vedere") {
+            Sezione("How large an effect would have to be to show up") {
                 ForEach(riepilogo.rilevabilita, id: \.giorniTotali) { s in
                     HStack {
-                        Text("\(s.periodi) confronti da \(Formati.giorni(s.giorniPerPeriodo))")
+                        Text("\(s.periodi) comparisons of \(s.giorniPerPeriodo) days")
                             .font(.callout)
                         Spacer()
-                        Text("≥ \(numero(s.differenzaMinima)) punti")
+                        Text("≥ \(Formati.decimale(s.differenzaMinima)) points")
                             .font(.callout.monospacedDigit().weight(.medium))
-                        Text("· \(Formati.giorni(s.giorniTotali))")
+                        Text("· \(s.giorniTotali) days")
                             .font(.caption).foregroundStyle(.secondary)
                     }
                 }
-                Text("Calcolato sull'oscillazione misurata nei tuoi dati, non su valori presi altrove. "
-                     + "È la stima più ottimistica possibile: dà per scontato che i periodi siano "
-                     + "indipendenti fra loro e che tu registri tutti i giorni.")
+                Text("Computed on the swing measured in your own data, not on values taken from elsewhere. It is the most optimistic estimate possible: it assumes the periods are independent of each other and that you record every day.")
                     .font(.caption).foregroundStyle(.secondary)
             }
         }
@@ -226,24 +216,24 @@ struct RaccoltaView: View {
     // MARK: - Esposizioni
 
     private var esposizioni: some View {
-        Sezione("Quante volte hai mangiato che cosa") {
+        Sezione("How often you ate what") {
             if riepilogo.esposizioni.isEmpty {
-                Text("Ancora nessun pasto registrato.").font(.callout).foregroundStyle(.secondary)
+                Text("No meals recorded yet.").font(.callout).foregroundStyle(.secondary)
             } else {
                 ForEach(riepilogo.esposizioni.prefix(20)) { e in
                     HStack {
                         Text(e.nome).font(.callout)
                         Spacer()
-                        Text("\(e.esposizioni)").font(.callout.monospacedDigit())
-                        Text("· \(Formati.giorni(e.giorniDistinti))").font(.caption).foregroundStyle(.secondary)
+                        Text(verbatim: "\(e.esposizioni)").font(.callout.monospacedDigit())
+                        Text("· \(e.giorniDistinti) days")
+                            .font(.caption).foregroundStyle(.secondary)
                     }
                 }
                 if riepilogo.esposizioni.count > 20 {
-                    Text("e altri \(riepilogo.esposizioni.count - 20).")
+                    Text("and \(riepilogo.esposizioni.count - 20) more.")
                         .font(.caption).foregroundStyle(.secondary)
                 }
-                Text("È un conteggio, non una classifica: nessuna di queste voci è messa in "
-                     + "relazione con come è andata.")
+                Text("This is a count, not a ranking: none of these entries is put in relation with how you felt.")
                     .font(.caption).foregroundStyle(.secondary)
             }
         }
@@ -258,32 +248,31 @@ struct RaccoltaView: View {
             vociPasto: pasti.flatMap { p in
                 p.vociOrdinate.compactMap { v in
                     guard let i = v.ingrediente else { return nil }
-                    return (p.quando, i.identificativo, i.nome, i.categoria)
+                    return (p.quando, i.identificativo, i.nome(locale), i.categoria(locale))
                 }
             },
             esiti: esiti.map { ($0.giorno, $0.dolorePeggiore) }))
     }
 
-    private func percentuale(_ x: Double) -> String { Formati.percentuale(x) }
-    private func numero(_ x: Double) -> String { Formati.decimale(x) }
-    private func descriviEntropia(_ e: Double, cosa: String) -> String {
+    @ViewBuilder
+    private func descriviEntropia(_ e: Double) -> some View {
         if e < 0.4 {
-            return "Finora \(cosa) si concentra quasi sempre sugli stessi valori: con così poca "
-                 + "varietà, un eventuale effetto avrebbe poco spazio per manifestarsi."
+            Text("So far stool form clusters on the same few values: with this little variety, an effect would have little room to show itself.")
         } else if e < 0.7 {
-            return "\(cosa.prefix(1).uppercased() + cosa.dropFirst()) usa una parte dei suoi livelli."
+            Text("Stool form uses part of its range.")
+        } else {
+            Text("Stool form uses its whole range.")
         }
-        return "\(cosa.prefix(1).uppercased() + cosa.dropFirst()) usa bene tutta la sua scala."
     }
 }
 
 // MARK: - Contenitori
 
 struct Sezione<Contenuto: View>: View {
-    let titolo: String
+    let titolo: LocalizedStringKey
     @ViewBuilder let contenuto: Contenuto
 
-    init(_ titolo: String, @ViewBuilder contenuto: () -> Contenuto) {
+    init(_ titolo: LocalizedStringKey, @ViewBuilder contenuto: () -> Contenuto) {
         self.titolo = titolo
         self.contenuto = contenuto()
     }
@@ -301,10 +290,10 @@ struct Sezione<Contenuto: View>: View {
 
 struct Nota: View {
     var colore: Color = .orange
-    let testo: String
+    let testo: Text
 
     var body: some View {
-        Label { Text(testo).font(.footnote) }
+        Label { testo.font(.footnote) }
         icon: { Image(systemName: "info.circle.fill") }
         .padding(10)
         .frame(maxWidth: .infinity, alignment: .leading)

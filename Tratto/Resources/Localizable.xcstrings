@@ -1,0 +1,5159 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ Recognition still works by matching your text against the catalogue.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ Il riconoscimento funziona lo stesso, confrontando quello che scrivi con il catalogo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ Recognition still works by matching your text against the catalogue."
+          }
+        }
+      }
+    },
+    "%@ vs %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vs %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ contro %@"
+          }
+        }
+      }
+    },
+    "%lld": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
+          }
+        }
+      }
+    },
+    "%lld comparisons of %lld days": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld comparisons of %lld days"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld confronti da %lld giorni"
+          }
+        }
+      }
+    },
+    "%lld days": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld giorni"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days"
+          }
+        }
+      }
+    },
+    "%lld days of gap": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld giorni di pausa"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days of gap"
+          }
+        }
+      }
+    },
+    "%lld days per block": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld giorni per blocco"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days per block"
+          }
+        }
+      }
+    },
+    "%lld of %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld su %lld"
+          }
+        }
+      }
+    },
+    "%lld of %lld pairs complete": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld pairs complete"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld coppie su %lld completate"
+          }
+        }
+      }
+    },
+    "%lld pairs of %lld days": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld pairs of %lld days"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld coppie da %lld giorni"
+          }
+        }
+      }
+    },
+    "%lld pairs of blocks": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld coppie di blocchi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld pairs of blocks"
+          }
+        }
+      }
+    },
+    "%lld pairs were lost because one of the two blocks has no usable days.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld coppie sono andate perse perché uno dei due blocchi non ha giorni utilizzabili."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld pairs were lost because one of the two blocks has no usable days."
+          }
+        }
+      }
+    },
+    "0 means no pain at all, 10 the worst you can imagine.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 vuol dire nessun dolore, 10 il peggiore che riesci a immaginare."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 means no pain at all, 10 the worst you can imagine."
+          }
+        }
+      }
+    },
+    "0 was the worst value and 5 the best. Three quarters of the observations sit on two adjacent levels: the scale was used little more than halfway.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 era il valore peggiore e 5 il migliore. Tre quarti delle osservazioni stanno su due livelli vicini: la scala veniva usata poco più che a metà."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 was the worst value and 5 the best. Three quarters of the observations sit on two adjacent levels: the scale was used little more than halfway."
+          }
+        }
+      }
+    },
+    "2020 archive": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivio 2020"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2020 archive"
+          }
+        }
+      }
+    },
+    "A bundle with one observation per event. Every code always carries the local coding.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un bundle con una osservazione per evento. Ogni codice porta sempre la codifica locale."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A bundle with one observation per event. Every code always carries the local coding."
+          }
+        }
+      }
+    },
+    "A day with nothing in it stays a day with nothing in it: it does not count as observed.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un giorno senza niente resta un giorno senza niente: non viene contato come osservato."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A day with nothing in it stays a day with nothing in it: it does not count as observed."
+          }
+        }
+      }
+    },
+    "A diary records what happens. A comparison makes something happen on purpose, and that is a different kind of evidence.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un diario registra quello che succede. Un confronto fa succedere qualcosa apposta, ed è una prova di natura diversa."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A diary records what happens. A comparison makes something happen on purpose, and that is a different kind of evidence."
+          }
+        }
+      }
+    },
+    "A one-sided hypothesis is easier to confirm, and that is exactly why it has to be chosen now and frozen. Choosing it after seeing the data is the shortcut that invalidates everything.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un'ipotesi unilaterale è più facile da confermare, ed è esattamente per questo che va scelta adesso e congelata. Sceglierla dopo aver visto i dati è la scorciatoia che invalida tutto."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A one-sided hypothesis is easier to confirm, and that is exactly why it has to be chosen now and frozen. Choosing it after seeing the data is the shortcut that invalidates everything."
+          }
+        }
+      }
+    },
+    "A personal diary produces too few repetitions. Testing dozens of foods at once makes chance findings almost certain.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un diario personale produce troppe poche ripetizioni. Provarne decine insieme rende quasi certo che qualcosa risulti positivo per caso."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A personal diary produces too few repetitions. Testing dozens of foods at once makes chance findings almost certain."
+          }
+        }
+      }
+    },
+    "Abdominal pain, worst in the last 24 hours (0-10)": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dolore addominale, il peggiore nelle ultime 24 ore (0-10)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abdominal pain, worst in the last 24 hours (0-10)"
+          }
+        }
+      }
+    },
+    "Add SNOMED CT and LOINC to the export": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi SNOMED CT e LOINC all'esportazione"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add SNOMED CT and LOINC to the export"
+          }
+        }
+      }
+    },
+    "An app that named a culprit anyway would not be more useful. It would be confidently wrong, and it might take a food away from you for years.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un'app che indicasse comunque un colpevole non sarebbe più utile. Sbaglierebbe con sicurezza, e potrebbe toglierti un alimento per anni."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An app that named a culprit anyway would not be more useful. It would be confidently wrong, and it might take a food away from you for years."
+          }
+        }
+      }
+    },
+    "Archive not available.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivio non disponibile."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archive not available."
+          }
+        }
+      }
+    },
+    "Asks one question a day: the worst abdominal pain in the last 24 hours.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fa una domanda al giorno: il peggior dolore addominale nelle ultime 24 ore."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asks one question a day: the worst abdominal pain in the last 24 hours."
+          }
+        }
+      }
+    },
+    "At %lld pairs a single pair going the other way ends the comparison without a result. The first size that tolerates one disagreement is %lld pairs.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At %lld pairs a single pair going the other way ends the comparison without a result. The first size that tolerates one disagreement is %lld pairs."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con %lld coppie basta che una vada nella direzione opposta perché il confronto finisca senza risultato. La prima dimensione che tollera una discordanza è di %lld coppie."
+          }
+        }
+      }
+    },
+    "At least %lld days with pain recorded are needed to estimate how much it swings by itself. So far there are %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At least %lld days with pain recorded are needed to estimate how much it swings by itself. So far there are %lld."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servono almeno %lld giorni con il dolore segnato per stimare quanto oscilla da solo. Finora sono %lld."
+          }
+        }
+      }
+    },
+    "Bathroom": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bagno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bathroom"
+          }
+        }
+      }
+    },
+    "Before a gastroenterology appointment, when the clinician needs to see what actually happens rather than what you remember.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prima di una visita gastroenterologica, quando il medico ha bisogno di vedere cosa succede davvero e non cosa ricordi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Before a gastroenterology appointment, when the clinician needs to see what actually happens rather than what you remember."
+          }
+        }
+      }
+    },
+    "Before and after a treatment or a procedure, where the point is the change over time, not the cause.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prima e dopo una terapia o un intervento, dove quello che conta è il cambiamento nel tempo e non la causa."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Before and after a treatment or a procedure, where the point is the change over time, not the cause."
+          }
+        }
+      }
+    },
+    "Before you commit, the next screen tells you how likely this is to find anything. Usually it is less than people expect.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prima di impegnarti, la schermata successiva ti dice quante probabilità ci sono di trovare qualcosa. Di solito sono meno di quanto ci si aspetti."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Before you commit, the next screen tells you how likely this is to find anything. Usually it is less than people expect."
+          }
+        }
+      }
+    },
+    "Below 70%, what was eaten on most days is not known.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sotto il 70%, quello che hai mangiato nella maggior parte delle giornate non è noto."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Below 70%, what was eaten on most days is not known."
+          }
+        }
+      }
+    },
+    "Bloating": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gonfiore"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloating"
+          }
+        }
+      }
+    },
+    "Block done": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocco concluso"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Block done"
+          }
+        }
+      }
+    },
+    "Blocks": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocchi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocks"
+          }
+        }
+      }
+    },
+    "Blood in your stool is something to show a doctor, even if it happens only once and even if you already have an explanation. Tratto just records it.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il sangue nelle feci è una cosa da far vedere a un medico, anche se succede una volta sola e anche se hai già una spiegazione. Tratto lo annota e basta."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blood in your stool is something to show a doctor, even if it happens only once and even if you already have an explanation. Tratto just records it."
+          }
+        }
+      }
+    },
+    "Bowel and food diary": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diario intestinale e alimentare"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bowel and food diary"
+          }
+        }
+      }
+    },
+    "Bowel movements per day (mean)": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evacuazioni al giorno (media)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bowel movements per day (mean)"
+          }
+        }
+      }
+    },
+    "Can't recall": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ricordo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't recall"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulla"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "Catalogue": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catalogo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catalogue"
+          }
+        }
+      }
+    },
+    "Choose…": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose…"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chiudi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "Coffees: %lld": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caffè: %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coffees: %lld"
+          }
+        }
+      }
+    },
+    "Collected": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raccolta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collected"
+          }
+        }
+      }
+    },
+    "Compared against": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confrontato con"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compared against"
+          }
+        }
+      }
+    },
+    "Comparisons": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confronti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparisons"
+          }
+        }
+      }
+    },
+    "Complete days": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giorni completi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete days"
+          }
+        }
+      }
+    },
+    "Completeness of the food diary": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completezza del diario alimentare"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completeness of the food diary"
+          }
+        }
+      }
+    },
+    "Computed on the swing measured in your own data, not on values taken from elsewhere. It is the most optimistic estimate possible: it assumes the periods are independent of each other and that you record every day.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcolato sull'oscillazione misurata nei tuoi dati, non su valori presi altrove. È la stima più ottimistica possibile: dà per scontato che i periodi siano indipendenti fra loro e che tu registri tutti i giorni."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Computed on the swing measured in your own data, not on values taken from elsewhere. It is the most optimistic estimate possible: it assumes the periods are independent of each other and that you record every day."
+          }
+        }
+      }
+    },
+    "Consistency, the 0-5 scale of 2020": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consistenza, la scala 0-5 del 2020"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consistency, the 0-5 scale of 2020"
+          }
+        }
+      }
+    },
+    "Could not finish starting up": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avvio non completato"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not finish starting up"
+          }
+        }
+      }
+    },
+    "Could not write the files: %@": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non sono riuscito a scrivere i file: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not write the files: %@"
+          }
+        }
+      }
+    },
+    "Coverage": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copertura"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coverage"
+          }
+        }
+      }
+    },
+    "Coverage over the last 7 days is %@. Below 70%% a period is not analysable, because most days are not observed but only partly known.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negli ultimi 7 giorni la copertura è %@. Sotto il 70%% un periodo non è analizzabile, perché la maggior parte delle giornate non è osservata ma solo in parte nota."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coverage over the last 7 days is %@. Below 70%% a period is not analysable, because most days are not observed but only partly known."
+          }
+        }
+      }
+    },
+    "Data Science coursework, May–July 2020": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progetto di Fondamenti di Data Science, maggio–luglio 2020"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data Science coursework, May–July 2020"
+          }
+        }
+      }
+    },
+    "Day": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giornata"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day"
+          }
+        }
+      }
+    },
+    "Days with at least one bowel movement outside the middle range (1-2 or 6-7): %lld of %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days with at least one bowel movement outside the middle range (1-2 or 6-7): %lld of %lld."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giornate con almeno un'evacuazione fuori dall'intervallo centrale (1-2 o 6-7): %lld su %lld."
+          }
+        }
+      }
+    },
+    "Days with at least one bowel movement outside the middle range: %lld of %lld observed.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days with at least one bowel movement outside the middle range: %lld of %lld observed."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giornate con almeno un'evacuazione fuori dall'intervallo centrale: %lld su %lld osservate."
+          }
+        }
+      }
+    },
+    "Days with entries": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giorni con registrazioni"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days with entries"
+          }
+        }
+      }
+    },
+    "Days with the entry filled in": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giorni con la voce compilata"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days with the entry filled in"
+          }
+        }
+      }
+    },
+    "Difference": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Differenza"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Difference"
+          }
+        }
+      }
+    },
+    "Discomfort before a bowel movement, the 0-5 scale of 2020": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fastidio prima dell'evacuazione, la scala 0-5 del 2020"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discomfort before a bowel movement, the 0-5 scale of 2020"
+          }
+        }
+      }
+    },
+    "Distance": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distanza"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distance"
+          }
+        }
+      }
+    },
+    "Distribution of stool form": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distribuzione della forma delle feci"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distribution of stool form"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fatto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "During a structured elimination and reintroduction plan run with a dietitian, where the diary is the record of the protocol.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durante un percorso di eliminazione e reintroduzione seguito da un dietista, dove il diario è il registro del protocollo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "During a structured elimination and reintroduction plan run with a dietitian, where the diary is the record of the protocol."
+          }
+        }
+      }
+    },
+    "Each bar is one pair: the target block minus the block it was compared against. Bars all on the same side is what the test is looking for.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni barra è una coppia: il blocco bersaglio meno il blocco di confronto. Barre tutte dallo stesso lato sono quello che il test sta cercando."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Each bar is one pair: the target block minus the block it was compared against. Bars all on the same side is what the test is looking for."
+          }
+        }
+      }
+    },
+    "Edit": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifica"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit"
+          }
+        }
+      }
+    },
+    "Edit meal": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifica pasto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit meal"
+          }
+        }
+      }
+    },
+    "Edit today's pain": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifica il dolore di oggi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit today's pain"
+          }
+        }
+      }
+    },
+    "Eighty-three foods were compared with no correction for the number of comparisons, and only seven of them appeared in at least ten meals.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ottantatré alimenti venivano confrontati senza nessuna correzione per il numero dei confronti, e solo sette di loro comparivano in almeno dieci pasti."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eighty-three foods were compared with no correction for the number of comparisons, and only seven of them appeared in at least ten meals."
+          }
+        }
+      }
+    },
+    "Estimates of what could be detected only appear once there is enough data to compute them. Before that, any «you need N days» would be made up.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le stime su cosa si potrebbe vedere compaiono solo quando ci sono abbastanza dati per calcolarle. Prima, qualunque «servono N giorni» sarebbe inventato."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimates of what could be detected only appear once there is enough data to compute them. Before that, any «you need N days» would be made up."
+          }
+        }
+      }
+    },
+    "Evening question at %lld:00": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domanda della sera alle %lld:00"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evening question at %lld:00"
+          }
+        }
+      }
+    },
+    "Events, meals expanded one row per ingredient, and a daily file with outcomes, context and coverage. This is the road to R.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eventi, pasti espansi una riga per ingrediente, e un file giornaliero con esiti, contesto e copertura. È la strada verso R."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Events, meals expanded one row per ingredient, and a daily file with outcomes, context and coverage. This is the road to R."
+          }
+        }
+      }
+    },
+    "Every reminder carries a «Nothing» action: one tap and a skipped slot becomes data instead of a hole.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni promemoria porta con sé l'azione «Niente»: un tocco e una fascia saltata diventa un dato invece di un buco."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every reminder carries a «Nothing» action: one tap and a skipped slot becomes data instead of a hole."
+          }
+        }
+      }
+    },
+    "Everything, for backup and for moving data between Mac and phone as a file: there is no automatic sync.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutto, per il backup e per passare i dati fra Mac e telefono come file: non c'è nessuna sincronizzazione automatica."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything, for backup and for moving data between Mac and phone as a file: there is no automatic sync."
+          }
+        }
+      }
+    },
+    "Exact p": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p esatto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exact p"
+          }
+        }
+      }
+    },
+    "Export": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esporta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export"
+          }
+        }
+      }
+    },
+    "Exports a one-page report for an appointment, plus CSV, JSON and FHIR.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esporta un referto di una pagina per la visita, più CSV, JSON e FHIR."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exports a one-page report for an appointment, plus CSV, JSON and FHIR."
+          }
+        }
+      }
+    },
+    "External codings": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Codifiche esterne"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "External codings"
+          }
+        }
+      }
+    },
+    "FHIR": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FHIR"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FHIR"
+          }
+        }
+      }
+    },
+    "Files ready": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File pronti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Files ready"
+          }
+        }
+      }
+    },
+    "Finding the culprit is not the only reason to keep one. In most of the situations where a bowel diary is asked for, the question is different.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trovare il colpevole non è l'unico motivo per tenerne uno. Nella maggior parte delle situazioni in cui un diario intestinale viene richiesto, la domanda è un'altra."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finding the culprit is not the only reason to keep one. In most of the situations where a bowel diary is asked for, the question is different."
+          }
+        }
+      }
+    },
+    "Fingerprint": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impronta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fingerprint"
+          }
+        }
+      }
+    },
+    "Follow the system": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segui il sistema"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Follow the system"
+          }
+        }
+      }
+    },
+    "Foods eaten together cannot be told apart. If rice and olive oil almost always appear in the same meal, no calculation can separate them.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I cibi mangiati insieme non si possono distinguere. Se riso e olio compaiono quasi sempre nello stesso pasto, nessun calcolo riesce a separarli."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foods eaten together cannot be told apart. If rice and olive oil almost always appear in the same meal, no calculation can separate them."
+          }
+        }
+      }
+    },
+    "Form": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forma"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Form"
+          }
+        }
+      }
+    },
+    "Freeze and start": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Congela e inizia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freeze and start"
+          }
+        }
+      }
+    },
+    "From 0 to 10": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Da 0 a 10"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From 0 to 10"
+          }
+        }
+      }
+    },
+    "From catalogue": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dal catalogo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From catalogue"
+          }
+        }
+      }
+    },
+    "Frozen on": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Congelato il"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frozen on"
+          }
+        }
+      }
+    },
+    "Generate the files": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genera i file"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generate the files"
+          }
+        }
+      }
+    },
+    "Generating…": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genero…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generating…"
+          }
+        }
+      }
+    },
+    "Here 0 was the best value: the two scales of 2020 ran in opposite directions.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qui 0 era il valore migliore: le due scale del 2020 andavano in direzioni opposte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Here 0 was the best value: the two scales of 2020 ran in opposite directions."
+          }
+        }
+      }
+    },
+    "Hours of sleep": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ore di sonno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hours of sleep"
+          }
+        }
+      }
+    },
+    "How large an effect would have to be to show up": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quanto dovrebbe essere grande un effetto per potersi vedere"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How large an effect would have to be to show up"
+          }
+        }
+      }
+    },
+    "How much the numbers move on their own": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quanto oscillano i numeri da soli"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How much the numbers move on their own"
+          }
+        }
+      }
+    },
+    "How often you ate what": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quante volte hai mangiato che cosa"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How often you ate what"
+          }
+        }
+      }
+    },
+    "How the day went": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Com'è andata la giornata"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How the day went"
+          }
+        }
+      }
+    },
+    "Hypothesis": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ipotesi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypothesis"
+          }
+        }
+      }
+    },
+    "I drank alcohol": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ho bevuto alcol"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I drank alcohol"
+          }
+        }
+      }
+    },
+    "I exercised": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ho fatto attività fisica"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I exercised"
+          }
+        }
+      }
+    },
+    "I have read the numbers above": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ho letto i numeri qui sopra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I have read the numbers above"
+          }
+        }
+      }
+    },
+    "I noticed blood": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ho notato del sangue"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I noticed blood"
+          }
+        }
+      }
+    },
+    "If the target really did affect you…": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se il bersaglio ti riguardasse davvero…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If the target really did affect you…"
+          }
+        }
+      }
+    },
+    "In all of these, a faithful record is the whole job. Tratto is built to do that job well and to stop there.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In tutti questi casi, una registrazione fedele è tutto il lavoro. Tratto è fatta per farlo bene e fermarsi lì."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In all of these, a faithful record is the whole job. Tratto is built to do that job well and to stop there."
+          }
+        }
+      }
+    },
+    "In blinded challenges an inert substance triggered symptoms in about a quarter of patients. A single open test is wrong roughly one time in four.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nei confronti in cieco una sostanza inerte ha scatenato sintomi in circa un quarto dei pazienti. Una prova singola e in chiaro sbaglia grosso modo una volta su quattro."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In blinded challenges an inert substance triggered symptoms in about a quarter of patients. A single open test is wrong roughly one time in four."
+          }
+        }
+      }
+    },
+    "In numbers": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In cifre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In numbers"
+          }
+        }
+      }
+    },
+    "Ingredients": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingredienti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingredients"
+          }
+        }
+      }
+    },
+    "Interval": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intervallo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interval"
+          }
+        }
+      }
+    },
+    "JSON": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JSON"
+          }
+        }
+      }
+    },
+    "Knowing that you ate nothing is data. A slot left blank is not.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sapere che non hai mangiato è un dato. Una fascia lasciata vuota, no."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Knowing that you ate nothing is data. A slot left blank is not."
+          }
+        }
+      }
+    },
+    "Language": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lingua"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        }
+      }
+    },
+    "Level": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Livello"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level"
+          }
+        }
+      }
+    },
+    "Meal": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meal"
+          }
+        }
+      }
+    },
+    "Meal slot": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fascia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meal slot"
+          }
+        }
+      }
+    },
+    "Mean": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Media"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mean"
+          }
+        }
+      }
+    },
+    "Mean coverage of the expected slots (breakfast, lunch, dinner) over the last 7 days: %@.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copertura media delle fasce attese (colazione, pranzo, cena) negli ultimi 7 giorni: %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mean coverage of the expected slots (breakfast, lunch, dinner) over the last 7 days: %@."
+          }
+        }
+      }
+    },
+    "Median": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mediana"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Median"
+          }
+        }
+      }
+    },
+    "Median %@, typical swing ±%@ points over %lld days.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Median %@, typical swing ±%@ points over %lld days."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mediana %@, oscillazione tipica ±%@ punti su %lld giorni."
+          }
+        }
+      }
+    },
+    "Minimum and maximum": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimo e massimo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum and maximum"
+          }
+        }
+      }
+    },
+    "Nearby days still resemble each other too much to be treated as independent observations.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I giorni vicini si somigliano ancora troppo perché si possano trattare come osservazioni indipendenti."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nearby days still resemble each other too much to be treated as independent observations."
+          }
+        }
+      }
+    },
+    "New comparison": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuovo confronto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New comparison"
+          }
+        }
+      }
+    },
+    "No meals recorded yet.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ancora nessun pasto registrato."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No meals recorded yet."
+          }
+        }
+      }
+    },
+    "Not all the pairs are finished. Looking at the result now and deciding whether to go on would break the test: the exact p is only valid if the number of pairs was fixed in advance.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non tutte le coppie sono finite. Guardare il risultato adesso e decidere se andare avanti romperebbe il test: il p esatto vale solo se il numero di coppie era fissato in partenza."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not all the pairs are finished. Looking at the result now and deciding whether to go on would break the test: the exact p is only valid if the number of pairs was fixed in advance."
+          }
+        }
+      }
+    },
+    "Not in the catalogue": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non sono nel catalogo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not in the catalogue"
+          }
+        }
+      }
+    },
+    "Note on the scales": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nota sulle scale"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note on the scales"
+          }
+        }
+      }
+    },
+    "Notes": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notes"
+          }
+        }
+      }
+    },
+    "Nothing": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing"
+          }
+        }
+      }
+    },
+    "Nothing here separates the target from what it was compared against. On a comparison this size that is the most common outcome, and it is a legitimate one: it means you can stop wondering about this ingredient for now.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qui non c'è niente che separi il bersaglio da quello con cui è stato confrontato. Su un confronto di questa dimensione è l'esito più comune, ed è un esito legittimo: vuol dire che per ora su questo ingrediente puoi smettere di interrogarti."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing here separates the target from what it was compared against. On a comparison this size that is the most common outcome, and it is a legitimate one: it means you can stop wondering about this ingredient for now."
+          }
+        }
+      }
+    },
+    "Nothing recorded on this day.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessuna registrazione in questo giorno."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing recorded on this day."
+          }
+        }
+      }
+    },
+    "Nothing to show yet. Record your first event or your first meal.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non c'è ancora niente da mostrare. Registra il primo evento o il primo pasto."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing to show yet. Record your first event or your first meal."
+          }
+        }
+      }
+    },
+    "Notifications are turned off in system settings, so the reminders will not appear.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le notifiche sono disattivate nelle impostazioni di sistema, quindi i promemoria non compariranno."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications are turned off in system settings, so the reminders will not appear."
+          }
+        }
+      }
+    },
+    "Now": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adesso"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Now"
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Va bene"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Of the variation in stool form, %@ sits between different days and the rest between bowel movements on the same day.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Della variabilità della forma delle feci, %@ sta fra giorni diversi e il resto fra evacuazioni dello stesso giorno."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Of the variation in stool form, %@ sits between different days and the rest between bowel movements on the same day."
+          }
+        }
+      }
+    },
+    "Off by default. Stool form has a SNOMED CT concept but no LOINC code at all (the only «Bristol» in LOINC is a cigarette brand); pain from 0 to 10 does have a public LOINC code. SNOMED CT, however, is not free in Italy, which is not a member country: this is why the local coding is always there and the external ones are added only if you want them.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spento di default. La forma delle feci ha un concetto SNOMED CT ma nessun codice LOINC (l'unico «Bristol» presente in LOINC è una marca di sigarette); il dolore da 0 a 10 ha invece un codice LOINC pubblico. SNOMED CT però non è libero in Italia, che non è fra i paesi membri: per questo la codifica locale c'è sempre e quelle esterne si aggiungono solo se le vuoi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off by default. Stool form has a SNOMED CT concept but no LOINC code at all (the only «Bristol» in LOINC is a cigarette brand); pain from 0 to 10 does have a public LOINC code. SNOMED CT, however, is not free in Italy, which is not a member country: this is why the local coding is always there and the external ones are added only if you want them."
+          }
+        }
+      }
+    },
+    "One page: period covered, how many bowel movements, how the forms are distributed, how pain went, and the note that says which scale was used. No conclusions: this is the document to bring to an appointment.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pagina sola: periodo coperto, quante evacuazioni, come si distribuiscono le forme, l'andamento del dolore, e la nota che dice quale scala è stata usata. Nessuna conclusione: è il documento da portare a una visita."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One page: period covered, how many bowel movements, how the forms are distributed, how pain went, and the note that says which scale was used. No conclusions: this is the document to bring to an appointment."
+          }
+        }
+      }
+    },
+    "Only 26 days out of 68 had at least three meals recorded. On the rest, what was eaten was largely unknown.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo 26 giorni su 68 avevano almeno tre pasti registrati. Negli altri, quello che era stato mangiato era in gran parte ignoto."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only 26 days out of 68 had at least three meals recorded. On the rest, what was eaten was largely unknown."
+          }
+        }
+      }
+    },
+    "Optional": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facoltativo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional"
+          }
+        }
+      }
+    },
+    "Outcome": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esito"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Outcome"
+          }
+        }
+      }
+    },
+    "Over 59 days, breakfast appears 25 times and the morning snack once. That is not carelessness: a trip to the bathroom is memorable, a breakfast identical to every other one is not. It is why today you can answer «nothing» with one tap.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Su 59 giorni, la colazione compare 25 volte e lo spuntino del mattino una sola. Non è disattenzione: un evento in bagno si ricorda, una colazione uguale a tutte le altre no. È il motivo per cui oggi si può rispondere «niente» con un tocco."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 59 days, breakfast appears 25 times and the morning snack once. That is not carelessness: a trip to the bathroom is memorable, a breakfast identical to every other one is not. It is why today you can answer «nothing» with one tap."
+          }
+        }
+      }
+    },
+    "PDF report": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referto PDF"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF report"
+          }
+        }
+      }
+    },
+    "Pain": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dolore"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pain"
+          }
+        }
+      }
+    },
+    "Pain at the time": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dolore in quel momento"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pain at the time"
+          }
+        }
+      }
+    },
+    "Pain is collected on a self-reported 0-10 numeric scale, once a day.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il dolore è raccolto su scala numerica 0-10 auto-riferita, una volta al giorno."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pain is collected on a self-reported 0-10 numeric scale, once a day."
+          }
+        }
+      }
+    },
+    "Pain, day by day": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dolore, giorno per giorno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pain, day by day"
+          }
+        }
+      }
+    },
+    "Pair": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coppia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pair"
+          }
+        }
+      }
+    },
+    "Pair by pair": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coppia per coppia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pair by pair"
+          }
+        }
+      }
+    },
+    "Pairs that must agree": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coppie che devono concordare"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pairs that must agree"
+          }
+        }
+      }
+    },
+    "Pairs used": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coppie usate"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pairs used"
+          }
+        }
+      }
+    },
+    "Period observed: %@ to %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Period observed: %@ to %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo osservato: dal %@ al %@"
+          }
+        }
+      }
+    },
+    "Plan a comparison": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programma un confronto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan a comparison"
+          }
+        }
+      }
+    },
+    "Produced by Tratto, a diary kept by the patient. Data not verified by a third party.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prodotto da Tratto, diario compilato dal paziente. Dati non verificati da terzi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produced by Tratto, a diary kept by the patient. Data not verified by a third party."
+          }
+        }
+      }
+    },
+    "Recognise": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riconosci"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recognise"
+          }
+        }
+      }
+    },
+    "Record today's pain": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segna il dolore di oggi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record today's pain"
+          }
+        }
+      }
+    },
+    "Records bowel movements in three taps, with their time, form, and optionally urgency and pain.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registra le evacuazioni in tre tocchi, con ora, forma e, se vuoi, urgenza e dolore."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Records bowel movements in three taps, with their time, form, and optionally urgency and pain."
+          }
+        }
+      }
+    },
+    "Records meals as ingredients, dictated or typed, and records the slots where you ate nothing.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registra i pasti come ingredienti, dettati o scritti, e registra le fasce in cui non hai mangiato."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Records meals as ingredients, dictated or typed, and records the slots where you ate nothing."
+          }
+        }
+      }
+    },
+    "Remind me during the day": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricordamelo durante la giornata"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remind me during the day"
+          }
+        }
+      }
+    },
+    "Reminders": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promemoria"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminders"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Togli"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove"
+          }
+        }
+      }
+    },
+    "Result": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risultato"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Result"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        }
+      }
+    },
+    "Search an ingredient": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerca un ingrediente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search an ingredient"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impostazioni"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "Shape of the plan": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forma del piano"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shape of the plan"
+          }
+        }
+      }
+    },
+    "Shows how complete the diary is, how the numbers are distributed, and how much they move on their own.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra quanto è completo il diario, come si distribuiscono i numeri e quanto oscillano da soli."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows how complete the diary is, how the numbers are distributed, and how much they move on their own."
+          }
+        }
+      }
+    },
+    "Similarity": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somiglianza"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Similarity"
+          }
+        }
+      }
+    },
+    "Slot": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fascia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slot"
+          }
+        }
+      }
+    },
+    "Smallest p you can reach": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p più piccolo raggiungibile"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smallest p you can reach"
+          }
+        }
+      }
+    },
+    "So far stool form clusters on the same few values: with this little variety, an effect would have little room to show itself.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finora la forma delle feci si concentra quasi sempre sugli stessi valori: con così poca varietà, un effetto avrebbe poco spazio per manifestarsi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So far stool form clusters on the same few values: with this little variety, an effect would have little room to show itself."
+          }
+        }
+      }
+    },
+    "Still open today": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fasce ancora aperte oggi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Still open today"
+          }
+        }
+      }
+    },
+    "Stool form": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forma delle feci"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stool form"
+          }
+        }
+      }
+    },
+    "Stool form uses its whole range.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La forma delle feci usa bene tutta la sua scala."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stool form uses its whole range."
+          }
+        }
+      }
+    },
+    "Stool form uses part of its range.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La forma delle feci usa una parte dei suoi livelli."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stool form uses part of its range."
+          }
+        }
+      }
+    },
+    "Stress": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stress"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stress"
+          }
+        }
+      }
+    },
+    "Symptoms move a lot on their own. Sleep, stress, coffee and the working week shift the numbers as much as food does.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I sintomi oscillano molto da soli. Sonno, stress, caffè e il ritmo della settimana muovono i numeri quanto il cibo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Symptoms move a lot on their own. Sleep, stress, coffee and the working week shift the numbers as much as food does."
+          }
+        }
+      }
+    },
+    "Tap to add them to your catalogue. Whatever you skip still stays in the text of the meal.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tocca per aggiungerli al tuo catalogo. Quello che non aggiungi resta comunque scritto nel testo del pasto."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to add them to your catalogue. Whatever you skip still stays in the text of the meal."
+          }
+        }
+      }
+    },
+    "Target": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bersaglio"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Target"
+          }
+        }
+      }
+    },
+    "The analysis is not shown because the plan changed after it was frozen.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'analisi non viene mostrata perché il piano è cambiato dopo essere stato congelato."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The analysis is not shown because the plan changed after it was frozen."
+          }
+        }
+      }
+    },
+    "The app is written in English. Italian is a translation, and the change takes effect right away.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'app è scritta in inglese. L'italiano è una traduzione, e il cambio ha effetto subito."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The app is written in English. Italian is a translation, and the change takes effect right away."
+          }
+        }
+      }
+    },
+    "The daily score was assigned to every food eaten that day. Two foods always eaten together cannot be told apart, by any calculation.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il punteggio giornaliero veniva assegnato a tutti gli alimenti mangiati quel giorno. Due cibi mangiati sempre insieme non si possono distinguere, con nessun calcolo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The daily score was assigned to every food eaten that day. Two foods always eaten together cannot be told apart, by any calculation."
+          }
+        }
+      }
+    },
+    "The first %lld day of each block is left out of the calculation, to drop what carried over from the block before. It changes nothing in what you do.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il primo %lld giorno di ogni blocco resta fuori dal calcolo, per togliere quello che si trascina dal blocco precedente. Non cambia niente in quello che fai."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first %lld day of each block is left out of the calculation, to drop what carried over from the block before. It changes nothing in what you do."
+          }
+        }
+      }
+    },
+    "The frozen plan": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il piano congelato"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The frozen plan"
+          }
+        }
+      }
+    },
+    "The interval is at %@, not at 95%%: with this many pairs 95%% is not one of the levels that exist.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'intervallo è al %@, non al 95%%: con questo numero di coppie il 95%% non è fra i livelli che esistono."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The interval is at %@, not at 95%%: with this many pairs 95%% is not one of the levels that exist."
+          }
+        }
+      }
+    },
+    "The pairs lean the same way often enough that chance alone is an unlikely explanation. That is not the same as proof, and one comparison is not a diagnosis: an inert substance triggers symptoms in about a quarter of people. Repeat it before you act on it, and take it to a clinician.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le coppie pendono dalla stessa parte abbastanza spesso da rendere il caso una spiegazione poco probabile. Non è la stessa cosa di una prova, e un confronto solo non è una diagnosi: una sostanza inerte scatena sintomi in circa un quarto delle persone. Ripetilo prima di agire, e portalo a un medico."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The pairs lean the same way often enough that chance alone is an unlikely explanation. That is not the same as proof, and one comparison is not a diagnosis: an inert substance triggers symptoms in about a quarter of people. Repeat it before you act on it, and take it to a clinician."
+          }
+        }
+      }
+    },
+    "The plan is frozen before you start: the hypothesis, the outcome and the decision rule are fingerprinted, and the analysis refuses to run if any of them changed afterwards.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il piano viene congelato prima di iniziare: ipotesi, esito e regola di decisione ricevono un'impronta, e l'analisi si rifiuta di girare se uno di questi è cambiato dopo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The plan is frozen before you start: the hypothesis, the outcome and the decision rule are fingerprinted, and the analysis refuses to run if any of them changed afterwards."
+          }
+        }
+      }
+    },
+    "The plan no longer matches the fingerprint taken when it was frozen. The analysis will not run: a comparison whose rules changed along the way cannot be read as if they had not.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il piano non corrisponde più all'impronta presa quando è stato congelato. L'analisi non viene eseguita: un confronto le cui regole sono cambiate per strada non si può leggere come se non lo fossero."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The plan no longer matches the fingerprint taken when it was frozen. The analysis will not run: a comparison whose rules changed along the way cannot be read as if they had not."
+          }
+        }
+      }
+    },
+    "The question mark marks entries matched by similarity: check them.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il punto interrogativo segna le voci riconosciute per somiglianza: controllale."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The question mark marks entries matched by similarity: check them."
+          }
+        }
+      }
+    },
+    "The score was then «validated» by correlating it with mean consistency and mean discomfort. But it was computed from those two numbers: the correlation of 0.84 was the score correlating with itself.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il punteggio veniva poi «validato» correlandolo con la consistenza media e il fastidio medio. Ma era calcolato proprio a partire da quei due numeri: la correlazione di 0,84 era il punteggio che correlava con sé stesso."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The score was then «validated» by correlating it with mean consistency and mean discomfort. But it was computed from those two numbers: the correlation of 0.84 was the score correlating with itself."
+          }
+        }
+      }
+    },
+    "The structure follows published reintroduction protocols. The block lengths do not: they come from how much your own numbers carry over from one day to the next.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La struttura segue i protocolli di reintroduzione pubblicati. Le durate dei blocchi no: vengono da quanto i tuoi numeri si trascinano da un giorno all'altro."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The structure follows published reintroduction protocols. The block lengths do not: they come from how much your own numbers carry over from one day to the next."
+          }
+        }
+      }
+    },
+    "The two lists were kept separate but overlapped: carrot, tuna, parmesan, fennel, sausage and eggs appeared in both. In today's catalogue they are a single entry.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le due anagrafiche erano separate ma si sovrapponevano: carota, tonno, parmigiano, finocchio, salsiccia e uova comparivano in tutte e due. Nel catalogo di oggi sono una voce sola."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The two lists were kept separate but overlapped: carrot, tuna, parmesan, fennel, sausage and eggs appeared in both. In today's catalogue they are a single entry."
+          }
+        }
+      }
+    },
+    "These are the chances of ending up with a significant result. They are low because a comparison this short needs almost every pair to agree.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sono le probabilità di arrivare a un risultato significativo. Sono basse perché un confronto così corto ha bisogno che quasi tutte le coppie concordino."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These are the chances of ending up with a significant result. They are low because a comparison this short needs almost every pair to agree."
+          }
+        }
+      }
+    },
+    "These entries are not here to explain your symptoms. They are here to record what else was going on, because in a diary kept by one person sleep, stress and coffee move the numbers as much as food does.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queste voci non servono a spiegare i sintomi. Servono a sapere che cos'altro stava succedendo, perché in un diario di una persona sola sonno, stress e caffè muovono i numeri quanto il cibo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These entries are not here to explain your symptoms. They are here to record what else was going on, because in a diary kept by one person sleep, stress and coffee move the numbers as much as food does."
+          }
+        }
+      }
+    },
+    "These numbers use different scales from the ones in use now and are not comparable. «Consistency» ran from 0 to 5 with 0 as the worst value and rose monotonically: it is not the seven-level scale used today, whose best value sits in the middle. It is not converted, it enters no calculation, and it is never added to new data. The period also falls in the months right after lockdown, with hours, diet and stress that are hard to repeat.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questi dati usano scale diverse da quelle di oggi e non sono confrontabili. La «consistenza» va da 0 a 5 con 0 come valore peggiore e cresce in modo monotono: non è la scala a sette livelli usata adesso, che ha l'ottimo al centro. Non viene convertita, non entra in nessun calcolo e non si somma ai dati nuovi. Il periodo cade inoltre nei mesi successivi al lockdown, con orari, dieta e stress difficilmente ripetibili."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These numbers use different scales from the ones in use now and are not comparable. «Consistency» ran from 0 to 5 with 0 as the worst value and rose monotonically: it is not the seven-level scale used today, whose best value sits in the middle. It is not converted, it enters no calculation, and it is never added to new data. The period also falls in the months right after lockdown, with hours, diet and stress that are hard to repeat."
+          }
+        }
+      }
+    },
+    "They are in the app's temporary folder: share them or save them wherever you like.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sono nella cartella temporanea dell'app: condividili o salvali dove vuoi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "They are in the app's temporary folder: share them or save them wherever you like."
+          }
+        }
+      }
+    },
+    "This comparison could not have reached significance with the pairs it has, so the result says nothing either way.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo confronto non avrebbe potuto raggiungere la significatività con le coppie che ha, quindi il risultato non dice niente in nessuna direzione."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This comparison could not have reached significance with the pairs it has, so the result says nothing either way."
+          }
+        }
+      }
+    },
+    "This document reports only what was recorded. It contains no correlations between foods and symptoms, makes no diagnostic hypotheses, and is not produced by a medical device.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo documento riporta soltanto quello che è stato registrato. Non contiene correlazioni fra alimenti e sintomi, non formula ipotesi diagnostiche e non è prodotto da un dispositivo medico."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This document reports only what was recorded. It contains no correlations between foods and symptoms, makes no diagnostic hypotheses, and is not produced by a medical device."
+          }
+        }
+      }
+    },
+    "This is a count, not a ranking: none of these entries is put in relation with how you felt.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È un conteggio, non una classifica: nessuna di queste voci è messa in relazione con come è andata."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is a count, not a ranking: none of these entries is put in relation with how you felt."
+          }
+        }
+      }
+    },
+    "Three CSV files": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tre file CSV"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Three CSV files"
+          }
+        }
+      }
+    },
+    "Ties": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pareggi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ties"
+          }
+        }
+      }
+    },
+    "Time": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ora"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time"
+          }
+        }
+      }
+    },
+    "Times": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Times"
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oggi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
+          }
+        }
+      }
+    },
+    "Total bowel movements": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evacuazioni totali"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total bowel movements"
+          }
+        }
+      }
+    },
+    "Total length": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durata totale"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total length"
+          }
+        }
+      }
+    },
+    "Tratto": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto"
+          }
+        }
+      }
+    },
+    "Tratto lays out alternating blocks of days, with a gap between them, and randomises the order inside each pair.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto dispone blocchi di giorni alternati, con una pausa fra l'uno e l'altro, e sorteggia l'ordine dentro ogni coppia."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto lays out alternating blocks of days, with a gap between them, and randomises the order inside each pair."
+          }
+        }
+      }
+    },
+    "Tratto never tells you that a food is causing your symptoms.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto non ti dirà mai che un alimento è la causa dei tuoi sintomi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto never tells you that a food is causing your symptoms."
+          }
+        }
+      }
+    },
+    "Tratto records what you enter and counts it. It is not a medical device, it does not diagnose, and it does not replace a clinician.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto registra quello che scrivi e ne mostra il conteggio. Non è un dispositivo medico, non formula diagnosi e non sostituisce il parere di un medico."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto records what you enter and counts it. It is not a medical device, it does not diagnose, and it does not replace a clinician."
+          }
+        }
+      }
+    },
+    "Tratto records what you enter and shows counts and summaries of it. It does not link foods to symptoms, and it will not: on the numbers a personal diary produces, such a link could not be told apart from chance. It is not a medical device, it does not diagnose, and it does not replace a clinician. Talk to a doctor or a dietitian before changing what you eat.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto registra quello che inserisci e ne mostra ricorrenze e riepiloghi. Non mette in relazione gli alimenti con i sintomi e non lo farà: sui numeri che un diario personale produce, una relazione del genere non sarebbe distinguibile dal caso. Non è un dispositivo medico, non formula diagnosi e non sostituisce il parere di un medico. Parla con un medico o con un dietista prima di cambiare la tua alimentazione."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tratto records what you enter and shows counts and summaries of it. It does not link foods to symptoms, and it will not: on the numbers a personal diary produces, such a link could not be told apart from chance. It is not a medical device, it does not diagnose, and it does not replace a clinician. Talk to a doctor or a dietitian before changing what you eat."
+          }
+        }
+      }
+    },
+    "Two days %lld days apart no longer resemble each other appreciably. That is the number a washout between two conditions would have to respect.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Due giorni distanti %lld giorni non si somigliano più in modo apprezzabile. È il numero che una pausa fra due condizioni dovrebbe rispettare."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two days %lld days apart no longer resemble each other appreciably. That is the number a washout between two conditions would have to respect."
+          }
+        }
+      }
+    },
+    "Typical difference": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Differenza tipica"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typical difference"
+          }
+        }
+      }
+    },
+    "Typical swing (SD)": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oscillazione tipica (DS)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typical swing (SD)"
+          }
+        }
+      }
+    },
+    "Unusual day": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giornata fuori dal solito"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unusual day"
+          }
+        }
+      }
+    },
+    "Urgency": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urgenza"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urgency"
+          }
+        }
+      }
+    },
+    "Usual breakfast": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solita colazione"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usual breakfast"
+          }
+        }
+      }
+    },
+    "Usual meals": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasti ricorrenti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usual meals"
+          }
+        }
+      }
+    },
+    "Usual snack": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solito spuntino"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usual snack"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versione"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version"
+          }
+        }
+      }
+    },
+    "What Tratto is for": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A che cosa serve Tratto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What Tratto is for"
+          }
+        }
+      }
+    },
+    "What came up on re-reading the data": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa è emerso rileggendo i dati"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What came up on re-reading the data"
+          }
+        }
+      }
+    },
+    "What counts as the outcome": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Che cosa conta come esito"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What counts as the outcome"
+          }
+        }
+      }
+    },
+    "What did you eat?": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Che cosa hai mangiato?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What did you eat?"
+          }
+        }
+      }
+    },
+    "What it does": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Che cosa fa"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What it does"
+          }
+        }
+      }
+    },
+    "What it does not do, and why": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Che cosa non fa, e perché"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What it does not do, and why"
+          }
+        }
+      }
+    },
+    "What it produces": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Che cosa produce"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What it produces"
+          }
+        }
+      }
+    },
+    "What to compare": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Che cosa confrontare"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What to compare"
+          }
+        }
+      }
+    },
+    "What you can hope to see": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Che cosa puoi sperare di vedere"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you can hope to see"
+          }
+        }
+      }
+    },
+    "When a trigger is already known — coeliac disease, a diagnosed intolerance — and what matters is adherence and how things are going.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando il colpevole è già noto, per esempio una celiachia o un'intolleranza diagnosticata, e quello che conta è l'aderenza e come sta andando."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When a trigger is already known — coeliac disease, a diagnosed intolerance — and what matters is adherence and how things are going."
+          }
+        }
+      }
+    },
+    "When coverage falls below 70% over a week, the app marks the period as not analysable rather than showing numbers that look sound.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando la copertura scende sotto il 70% su una settimana, l'app dichiara il periodo non analizzabile invece di mostrare numeri che sembrano validi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When coverage falls below 70% over a week, the app marks the period as not analysable rather than showing numbers that look sound."
+          }
+        }
+      }
+    },
+    "When someone else will read it: a diary written as you go is worth more than one reconstructed the evening before.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando lo leggerà qualcun altro: un diario scritto man mano vale più di uno ricostruito la sera prima."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When someone else will read it: a diary written as you go is worth more than one reconstructed the evening before."
+          }
+        }
+      }
+    },
+    "When the between-days share is low, a daily average is mostly noise.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando la quota fra giorni è bassa, la media di una giornata è per lo più rumore."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When the between-days share is low, a daily average is mostly noise."
+          }
+        }
+      }
+    },
+    "Where we put our hands up": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dove alziamo le mani"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where we put our hands up"
+          }
+        }
+      }
+    },
+    "Whether a food affects you is, in most cases, not knowable from a diary alone. Tratto says so instead of guessing.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se un alimento ti riguardi o no, nella maggior parte dei casi, da un diario soltanto non si può sapere. Tratto lo dice invece di tirare a indovinare."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whether a food affects you is, in most cases, not knowable from a diary alone. Tratto says so instead of guessing."
+          }
+        }
+      }
+    },
+    "Which meals actually got recorded": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quali pasti venivano registrati davvero"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which meals actually got recorded"
+          }
+        }
+      }
+    },
+    "Who needs this diary anyway": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A chi serve comunque questo diario"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Who needs this diary anyway"
+          }
+        }
+      }
+    },
+    "Whole foods cannot be blinded: you will know which block is which. The comparison ingredient is not a placebo, it is something you do not suspect, so that expectation has something to be measured against.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli alimenti interi non si possono accecare: saprai quale blocco è quale. L'ingrediente di confronto non è un placebo, è qualcosa che non sospetti, così che l'aspettativa abbia qualcosa contro cui essere misurata."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whole foods cannot be blinded: you will know which block is which. The comparison ingredient is not a placebo, it is something you do not suspect, so that expectation has something to be measured against."
+          }
+        }
+      }
+    },
+    "Why a planned comparison": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perché un confronto programmato"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Why a planned comparison"
+          }
+        }
+      }
+    },
+    "Why those results did not hold": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perché quei risultati non reggevano"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Why those results did not hold"
+          }
+        }
+      }
+    },
+    "With %lld pairs no result can be significant, whatever happens. You would need at least 6 pairs for a two-sided hypothesis, or 5 for a one-sided one.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con %lld coppie nessun risultato può essere significativo, qualunque cosa succeda. Ne servirebbero almeno 6 per un'ipotesi bilaterale, o 5 per una unilaterale."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With %lld pairs no result can be significant, whatever happens. You would need at least 6 pairs for a two-sided hypothesis, or 5 for a one-sided one."
+          }
+        }
+      }
+    },
+    "Worst abdominal pain in the last 24 hours": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il peggior dolore alla pancia nelle ultime 24 ore"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worst abdominal pain in the last 24 hours"
+          }
+        }
+      }
+    },
+    "Write them the way you would say them out loud. One tap on the Now screen logs them.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scrivili come li diresti ad alta voce. Un tocco nella schermata Adesso li registra."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write them the way you would say them out loud. One tap on the Now screen logs them."
+          }
+        }
+      }
+    },
+    "You pick one ingredient to test and one to compare it against.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli un ingrediente da provare e uno con cui confrontarlo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You pick one ingredient to test and one to compare it against."
+          }
+        }
+      }
+    },
+    "Your own series still resembles itself 3 days later and stops doing so at 4. That is where the default gap comes from, not from a protocol.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua serie si somiglia ancora a 3 giorni di distanza e smette di farlo a 4. Da lì viene la pausa predefinita, non da un protocollo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your own series still resembles itself 3 days later and stops doing so at 4. That is where the default gap comes from, not from a protocol."
+          }
+        }
+      }
+    },
+    "Your pain moves by about %@ points from one day to the next with nothing in particular happening. That is worth knowing before you can say whether anything changes it.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo dolore cambia di circa %@ punti da un giorno all'altro senza che sia successo niente di particolare. Serve saperlo prima di poter dire se qualcosa lo cambia davvero."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your pain moves by about %@ points from one day to the next with nothing in particular happening. That is worth knowing before you can say whether anything changes it."
+          }
+        }
+      }
+    },
+    "and %lld more.": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e altri %lld."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "and %lld more."
+          }
+        }
+      }
+    },
+    "blood": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sangue"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "blood"
+          }
+        }
+      }
+    },
+    "complete days": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "giorni completi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "complete days"
+          }
+        }
+      }
+    },
+    "condiments": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "condimenti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "condiments"
+          }
+        }
+      }
+    },
+    "courses": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "portate"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "courses"
+          }
+        }
+      }
+    },
+    "days of %lld": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "giorni su %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "days of %lld"
+          }
+        }
+      }
+    },
+    "event": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "evento"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "event"
+          }
+        }
+      }
+    },
+    "events": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "eventi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "events"
+          }
+        }
+      }
+    },
+    "foods": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "alimenti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "foods"
+          }
+        }
+      }
+    },
+    "from %@ to %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "from %@ to %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dal %@ al %@"
+          }
+        }
+      }
+    },
+    "last 7 days": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ultimi 7 giorni"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "last 7 days"
+          }
+        }
+      }
+    },
+    "meals": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pasti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "meals"
+          }
+        }
+      }
+    },
+    "meals answered": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "fasce risolte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "meals answered"
+          }
+        }
+      }
+    },
+    "no data": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "nessun dato"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "no data"
+          }
+        }
+      }
+    },
+    "not set": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "non indicato"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "not set"
+          }
+        }
+      }
+    },
+    "pain": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dolore"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pain"
+          }
+        }
+      }
+    },
+    "pain %lld": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dolore %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pain %lld"
+          }
+        }
+      }
+    },
+    "urgency %lld": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "urgenza %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "urgency %lld"
+          }
+        }
+      }
+    },
+    "· %lld days": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· %lld giorni"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· %lld days"
+          }
+        }
+      }
+    },
+    "…in 7 pairs out of 10": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "…in 7 coppie su 10"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "…in 7 pairs out of 10"
+          }
+        }
+      }
+    },
+    "…in 8 pairs out of 10": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "…in 8 coppie su 10"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "…in 8 pairs out of 10"
+          }
+        }
+      }
+    },
+    "…in 9 pairs out of 10": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "…in 9 coppie su 10"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "…in 9 pairs out of 10"
+          }
+        }
+      }
+    },
+    "≥ %@ points": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≥ %@ punti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≥ %@ points"
+          }
+        }
+      }
+    },
+    "Hard pellets": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Palline dure"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard pellets"
+          }
+        }
+      }
+    },
+    "Lumpy": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grumosa"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lumpy"
+          }
+        }
+      }
+    },
+    "Cracked": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con crepe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cracked"
+          }
+        }
+      }
+    },
+    "Smooth": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liscia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smooth"
+          }
+        }
+      }
+    },
+    "Soft pieces": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pezzi morbidi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soft pieces"
+          }
+        }
+      }
+    },
+    "Mushy": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poltiglia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mushy"
+          }
+        }
+      }
+    },
+    "Liquid": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liquida"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liquid"
+          }
+        }
+      }
+    },
+    "Separate hard pellets, hard to pass": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Palline separate e dure, difficili da espellere"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Separate hard pellets, hard to pass"
+          }
+        }
+      }
+    },
+    "One compact piece with a lumpy surface": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un unico pezzo compatto, con la superficie a grumi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One compact piece with a lumpy surface"
+          }
+        }
+      }
+    },
+    "One long piece with cracks on the surface": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un unico pezzo allungato, con delle crepe sopra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One long piece with cracks on the surface"
+          }
+        }
+      }
+    },
+    "One long piece, smooth and soft": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un unico pezzo allungato, liscio e morbido"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One long piece, smooth and soft"
+          }
+        }
+      }
+    },
+    "Soft pieces with clear-cut edges": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pezzi morbidi con i bordi ben definiti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soft pieces with clear-cut edges"
+          }
+        }
+      }
+    },
+    "Ragged pieces, mushy texture": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pezzi sfrangiati, consistenza di poltiglia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ragged pieces, mushy texture"
+          }
+        }
+      }
+    },
+    "Liquid, with no solid pieces": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liquida, senza pezzi solidi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liquid, with no solid pieces"
+          }
+        }
+      }
+    },
+    "Breakfast": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colazione"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Breakfast"
+          }
+        }
+      }
+    },
+    "Morning snack": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spuntino del mattino"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morning snack"
+          }
+        }
+      }
+    },
+    "Lunch": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pranzo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lunch"
+          }
+        }
+      }
+    },
+    "Afternoon snack": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merenda"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afternoon snack"
+          }
+        }
+      }
+    },
+    "Dinner": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dinner"
+          }
+        }
+      }
+    },
+    "Evening snack": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spuntino della sera"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evening snack"
+          }
+        }
+      }
+    },
+    "Logged": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrato"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logged"
+          }
+        }
+      }
+    },
+    "A little": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poca"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A little"
+          }
+        }
+      }
+    },
+    "Normal": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Normale"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Normal"
+          }
+        }
+      }
+    },
+    "A lot": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A lot"
+          }
+        }
+      }
+    },
+    "Stool form (local 1-7 scale)": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forma delle feci (scala locale 1-7)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stool form (local 1-7 scale)"
+          }
+        }
+      }
+    },
+    "Bowel movements per day": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evacuazioni al giorno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bowel movements per day"
+          }
+        }
+      }
+    },
+    "Worst abdominal pain in the last 24 hours (0-10)": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peggior dolore addominale nelle ultime 24 ore (0-10)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worst abdominal pain in the last 24 hours (0-10)"
+          }
+        }
+      }
+    },
+    "Perceived urgency (0-10)": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urgenza percepita (0-10)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perceived urgency (0-10)"
+          }
+        }
+      }
+    },
+    "Perceived bloating (0-10)": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gonfiore percepito (0-10)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perceived bloating (0-10)"
+          }
+        }
+      }
+    },
+    "Day with at least one bowel movement outside the middle range": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giornata con almeno un'evacuazione fuori dall'intervallo centrale"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day with at least one bowel movement outside the middle range"
+          }
+        }
+      }
+    },
+    "A 7-level ordinal scale with its own labels and illustrations, ordered from the most compact form (1) to liquid (7). It is not the Bristol scale and the values must not be read as such.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scala ordinale a 7 livelli con etichette e illustrazioni proprie, ordinata dalla forma piu' compatta (1) alla liquida (7). Non e' la scala di Bristol e i valori non vanno letti come tali."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A 7-level ordinal scale with its own labels and illustrations, ordered from the most compact form (1) to liquid (7). It is not the Bristol scale and the values must not be read as such."
+          }
+        }
+      }
+    },
+    "Self-reported 0-10 numeric scale, recorded once a day.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scala numerica 0-10 auto-riferita, una rilevazione al giorno."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Self-reported 0-10 numeric scale, recorded once a day."
+          }
+        }
+      }
+    },
+    "foods with no category": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "alimenti senza categoria"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "foods with no category"
+          }
+        }
+      }
+    },
+    "missing values in events": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valori mancanti negli eventi"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "missing values in events"
+          }
+        }
+      }
+    },
+    "empty event rows, discarded": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "righe di evento vuote, scartate"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "empty event rows, discarded"
+          }
+        }
+      }
+    },
+    "duplicate entries in the lists": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "voci duplicate in anagrafica"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "duplicate entries in the lists"
+          }
+        }
+      }
+    },
+    "references to entries that do not exist": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "riferimenti a voci inesistenti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "references to entries that do not exist"
+          }
+        }
+      }
+    },
+    "dates that could not be read": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "date non interpretabili"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dates that could not be read"
+          }
+        }
+      }
+    },
+    "non-numeric values": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "valori non numerici"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "non-numeric values"
+          }
+        }
+      }
+    },
+    "Mean daily pain (0-10)": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dolore medio giornaliero (0-10)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mean daily pain (0-10)"
+          }
+        }
+      }
+    },
+    "Share of days outside the middle range": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quota di giornate fuori dall'intervallo centrale"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share of days outside the middle range"
+          }
+        }
+      }
+    },
+    "Any difference (two-sided)": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una differenza qualsiasi (bilaterale)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Any difference (two-sided)"
+          }
+        }
+      }
+    },
+    "The target makes it worse (one-sided)": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il bersaglio peggiora le cose (unilaterale)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The target makes it worse (one-sided)"
+          }
+        }
+      }
+    },
+    "Comparison": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confronto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparison"
+          }
+        }
+      }
+    },
+    "Consistent with an effect": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coerente con un effetto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consistent with an effect"
+          }
+        }
+      }
+    },
+    "No detectable effect": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun effetto rilevabile"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No detectable effect"
+          }
+        }
+      }
+    },
+    "Inconclusive": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non concludente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inconclusive"
+          }
+        }
+      }
+    },
+    "Protocol changed after it was frozen": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piano cambiato dopo il congelamento"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Protocol changed after it was frozen"
+          }
+        }
+      }
+    },
+    "Not finished yet": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ancora finito"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not finished yet"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
