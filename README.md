@@ -1,9 +1,14 @@
 # Tratto
 
-Diario intestinale e alimentare per macOS e iOS. Riprende, sei anni dopo, il
-progetto [Progetto-fondamenti-Nerelli](https://github.com/nerln/Progetto-fondamenti-Nerelli):
+[![build](https://github.com/nerln/tratto/actions/workflows/build.yml/badge.svg)](https://github.com/nerln/tratto/actions/workflows/build.yml)
+
+Diario intestinale e alimentare per macOS, iOS, Windows e Android. Riprende, sei
+anni dopo, il progetto [Progetto-fondamenti-Nerelli](https://github.com/nerln/Progetto-fondamenti-Nerelli):
 il diario che correlava cibo e funzione intestinale, tenuto dal 2 maggio all'8
 luglio 2020 per l'esame di Fondamenti di Data Science.
+
+Il sito sta su [nerln.github.io/tratto](https://nerln.github.io/tratto/), i
+binari fra le [release](https://github.com/nerln/tratto/releases).
 
 Interfaccia in inglese, con l'italiano selezionabile dalle impostazioni e senza
 riavviare l'app.
