@@ -26,6 +26,11 @@ jobs:
   core:
     name: TypeScript core
     runs-on: ubuntu-latest
+    # Electron's postinstall pulls a hundred-megabyte prebuilt binary that only
+    # the Windows job has any use for. Skipping it here removes both the wait
+    # and a network failure that has nothing to do with the code under test.
+    env:
+      ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -73,6 +78,8 @@ jobs:
     name: Android APK
     needs: core
     runs-on: ubuntu-latest
+    env:
+      ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
