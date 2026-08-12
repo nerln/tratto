@@ -2,10 +2,9 @@
 
 [![build](https://github.com/nerln/tratto/actions/workflows/build.yml/badge.svg)](https://github.com/nerln/tratto/actions/workflows/build.yml)
 
-Diario intestinale e alimentare per macOS, iOS, Windows e Android. Riprende, sei
-anni dopo, il progetto [Progetto-fondamenti-Nerelli](https://github.com/nerln/Progetto-fondamenti-Nerelli):
-il diario che correlava cibo e funzione intestinale, tenuto dal 2 maggio all'8
-luglio 2020 per l'esame di Fondamenti di Data Science.
+Diario intestinale e alimentare per macOS, iOS, Windows e Android. Registra in
+tre tocchi, tiene tutto sul dispositivo, esporta in formati che un clinico può
+aprire, e non nomina mai un alimento colpevole.
 
 Il sito sta su [nerln.github.io/tratto](https://nerln.github.io/tratto/), i
 binari fra le [release](https://github.com/nerln/tratto/releases).
@@ -17,6 +16,61 @@ La fase 1 fa una cosa sola e la fa per intero: **registra**. Non mette in
 relazione gli alimenti con i sintomi, e non lo farà. La fase 2 aggiunge l'unica
 cosa che quella relazione la può davvero produrre: un **confronto programmato**,
 con il piano congelato prima di iniziare.
+
+## Da dove viene
+
+L'obiettivo iniziale, nel 2020, era il più ovvio: tenere un diario di cibo e
+funzione intestinale per 68 giorni e ricavarne quali alimenti facessero male. Il
+risultato è stato che il diario non poteva dirlo, e la ragione stava nei dati e
+non nei conti: gran parte delle giornate era registrata a metà, e gli alimenti
+interessanti non erano mai stati mangiati abbastanza spesso, né abbastanza
+separatamente, da poter essere distinti.
+
+Da qui l'idea di Tratto. Un diario vale la pena di tenerlo, vale la pena di
+tenerlo bene, e nel momento in cui indica un colpevole sta inventando. Quindi
+questo registra per davvero e dichiara quello che vede e quello che non vede.
+
+## Che cosa fa, in breve
+
+- **Tre tocchi per un evento**: apri, scegli la forma fra sette disegni, salvi.
+- **I pasti in lingua naturale**, dettati o scritti, riconosciuti contro un
+  vocabolario chiuso di 142 ingredienti in inglese e italiano, e sempre
+  correggibili a mano.
+- **Registra l'assenza**: chiede delle fasce saltate e accetta «niente» come
+  risposta, così una colazione vuota è vuota e non ignota.
+- **Mostra i tuoi numeri**: copertura, distribuzione delle forme, andamento del
+  dolore, quanto oscillano i dati da soli, quanto devono distare due giorni per
+  smettere di somigliarsi. Mai una classifica di alimenti.
+- **Un referto di una pagina** da portare a una visita.
+- **Fase 2**: quando vuoi una risposta, imposta un confronto vero a blocchi
+  alternati, e prima ti dice se può funzionare.
+
+### Privacy, integrazioni, scale, prezzo
+
+**Privacy.** Nessun server, nessun account, nessuna telemetria, nessuna
+richiesta di rete fatta dall'app. Niente iCloud, sia perché le linee guida App
+Store vietano i dati sanitari personali in iCloud, sia perché la sincronizzazione
+è il punto in cui un'app locale smette di esserlo: fra Mac e telefono si passa
+un file esplicito. Il riconoscimento dei pasti avviene sul dispositivo. L'app web
+**non** è ospitata su `nerln.github.io`: un archivio sanitario in IndexedDB su
+un'origine condivisa con altri progetti sarebbe leggibile da qualsiasi altra
+pagina di quell'origine.
+
+**Integrazioni.** Esportazione in bundle FHIR R4, tre CSV, JSON completo, e
+referto PDF su macOS e iOS; reimportazione dal JSON. Le codifiche esterne
+(SNOMED CT, LOINC) sono opzionali e spente di default, quella locale c'è sempre.
+Tratto **non** scrive su Apple Health né su Health Connect, perché nessuna delle
+due ha un tipo per questi dati e l'insieme dei tipi non è estendibile.
+
+**Scale.** Sette livelli di forma con disegni ed etichette propri, nessuno
+strumento proprietario nominato; dolore 0-10 nelle ultime 24 ore come esito
+primario (LOINC 72514-3); fasce dei pasti invece di orari liberi. Ogni
+esportazione dichiara quale scala ha prodotto i numeri. Nessun punteggio clinico
+pubblicato viene calcolato (MDCG 2019-11).
+
+**Prezzo.** Gratis su tutte e quattro le piattaforme, nessun abbonamento,
+nessun livello a pagamento, nessun acquisto. Su iOS, senza account developer a
+pagamento, una build fatta da sé va reinstallata ogni sette giorni.
 
 ## A chi serve
 
@@ -42,26 +96,25 @@ elettronico (Stone 2002).
 
 ## Perché non calcola correlazioni
 
-Il progetto del 2020 le calcolava, e il modo in cui lo faceva non reggeva.
-Rileggendo il codice R e rimisurando i dati:
+Non per prudenza, ma perché su questi numeri la risposta non è distinguibile dal
+caso. Tre ragioni, tutte misurate e non asserite:
 
-- Il punteggio giornaliero veniva attribuito **a tutti** gli alimenti mangiati
-  quel giorno. Due cibi mangiati sempre insieme non si possono separare con
-  nessun calcolo.
-- Il punteggio veniva poi «validato» correlandolo con la consistenza media e il
-  fastidio medio: **ma era calcolato a partire da quei due numeri**. La
-  correlazione di Pearson 0,84 era il punteggio che correlava con sé stesso.
-- 83 alimenti confrontati senza nessuna correzione per il numero dei confronti,
-  e solo **7** di loro comparivano in almeno dieci pasti.
-- Solo **26 giorni su 68** avevano almeno tre pasti registrati. Negli altri
-  l'alimentazione era in gran parte ignota.
+- Un punteggio giornaliero finisce attribuito **a tutti** gli alimenti di quel
+  giorno, e due cibi mangiati sempre insieme non si separano con nessun calcolo.
+- Confrontare decine di alimenti senza correzione produce risultati
+  «significativi» a comando, e quasi nessuno di quegli alimenti ha abbastanza
+  esposizioni per reggere un confronto.
+- Soprattutto: se solo **26 giornate su 68** hanno almeno tre pasti registrati,
+  nelle altre l'alimentazione è in gran parte ignota. Il problema non è la
+  statistica, è che i tre quarti delle giornate non sono osservate.
 
-Quest'ultimo è il numero che conta. Il problema non era la statistica: era che
-i tre quarti delle giornate non erano osservate.
+La conseguenza in codice è che dal diario osservazionale non esce mai una
+relazione fra alimenti e sintomi, in nessuna schermata. L'unica relazione che
+l'app produce viene dalla fase 2.
 
-## Che cosa è stato misurato prima di decidere
+## Le costanti vengono da dati misurati, non da un manuale
 
-Non asserito: calcolato sui dati veri del 2020 (`Strumenti/varianza.py`).
+Calcolate su 68 giorni di diario reale con `Strumenti/varianza.py`.
 
 | grandezza | valore | conseguenza sul progetto |
 |---|---|---|

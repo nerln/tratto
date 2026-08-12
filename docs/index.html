@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tratto: a bowel diary that refuses to guess</title>
-<meta name="description" content="A bowel and food diary for macOS, iOS, Windows and Android. It records what you enter and will not tell you which food is to blame, because on a personal diary that answer cannot be told apart from chance.">
+<title>Tratto: a bowel diary you will actually keep</title>
+<meta name="description" content="A bowel and food diary for macOS, iOS, Windows and Android. Three taps for a bathroom visit, one question at night, and everything stays on your device. Free, no account, no subscription.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="./style.css">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tratto: a bowel diary that refuses to guess">
-<meta property="og:description" content="It started as a data science assignment in 2020. The score turned out to correlate with itself. Six years later, here is the version that says so.">
+<meta property="og:title" content="Tratto: a bowel diary you will actually keep">
+<meta property="og:description" content="Three taps for a bathroom visit, one question at night. Everything stays on your device. Free on macOS, iOS, Windows and Android.">
 <meta property="og:url" content="https://nerln.github.io/tratto/">
 <meta property="og:image" content="https://nerln.github.io/tratto/preview.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,11 +20,11 @@
 <header class="hero">
   <p class="kicker">macOS · iOS · Windows · Android</p>
   <h1>Tratto</h1>
-  <p class="lede">A bowel and food diary that records faithfully and will not tell you which food is to blame.</p>
-  <p class="sub">The refusal is the feature. On the numbers a personal diary produces, that answer cannot be told apart from chance, and an app that names a culprit anyway is confidently wrong.</p>
+  <p class="lede">A bowel and food diary you will actually keep.</p>
+  <p class="sub">Three taps for a bathroom visit. One question at night. Everything stays on your device, and there is nothing to subscribe to, no account to make, and nothing to upload.</p>
   <p class="cta">
-    <a class="button" href="https://github.com/nerln/tratto/releases">Downloads</a>
-    <a class="button button-quiet" href="https://github.com/nerln/tratto">Source</a>
+    <a class="button" href="https://github.com/nerln/tratto/releases">Download, free</a>
+    <a class="button button-quiet" href="#privacy">How it handles your data</a>
     <a class="button button-quiet" href="./notes.html">Notes &amp; citations</a>
   </p>
 </header>
@@ -32,98 +32,134 @@
 <main>
 
 <section>
-  <h2>It began as coursework, and the coursework was wrong</h2>
-
-  <p>In 2020 I kept a diary for 68 days and wrote it up for a data science exam. The introduction still opens the file:</p>
-
-  <blockquote lang="en">
-    <p>For the last few years my gut has not been healthy, and I became convinced that specific foods or meals were doing me harm. Holding that conviction, I went through a range of tests and medical appointments, many of them proctological. So I asked myself whether, by tracking what I eat and how I go to the bathroom, it would be possible to work out whether and which foods were hurting me.</p>
-    <footer>The 2020 write-up, translated.</footer>
-  </blockquote>
-
-  <p>It was a reasonable question. The method was not. I built a daily score out of how many times I went, how the stool looked and how much it hurt beforehand, then handed that score to every food I had eaten that day. Then I checked whether the score was any good:</p>
-
-  <blockquote lang="en" class="damning">
-    <p>I conclude the score is reasonably reliable, since it correlates with mean consistency and somewhat with prior discomfort.</p>
-    <footer>Also the 2020 write-up.</footer>
-  </blockquote>
-
-  <p>The score was <em>computed from</em> mean consistency and prior discomfort. Pearson put it at 0.84, which is the number you get when something correlates with itself. I graded my own homework and gave it a good mark.</p>
-
-  <p>There was a second problem, quieter and worse. Eighty-three foods went into that comparison. Seven of them appeared in at least ten meals. And only 26 days out of 68 had as many as three meals written down, so on most days what I had eaten was largely unknown. The statistics were never the bottleneck.</p>
-
-  <p class="aside">To its credit, 2020-me noticed something was off: <span lang="en">"I really do not think fennel is doing me any harm, but I think I happened to eat it on days that did not score well."</span> That is collinearity, described correctly and then walked past.</p>
+  <h2>Where it came from</h2>
+  <p>The question behind Tratto was asked in 2020, as a university data science project: keep a food and bowel diary for 68 days, then work out which foods were doing the damage. The answer that came back was that the diary could not tell, and the reason was in the data rather than in the arithmetic. Most days were only half recorded, and the foods worth examining had never been eaten often enough or separately enough to be told apart.</p>
+  <p>That is the idea Tratto is built on. A diary is worth keeping, and it is worth keeping well, and the moment it starts naming culprits it is making things up. So this one records properly and says what it can and cannot see.</p>
 </section>
 
 <section>
-  <h2>What the data actually supports</h2>
-
-  <p>Before rebuilding anything I re-measured the old diary. These are not assumptions carried over from a textbook; they are computed from those 68 days, and the script is in the repository.</p>
-
-  <table class="numbers">
-    <caption>Measured on the 2020 diary</caption>
-    <tbody>
-      <tr><th scope="row">Standard deviation of stool consistency</th><td>0.91 on a 0 to 5 scale</td><td>the outcome does vary; the fear that it was flat was wrong</td></tr>
-      <tr><th scope="row">Share of variance between days</th><td>57%</td><td>the other 43% is noise between movements on the same day</td></tr>
-      <tr><th scope="row">Autocorrelation at one day</th><td>+0.51</td><td>consecutive days are not independent observations</td></tr>
-      <tr><th scope="row">Autocorrelation at three days</th><td>+0.16</td><td>which is where a four-day washout comes from, rather than from a protocol</td></tr>
-      <tr><th scope="row">Inseparable ingredient pairs</th><td>one</td><td>lactose-free milk and puffed rice: breakfast</td></tr>
-      <tr><th scope="row">Ingredients with ten or more exposures</th><td>19 of 142</td><td>the set that could be looked at at all</td></tr>
-      <tr><th scope="row">Days with three meals recorded</th><td>26 of 68</td><td>the actual reason it failed</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h2>So what does it do</h2>
+  <h2>What it does</h2>
 
   <div class="cols">
     <div>
-      <h3>It records</h3>
-      <p>Three taps for a bathroom visit: open, pick the form from seven drawings, save. Meals get typed or dictated in plain language and matched against a closed vocabulary of 142 ingredients, in English or Italian. One question a day, at night: worst abdominal pain in the last 24 hours.</p>
-      <p>And it records absence. In 2020 breakfast was written down 25 times in 59 days, not out of laziness but because a trip to the bathroom is memorable and a breakfast identical to every other one is not. A slot answered "nothing" is data. A slot left blank is a hole.</p>
+      <h3>Three taps, and you are done</h3>
+      <p>Open, pick the form from seven drawings, save. No typing, no scrolling through a form, no login screen between you and the thing you came to record. It is designed for one hand in a bathroom, because that is where it gets used.</p>
     </div>
     <div>
-      <h3>It shows how noisy you are</h3>
-      <p>How complete the diary is, how the forms are distributed, how much the numbers move on their own, and how far apart two days have to be before they stop resembling each other. That last figure is what a washout would have to respect.</p>
-      <p>What it never shows is a ranking of foods. Not a shortlist, not a "suspects" tab, not a p-value next to an ingredient.</p>
+      <h3>Meals in plain language</h3>
+      <p>Type or dictate what you ate the way you would say it out loud. Tratto matches it against a vocabulary of 142 ingredients, in English or Italian, and shows you what it recognised so you can correct it. Nothing is guessed silently.</p>
+    </div>
+    <div>
+      <h3>It notices what you did not write down</h3>
+      <p>A bathroom visit is memorable. A breakfast identical to every other breakfast is not, and that is exactly the gap that ruins a diary. Tratto asks about the slots you skipped and takes "nothing" for an answer, so an empty morning means empty rather than unknown.</p>
+    </div>
+    <div>
+      <h3>It shows you your own numbers</h3>
+      <p>How complete your diary is. How your forms are distributed. How your pain has moved. How much your numbers wander on their own, and how far apart two days have to be before they stop resembling each other. Counts and summaries, on your data.</p>
+    </div>
+    <div>
+      <h3>A document to bring to an appointment</h3>
+      <p>One page: the period covered, how many bowel movements, how the forms fell out, how pain went, and a note saying which scale was used. Raw record, no conclusions, nothing for a clinician to have to unpick.</p>
+    </div>
+    <div>
+      <h3>When you want an answer, it runs a real test</h3>
+      <p>Phase two stops observing and starts arranging: one ingredient against one comparison, alternating blocks of days, the order randomised, and the plan frozen before you begin. It is the only setup that can produce evidence rather than a hunch.</p>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>And then, if the numbers allow it, a comparison</h2>
+  <h2>And it tells you when it is not worth it</h2>
 
-  <p>Passive observation cannot produce the evidence, so phase two stops observing and starts arranging. You pick one ingredient and one to compare it against; the app lays out alternating blocks of days with a gap in between and randomises the order inside each pair. The structure follows published reintroduction protocols. The block lengths do not: they come from your own autocorrelation, and from the fact that in the published blinded challenge lactose symptoms only appear on day three, so a three-day block is cut off before they could show.</p>
+  <p>Before you commit two months to a comparison, Tratto shows you the one number that decides whether the experiment can work at all.</p>
 
-  <p>Before you agree to spend two months, the app tells you the one number that matters, and it is not the effect size:</p>
+  <p class="figure">With six pairs of blocks and a two-sided hypothesis, the test needs <strong>six agreements out of six</strong>. So even for a food that genuinely affects you in eight pairs out of ten, the chance of reaching a significant result is <strong>26%</strong>. With five pairs or fewer, nothing can be significant. Nine is the first size that tolerates one disagreement.</p>
 
-  <p class="figure">With six pairs and a two-sided hypothesis the test needs <strong>six agreements out of six</strong>. So even for a food that genuinely affects you in eight pairs out of ten, the chance of reaching a significant result is <strong>26%</strong>. With five pairs or fewer, nothing can be significant at all. Nine is the first size that tolerates a single disagreement.</p>
+  <p>Most apps in this category would not show you that, because it talks you out of using the feature. It is here because a two month experiment that could not have succeeded is worse than no experiment.</p>
 
-  <p>The plan is then frozen: the hypothesis, the outcome, the decision rule and the block order go into a canonical text and its SHA-256 is stored. Change any of them afterwards and the analysis refuses to run. That is the only way a preregistration means anything when the experimenter and the subject are the same person.</p>
-
-  <p>There is no placebo, and the app says so rather than implying otherwise. Whole foods cannot be blinded; you will know which block is which. The comparison ingredient is something you do not suspect, so that expectation has something to be measured against. It is needed because in the published blinded challenge an inert control triggered symptoms in about a quarter of patients.</p>
+  <p>What Tratto never shows is a ranking of foods. No shortlist, no suspects tab, no p-value beside an ingredient. On the numbers a personal diary produces, that answer cannot be told apart from chance, and an app that names a culprit anyway is confidently wrong.</p>
 </section>
 
 <section>
-  <h2>The same numbers on every platform</h2>
+  <h2>Who it is for</h2>
 
-  <p>The Apple version is written in Swift, the Windows and Android versions share a TypeScript core. Two implementations of the same exact statistics are an excellent way to drift apart quietly, so neither is trusted alone: the Swift test suite writes a file of golden numbers and the TypeScript suite has to reproduce it digit for digit, Wilcoxon with tied ranks and the 64-bit block shuffle included. A p-value computed on a phone is the same p-value computed on a laptop.</p>
+  <p>Before a gastroenterology appointment, where the clinician needs what happened rather than what you remember. Inside an elimination and reintroduction plan run with a dietitian, where the diary is the record of the protocol. When the trigger is already known and what matters is adherence. Before and after a treatment, where the point is the change.</p>
 
-  <div class="downloads">
-    <div><h3>macOS &amp; iOS</h3><p>SwiftUI and SwiftData. Build it from source; it is not on the App Store.</p></div>
-    <div><h3>Windows</h3><p>A portable build and a zip. Unsigned, so SmartScreen will warn you.</p></div>
-    <div><h3>Android</h3><p>A debug APK. You will need to allow installation from unknown sources.</p></div>
+  <p>In all of those a faithful record is the whole job, and the value is the timestamp: <cite>Stone et al., BMJ 2002</cite> compared a paper diary against an electronic one that stamped every entry, and found reported adherence to paper at 90% against actual adherence of 11%. The electronic version reached 94%.</p>
+</section>
+
+<hr>
+
+<section id="privacy">
+  <h2>The details that decide it</h2>
+  <p class="sub">Everything below is checkable in the source, and the parts that come from someone else's rules are cited on the <a href="./notes.html">notes page</a>.</p>
+
+  <h3>Privacy: it is a local app, in the strict sense</h3>
+  <ul class="facts">
+    <li>Your diary lives in a store on your device. There is <strong>no server</strong>, because there is nothing on the other end to have one.</li>
+    <li><strong>No account.</strong> Nothing to sign up for, nothing to sign in to, no email address collected.</li>
+    <li><strong>No telemetry, no analytics, no crash reporting, no advertising identifier.</strong> The app makes no network request of its own.</li>
+    <li><strong>No iCloud sync</strong>, and that is deliberate twice over: App Store rules forbid keeping personal health data in iCloud, and syncing is the step where a local app stops being one. Moving your diary between your Mac and your phone is an explicit file that you send yourself.</li>
+    <li>Meal text is matched <strong>on your device</strong>. Where the system's on-device model helps, it is a suggester whose output is checked by deterministic code, and it never leaves the machine.</li>
+    <li>This website sets no cookie, loads no font, embeds no analytics and makes no third-party request.</li>
+    <li>The app is <strong>not</strong> published as a web page on this domain, on purpose. A health diary in browser storage on an origin shared with other projects is readable by any other page on that origin. That was a real option and it was rejected.</li>
+  </ul>
+
+  <h3>Integrations: files that anyone can open, and honesty about the rest</h3>
+  <p>Export gives you a <strong>FHIR R4 bundle</strong>, three <strong>CSV</strong> files, the complete <strong>JSON</strong>, and on macOS and iOS a one-page <strong>PDF</strong>. Import takes the JSON back. Coding for interoperability is on a switch: a local coding is always present, and the external ones (SNOMED CT, LOINC) are optional and off by default, because SNOMED is not free in Italy and an archive should not become unexportable because of a licence.</p>
+  <p>What Tratto does not do is claim to write into Apple Health or Health Connect, because neither of them will take this. Verified against each platform's own list of types:</p>
+  <div class="table-scroll">
+  <table class="matrix">
+    <thead><tr><th scope="col">What</th><th scope="col">Apple Health</th><th scope="col">Health Connect</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Bowel movements and stool form</th><td class="no">no type</td><td class="no">no type</td></tr>
+      <tr><th scope="row">Bloating, abdominal pain</th><td class="partial">severity only</td><td class="no">no type</td></tr>
+      <tr><th scope="row">Diarrhea and constipation flags</th><td class="partial">presence only</td><td class="no">no type</td></tr>
+      <tr><th scope="row">A custom type of our own</th><td class="no">not allowed</td><td class="no">not allowed</td></tr>
+    </tbody>
+  </table>
   </div>
-  <p class="cta"><a class="button" href="https://github.com/nerln/tratto/releases">Go to the releases</a></p>
+  <p class="aside">Health Connect has 42 record types and the set is closed. Apple Health has seven gastrointestinal symptom types, all on a four-level severity enum, so a 0 to 10 score projects onto it and never comes back. Reading sleep and activity from those platforms is the direction that would work, and it is not in this version.</p>
+
+  <h3>Scales: which ones, and why they are ours</h3>
+  <ul class="facts">
+    <li><strong>Stool form, seven levels</strong>, with drawings and labels written from scratch. The best known seven-level scale is a copyrighted work whose ownership is genuinely disputed between three organisations, so no proprietary instrument is used and none is named in the interface.</li>
+    <li><strong>Pain, 0 to 10</strong>, worst in the last 24 hours, asked once a day. This is the primary outcome, it is the endpoint clinical trials use, and it carries a free public code, LOINC 72514-3.</li>
+    <li><strong>Meal slots</strong> rather than free timestamps, so a missing breakfast is a question the app can ask instead of a hole nobody notices.</li>
+    <li>Every export states <strong>which scale produced the numbers</strong>, so nobody reading it later mistakes it for a scale it is not.</li>
+    <li>No published clinical index is computed. Calculating one would push the app across the line drawn by <cite>MDCG 2019-11</cite>, where recording, storing, searching, exporting and charting stay below the medical device threshold.</li>
+  </ul>
+
+  <h3>Price: free, and here is what that costs you</h3>
+  <div class="table-scroll">
+  <table class="matrix">
+    <thead><tr><th scope="col">Platform</th><th scope="col">Price</th><th scope="col">What you should know</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Windows</th><td class="yes">Free</td><td>Portable executable, no installer. Unsigned, so SmartScreen will warn you once.</td></tr>
+      <tr><th scope="row">Android</th><td class="yes">Free</td><td>APK. You will need to allow installation from whichever app you download it with.</td></tr>
+      <tr><th scope="row">macOS and iOS</th><td class="yes">Free</td><td>Built from source. Not on the App Store, and on iOS without a paid Apple developer account a self-built app must be reinstalled every seven days.</td></tr>
+      <tr><th scope="row">Subscription</th><td class="yes">None</td><td>There is no paid tier, no trial and no feature behind a purchase.</td></tr>
+      <tr><th scope="row">Your data</th><td class="yes">Yours</td><td>It is not the product. There is no one to sell it to and no channel to sell it through.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="aside">Windows is unsigned because signing would buy nothing: since 2024 an EV certificate no longer skips SmartScreen, and the managed signing service is closed to individual developers outside the United States and Canada. Saying so is cheaper than pretending.</p>
+
+  <h3>The same numbers on every platform</h3>
+  <p>The Apple version is written in Swift, the Windows and Android versions share a TypeScript core, and the same exact statistics therefore exist twice. Two implementations drift apart quietly, so neither is trusted alone: the Swift test suite writes a file of golden numbers and the TypeScript suite has to reproduce it digit for digit, tied ranks and the 64-bit block shuffle included. A number computed on your phone is the number computed on your laptop.</p>
 </section>
 
 <section>
-  <h2>Who this is actually for</h2>
-
-  <p>Finding the culprit is not the only reason to keep a diary, and in most of the situations where one is asked for, it is not the question. Before a gastroenterology appointment, where the clinician needs what happened rather than what you remember. Inside an elimination and reintroduction plan run with a dietitian, where the diary is the record of the protocol. When the trigger is already known, and what matters is adherence. Before and after a treatment, where the point is the change and not the cause.</p>
-
-  <p>In all of those a faithful record is the entire job, and the value is not inference: it is that the entry carries a real timestamp instead of being reconstructed the evening before. That difference has been measured: <cite>Stone et al., BMJ 2002</cite> put reported adherence to a paper diary at 90% and actual adherence at 11%.</p>
+  <h2>Get it</h2>
+  <div class="downloads">
+    <div><h3>Windows</h3><p>Portable build and a zip.</p></div>
+    <div><h3>Android</h3><p>APK, signed with a stable key so updates install over the old version.</p></div>
+    <div><h3>macOS &amp; iOS</h3><p>SwiftUI and SwiftData. Build it from source.</p></div>
+  </div>
+  <p class="cta">
+    <a class="button" href="https://github.com/nerln/tratto/releases">Go to the releases</a>
+    <a class="button button-quiet" href="https://github.com/nerln/tratto">Read the source</a>
+  </p>
 </section>
 
 <footer>
@@ -131,7 +167,6 @@
   <p class="links">
     <a href="./notes.html">Notes, sources and the things we could not verify</a> ·
     <a href="https://github.com/nerln/tratto">Source</a> ·
-    <a href="https://github.com/nerln/Progetto-fondamenti-Nerelli">The 2020 original</a> ·
     MIT
   </p>
 </footer>
