@@ -60,11 +60,35 @@ jobs:
           cache-dependency-path: cross/package-lock.json
       - run: npm ci
         working-directory: cross
+      # electron-builder fetches its Electron runtime and its NSIS toolchain
+      # from GitHub releases at package time. Keeping them between runs saves a
+      # hundred and twenty megabytes of download and, more to the point, four
+      # chances for the network to end the job.
+      - name: Cache the packaging toolchain
+        uses: actions/cache@v6
+        with:
+          path: ~\AppData\Local\electron-builder\Cache
+          key: electron-builder-${{ runner.os }}-${{ hashFiles('cross/package-lock.json') }}
+          restore-keys: electron-builder-${{ runner.os }}-
       # Unsigned on purpose. Since 2024 an EV certificate no longer skips
       # SmartScreen, and Azure Artifact Signing is closed to individual
       # developers outside the US and Canada. Paying would buy nothing here.
+      #
+      # The retry is not superstition. app-builder downloads these artifacts
+      # through DownloadNoRetry, so a single EOF on a 1.3 MB file takes the
+      # whole build with it, which is exactly how the first run of this
+      # workflow died.
       - name: Package
-        run: npx electron-builder --win portable zip --publish never
+        shell: bash
+        run: |
+          for attempt in 1 2 3; do
+            if npx electron-builder --win portable zip --publish never; then
+              exit 0
+            fi
+            echo "attempt $attempt failed"
+            sleep 20
+          done
+          exit 1
         working-directory: cross
       - uses: actions/upload-artifact@v7
         with:
