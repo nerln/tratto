@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes and sources: Tratto</title>
+<meta name="description" content="Where every claim in Tratto comes from, what could not be verified, and which parts of a bowel diary the health platforms will not accept.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notes and sources: Tratto">
+<meta property="og:description" content="Where every claim comes from, and what could not be verified.">
+<meta property="og:url" content="https://nerln.github.io/tratto/notes.html">
+<meta property="og:image" content="https://nerln.github.io/tratto/preview.png">
+</head>
+<body>
+
+<header class="hero hero-small">
+  <p class="kicker"><a href="./">← Tratto</a></p>
+  <h1>Notes and sources</h1>
+  <p class="lede">Every design decision below was checked against a primary source before it went into code. Where the check failed, that is written down too.</p>
+</header>
+
+<main>
+
+<section>
+  <h2>Why the scale has its own drawings</h2>
+  <p>The best known seven-level stool scale is a copyrighted work, and its ownership is genuinely disputed: an American gastroenterology guideline reproduces it crediting one foundation, a UK version credits a pharmaceutical company, and a third organisation distributes it under licence. Three plausible owners for the same figure is not a situation to build an app on.</p>
+  <p>So Tratto has seven drawings of its own and seven labels written from scratch, and the name of no proprietary instrument appears anywhere in the interface. The ordering from most compact to liquid is a physical description, not a work. The original description of transit time and stool form is <cite>Lewis SJ, Heaton KW, Scandinavian Journal of Gastroenterology, 1997</cite>, cited here as a reference and not reproduced.</p>
+  <p>The same reasoning kept the IBS severity questionnaire out: it is licensed by the same foundation as the scale, and computing a published clinical score would also push the app across the line drawn by <cite>MDCG 2019-11</cite>, where recording, storing, searching, exporting and charting stay below the medical-device threshold and calculating a clinical index does not.</p>
+</section>
+
+<section>
+  <h2>Where the coding is asymmetric, and what that forced</h2>
+  <p>The export codes each observation with an array of codings rather than a single one, from the first version of the schema. That is not future-proofing for its own sake; it is the only shape that survives the facts:</p>
+  <ul class="facts">
+    <li><strong>Stool form</strong> has a SNOMED CT concept, <code>443172007</code>, and <strong>no LOINC code at all</strong>. Expanding the LOINC value set with a "Bristol" filter returns exactly one concept, an answer-list entry that is a brand of cigarettes. It must never be used for stool.</li>
+    <li><strong>Pain on a 0 to 10 scale</strong> has a public LOINC code, <code>72514-3</code>, and needs no SNOMED.</li>
+    <li><strong>Bowel movement frequency</strong> has both: SNOMED <code>249521002</code>, and LOINC <code>80261-1</code>, which is ordinal across five buckets and loses information.</li>
+    <li>SNOMED CT is <strong>not free in Italy</strong>, which is not a member country. So a local coding is always present and the external ones are optional and off by default.</li>
+  </ul>
+  <p>This turns out to be the recommended shape rather than a workaround. The HL7 implementation guide for personal health records says in as many words that patient-generated data uses a temporary proprietary code system, because LOINC and SNOMED do not cover everything.</p>
+</section>
+
+<section>
+  <h2>What the health platforms will not take</h2>
+  <p>This was the least pleasant thing to find out, and it is worth stating plainly rather than burying in a settings screen.</p>
+
+  <div class="table-scroll">
+  <table class="matrix">
+    <caption>Verified against each platform's own list of types</caption>
+    <thead><tr><th scope="col">What</th><th scope="col">Apple Health</th><th scope="col">Health Connect</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Bowel movements and stool form</th><td class="no">no type</td><td class="no">no type</td></tr>
+      <tr><th scope="row">Bloating, abdominal pain</th><td class="partial">severity only</td><td class="no">no type</td></tr>
+      <tr><th scope="row">Diarrhea and constipation flags</th><td class="partial">presence only</td><td class="no">no type</td></tr>
+      <tr><th scope="row">Sleep, steps, exercise</th><td class="yes">readable, unused</td><td class="yes">readable, unused</td></tr>
+      <tr><th scope="row">A custom type of our own</th><td class="no">not allowed</td><td class="no">not allowed</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>Apple Health has seven category types for gastrointestinal symptoms, all on a four-level severity enum, so a 0 to 10 score can be projected onto it and never recovered from it. Health Connect is worse: its 42 record types cover activity, body measurements, cycle tracking, nutrition, sleep, vitals and mindfulness, and none of them is a bowel movement, a stool form, a gastrointestinal symptom or a pain score. The set is closed and there is no extension mechanism.</p>
+
+  <p>Health Connect does accept FHIR, through its Medical Records API, in R4 and R4B. It also rejects any <code>Observation</code> that does not fall into one of four categories: laboratory, vital signs, social history or pregnancy. Everything this diary records falls outside all four. The API is additionally marked experimental and needs to be compiled against a newer platform SDK, so it is not something to promise a user.</p>
+
+  <p>The direction that could work is the opposite one, since both platforms already hold sleep and activity and reading those would fill in the daily context without asking the same question twice. That is where the next version goes, and it is not in this one: today Tratto reads nothing from either platform, and the daily context is typed in. What exists is the file. It is a FHIR R4 bundle alongside three CSVs and the full JSON, plus a one-page PDF on macOS and iOS.</p>
+
+  <p>Exporting on Android needed its own road, for a reason worth recording. Capacitor's WebView registers no <code>DownloadListener</code>, which was confirmed by reading the plugin's sixty Java source files rather than by trusting the documentation. A blob URL and an <code>&lt;a download&gt;</code> inside that WebView therefore produce no file and no error. The Android build writes through the filesystem plugin and hands the result to the share sheet. Importing needs none of that, because <code>onShowFileChooser</code> is implemented.</p>
+
+  <p class="aside">Deliberately not claimed anywhere on this site: that Tratto is interoperable with electronic health record systems. Under the European Health Data Space that specific claim carries obligations, and "it writes files you can hand over" is both accurate and enough.</p>
+</section>
+
+<section>
+  <h2>Why phase two is shaped the way it is</h2>
+  <ul class="facts">
+    <li>The three-phase elimination and reintroduction structure, one target at a time with a washout, is described in <cite>Whelan et al., Journal of Human Nutrition and Dietetics, 2018</cite> and <cite>Lomer, Proceedings of the Nutrition Society, 2023</cite> (CC BY). The 2018 paper is candid that this phase has no randomised trials behind it and describes the practice of one centre.</li>
+    <li>The reason a control block exists at all is <cite>Van den Houte et al., Gastroenterology 2024;167(2):333-342</cite>. In that blinded challenge, glucose, the inert control, triggered symptoms in 26% of patients, more than sorbitol at 23%, and level with lactose and fructose. An open single challenge cannot separate a real trigger from that.</li>
+    <li>Block length comes from this diary's own autocorrelation rather than from the clinical three days, and from the same trial: lactose symptoms appeared on day three, so a three-day block ends before they could be seen.</li>
+    <li>The exact tests are the sign test and Wilcoxon's signed rank, with the null distribution built by permuting signs over the ranks that were actually observed. With ties that is not the classic table, and the classic table is the one that is wrong. <code>scipy.stats.wilcoxon(mode="exact")</code> uses it and disagrees on exactly those cases. The oracle for our tests is the enumeration of all 2<sup>n</sup> sign assignments.</li>
+    <li>Reporting follows the shape of the n-of-1 checklists: <cite>CENT, BMJ 2015;350:h1738</cite> for the report and <cite>SPENT, BMJ 2020;368:m122</cite> for the protocol.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What a diary is worth when it cannot find a culprit</h2>
+  <p>Two measured findings, rather than an argument.</p>
+  <p>The first: paper diaries are largely written afterwards. <cite>Stone et al., BMJ 2002</cite> compared a paper diary with an electronic one that timestamped every entry: reported adherence to the paper was 90%, actual adherence was 11%, and the electronic version reached 94%. An app that records the moment is not a nicer notebook; it fixes something that has been measured to be broken.</p>
+  <p>The second: this limit is the state of the art, not a shortcoming of one app. <cite>Schroeder et al., CSCW 2017</cite> wrote that determining exactly which foods are causing an individual's symptoms is beyond what food and symptom journals can do, and that they did not want the presentation of an analysis to imply more confidence than was warranted. That is the sentence Tratto is built around.</p>
+</section>
+
+<section>
+  <h2>Things we could not verify, and did not pretend to</h2>
+  <ul class="facts">
+    <li>The full text of the 2026 revision of the Rome criteria. Tratto therefore implements no diagnostic subtyping at all, rather than an outdated one.</li>
+    <li>Whether the seven-level scale's rights sit with the foundation, the pharmaceutical company or the licensing house. Three sources, three answers. Hence the original drawings.</li>
+    <li>Whether there is any usable open model that classifies stool photographs into seven classes. There is not: the best published result uses a camera fixed to a toilet, and the only downloadable model is binary with an empty model card. So the app has a picker and no classifier.</li>
+    <li>Whether an open, permissively licensed model exists for extracting foods from free text in Italian. It does not. Hence a closed vocabulary and deterministic matching.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Tratto is not a medical device, does not diagnose and does not replace a clinician.</p>
+  <p class="links">
+    <a href="./">Back to the front</a> ·
+    <a href="https://github.com/nerln/tratto">Source</a> ·
+    <a href="https://github.com/nerln/Progetto-fondamenti-Nerelli">The 2020 original</a>
+  </p>
+  <p class="colophon">Built with a great deal of checking. <button type="button" id="spark" class="spark" aria-label="A small thank you">🙂</button></p>
+</footer>
+
+<dialog id="hello" class="hello">
+  <p class="hello-big">c'est Claire? <strong>HI GIRL</strong> 👋✨</p>
+  <p>🎉 You found the one part of this website that is not about bowel movements. Congratulations, genuinely.</p>
+  <p>🧪 Everything else here is a very long argument about why you cannot work out which food is upsetting you by writing down what you ate. Eugenio spent 68 days in 2020 proving this to himself the hard way, and then six years later built an app whose main feature is <em>refusing to answer the question</em>. 💅</p>
+  <p>🫶 Anyway. Hope your day is going well. Go outside.</p>
+  <form method="dialog"><button class="button">Bye 👋</button></form>
+</dialog>
+
+<script>
+// Two ways in: type her name anywhere, or press the little face in the colophon.
+(function () {
+  var dialog = document.getElementById('hello');
+  var spark = document.getElementById('spark');
+  if (!dialog || !spark) return;
+  var open = function () {
+    if (typeof dialog.showModal === 'function') dialog.showModal();
+    else dialog.setAttribute('open', '');
+  };
+  spark.addEventListener('click', open);
+  var target = 'claire';
+  var typed = '';
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key.length !== 1) return;
+    typed = (typed + e.key.toLowerCase()).slice(-target.length);
+    if (typed === target) open();
+  });
+})();
+</script>
+
+</main>
+</body>
+</html>

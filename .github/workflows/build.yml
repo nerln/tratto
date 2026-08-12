@@ -1,0 +1,161 @@
+# Builds the Windows and Android binaries on real Windows and real Linux, and
+# runs both test suites.
+#
+# The point of the Apple job is not that the Swift app compiles. It is that the
+# Swift suite regenerates fixtures/golden.json and the file has to come out
+# byte for byte identical to the one in the repository, which the TypeScript
+# suite has already been checked against. Two implementations of the same exact
+# statistics drift apart quietly; this is the thing that makes the drift loud.
+#
+# Action versions were read from the GitHub API rather than copied from a
+# tutorial, so they are pinned to a major that actually exists.
+
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    name: TypeScript core
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: cross/package-lock.json
+      - run: npm ci
+        working-directory: cross
+      - name: Typecheck
+        run: npx tsc --noEmit
+        working-directory: cross
+      - name: Golden fixtures
+        run: npm test
+        working-directory: cross
+
+  windows:
+    name: Windows binary
+    needs: core
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: cross/package-lock.json
+      - run: npm ci
+        working-directory: cross
+      # Unsigned on purpose. Since 2024 an EV certificate no longer skips
+      # SmartScreen, and Azure Artifact Signing is closed to individual
+      # developers outside the US and Canada. Paying would buy nothing here.
+      - name: Package
+        run: npx electron-builder --win portable zip --publish never
+        working-directory: cross
+      - uses: actions/upload-artifact@v7
+        with:
+          name: tratto-windows
+          path: |
+            cross/release/*.exe
+            cross/release/*.zip
+          if-no-files-found: error
+
+  android:
+    name: Android APK
+    needs: core
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: cross/package-lock.json
+      # The Capacitor filesystem and share plugins request a Java 21 toolchain
+      # by name, and Gradle does not substitute a newer JDK for one.
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v6
+      - run: npm ci
+        working-directory: cross
+      - name: Build web bundle
+        run: npm run build
+        working-directory: cross
+      - name: Sync into the Android project
+        run: npx cap sync android
+        working-directory: cross
+      - name: Assemble
+        run: ./gradlew assembleDebug --no-daemon
+        working-directory: cross/android
+      # Signed with the debug key committed to the repository, so an update
+      # installs over the previous version instead of demanding an uninstall.
+      - name: Check the signature is the pinned one
+        run: |
+          set -euo pipefail
+          APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner | sort -V | tail -1)
+          "$APKSIGNER" verify --print-certs \
+            app/build/outputs/apk/debug/app-debug.apk | tee /tmp/certs.txt
+          grep -qi '6df9b75b88a272169935c07048d97f05474b3788fab6554be5d0c40b5b105edc' /tmp/certs.txt
+        working-directory: cross/android
+      - name: Name it after the version
+        run: |
+          set -euo pipefail
+          cp app/build/outputs/apk/debug/app-debug.apk \
+             "$RUNNER_TEMP/Tratto-android-debug.apk"
+        working-directory: cross/android
+      - uses: actions/upload-artifact@v7
+        with:
+          name: tratto-android
+          path: ${{ runner.temp }}/Tratto-android-debug.apk
+          if-no-files-found: error
+
+  apple:
+    name: Swift suite and the golden file
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Show the toolchain we got
+        run: xcodebuild -version && swift --version
+      - name: Test
+        run: |
+          set -euo pipefail
+          xcodebuild test \
+            -project Tratto.xcodeproj \
+            -scheme Tratto \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY=- CODE_SIGNING_REQUIRED=NO \
+            | tail -40
+      - name: The golden file must not have moved
+        run: git diff --exit-code -- fixtures/golden.json
+
+  release:
+    name: Attach to the release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [windows, android, apple]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: artifacts
+      - uses: softprops/action-gh-release@v3
+        with:
+          files: artifacts/**/*
+          fail_on_unmatched_files: true
+          body: |
+            Unsigned builds. Windows will show a SmartScreen warning; Android
+            needs "install unknown apps" for whichever app you download with.
+
+            Neither is a medical device.

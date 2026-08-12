@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fbf9f6"/>
+  <rect x="0" y="0" width="1200" height="10" fill="#7a5c3d"/>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="80" y="120" font-size="22" letter-spacing="3" fill="#5d564d">MACOS · IOS · WINDOWS · ANDROID</text>
+
+    <text x="80" y="238" font-size="112" font-weight="700" letter-spacing="-3" fill="#191713">Tratto</text>
+
+    <text x="80" y="304" font-size="35" fill="#191713">A bowel diary that refuses to guess</text>
+
+    <text x="80" y="366" font-size="25" fill="#5d564d">It began as a 2020 data science assignment. The score</text>
+    <text x="80" y="401" font-size="25" fill="#5d564d">turned out to correlate with itself.</text>
+
+    <rect x="80" y="452" width="640" height="104" rx="14" fill="#ffffff" stroke="#e2dad0" stroke-width="2"/>
+    <text x="108" y="516" font-size="42" font-weight="700" fill="#9c3a2b">r = 0.84</text>
+    <text x="292" y="492" font-size="21" fill="#5d564d">which is the number you get</text>
+    <text x="292" y="522" font-size="21" fill="#5d564d">when something correlates with itself</text>
+
+    <text x="762" y="492" font-size="21" fill="#5d564d">Exact tests, and no p-value</text>
+    <text x="762" y="522" font-size="21" fill="#5d564d">next to any ingredient.</text>
+
+    <text x="80" y="600" font-size="20" fill="#5d564d">nerln.github.io/tratto</text>
+    <text x="1120" y="600" font-size="20" fill="#5d564d" text-anchor="end">Not a medical device</text>
+  </g>
+</svg>

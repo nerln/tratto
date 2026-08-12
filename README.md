@@ -207,7 +207,11 @@ Tratto/
   Views/      schermate, disegni della scala, referto PDF
   Resources/  seed-ontologia.json (142 voci, bilingue), archivio-2020.json (sola lettura),
               Localizable.xcstrings (319 chiavi)
-TrattoTests/  119 prove
+TrattoTests/  120 prove in 15 suite, fra cui quella che scrive il file d'oro
+cross/        la versione TypeScript: nucleo condiviso, Electron per Windows,
+              Capacitor per Android
+docs/         il sito, servito da GitHub Pages
+fixtures/     golden.json, il contratto fra le due implementazioni
 Strumenti/    etl.py, ontologia.py, nomi_en.py, varianza.py, chiavi.py, traduci.py
 dati/         recovered.json, l'originale normalizzato
 ```
@@ -260,6 +264,67 @@ Per gli screenshot e le anteprime, solo nelle build di sviluppo:
 ```bash
 xcrun simctl launch booted dev.nerln.tratto --dati-esempio=45 --azzera --scheda=raccolta
 ```
+
+## Windows e Android
+
+Sotto `cross/` c'è una seconda implementazione in TypeScript, senza framework:
+il nucleo statistico, il riconoscimento dei pasti, la copertura, il motore dei
+confronti e l'esportazione. Da lì escono la build Electron per Windows e quella
+Capacitor per Android.
+
+```bash
+cd cross
+npm ci
+npm test                                    # 70 asserzioni contro il file d'oro
+npm run build                               # bundle web
+npx electron-builder --win portable zip     # .exe portabile + zip
+npx cap sync android && (cd android && ./gradlew assembleDebug)
+```
+
+### Il file d'oro
+
+Due implementazioni della stessa statistica esatta divergono in silenzio. Per
+questo la suite Swift **scrive** `fixtures/golden.json` (test dei segni,
+Wilcoxon con ranghi pari merito, potenza, quantile normale, sequenze dei
+blocchi, riconoscimento sull'ontologia vera) e la suite TypeScript deve
+riprodurlo cifra per cifra. La CI rifà il file su macOS e fallisce se `git
+diff` sul file non è vuoto: la deriva non passa inosservata.
+
+L'oracolo dei test esatti non è `scipy`. Con i pari merito
+`scipy.stats.wilcoxon(mode="exact")` usa la tabella senza pari merito e dà un
+valore diverso; l'oracolo è l'enumerazione di tutte le 2<sup>n</sup>
+assegnazioni di segno.
+
+### Le due cose che ci sono costate un giro
+
+**La WebView di Capacitor non registra alcun `DownloadListener`.** Verificato
+leggendo i sessanta file Java del plugin, non la documentazione. Dentro l'app
+Android un blob URL e un `<a download>` non producono nessun file e nessun
+errore: l'esportazione passa dal plugin filesystem e poi dal foglio di
+condivisione. L'importazione invece funziona da sola, perché
+`onShowFileChooser` è implementato.
+
+**La chiave di debug sta nel repository, di proposito.** Android non installa
+APK non firmati, e lasciato a sé Gradle firma con `~/.android/debug.keystore`,
+che ogni macchina genera per conto suo: la build di questo Mac e quella di un
+runner avrebbero due identità diverse, e la seconda non si installerebbe sopra
+la prima. `cross/android/tratto-debug.keystore` non protegge niente e non
+vuole farlo; serve solo a rendere possibile un aggiornamento.
+
+### Firma su Windows: nessuna, e non è una svista
+
+Da metà 2024 un certificato EV non salta più SmartScreen, e Azure Artifact
+Signing è aperto agli sviluppatori individuali soltanto di Stati Uniti e
+Canada. Per un individuo italiano, fuori dallo Store, pagare non comprerebbe
+nulla. La build è quindi non firmata e il sito lo dice.
+
+## Il sito
+
+`docs/` è servito da GitHub Pages su `main`. Tre file, nessuna richiesta a
+terzi, nessun font remoto, nessuna analitica. Passa pa11y sullo standard
+WCAG2AA senza rilievi. L'app web non è ospitata lì: un archivio sanitario in IndexedDB su
+un'origine condivisa con altri progetti sarebbe leggibile da qualsiasi altra
+pagina della stessa origine.
 
 ## Che cosa non è
 

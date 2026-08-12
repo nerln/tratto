@@ -1,0 +1,2251 @@
+{
+ "versione": 2,
+ "origine": "Progetto-fondamenti-Nerelli (2020), anagrafiche Pasti + Condimenti unificate",
+ "nota": "Il campo `gruppi` contiene solo etichette di conoscenza comune (lattosio, glutine, caffeina). Non e' un dato clinico e non deriva da nessuna tabella FODMAP: quelle di Monash non sono utilizzabili legalmente. Va trattato come ipotesi modificabile dall'utente. I nomi italiani restano perche' servono comunque al riconoscimento del testo dettato in italiano, qualunque sia la lingua dell'interfaccia.",
+ "ingredienti": [
+  {
+   "id": "caffe",
+   "gruppi": [
+    "caffeina"
+   ],
+   "sinonimi": [
+    "caffè"
+   ],
+   "terminiLegacy2020": [
+    "caffe"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Caffè",
+   "nomeEn": "Coffee",
+   "categoriaIt": "Bevande",
+   "categoriaEn": "Drinks"
+  },
+  {
+   "id": "caffe_d_orzo",
+   "gruppi": [],
+   "sinonimi": [
+    "caffè_orzo"
+   ],
+   "terminiLegacy2020": [
+    "caffe_orzo"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Caffè d'orzo",
+   "nomeEn": "Barley coffee",
+   "categoriaIt": "Bevande",
+   "categoriaEn": "Drinks"
+  },
+  {
+   "id": "cioccolata_calda",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "cioccolata_calda"
+   ],
+   "terminiLegacy2020": [
+    "cioccolata_calda"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Cioccolata calda",
+   "nomeEn": "Hot chocolate",
+   "categoriaIt": "Bevande",
+   "categoriaEn": "Drinks"
+  },
+  {
+   "id": "coca_cola",
+   "gruppi": [
+    "caffeina"
+   ],
+   "sinonimi": [
+    "coca_cola"
+   ],
+   "terminiLegacy2020": [
+    "coca_cola"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Coca-Cola",
+   "nomeEn": "Coca-Cola",
+   "categoriaIt": "Bevande",
+   "categoriaEn": "Drinks"
+  },
+  {
+   "id": "latte_di_mandorla",
+   "gruppi": [],
+   "sinonimi": [
+    "latte_mandorla"
+   ],
+   "terminiLegacy2020": [
+    "latte_mandorla"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Latte di mandorla",
+   "nomeEn": "Almond milk",
+   "categoriaIt": "Bevande",
+   "categoriaEn": "Drinks"
+  },
+  {
+   "id": "tisana",
+   "gruppi": [],
+   "sinonimi": [
+    "tisana_frutti_bosco"
+   ],
+   "terminiLegacy2020": [
+    "tisana_frutti_bosco"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Tisana",
+   "nomeEn": "Herbal tea",
+   "categoriaIt": "Bevande",
+   "categoriaEn": "Drinks"
+  },
+  {
+   "id": "te_alla_pesca",
+   "gruppi": [
+    "caffeina"
+   ],
+   "sinonimi": [
+    "te_pesca"
+   ],
+   "terminiLegacy2020": [
+    "te_pesca"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Tè alla pesca",
+   "nomeEn": "Peach iced tea",
+   "categoriaIt": "Bevande",
+   "categoriaEn": "Drinks"
+  },
+  {
+   "id": "pollo",
+   "gruppi": [],
+   "sinonimi": [
+    "cosciotti_pollo",
+    "fettina_pollo",
+    "pollo_allo_spiedo",
+    "pollo_pezzetti"
+   ],
+   "terminiLegacy2020": [
+    "cosciotti_pollo",
+    "fettina_pollo",
+    "pollo_allo_spiedo",
+    "pollo_pezzetti"
+   ],
+   "esposizioni2020": 26,
+   "nomeIt": "Pollo",
+   "nomeEn": "Chicken",
+   "categoriaIt": "Carne bianca",
+   "categoriaEn": "Poultry"
+  },
+  {
+   "id": "agnello",
+   "gruppi": [],
+   "sinonimi": [
+    "agnello"
+   ],
+   "terminiLegacy2020": [
+    "agnello"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Agnello",
+   "nomeEn": "Lamb",
+   "categoriaIt": "Carne rossa",
+   "categoriaEn": "Red meat"
+  },
+  {
+   "id": "carne_a_pezzi",
+   "gruppi": [],
+   "sinonimi": [
+    "carne_pezzetti"
+   ],
+   "terminiLegacy2020": [
+    "carne_pezzetti"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Carne a pezzi",
+   "nomeEn": "Diced meat",
+   "categoriaIt": "Carne rossa",
+   "categoriaEn": "Red meat"
+  },
+  {
+   "id": "carne_trita",
+   "gruppi": [],
+   "sinonimi": [
+    "carne_trita"
+   ],
+   "terminiLegacy2020": [
+    "carne_trita"
+   ],
+   "esposizioni2020": 11,
+   "nomeIt": "Carne trita",
+   "nomeEn": "Minced meat",
+   "categoriaIt": "Carne rossa",
+   "categoriaEn": "Red meat"
+  },
+  {
+   "id": "salsiccia",
+   "gruppi": [],
+   "sinonimi": [
+    "salsiccia"
+   ],
+   "terminiLegacy2020": [
+    "salsiccia"
+   ],
+   "esposizioni2020": 10,
+   "nomeIt": "Salsiccia",
+   "nomeEn": "Sausage",
+   "categoriaIt": "Carne rossa",
+   "categoriaEn": "Red meat"
+  },
+  {
+   "id": "spiedini_di_maiale",
+   "gruppi": [],
+   "sinonimi": [
+    "spiedini_maiale"
+   ],
+   "terminiLegacy2020": [
+    "spiedini_maiale"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Spiedini di maiale",
+   "nomeEn": "Pork skewers",
+   "categoriaIt": "Carne rossa",
+   "categoriaEn": "Red meat"
+  },
+  {
+   "id": "corn_flakes",
+   "gruppi": [],
+   "sinonimi": [
+    "corn_flakes"
+   ],
+   "terminiLegacy2020": [
+    "corn_flakes"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Corn flakes",
+   "nomeEn": "Corn flakes",
+   "categoriaIt": "Cereali",
+   "categoriaEn": "Grains"
+  },
+  {
+   "id": "galletta_di_riso",
+   "gruppi": [],
+   "sinonimi": [
+    "galletta_riso"
+   ],
+   "terminiLegacy2020": [
+    "galletta_riso"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Gallette di riso",
+   "nomeEn": "Rice cakes",
+   "categoriaIt": "Cereali",
+   "categoriaEn": "Grains"
+  },
+  {
+   "id": "pangrattato",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pan_grattato"
+   ],
+   "terminiLegacy2020": [
+    "pan_grattato"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Pangrattato",
+   "nomeEn": "Breadcrumbs",
+   "categoriaIt": "Cereali",
+   "categoriaEn": "Grains"
+  },
+  {
+   "id": "pangrattato_senza_glutine",
+   "gruppi": [],
+   "sinonimi": [
+    "pan_grattato_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "pan_grattato_senza_glutine"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Pangrattato senza glutine",
+   "nomeEn": "Gluten-free breadcrumbs",
+   "categoriaIt": "Cereali",
+   "categoriaEn": "Grains"
+  },
+  {
+   "id": "polenta",
+   "gruppi": [],
+   "sinonimi": [
+    "polenta"
+   ],
+   "terminiLegacy2020": [
+    "polenta"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Polenta",
+   "nomeEn": "Polenta",
+   "categoriaIt": "Cereali",
+   "categoriaEn": "Grains"
+  },
+  {
+   "id": "riso",
+   "gruppi": [],
+   "sinonimi": [
+    "riso"
+   ],
+   "terminiLegacy2020": [
+    "riso"
+   ],
+   "esposizioni2020": 46,
+   "nomeIt": "Riso",
+   "nomeEn": "Rice",
+   "categoriaIt": "Cereali",
+   "categoriaEn": "Grains"
+  },
+  {
+   "id": "riso_soffiato",
+   "gruppi": [],
+   "sinonimi": [
+    "riso_soffiato"
+   ],
+   "terminiLegacy2020": [
+    "riso_soffiato"
+   ],
+   "esposizioni2020": 18,
+   "nomeIt": "Riso soffiato",
+   "nomeEn": "Puffed rice",
+   "categoriaIt": "Cereali",
+   "categoriaEn": "Grains"
+  },
+  {
+   "id": "aceto_di_vino",
+   "gruppi": [],
+   "sinonimi": [
+    "aceto_di_vino"
+   ],
+   "terminiLegacy2020": [
+    "aceto_di_vino"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Aceto di vino",
+   "nomeEn": "Wine vinegar",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "capperi",
+   "gruppi": [],
+   "sinonimi": [
+    "capperi"
+   ],
+   "terminiLegacy2020": [
+    "capperi"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Capperi",
+   "nomeEn": "Capers",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "marmellata",
+   "gruppi": [],
+   "sinonimi": [
+    "marmellata"
+   ],
+   "terminiLegacy2020": [
+    "marmellata"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Marmellata",
+   "nomeEn": "Jam",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "olive_nere",
+   "gruppi": [],
+   "sinonimi": [
+    "olive_nere"
+   ],
+   "terminiLegacy2020": [
+    "olive_nere"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Olive nere",
+   "nomeEn": "Black olives",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "olive_verdi",
+   "gruppi": [],
+   "sinonimi": [
+    "olive_verdi"
+   ],
+   "terminiLegacy2020": [
+    "olive_verdi"
+   ],
+   "esposizioni2020": 7,
+   "nomeIt": "Olive verdi",
+   "nomeEn": "Green olives",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "pesto_genovese",
+   "gruppi": [],
+   "sinonimi": [
+    "pesto_genovese"
+   ],
+   "terminiLegacy2020": [
+    "pesto_genovese"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Pesto genovese",
+   "nomeEn": "Basil pesto",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "pesto_ricotta_noci",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "pesto_ricotta_noci"
+   ],
+   "terminiLegacy2020": [
+    "pesto_ricotta_noci"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Pesto ricotta e noci",
+   "nomeEn": "Ricotta and walnut pesto",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "salsa_di_pomodoro",
+   "gruppi": [],
+   "sinonimi": [
+    "salsa_pomodoro"
+   ],
+   "terminiLegacy2020": [
+    "salsa_pomodoro"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Salsa di pomodoro",
+   "nomeEn": "Tomato sauce",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "salsa_di_soia",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "salsa_soia"
+   ],
+   "terminiLegacy2020": [
+    "salsa_soia"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Salsa di soia",
+   "nomeEn": "Soy sauce",
+   "categoriaIt": "Condimenti",
+   "categoriaEn": "Condiments"
+  },
+  {
+   "id": "budino",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "budino"
+   ],
+   "terminiLegacy2020": [
+    "budino"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Budino",
+   "nomeEn": "Pudding",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "cantuccini_senza_glutine",
+   "gruppi": [],
+   "sinonimi": [
+    "cantuccini_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "cantuccini_senza_glutine"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Cantuccini senza glutine",
+   "nomeEn": "Gluten-free almond biscuits",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "cioccolato_al_latte",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "cioccolata_al_latte",
+    "cioccolato"
+   ],
+   "terminiLegacy2020": [
+    "cioccolata_al_latte",
+    "cioccolato"
+   ],
+   "esposizioni2020": 5,
+   "nomeIt": "Cioccolato al latte",
+   "nomeEn": "Milk chocolate",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "cioccolato_fondente",
+   "gruppi": [],
+   "sinonimi": [
+    "cioccolata_fondente"
+   ],
+   "terminiLegacy2020": [
+    "cioccolata_fondente"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Cioccolato fondente",
+   "nomeEn": "Dark chocolate",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "cornetto_alla_crema",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "cornetto_crema"
+   ],
+   "terminiLegacy2020": [
+    "cornetto_crema"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Cornetto alla crema",
+   "nomeEn": "Custard croissant",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "crema_di_nocciole",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "choco_cream",
+    "cioccolata_nocciolata"
+   ],
+   "terminiLegacy2020": [
+    "choco_cream",
+    "cioccolata_nocciolata"
+   ],
+   "esposizioni2020": 8,
+   "nomeIt": "Crema di nocciole",
+   "nomeEn": "Hazelnut spread",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "gelato",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "gelato"
+   ],
+   "terminiLegacy2020": [
+    "gelato"
+   ],
+   "esposizioni2020": 9,
+   "nomeIt": "Gelato",
+   "nomeEn": "Ice cream",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "gelato_senza_lattosio",
+   "gruppi": [],
+   "sinonimi": [
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "cornetto_sammontana_no_lattosio"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Gelato senza lattosio",
+   "nomeEn": "Lactose-free ice cream",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "gubana",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "gubana"
+   ],
+   "terminiLegacy2020": [
+    "gubana"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Gubana",
+   "nomeEn": "Gubana (Friulian sweet bread)",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "krapfen",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "krapfen"
+   ],
+   "terminiLegacy2020": [
+    "krapfen"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Krapfen",
+   "nomeEn": "Doughnut",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "torta_di_mele",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "torta_mele"
+   ],
+   "terminiLegacy2020": [
+    "torta_mele"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Torta di mele",
+   "nomeEn": "Apple cake",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "torta_foresta_nera",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "foresta_nera"
+   ],
+   "terminiLegacy2020": [
+    "foresta_nera"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Torta foresta nera",
+   "nomeEn": "Black forest cake",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "zuppa_inglese",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "zuppa_inglese"
+   ],
+   "terminiLegacy2020": [
+    "zuppa_inglese"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Zuppa inglese",
+   "nomeEn": "Zuppa inglese (trifle)",
+   "categoriaIt": "Dolci",
+   "categoriaEn": "Sweets"
+  },
+  {
+   "id": "basilico",
+   "gruppi": [],
+   "sinonimi": [
+    "basilico"
+   ],
+   "terminiLegacy2020": [
+    "basilico"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Basilico",
+   "nomeEn": "Basil",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "curry",
+   "gruppi": [],
+   "sinonimi": [
+    "curry"
+   ],
+   "terminiLegacy2020": [
+    "curry"
+   ],
+   "esposizioni2020": 5,
+   "nomeIt": "Curry",
+   "nomeEn": "Curry",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "erba_cipollina",
+   "gruppi": [],
+   "sinonimi": [
+    "erba_cipollina"
+   ],
+   "terminiLegacy2020": [
+    "erba_cipollina"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Erba cipollina",
+   "nomeEn": "Chives",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "origano",
+   "gruppi": [],
+   "sinonimi": [
+    "origano"
+   ],
+   "terminiLegacy2020": [
+    "origano"
+   ],
+   "esposizioni2020": 6,
+   "nomeIt": "Origano",
+   "nomeEn": "Oregano",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "pepe_nero",
+   "gruppi": [],
+   "sinonimi": [
+    "pepe_nero"
+   ],
+   "terminiLegacy2020": [
+    "pepe_nero"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Pepe nero",
+   "nomeEn": "Black pepper",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "vaniglia",
+   "gruppi": [],
+   "sinonimi": [
+    "vaniglia"
+   ],
+   "terminiLegacy2020": [
+    "vaniglia"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Vaniglia",
+   "nomeEn": "Vanilla",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "zafferano",
+   "gruppi": [],
+   "sinonimi": [
+    "zafferano"
+   ],
+   "terminiLegacy2020": [
+    "zafferano"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Zafferano",
+   "nomeEn": "Saffron",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "zenzero",
+   "gruppi": [],
+   "sinonimi": [
+    "zenzero"
+   ],
+   "terminiLegacy2020": [
+    "zenzero"
+   ],
+   "esposizioni2020": 17,
+   "nomeIt": "Zenzero",
+   "nomeEn": "Ginger",
+   "categoriaIt": "Erbe e spezie",
+   "categoriaEn": "Herbs and spices"
+  },
+  {
+   "id": "formaggio_senza_lattosio",
+   "gruppi": [],
+   "sinonimi": [
+    "formaggio_senza_lattosio",
+    "sottilette_senza_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "formaggio_senza_lattosio",
+    "sottilette_senza_lattosio"
+   ],
+   "esposizioni2020": 5,
+   "nomeIt": "Formaggio senza lattosio",
+   "nomeEn": "Lactose-free cheese",
+   "categoriaIt": "Formaggi",
+   "categoriaEn": "Cheese"
+  },
+  {
+   "id": "mozzarella",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "mozzarella"
+   ],
+   "terminiLegacy2020": [
+    "mozzarella"
+   ],
+   "esposizioni2020": 9,
+   "nomeIt": "Mozzarella",
+   "nomeEn": "Mozzarella",
+   "categoriaIt": "Formaggi",
+   "categoriaEn": "Cheese"
+  },
+  {
+   "id": "parmigiano",
+   "gruppi": [],
+   "sinonimi": [
+    "parmigiano"
+   ],
+   "terminiLegacy2020": [
+    "parmigiano"
+   ],
+   "esposizioni2020": 24,
+   "nomeIt": "Parmigiano",
+   "nomeEn": "Parmesan",
+   "categoriaIt": "Formaggi",
+   "categoriaEn": "Cheese"
+  },
+  {
+   "id": "arancia",
+   "gruppi": [],
+   "sinonimi": [
+    "arancia"
+   ],
+   "terminiLegacy2020": [
+    "arancia"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Arancia",
+   "nomeEn": "Orange",
+   "categoriaIt": "Frutta",
+   "categoriaEn": "Fruit"
+  },
+  {
+   "id": "banana",
+   "gruppi": [],
+   "sinonimi": [
+    "banana"
+   ],
+   "terminiLegacy2020": [
+    "banana"
+   ],
+   "esposizioni2020": 5,
+   "nomeIt": "Banana",
+   "nomeEn": "Banana",
+   "categoriaIt": "Frutta",
+   "categoriaEn": "Fruit"
+  },
+  {
+   "id": "limone",
+   "gruppi": [],
+   "sinonimi": [
+    "limone"
+   ],
+   "terminiLegacy2020": [
+    "limone"
+   ],
+   "esposizioni2020": 29,
+   "nomeIt": "Limone",
+   "nomeEn": "Lemon",
+   "categoriaIt": "Frutta",
+   "categoriaEn": "Fruit"
+  },
+  {
+   "id": "mela",
+   "gruppi": [],
+   "sinonimi": [
+    "mela"
+   ],
+   "terminiLegacy2020": [
+    "mela"
+   ],
+   "esposizioni2020": 53,
+   "nomeIt": "Mela",
+   "nomeEn": "Apple",
+   "categoriaIt": "Frutta",
+   "categoriaEn": "Fruit"
+  },
+  {
+   "id": "pera",
+   "gruppi": [],
+   "sinonimi": [
+    "pera"
+   ],
+   "terminiLegacy2020": [
+    "pera"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Pera",
+   "nomeEn": "Pear",
+   "categoriaIt": "Frutta",
+   "categoriaEn": "Fruit"
+  },
+  {
+   "id": "arachidi",
+   "gruppi": [],
+   "sinonimi": [
+    "noccioline"
+   ],
+   "terminiLegacy2020": [
+    "noccioline"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Arachidi",
+   "nomeEn": "Peanuts",
+   "categoriaIt": "Frutta secca",
+   "categoriaEn": "Nuts"
+  },
+  {
+   "id": "pistacchio",
+   "gruppi": [],
+   "sinonimi": [
+    "pistacchio"
+   ],
+   "terminiLegacy2020": [
+    "pistacchio"
+   ],
+   "esposizioni2020": 8,
+   "nomeIt": "Pistacchio",
+   "nomeEn": "Pistachio",
+   "categoriaIt": "Frutta secca",
+   "categoriaEn": "Nuts"
+  },
+  {
+   "id": "burro",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "burro"
+   ],
+   "terminiLegacy2020": [
+    "burro"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Burro",
+   "nomeEn": "Butter",
+   "categoriaIt": "Grassi",
+   "categoriaEn": "Fats"
+  },
+  {
+   "id": "olio_di_oliva",
+   "gruppi": [],
+   "sinonimi": [
+    "olio"
+   ],
+   "terminiLegacy2020": [
+    "olio"
+   ],
+   "esposizioni2020": 51,
+   "nomeIt": "Olio d'oliva",
+   "nomeEn": "Olive oil",
+   "categoriaIt": "Grassi",
+   "categoriaEn": "Fats"
+  },
+  {
+   "id": "latte_senza_lattosio",
+   "gruppi": [],
+   "sinonimi": [
+    "latte_senza_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "latte_senza_lattosio"
+   ],
+   "esposizioni2020": 21,
+   "nomeIt": "Latte senza lattosio",
+   "nomeEn": "Lactose-free milk",
+   "categoriaIt": "Latticini",
+   "categoriaEn": "Dairy"
+  },
+  {
+   "id": "panna",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "panna_con_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "panna_con_lattosio"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Panna",
+   "nomeEn": "Cream",
+   "categoriaIt": "Latticini",
+   "categoriaEn": "Dairy"
+  },
+  {
+   "id": "panna_senza_lattosio",
+   "gruppi": [],
+   "sinonimi": [
+    "panna_senza_lattosio"
+   ],
+   "terminiLegacy2020": [
+    "panna_senza_lattosio"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Panna senza lattosio",
+   "nomeEn": "Lactose-free cream",
+   "categoriaIt": "Latticini",
+   "categoriaEn": "Dairy"
+  },
+  {
+   "id": "yogurt",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "yogurt"
+   ],
+   "terminiLegacy2020": [
+    "yogurt"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Yogurt",
+   "nomeEn": "Yoghurt",
+   "categoriaIt": "Latticini",
+   "categoriaEn": "Dairy"
+  },
+  {
+   "id": "ceci",
+   "gruppi": [],
+   "sinonimi": [
+    "ceci"
+   ],
+   "terminiLegacy2020": [
+    "ceci"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Ceci",
+   "nomeEn": "Chickpeas",
+   "categoriaIt": "Legumi",
+   "categoriaEn": "Legumes"
+  },
+  {
+   "id": "fagioli_cannellini",
+   "gruppi": [],
+   "sinonimi": [
+    "cannellino"
+   ],
+   "terminiLegacy2020": [
+    "cannellino"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Fagioli cannellini",
+   "nomeEn": "Cannellini beans",
+   "categoriaIt": "Legumi",
+   "categoriaEn": "Legumes"
+  },
+  {
+   "id": "focaccia",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "focaccia"
+   ],
+   "terminiLegacy2020": [
+    "focaccia"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Focaccia",
+   "nomeEn": "Focaccia",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "grissini",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "grissini"
+   ],
+   "terminiLegacy2020": [
+    "grissini"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Grissini",
+   "nomeEn": "Breadsticks",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pancarre",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pancarré"
+   ],
+   "terminiLegacy2020": [
+    "pancarre"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Pancarré",
+   "nomeEn": "Sliced white bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pancarre_integrale",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pancarrè_integrale"
+   ],
+   "terminiLegacy2020": [
+    "pancarre_integrale"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Pancarré integrale",
+   "nomeEn": "Sliced wholemeal bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pancarre_senza_glutine",
+   "gruppi": [],
+   "sinonimi": [
+    "pancarré_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "pancarre_senza_glutine"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Pancarré senza glutine",
+   "nomeEn": "Gluten-free sliced bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pane_alle_noci",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_noci_integrale_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_noci_integrale_semola"
+   ],
+   "esposizioni2020": 8,
+   "nomeIt": "Pane alle noci",
+   "nomeEn": "Walnut bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pane_alle_olive",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_olive_integrale_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_olive_integrale_semola"
+   ],
+   "esposizioni2020": 6,
+   "nomeIt": "Pane alle olive",
+   "nomeEn": "Olive bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pane_di_semola",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_semola"
+   ],
+   "esposizioni2020": 16,
+   "nomeIt": "Pane di semola",
+   "nomeEn": "Durum wheat bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pane_integrale",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pane_integrale_semola"
+   ],
+   "terminiLegacy2020": [
+    "pane_integrale_semola"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Pane integrale",
+   "nomeEn": "Wholemeal bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "pane_senza_glutine",
+   "gruppi": [],
+   "sinonimi": [
+    "pane_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "pane_senza_glutine"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Pane senza glutine",
+   "nomeEn": "Gluten-free bread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "piadina_senza_glutine",
+   "gruppi": [],
+   "sinonimi": [
+    "piadina_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "piadina_senza_glutine"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Piadina senza glutine",
+   "nomeEn": "Gluten-free flatbread",
+   "categoriaIt": "Pane",
+   "categoriaEn": "Bread"
+  },
+  {
+   "id": "gnocchi_integrali",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "gnocchi_integrali"
+   ],
+   "terminiLegacy2020": [
+    "gnocchi_integrali"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Gnocchi integrali",
+   "nomeEn": "Wholewheat gnocchi",
+   "categoriaIt": "Pasta",
+   "categoriaEn": "Pasta"
+  },
+  {
+   "id": "pasta_di_grano",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pasta"
+   ],
+   "terminiLegacy2020": [
+    "pasta"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Pasta",
+   "nomeEn": "Pasta",
+   "categoriaIt": "Pasta",
+   "categoriaEn": "Pasta"
+  },
+  {
+   "id": "pasta_di_mais",
+   "gruppi": [],
+   "sinonimi": [
+    "pasta_mais"
+   ],
+   "terminiLegacy2020": [
+    "pasta_mais"
+   ],
+   "esposizioni2020": 5,
+   "nomeIt": "Pasta di mais",
+   "nomeEn": "Corn pasta",
+   "categoriaIt": "Pasta",
+   "categoriaEn": "Pasta"
+  },
+  {
+   "id": "pasta_di_semola",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pasta_semola"
+   ],
+   "terminiLegacy2020": [
+    "pasta_semola"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Pasta di semola",
+   "nomeEn": "Durum wheat pasta",
+   "categoriaIt": "Pasta",
+   "categoriaEn": "Pasta"
+  },
+  {
+   "id": "pasta_integrale",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pasta_integrale"
+   ],
+   "terminiLegacy2020": [
+    "pasta_integrale"
+   ],
+   "esposizioni2020": 14,
+   "nomeIt": "Pasta integrale",
+   "nomeEn": "Wholewheat pasta",
+   "categoriaIt": "Pasta",
+   "categoriaEn": "Pasta"
+  },
+  {
+   "id": "tortelli",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "tortelli"
+   ],
+   "terminiLegacy2020": [
+    "tortelli"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Tortelli",
+   "nomeEn": "Tortelli (filled pasta)",
+   "categoriaIt": "Pasta ripiena",
+   "categoriaEn": "Filled pasta"
+  },
+  {
+   "id": "acciughe",
+   "gruppi": [],
+   "sinonimi": [
+    "acciughine"
+   ],
+   "terminiLegacy2020": [
+    "acciughine"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Acciughe",
+   "nomeEn": "Anchovies",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "baccala",
+   "gruppi": [],
+   "sinonimi": [
+    "baccalà"
+   ],
+   "terminiLegacy2020": [
+    "baccala"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Baccalà",
+   "nomeEn": "Salt cod",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "frutti_di_mare",
+   "gruppi": [],
+   "sinonimi": [
+    "frutti_di_mare"
+   ],
+   "terminiLegacy2020": [
+    "frutti_di_mare"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Frutti di mare",
+   "nomeEn": "Seafood",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "gamberetti",
+   "gruppi": [],
+   "sinonimi": [
+    "gamberetti"
+   ],
+   "terminiLegacy2020": [
+    "gamberetti"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Gamberetti",
+   "nomeEn": "Prawns",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "merluzzo",
+   "gruppi": [],
+   "sinonimi": [
+    "merluzzo"
+   ],
+   "terminiLegacy2020": [
+    "merluzzo"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Merluzzo",
+   "nomeEn": "Cod",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "salmone",
+   "gruppi": [],
+   "sinonimi": [
+    "salmone"
+   ],
+   "terminiLegacy2020": [
+    "salmone"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Salmone",
+   "nomeEn": "Salmon",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "salmone_affumicato",
+   "gruppi": [],
+   "sinonimi": [
+    "salmone_affumicato"
+   ],
+   "terminiLegacy2020": [
+    "salmone_affumicato"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Salmone affumicato",
+   "nomeEn": "Smoked salmon",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "sgombro",
+   "gruppi": [],
+   "sinonimi": [
+    "sgombro"
+   ],
+   "terminiLegacy2020": [
+    "sgombro"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Sgombro",
+   "nomeEn": "Mackerel",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "tonno",
+   "gruppi": [],
+   "sinonimi": [
+    "tonno"
+   ],
+   "terminiLegacy2020": [
+    "tonno"
+   ],
+   "esposizioni2020": 5,
+   "nomeIt": "Tonno",
+   "nomeEn": "Tuna",
+   "categoriaIt": "Pesce",
+   "categoriaEn": "Fish and seafood"
+  },
+  {
+   "id": "canederli",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "canederli"
+   ],
+   "terminiLegacy2020": [
+    "canederli"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Canederli",
+   "nomeEn": "Canederli (bread dumplings)",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "cotoletta",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "cotolette"
+   ],
+   "terminiLegacy2020": [
+    "cotolette"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Cotoletta",
+   "nomeEn": "Breaded cutlet",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "empanada",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "empanada_gallega"
+   ],
+   "terminiLegacy2020": [
+    "empanada_gallega"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Empanada",
+   "nomeEn": "Empanada",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "erbazzone",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "erbazzone_reggiano"
+   ],
+   "terminiLegacy2020": [
+    "erbazzone_reggiano"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Erbazzone",
+   "nomeEn": "Erbazzone (spinach pie)",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "frico",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "frico"
+   ],
+   "terminiLegacy2020": [
+    "frico"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Frico",
+   "nomeEn": "Frico (cheese and potato cake)",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "gnocchi_di_sauris",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "gnocchi_di_sauris"
+   ],
+   "terminiLegacy2020": [
+    "gnocchi_di_sauris"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Gnocchi di Sauris",
+   "nomeEn": "Gnocchi di Sauris (ham dumplings)",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "hamburger",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "hamburger"
+   ],
+   "terminiLegacy2020": [
+    "hamburger"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Hamburger",
+   "nomeEn": "Burger",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "involtini",
+   "gruppi": [],
+   "sinonimi": [
+    "involtini"
+   ],
+   "terminiLegacy2020": [
+    "involtini"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Involtini",
+   "nomeEn": "Meat roulades",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "panzerotto",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "panzerotto"
+   ],
+   "terminiLegacy2020": [
+    "panzerotto"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Panzerotto",
+   "nomeEn": "Panzerotto (fried turnover)",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "patatine_fritte",
+   "gruppi": [],
+   "sinonimi": [
+    "patatine"
+   ],
+   "terminiLegacy2020": [
+    "patatine"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Patatine fritte",
+   "nomeEn": "Chips",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "pizza",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "pizza"
+   ],
+   "terminiLegacy2020": [
+    "pizza"
+   ],
+   "esposizioni2020": 8,
+   "nomeIt": "Pizza",
+   "nomeEn": "Pizza",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "pollo_tikka_masala",
+   "gruppi": [
+    "lattosio"
+   ],
+   "sinonimi": [
+    "pollo tikka masala"
+   ],
+   "terminiLegacy2020": [
+    "pollo_tikka_masala"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Pollo tikka masala",
+   "nomeEn": "Chicken tikka masala",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "polpette_di_carne",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "polpette_carne"
+   ],
+   "terminiLegacy2020": [
+    "polpette_carne"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Polpette di carne",
+   "nomeEn": "Meatballs",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "polpette_di_carne_senza_glutine",
+   "gruppi": [],
+   "sinonimi": [
+    "polpette_carne_senza_glutine"
+   ],
+   "terminiLegacy2020": [
+    "polpette_carne_senza_glutine"
+   ],
+   "esposizioni2020": 6,
+   "nomeIt": "Polpette di carne senza glutine",
+   "nomeEn": "Gluten-free meatballs",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "polpette_di_tonno",
+   "gruppi": [],
+   "sinonimi": [
+    "polpette_tonno"
+   ],
+   "terminiLegacy2020": [
+    "polpette_tonno"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Polpette di tonno",
+   "nomeEn": "Tuna balls",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "rotolo_speck_formaggio",
+   "gruppi": [
+    "glutine",
+    "lattosio"
+   ],
+   "sinonimi": [
+    "rotolo_speck_formaggio"
+   ],
+   "terminiLegacy2020": [
+    "rotolo_speck_formaggio"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Rotolo speck e formaggio",
+   "nomeEn": "Speck and cheese roll",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "rustico",
+   "gruppi": [
+    "glutine"
+   ],
+   "sinonimi": [
+    "rustico"
+   ],
+   "terminiLegacy2020": [
+    "rustico"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Rustico",
+   "nomeEn": "Savoury pastry",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "spezzatino",
+   "gruppi": [],
+   "sinonimi": [
+    "spezzatino"
+   ],
+   "terminiLegacy2020": [
+    "spezzatino"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Spezzatino",
+   "nomeEn": "Meat stew",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "sushi",
+   "gruppi": [],
+   "sinonimi": [
+    "sushi"
+   ],
+   "terminiLegacy2020": [
+    "sushi"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Sushi",
+   "nomeEn": "Sushi",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "tortilla_di_patate",
+   "gruppi": [],
+   "sinonimi": [
+    "tortilla"
+   ],
+   "terminiLegacy2020": [
+    "tortilla"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Tortilla di patate",
+   "nomeEn": "Potato omelette",
+   "categoriaIt": "Piatti composti",
+   "categoriaEn": "Composite dishes"
+  },
+  {
+   "id": "mortadella",
+   "gruppi": [],
+   "sinonimi": [
+    "mortadella"
+   ],
+   "terminiLegacy2020": [
+    "mortadella"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Mortadella",
+   "nomeEn": "Mortadella",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "pancetta",
+   "gruppi": [],
+   "sinonimi": [
+    "pancetta"
+   ],
+   "terminiLegacy2020": [
+    "pancetta"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Pancetta",
+   "nomeEn": "Pancetta",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "prosciutto_cotto",
+   "gruppi": [],
+   "sinonimi": [
+    "prosciutto_cotto"
+   ],
+   "terminiLegacy2020": [
+    "prosciutto_cotto"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Prosciutto cotto",
+   "nomeEn": "Cooked ham",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "prosciutto_crudo",
+   "gruppi": [],
+   "sinonimi": [
+    "prosciutto_crudo"
+   ],
+   "terminiLegacy2020": [
+    "prosciutto_crudo"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Prosciutto crudo",
+   "nomeEn": "Prosciutto crudo",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "salame",
+   "gruppi": [],
+   "sinonimi": [
+    "salame"
+   ],
+   "terminiLegacy2020": [
+    "salame"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Salame",
+   "nomeEn": "Salami",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "salame_d_oca",
+   "gruppi": [],
+   "sinonimi": [
+    "salame_oca"
+   ],
+   "terminiLegacy2020": [
+    "salame_oca"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Salame d'oca",
+   "nomeEn": "Goose salami",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "salame_piccante",
+   "gruppi": [],
+   "sinonimi": [
+    "salame_piccante"
+   ],
+   "terminiLegacy2020": [
+    "salame_piccante"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Salame piccante",
+   "nomeEn": "Spicy salami",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "speck",
+   "gruppi": [],
+   "sinonimi": [
+    "speck"
+   ],
+   "terminiLegacy2020": [
+    "speck"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Speck",
+   "nomeEn": "Speck",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "wurstel",
+   "gruppi": [],
+   "sinonimi": [
+    "wurstel"
+   ],
+   "terminiLegacy2020": [
+    "wurstel"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Wurstel",
+   "nomeEn": "Frankfurter",
+   "categoriaIt": "Salumi",
+   "categoriaEn": "Cured meats"
+  },
+  {
+   "id": "semi_di_sesamo",
+   "gruppi": [],
+   "sinonimi": [
+    "semi_sesamo"
+   ],
+   "terminiLegacy2020": [
+    "semi_sesamo"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Semi di sesamo",
+   "nomeEn": "Sesame seeds",
+   "categoriaIt": "Semi",
+   "categoriaEn": "Seeds"
+  },
+  {
+   "id": "patata",
+   "gruppi": [],
+   "sinonimi": [
+    "patata"
+   ],
+   "terminiLegacy2020": [
+    "patata"
+   ],
+   "esposizioni2020": 6,
+   "nomeIt": "Patata",
+   "nomeEn": "Potato",
+   "categoriaIt": "Tuberi",
+   "categoriaEn": "Tubers"
+  },
+  {
+   "id": "tuorlo",
+   "gruppi": [],
+   "sinonimi": [
+    "tuorlo_uovo"
+   ],
+   "terminiLegacy2020": [
+    "tuorlo_uovo"
+   ],
+   "esposizioni2020": 3,
+   "nomeIt": "Tuorlo",
+   "nomeEn": "Egg yolk",
+   "categoriaIt": "Uova",
+   "categoriaEn": "Eggs"
+  },
+  {
+   "id": "uovo",
+   "gruppi": [],
+   "sinonimi": [
+    "uova",
+    "uovo"
+   ],
+   "terminiLegacy2020": [
+    "uova",
+    "uovo"
+   ],
+   "esposizioni2020": 4,
+   "nomeIt": "Uovo",
+   "nomeEn": "Egg",
+   "categoriaIt": "Uova",
+   "categoriaEn": "Eggs"
+  },
+  {
+   "id": "asparagi",
+   "gruppi": [],
+   "sinonimi": [
+    "asparagi"
+   ],
+   "terminiLegacy2020": [
+    "asparagi"
+   ],
+   "esposizioni2020": 0,
+   "nomeIt": "Asparagi",
+   "nomeEn": "Asparagus",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "carciofo",
+   "gruppi": [],
+   "sinonimi": [
+    "carciofo"
+   ],
+   "terminiLegacy2020": [
+    "carciofo"
+   ],
+   "esposizioni2020": 5,
+   "nomeIt": "Carciofo",
+   "nomeEn": "Artichoke",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "carota",
+   "gruppi": [],
+   "sinonimi": [
+    "carota"
+   ],
+   "terminiLegacy2020": [
+    "carota"
+   ],
+   "esposizioni2020": 35,
+   "nomeIt": "Carota",
+   "nomeEn": "Carrot",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "cavolo_cappuccio",
+   "gruppi": [],
+   "sinonimi": [
+    "cavolo_cappuccio"
+   ],
+   "terminiLegacy2020": [
+    "cavolo_cappuccio"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Cavolo cappuccio",
+   "nomeEn": "White cabbage",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "cipolla",
+   "gruppi": [],
+   "sinonimi": [
+    "cipolla"
+   ],
+   "terminiLegacy2020": [
+    "cipolla"
+   ],
+   "esposizioni2020": 21,
+   "nomeIt": "Cipolla",
+   "nomeEn": "Onion",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "finocchio",
+   "gruppi": [],
+   "sinonimi": [
+    "finocchio"
+   ],
+   "terminiLegacy2020": [
+    "finocchio"
+   ],
+   "esposizioni2020": 15,
+   "nomeIt": "Finocchio",
+   "nomeEn": "Fennel",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "funghi",
+   "gruppi": [],
+   "sinonimi": [
+    "funghi"
+   ],
+   "terminiLegacy2020": [
+    "funghi"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Funghi",
+   "nomeEn": "Mushrooms",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "insalata",
+   "gruppi": [],
+   "sinonimi": [
+    "insalata",
+    "lattuga"
+   ],
+   "terminiLegacy2020": [
+    "insalata",
+    "lattuga"
+   ],
+   "esposizioni2020": 15,
+   "nomeIt": "Insalata",
+   "nomeEn": "Lettuce",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "melanzana",
+   "gruppi": [],
+   "sinonimi": [
+    "melanzane"
+   ],
+   "terminiLegacy2020": [
+    "melanzane"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Melanzana",
+   "nomeEn": "Aubergine",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "peperone",
+   "gruppi": [],
+   "sinonimi": [
+    "peperoni"
+   ],
+   "terminiLegacy2020": [
+    "peperoni"
+   ],
+   "esposizioni2020": 2,
+   "nomeIt": "Peperone",
+   "nomeEn": "Bell pepper",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "pomodoro",
+   "gruppi": [],
+   "sinonimi": [
+    "pomodoro"
+   ],
+   "terminiLegacy2020": [
+    "pomodoro"
+   ],
+   "esposizioni2020": 26,
+   "nomeIt": "Pomodoro",
+   "nomeEn": "Tomato",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "sedano",
+   "gruppi": [],
+   "sinonimi": [
+    "sedano"
+   ],
+   "terminiLegacy2020": [
+    "sedano"
+   ],
+   "esposizioni2020": 6,
+   "nomeIt": "Sedano",
+   "nomeEn": "Celery",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "spinaci",
+   "gruppi": [],
+   "sinonimi": [
+    "spinaci"
+   ],
+   "terminiLegacy2020": [
+    "spinaci"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Spinaci",
+   "nomeEn": "Spinach",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "verdure_miste",
+   "gruppi": [],
+   "sinonimi": [
+    "verdure_miste"
+   ],
+   "terminiLegacy2020": [
+    "verdure_miste"
+   ],
+   "esposizioni2020": 1,
+   "nomeIt": "Verdure miste",
+   "nomeEn": "Mixed vegetables",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  },
+  {
+   "id": "zucchina",
+   "gruppi": [],
+   "sinonimi": [
+    "zucchine"
+   ],
+   "terminiLegacy2020": [
+    "zucchine"
+   ],
+   "esposizioni2020": 32,
+   "nomeIt": "Zucchina",
+   "nomeEn": "Courgette",
+   "categoriaIt": "Verdura",
+   "categoriaEn": "Vegetables"
+  }
+ ]
+}

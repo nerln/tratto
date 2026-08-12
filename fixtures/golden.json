@@ -1,0 +1,2453 @@
+{
+  "autocorrelazione" : [
+    {
+      "nome" : "crescente",
+      "ritardi" : [
+        {
+          "coppie" : 19,
+          "r" : 1,
+          "ritardo" : 1
+        },
+        {
+          "coppie" : 18,
+          "r" : 1,
+          "ritardo" : 2
+        },
+        {
+          "coppie" : 17,
+          "r" : 1,
+          "ritardo" : 3
+        },
+        {
+          "coppie" : 16,
+          "r" : 1,
+          "ritardo" : 4
+        },
+        {
+          "coppie" : 15,
+          "r" : 1,
+          "ritardo" : 5
+        }
+      ],
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "nome" : "alternata",
+      "ritardi" : [
+        {
+          "coppie" : 19,
+          "r" : -1,
+          "ritardo" : 1
+        },
+        {
+          "coppie" : 18,
+          "r" : 1,
+          "ritardo" : 2
+        },
+        {
+          "coppie" : 17,
+          "r" : -1,
+          "ritardo" : 3
+        },
+        {
+          "coppie" : 16,
+          "r" : 1,
+          "ritardo" : 4
+        },
+        {
+          "coppie" : 15,
+          "r" : -1,
+          "ritardo" : 5
+        }
+      ],
+      "valori" : [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "nome" : "costante",
+      "ritardi" : [
+        {
+          "coppie" : 19,
+          "r" : null,
+          "ritardo" : 1
+        },
+        {
+          "coppie" : 18,
+          "r" : null,
+          "ritardo" : 2
+        },
+        {
+          "coppie" : 17,
+          "r" : null,
+          "ritardo" : 3
+        },
+        {
+          "coppie" : 16,
+          "r" : null,
+          "ritardo" : 4
+        },
+        {
+          "coppie" : 15,
+          "r" : null,
+          "ritardo" : 5
+        }
+      ],
+      "valori" : [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "blocchiMinimi" : [
+    {
+      "n" : 6,
+      "unilaterale" : false
+    },
+    {
+      "n" : 5,
+      "unilaterale" : true
+    }
+  ],
+  "componentiVarianza" : [
+    {
+      "entroGiorno" : 0,
+      "fraGiorni" : 16,
+      "giorni" : 3,
+      "gruppi" : [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          9,
+          9
+        ]
+      ],
+      "icc" : 1,
+      "mediaOsservazioniPerGiorno" : 2,
+      "nome" : "tuttaFraGiorni",
+      "osservazioni" : 6
+    },
+    {
+      "entroGiorno" : 32,
+      "fraGiorni" : 0,
+      "giorni" : 3,
+      "gruppi" : [
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "icc" : 0,
+      "mediaOsservazioniPerGiorno" : 2,
+      "nome" : "nienteFraGiorni",
+      "osservazioni" : 6
+    },
+    {
+      "entroGiorno" : 0.83333333333333337,
+      "fraGiorni" : 1.8181818181818179,
+      "giorni" : 3,
+      "gruppi" : [
+        [
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "icc" : 0.68571428571428561,
+      "mediaOsservazioniPerGiorno" : 2,
+      "nome" : "sbilanciati",
+      "osservazioni" : 6
+    },
+    {
+      "entroGiorno" : 0.41666666666666669,
+      "fraGiorni" : 1.258064516129032,
+      "giorni" : 5,
+      "gruppi" : [
+        [
+          3,
+          4
+        ],
+        [
+          2
+        ],
+        [
+          4,
+          4,
+          5
+        ],
+        [
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "icc" : 0.7512038523274478,
+      "mediaOsservazioniPerGiorno" : 1.8,
+      "nome" : "realistico",
+      "osservazioni" : 9
+    }
+  ],
+  "concetti" : [
+    {
+      "codificaLocale" : {
+        "codice" : "formaFecale",
+        "sistema" : "https://nerln.dev/tratto/CodeSystem/osservazioni"
+      },
+      "codificheEsterne" : [
+        {
+          "codice" : "443172007",
+          "etichetta" : "Bristol stool form score",
+          "sistema" : "http://snomed.info/sct"
+        }
+      ],
+      "etichettaInglese" : "Stool form (local 1-7 scale)",
+      "id" : "formaFecale"
+    },
+    {
+      "codificaLocale" : {
+        "codice" : "frequenzaEvacuazioni",
+        "sistema" : "https://nerln.dev/tratto/CodeSystem/osservazioni"
+      },
+      "codificheEsterne" : [
+        {
+          "codice" : "249521002",
+          "etichetta" : "Frequency of bowel action",
+          "sistema" : "http://snomed.info/sct"
+        }
+      ],
+      "etichettaInglese" : "Bowel movements per day",
+      "id" : "frequenzaEvacuazioni"
+    },
+    {
+      "codificaLocale" : {
+        "codice" : "dolorePeggiore24h",
+        "sistema" : "https://nerln.dev/tratto/CodeSystem/osservazioni"
+      },
+      "codificheEsterne" : [
+        {
+          "codice" : "72514-3",
+          "etichetta" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+          "sistema" : "http://loinc.org"
+        }
+      ],
+      "etichettaInglese" : "Worst abdominal pain in the last 24 hours (0-10)",
+      "id" : "dolorePeggiore24h"
+    },
+    {
+      "codificaLocale" : {
+        "codice" : "urgenza",
+        "sistema" : "https://nerln.dev/tratto/CodeSystem/osservazioni"
+      },
+      "codificheEsterne" : [
+
+      ],
+      "etichettaInglese" : "Perceived urgency (0-10)",
+      "id" : "urgenza"
+    },
+    {
+      "codificaLocale" : {
+        "codice" : "gonfiore",
+        "sistema" : "https://nerln.dev/tratto/CodeSystem/osservazioni"
+      },
+      "codificheEsterne" : [
+
+      ],
+      "etichettaInglese" : "Perceived bloating (0-10)",
+      "id" : "gonfiore"
+    },
+    {
+      "codificaLocale" : {
+        "codice" : "giornoAnormale",
+        "sistema" : "https://nerln.dev/tratto/CodeSystem/osservazioni"
+      },
+      "codificheEsterne" : [
+
+      ],
+      "etichettaInglese" : "Day with at least one bowel movement outside the middle range",
+      "id" : "giornoAnormale"
+    }
+  ],
+  "copertura" : {
+    "finestra7" : {
+      "analizzabile" : false,
+      "frazioneMedia" : 0.33333333333333331,
+      "giorni" : 7,
+      "giorniCompleti" : 2,
+      "giorniConEsito" : 2,
+      "giorniConEventi" : 2
+    },
+    "giornate" : [
+      {
+        "completa" : true,
+        "eventi" : 2,
+        "fasceAttese" : 3,
+        "fasceRisolte" : 3,
+        "frazione" : 1,
+        "giorno" : "2026-01-01",
+        "haEsito" : true
+      },
+      {
+        "completa" : false,
+        "eventi" : 0,
+        "fasceAttese" : 3,
+        "fasceRisolte" : 1,
+        "frazione" : 0.33333333333333331,
+        "giorno" : "2026-01-02",
+        "haEsito" : false
+      },
+      {
+        "completa" : false,
+        "eventi" : 1,
+        "fasceAttese" : 3,
+        "fasceRisolte" : 0,
+        "frazione" : 0,
+        "giorno" : "2026-01-03",
+        "haEsito" : false
+      },
+      {
+        "completa" : true,
+        "eventi" : 0,
+        "fasceAttese" : 3,
+        "fasceRisolte" : 3,
+        "frazione" : 1,
+        "giorno" : "2026-01-04",
+        "haEsito" : true
+      }
+    ]
+  },
+  "descrittive" : {
+    "campione" : [
+      2,
+      4,
+      4,
+      4,
+      5,
+      5,
+      7,
+      9
+    ],
+    "deviazioneStandard" : 2.1380899352993952,
+    "entropiaPiatta" : 0,
+    "entropiaSchiacciata" : 0.58167186571788676,
+    "entropiaUniforme" : 1,
+    "media" : 5,
+    "mediana" : 4.5,
+    "percentile25" : 4,
+    "percentile75" : 5.5
+  },
+  "differenzaMinimaRilevabile" : [
+    {
+      "differenzaMinima" : 0.82131824486737171,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 24,
+      "periodi" : 4,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.63619037686152713,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 40,
+      "periodi" : 4,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.53767900382185807,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 56,
+      "periodi" : 4,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.56877020545443668,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 36,
+      "periodi" : 6,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.44056750670880074,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 60,
+      "periodi" : 6,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.37234750279007722,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 84,
+      "periodi" : 6,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.46283590797597068,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 48,
+      "periodi" : 8,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.35851115272354461,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 80,
+      "periodi" : 8,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.30299722609192875,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 112,
+      "periodi" : 8,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.40067577824286427,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 60,
+      "periodi" : 10,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.31036212327266188,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 100,
+      "periodi" : 10,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 0.26230386899046654,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 140,
+      "periodi" : 10,
+      "sd" : 0.5
+    },
+    {
+      "differenzaMinima" : 1.6426364897347434,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 24,
+      "periodi" : 4,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 1.2723807537230543,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 40,
+      "periodi" : 4,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 1.0753580076437161,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 56,
+      "periodi" : 4,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 1.1375404109088734,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 36,
+      "periodi" : 6,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.88113501341760148,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 60,
+      "periodi" : 6,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.74469500558015445,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 84,
+      "periodi" : 6,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.92567181595194137,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 48,
+      "periodi" : 8,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.71702230544708923,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 80,
+      "periodi" : 8,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.6059944521838575,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 112,
+      "periodi" : 8,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.80135155648572853,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 60,
+      "periodi" : 10,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.62072424654532377,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 100,
+      "periodi" : 10,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 0.52460773798093308,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 140,
+      "periodi" : 10,
+      "sd" : 1
+    },
+    {
+      "differenzaMinima" : 3.2852729794694868,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 24,
+      "periodi" : 4,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 2.5447615074461085,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 40,
+      "periodi" : 4,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 2.1507160152874323,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 56,
+      "periodi" : 4,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 2.2750808218177467,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 36,
+      "periodi" : 6,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.762270026835203,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 60,
+      "periodi" : 6,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.4893900111603089,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 84,
+      "periodi" : 6,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.8513436319038827,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 48,
+      "periodi" : 8,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.4340446108941785,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 80,
+      "periodi" : 8,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.211988904367715,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 112,
+      "periodi" : 8,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.6027031129714571,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 60,
+      "periodi" : 10,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.2414484930906475,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 100,
+      "periodi" : 10,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 1.0492154759618662,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 140,
+      "periodi" : 10,
+      "sd" : 2
+    },
+    {
+      "differenzaMinima" : 3.9423275753633842,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 24,
+      "periodi" : 4,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 3.05371380893533,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 40,
+      "periodi" : 4,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 2.5808592183449184,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 56,
+      "periodi" : 4,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 2.7300969861812958,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 36,
+      "periodi" : 6,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 2.1147240322022434,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 60,
+      "periodi" : 6,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 1.7872680133923706,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 84,
+      "periodi" : 6,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 2.2216123582846592,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 48,
+      "periodi" : 8,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 1.7208535330730141,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 80,
+      "periodi" : 8,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 1.4543866852412579,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 112,
+      "periodi" : 8,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 1.9232437355657486,
+      "giorniPerPeriodo" : 3,
+      "giorniTotali" : 60,
+      "periodi" : 10,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 1.4897381917087769,
+      "giorniPerPeriodo" : 5,
+      "giorniTotali" : 100,
+      "periodi" : 10,
+      "sd" : 2.3999999999999999
+    },
+    {
+      "differenzaMinima" : 1.2590585711542392,
+      "giorniPerPeriodo" : 7,
+      "giorniTotali" : 140,
+      "periodi" : 10,
+      "sd" : 2.3999999999999999
+    }
+  ],
+  "distanza" : [
+    {
+      "a" : "riso",
+      "b" : "riso",
+      "limite" : 2,
+      "out" : 0
+    },
+    {
+      "a" : "riso",
+      "b" : "viso",
+      "limite" : 2,
+      "out" : 1
+    },
+    {
+      "a" : "parmigiano",
+      "b" : "parmiggiano",
+      "limite" : 2,
+      "out" : 1
+    },
+    {
+      "a" : "riso",
+      "b" : "elefante",
+      "limite" : 2,
+      "out" : 3
+    }
+  ],
+  "fattibilita" : [
+    {
+      "concordanzeNecessarie" : 3,
+      "coppie" : 3,
+      "coppiePerTollerareUnaDiscordanza" : 9,
+      "giorniTotali" : 50,
+      "pMinimoRaggiungibile" : 0.25,
+      "potenza70" : 0,
+      "potenza80" : 0,
+      "potenza90" : 0,
+      "raggiungibile" : false,
+      "unilaterale" : false
+    },
+    {
+      "concordanzeNecessarie" : 3,
+      "coppie" : 3,
+      "coppiePerTollerareUnaDiscordanza" : 8,
+      "giorniTotali" : 50,
+      "pMinimoRaggiungibile" : 0.125,
+      "potenza70" : 0,
+      "potenza80" : 0,
+      "potenza90" : 0,
+      "raggiungibile" : false,
+      "unilaterale" : true
+    },
+    {
+      "concordanzeNecessarie" : 5,
+      "coppie" : 5,
+      "coppiePerTollerareUnaDiscordanza" : 9,
+      "giorniTotali" : 86,
+      "pMinimoRaggiungibile" : 0.0625,
+      "potenza70" : 0,
+      "potenza80" : 0,
+      "potenza90" : 0,
+      "raggiungibile" : false,
+      "unilaterale" : false
+    },
+    {
+      "concordanzeNecessarie" : 5,
+      "coppie" : 5,
+      "coppiePerTollerareUnaDiscordanza" : 8,
+      "giorniTotali" : 86,
+      "pMinimoRaggiungibile" : 0.03125,
+      "potenza70" : 0.16806999999999994,
+      "potenza80" : 0.32768000000000008,
+      "potenza90" : 0.59049000000000007,
+      "raggiungibile" : true,
+      "unilaterale" : true
+    },
+    {
+      "concordanzeNecessarie" : 6,
+      "coppie" : 6,
+      "coppiePerTollerareUnaDiscordanza" : 9,
+      "giorniTotali" : 104,
+      "pMinimoRaggiungibile" : 0.03125,
+      "potenza70" : 0.11764899999999996,
+      "potenza80" : 0.2621440000000001,
+      "potenza90" : 0.53144100000000005,
+      "raggiungibile" : true,
+      "unilaterale" : false
+    },
+    {
+      "concordanzeNecessarie" : 6,
+      "coppie" : 6,
+      "coppiePerTollerareUnaDiscordanza" : 8,
+      "giorniTotali" : 104,
+      "pMinimoRaggiungibile" : 0.015625,
+      "potenza70" : 0.11764899999999996,
+      "potenza80" : 0.2621440000000001,
+      "potenza90" : 0.53144100000000005,
+      "raggiungibile" : true,
+      "unilaterale" : true
+    },
+    {
+      "concordanzeNecessarie" : 8,
+      "coppie" : 8,
+      "coppiePerTollerareUnaDiscordanza" : 9,
+      "giorniTotali" : 140,
+      "pMinimoRaggiungibile" : 0.0078125,
+      "potenza70" : 0.057648009999999972,
+      "potenza80" : 0.16777216000000009,
+      "potenza90" : 0.4304672100000001,
+      "raggiungibile" : true,
+      "unilaterale" : false
+    },
+    {
+      "concordanzeNecessarie" : 7,
+      "coppie" : 8,
+      "coppiePerTollerareUnaDiscordanza" : 8,
+      "giorniTotali" : 140,
+      "pMinimoRaggiungibile" : 0.00390625,
+      "potenza70" : 0.25529832999999991,
+      "potenza80" : 0.50331648000000018,
+      "potenza90" : 0.81310473000000005,
+      "raggiungibile" : true,
+      "unilaterale" : true
+    },
+    {
+      "concordanzeNecessarie" : 8,
+      "coppie" : 9,
+      "coppiePerTollerareUnaDiscordanza" : 9,
+      "giorniTotali" : 158,
+      "pMinimoRaggiungibile" : 0.00390625,
+      "potenza70" : 0.19600323399999994,
+      "potenza80" : 0.43620761600000013,
+      "potenza90" : 0.77484097800000007,
+      "raggiungibile" : true,
+      "unilaterale" : false
+    },
+    {
+      "concordanzeNecessarie" : 8,
+      "coppie" : 9,
+      "coppiePerTollerareUnaDiscordanza" : 9,
+      "giorniTotali" : 158,
+      "pMinimoRaggiungibile" : 0.001953125,
+      "potenza70" : 0.19600323399999994,
+      "potenza80" : 0.43620761600000013,
+      "potenza90" : 0.77484097800000007,
+      "raggiungibile" : true,
+      "unilaterale" : true
+    },
+    {
+      "concordanzeNecessarie" : 9,
+      "coppie" : 10,
+      "coppiePerTollerareUnaDiscordanza" : 10,
+      "giorniTotali" : 176,
+      "pMinimoRaggiungibile" : 0.001953125,
+      "potenza70" : 0.14930834589999994,
+      "potenza80" : 0.37580963840000015,
+      "potenza90" : 0.73609892910000019,
+      "raggiungibile" : true,
+      "unilaterale" : false
+    },
+    {
+      "concordanzeNecessarie" : 9,
+      "coppie" : 10,
+      "coppiePerTollerareUnaDiscordanza" : 10,
+      "giorniTotali" : 176,
+      "pMinimoRaggiungibile" : 0.0009765625,
+      "potenza70" : 0.14930834589999994,
+      "potenza80" : 0.37580963840000015,
+      "potenza90" : 0.73609892910000019,
+      "raggiungibile" : true,
+      "unilaterale" : true
+    }
+  ],
+  "formaFecale" : [
+    {
+      "anormale" : true,
+      "chiaveDescrizione" : "Separate hard pellets, hard to pass",
+      "chiaveEtichetta" : "Hard pellets",
+      "valore" : 1,
+      "zona" : "compatta"
+    },
+    {
+      "anormale" : true,
+      "chiaveDescrizione" : "One compact piece with a lumpy surface",
+      "chiaveEtichetta" : "Lumpy",
+      "valore" : 2,
+      "zona" : "compatta"
+    },
+    {
+      "anormale" : false,
+      "chiaveDescrizione" : "One long piece with cracks on the surface",
+      "chiaveEtichetta" : "Cracked",
+      "valore" : 3,
+      "zona" : "centrale"
+    },
+    {
+      "anormale" : false,
+      "chiaveDescrizione" : "One long piece, smooth and soft",
+      "chiaveEtichetta" : "Smooth",
+      "valore" : 4,
+      "zona" : "centrale"
+    },
+    {
+      "anormale" : false,
+      "chiaveDescrizione" : "Soft pieces with clear-cut edges",
+      "chiaveEtichetta" : "Soft pieces",
+      "valore" : 5,
+      "zona" : "centrale"
+    },
+    {
+      "anormale" : true,
+      "chiaveDescrizione" : "Ragged pieces, mushy texture",
+      "chiaveEtichetta" : "Mushy",
+      "valore" : 6,
+      "zona" : "molle"
+    },
+    {
+      "anormale" : true,
+      "chiaveDescrizione" : "Liquid, with no solid pieces",
+      "chiaveEtichetta" : "Liquid",
+      "valore" : 7,
+      "zona" : "molle"
+    }
+  ],
+  "normalizzazione" : [
+    {
+      "in" : "Olio d'oliva!",
+      "out" : "olio_d_oliva"
+    },
+    {
+      "in" : "  Caffè   ",
+      "out" : "caffe"
+    },
+    {
+      "in" : "Pasta INTEGRALE",
+      "out" : "pasta_integrale"
+    },
+    {
+      "in" : "",
+      "out" : ""
+    },
+    {
+      "in" : "a-b_c",
+      "out" : "a_b_c"
+    }
+  ],
+  "nota" : "Contratto numerico condiviso fra l'implementazione Swift e quella TypeScript. Se questi numeri cambiano, una delle due ha un bug.",
+  "potenza" : [
+    {
+      "blocchi" : 4,
+      "p" : 0.59999999999999998,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 4,
+      "p" : 0.59999999999999998,
+      "potenza" : 0,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 4,
+      "p" : 0.69999999999999996,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 4,
+      "p" : 0.69999999999999996,
+      "potenza" : 0,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 4,
+      "p" : 0.80000000000000004,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 4,
+      "p" : 0.80000000000000004,
+      "potenza" : 0,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 4,
+      "p" : 0.90000000000000002,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 4,
+      "p" : 0.90000000000000002,
+      "potenza" : 0,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 4,
+      "p" : 1,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 4,
+      "p" : 1,
+      "potenza" : 0,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.59999999999999998,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.077759999999999982,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.69999999999999996,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.16806999999999994,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.80000000000000004,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.32768000000000008,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.90000000000000002,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 5,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.59049000000000007,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 5,
+      "p" : 1,
+      "potenza" : 0,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 5,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.046655999999999989,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.046655999999999989,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.11764899999999996,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.11764899999999996,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.2621440000000001,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.2621440000000001,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.53144100000000005,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 6,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.53144100000000005,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 6,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 6,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.027993599999999993,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.027993599999999993,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.082354299999999964,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.082354299999999964,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.20971520000000007,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.20971520000000007,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.47829690000000008,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 7,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.47829690000000008,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 7,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 7,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.016796159999999994,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.10637567999999997,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.057648009999999972,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.25529832999999991,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.16777216000000009,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.50331648000000018,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.4304672100000001,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 8,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.81310473000000005,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 8,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 8,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.07054387199999998,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.07054387199999998,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.19600323399999994,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.19600323399999994,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.43620761600000013,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.43620761600000013,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.77484097800000007,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 9,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.77484097800000007,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 9,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 9,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.046357401599999987,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.59999999999999998,
+      "potenza" : 0.046357401599999987,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.14930834589999994,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.69999999999999996,
+      "potenza" : 0.14930834589999994,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.37580963840000015,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.80000000000000004,
+      "potenza" : 0.37580963840000015,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.73609892910000019,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 10,
+      "p" : 0.90000000000000002,
+      "potenza" : 0.73609892910000019,
+      "unilaterale" : true
+    },
+    {
+      "blocchi" : 10,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : false
+    },
+    {
+      "blocchi" : 10,
+      "p" : 1,
+      "potenza" : 1,
+      "unilaterale" : true
+    }
+  ],
+  "prodottoDa" : "Tratto (Swift)",
+  "quantileNormale" : [
+    {
+      "p" : 0.001,
+      "z" : -3.0902323047094038
+    },
+    {
+      "p" : 0.025000000000000001,
+      "z" : -1.959963986120195
+    },
+    {
+      "p" : 0.5,
+      "z" : 0
+    },
+    {
+      "p" : 0.80000000000000004,
+      "z" : 0.8416212327266186
+    },
+    {
+      "p" : 0.90000000000000002,
+      "z" : 1.2815515641401563
+    },
+    {
+      "p" : 0.97499999999999998,
+      "z" : 1.959963986120195
+    },
+    {
+      "p" : 0.999,
+      "z" : 3.0902323047094038
+    }
+  ],
+  "ranghiMedi" : [
+    {
+      "in" : [
+        3,
+        1,
+        2
+      ],
+      "out" : [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "in" : [
+        1,
+        1,
+        3
+      ],
+      "out" : [
+        1.5,
+        1.5,
+        3
+      ]
+    },
+    {
+      "in" : [
+        5,
+        5,
+        5,
+        5
+      ],
+      "out" : [
+        2.5,
+        2.5,
+        2.5,
+        2.5
+      ]
+    },
+    {
+      "in" : [
+        2,
+        1,
+        2,
+        3,
+        1
+      ],
+      "out" : [
+        3.5,
+        1.5,
+        3.5,
+        5,
+        1.5
+      ]
+    }
+  ],
+  "riconoscimento" : [
+    {
+      "frase" : "rice with a drizzle of olive oil",
+      "nonRiconosciuti" : [
+        "with",
+        "drizzle"
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "riso",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "olio_di_oliva",
+          "tipo" : "esatta"
+        }
+      ]
+    },
+    {
+      "frase" : "wholewheat pasta with tomato and parmesan",
+      "nonRiconosciuti" : [
+        "with",
+        "and"
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "pasta_integrale",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "pomodoro",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "parmigiano",
+          "tipo" : "esatta"
+        }
+      ]
+    },
+    {
+      "frase" : "an apple and two rice cakes",
+      "nonRiconosciuti" : [
+        "and",
+        "two"
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "mela",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "galletta_di_riso",
+          "tipo" : "esatta"
+        }
+      ]
+    },
+    {
+      "frase" : "sausage with courgette and onion",
+      "nonRiconosciuti" : [
+        "with",
+        "and"
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "salsiccia",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "zucchina",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "cipolla",
+          "tipo" : "esatta"
+        }
+      ]
+    },
+    {
+      "frase" : "riso in bianco con un filo d'olio",
+      "nonRiconosciuti" : [
+
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "riso",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "olio_di_oliva",
+          "tipo" : "esatta"
+        }
+      ]
+    },
+    {
+      "frase" : "insalata di finocchi con olio e limone",
+      "nonRiconosciuti" : [
+
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "insalata",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "finocchio",
+          "tipo" : "approssimata"
+        },
+        {
+          "id" : "olio_di_oliva",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "limone",
+          "tipo" : "approssimata"
+        }
+      ]
+    },
+    {
+      "frase" : "latte senza lattosio e riso soffiato",
+      "nonRiconosciuti" : [
+
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "latte_senza_lattosio",
+          "tipo" : "approssimata"
+        },
+        {
+          "id" : "riso_soffiato",
+          "tipo" : "esatta"
+        }
+      ]
+    },
+    {
+      "frase" : "pane di semola con il prosciutto crudo",
+      "nonRiconosciuti" : [
+
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "pane_di_semola",
+          "tipo" : "esatta"
+        },
+        {
+          "id" : "prosciutto_crudo",
+          "tipo" : "esatta"
+        }
+      ]
+    },
+    {
+      "frase" : "parmiggiano",
+      "nonRiconosciuti" : [
+
+      ],
+      "riconosciuti" : [
+        {
+          "id" : "parmigiano",
+          "tipo" : "approssimata"
+        }
+      ]
+    },
+    {
+      "frase" : "ho bevuto una birra",
+      "nonRiconosciuti" : [
+        "birra"
+      ],
+      "riconosciuti" : [
+
+      ]
+    },
+    {
+      "frase" : "quinoa con avocado",
+      "nonRiconosciuti" : [
+        "quinoa",
+        "avocado"
+      ],
+      "riconosciuti" : [
+
+      ]
+    },
+    {
+      "frase" : "oggi non ho avuto fame",
+      "nonRiconosciuti" : [
+        "non",
+        "avuto",
+        "fame"
+      ],
+      "riconosciuti" : [
+
+      ]
+    }
+  ],
+  "sequenzaBlocchi" : [
+    {
+      "coppie" : 6,
+      "seme" : "1",
+      "sequenza" : [
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio"
+      ]
+    },
+    {
+      "coppie" : 6,
+      "seme" : "42",
+      "sequenza" : [
+        "bersaglio",
+        "controllo",
+        "controllo",
+        "bersaglio",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "controllo",
+        "bersaglio"
+      ]
+    },
+    {
+      "coppie" : 6,
+      "seme" : "999",
+      "sequenza" : [
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "controllo",
+        "bersaglio",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo"
+      ]
+    },
+    {
+      "coppie" : 6,
+      "seme" : "3735928559",
+      "sequenza" : [
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "controllo",
+        "bersaglio",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo",
+        "bersaglio",
+        "controllo"
+      ]
+    }
+  ],
+  "testDeiSegni" : [
+    {
+      "coppieUsate" : 6,
+      "negativi" : 0,
+      "nome" : "unanime",
+      "pareggi" : 0,
+      "pBilaterale" : 0.03125,
+      "pMinimoRaggiungibile" : 0.03125,
+      "positivi" : 6,
+      "pUnilaterale" : 0.015625,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "coppieUsate" : 6,
+      "negativi" : 6,
+      "nome" : "unanimeNegativo",
+      "pareggi" : 0,
+      "pBilaterale" : 0.03125,
+      "pMinimoRaggiungibile" : 0.03125,
+      "positivi" : 0,
+      "pUnilaterale" : 0.015625,
+      "valori" : [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6
+      ]
+    },
+    {
+      "coppieUsate" : 6,
+      "negativi" : 1,
+      "nome" : "quasiUnanime",
+      "pareggi" : 0,
+      "pBilaterale" : 0.21875,
+      "pMinimoRaggiungibile" : 0.03125,
+      "positivi" : 5,
+      "pUnilaterale" : 0.109375,
+      "valori" : [
+        1,
+        2,
+        3,
+        -0.5,
+        4,
+        1.5
+      ]
+    },
+    {
+      "coppieUsate" : 11,
+      "negativi" : 8,
+      "nome" : "conPareggi",
+      "pareggi" : 1,
+      "pBilaterale" : 0.2265625,
+      "pMinimoRaggiungibile" : 0.0009765625,
+      "positivi" : 3,
+      "pUnilaterale" : 0.11328125,
+      "valori" : [
+        -4,
+        -2,
+        0,
+        3,
+        -5,
+        -1,
+        1,
+        -4,
+        -4,
+        -3,
+        2,
+        -4
+      ]
+    },
+    {
+      "coppieUsate" : 9,
+      "negativi" : 2,
+      "nome" : "molteExAequo",
+      "pareggi" : 0,
+      "pBilaterale" : 0.1796875,
+      "pMinimoRaggiungibile" : 0.00390625,
+      "positivi" : 7,
+      "pUnilaterale" : 0.08984375,
+      "valori" : [
+        3,
+        3,
+        3,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "coppieUsate" : 0,
+      "negativi" : 0,
+      "nome" : "tuttiPareggi",
+      "pareggi" : 6,
+      "pBilaterale" : 1,
+      "pMinimoRaggiungibile" : 1,
+      "positivi" : 0,
+      "pUnilaterale" : 1,
+      "valori" : [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "coppieUsate" : 5,
+      "negativi" : 0,
+      "nome" : "cinqueSole",
+      "pareggi" : 0,
+      "pBilaterale" : 0.0625,
+      "pMinimoRaggiungibile" : 0.0625,
+      "positivi" : 5,
+      "pUnilaterale" : 0.03125,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "coppieUsate" : 10,
+      "negativi" : 0,
+      "nome" : "dieci",
+      "pareggi" : 0,
+      "pBilaterale" : 0.001953125,
+      "pMinimoRaggiungibile" : 0.001953125,
+      "positivi" : 10,
+      "pUnilaterale" : 0.0009765625,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "coppieUsate" : 4,
+      "negativi" : 0,
+      "nome" : "conDueZeri",
+      "pareggi" : 2,
+      "pBilaterale" : 0.125,
+      "pMinimoRaggiungibile" : 0.125,
+      "positivi" : 4,
+      "pUnilaterale" : 0.0625,
+      "valori" : [
+        1,
+        2,
+        0,
+        3,
+        0,
+        4
+      ]
+    },
+    {
+      "coppieUsate" : 7,
+      "negativi" : 2,
+      "nome" : "decimali",
+      "pareggi" : 1,
+      "pBilaterale" : 0.453125,
+      "pMinimoRaggiungibile" : 0.015625,
+      "positivi" : 5,
+      "pUnilaterale" : 0.2265625,
+      "valori" : [
+        0.5,
+        -0.25,
+        1,
+        0.75,
+        -0.5,
+        1.25,
+        0,
+        2
+      ]
+    }
+  ],
+  "versione" : 2,
+  "wilcoxon" : [
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 6,
+      "hodgesLehmann" : 3.5,
+      "intervallo" : {
+        "alto" : 6,
+        "basso" : 1,
+        "confidenza" : 0.96875
+      },
+      "nome" : "unanime",
+      "pareggi" : 0,
+      "pBilaterale" : 0.03125,
+      "pMinimoRaggiungibile" : 0.03125,
+      "pUnilaterale" : 0.015625,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 21
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 6,
+      "hodgesLehmann" : 3.5,
+      "intervallo" : {
+        "alto" : 6,
+        "basso" : 1,
+        "confidenza" : 0.96875
+      },
+      "nome" : "unanime",
+      "pareggi" : 0,
+      "pBilaterale" : 0.03125,
+      "pMinimoRaggiungibile" : 0.03125,
+      "pUnilaterale" : 0.015625,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 21
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 6,
+      "hodgesLehmann" : -3.5,
+      "intervallo" : {
+        "alto" : -1,
+        "basso" : -6,
+        "confidenza" : 0.96875
+      },
+      "nome" : "unanimeNegativo",
+      "pareggi" : 0,
+      "pBilaterale" : 0.03125,
+      "pMinimoRaggiungibile" : 0.03125,
+      "pUnilaterale" : 0.015625,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6
+      ],
+      "wNegativo" : 21,
+      "wPositivo" : 0
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 6,
+      "hodgesLehmann" : -3.5,
+      "intervallo" : {
+        "alto" : -1,
+        "basso" : -6,
+        "confidenza" : 0.96875
+      },
+      "nome" : "unanimeNegativo",
+      "pareggi" : 0,
+      "pBilaterale" : 0.03125,
+      "pMinimoRaggiungibile" : 0.03125,
+      "pUnilaterale" : 0.015625,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6
+      ],
+      "wNegativo" : 21,
+      "wPositivo" : 0
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 6,
+      "hodgesLehmann" : 1.75,
+      "intervallo" : {
+        "alto" : 4,
+        "basso" : -0.5,
+        "confidenza" : 0.96875
+      },
+      "nome" : "quasiUnanime",
+      "pareggi" : 0,
+      "pBilaterale" : 0.0625,
+      "pMinimoRaggiungibile" : 0.03125,
+      "pUnilaterale" : 0.03125,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        -0.5,
+        4,
+        1.5
+      ],
+      "wNegativo" : 1,
+      "wPositivo" : 20
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 6,
+      "hodgesLehmann" : 1.75,
+      "intervallo" : {
+        "alto" : 4,
+        "basso" : -0.5,
+        "confidenza" : 0.96875
+      },
+      "nome" : "quasiUnanime",
+      "pareggi" : 0,
+      "pBilaterale" : 0.0625,
+      "pMinimoRaggiungibile" : 0.03125,
+      "pUnilaterale" : 0.03125,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        -0.5,
+        4,
+        1.5
+      ],
+      "wNegativo" : 1,
+      "wPositivo" : 20
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 11,
+      "hodgesLehmann" : -2,
+      "intervallo" : {
+        "alto" : 0,
+        "basso" : -4,
+        "confidenza" : 0.951171875
+      },
+      "nome" : "conPareggi",
+      "pareggi" : 1,
+      "pBilaterale" : 0.046875,
+      "pMinimoRaggiungibile" : 0.0009765625,
+      "pUnilaterale" : 0.0234375,
+      "ranghiConExAequo" : true,
+      "valori" : [
+        -4,
+        -2,
+        0,
+        3,
+        -5,
+        -1,
+        1,
+        -4,
+        -4,
+        -3,
+        2,
+        -4
+      ],
+      "wNegativo" : 55.5,
+      "wPositivo" : 10.5
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 11,
+      "hodgesLehmann" : -2,
+      "intervallo" : {
+        "alto" : 0,
+        "basso" : -4,
+        "confidenza" : 0.9521484375
+      },
+      "nome" : "conPareggi",
+      "pareggi" : 1,
+      "pBilaterale" : 0.0478515625,
+      "pMinimoRaggiungibile" : 0.0009765625,
+      "pUnilaterale" : 0.02392578125,
+      "ranghiConExAequo" : true,
+      "valori" : [
+        -4,
+        -2,
+        0,
+        3,
+        -5,
+        -1,
+        1,
+        -4,
+        -4,
+        -3,
+        2,
+        -4
+      ],
+      "wNegativo" : 63.5,
+      "wPositivo" : 13.5
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 9,
+      "hodgesLehmann" : 2,
+      "intervallo" : {
+        "alto" : 3,
+        "basso" : 0.5,
+        "confidenza" : 0.97265625
+      },
+      "nome" : "molteExAequo",
+      "pareggi" : 0,
+      "pBilaterale" : 0.015625,
+      "pMinimoRaggiungibile" : 0.00390625,
+      "pUnilaterale" : 0.0078125,
+      "ranghiConExAequo" : true,
+      "valori" : [
+        3,
+        3,
+        3,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        4
+      ],
+      "wNegativo" : 3,
+      "wPositivo" : 42
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 9,
+      "hodgesLehmann" : 2,
+      "intervallo" : {
+        "alto" : 3,
+        "basso" : 0.5,
+        "confidenza" : 0.97265625
+      },
+      "nome" : "molteExAequo",
+      "pareggi" : 0,
+      "pBilaterale" : 0.015625,
+      "pMinimoRaggiungibile" : 0.00390625,
+      "pUnilaterale" : 0.0078125,
+      "ranghiConExAequo" : true,
+      "valori" : [
+        3,
+        3,
+        3,
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        4
+      ],
+      "wNegativo" : 3,
+      "wPositivo" : 42
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 5,
+      "hodgesLehmann" : 3,
+      "nome" : "cinqueSole",
+      "pareggi" : 0,
+      "pBilaterale" : 0.0625,
+      "pMinimoRaggiungibile" : 0.0625,
+      "pUnilaterale" : 0.03125,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 15
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 5,
+      "hodgesLehmann" : 3,
+      "nome" : "cinqueSole",
+      "pareggi" : 0,
+      "pBilaterale" : 0.0625,
+      "pMinimoRaggiungibile" : 0.0625,
+      "pUnilaterale" : 0.03125,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 15
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 10,
+      "hodgesLehmann" : 5.5,
+      "intervallo" : {
+        "alto" : 8,
+        "basso" : 3,
+        "confidenza" : 0.951171875
+      },
+      "nome" : "dieci",
+      "pareggi" : 0,
+      "pBilaterale" : 0.001953125,
+      "pMinimoRaggiungibile" : 0.001953125,
+      "pUnilaterale" : 0.0009765625,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 55
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 10,
+      "hodgesLehmann" : 5.5,
+      "intervallo" : {
+        "alto" : 8,
+        "basso" : 3,
+        "confidenza" : 0.951171875
+      },
+      "nome" : "dieci",
+      "pareggi" : 0,
+      "pBilaterale" : 0.001953125,
+      "pMinimoRaggiungibile" : 0.001953125,
+      "pUnilaterale" : 0.0009765625,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 55
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 4,
+      "hodgesLehmann" : 2.5,
+      "nome" : "conDueZeri",
+      "pareggi" : 2,
+      "pBilaterale" : 0.125,
+      "pMinimoRaggiungibile" : 0.125,
+      "pUnilaterale" : 0.0625,
+      "ranghiConExAequo" : false,
+      "valori" : [
+        1,
+        2,
+        0,
+        3,
+        0,
+        4
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 10
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 4,
+      "hodgesLehmann" : 1.5,
+      "nome" : "conDueZeri",
+      "pareggi" : 2,
+      "pBilaterale" : 0.125,
+      "pMinimoRaggiungibile" : 0.125,
+      "pUnilaterale" : 0.0625,
+      "ranghiConExAequo" : true,
+      "valori" : [
+        1,
+        2,
+        0,
+        3,
+        0,
+        4
+      ],
+      "wNegativo" : 0,
+      "wPositivo" : 18
+    },
+    {
+      "convenzione" : "escludi",
+      "coppieUsate" : 7,
+      "hodgesLehmann" : 0.75,
+      "intervallo" : {
+        "alto" : 1.625,
+        "basso" : -0.375,
+        "confidenza" : 0.96875
+      },
+      "nome" : "decimali",
+      "pareggi" : 1,
+      "pBilaterale" : 0.09375,
+      "pMinimoRaggiungibile" : 0.015625,
+      "pUnilaterale" : 0.046875,
+      "ranghiConExAequo" : true,
+      "valori" : [
+        0.5,
+        -0.25,
+        1,
+        0.75,
+        -0.5,
+        1.25,
+        0,
+        2
+      ],
+      "wNegativo" : 3.5,
+      "wPositivo" : 24.5
+    },
+    {
+      "convenzione" : "pratt",
+      "coppieUsate" : 7,
+      "hodgesLehmann" : 0.5625,
+      "intervallo" : {
+        "alto" : 1.5,
+        "basso" : -0.25,
+        "confidenza" : 0.96875
+      },
+      "nome" : "decimali",
+      "pareggi" : 1,
+      "pBilaterale" : 0.109375,
+      "pMinimoRaggiungibile" : 0.015625,
+      "pUnilaterale" : 0.0546875,
+      "ranghiConExAequo" : true,
+      "valori" : [
+        0.5,
+        -0.25,
+        1,
+        0.75,
+        -0.5,
+        1.25,
+        0,
+        2
+      ],
+      "wNegativo" : 5.5,
+      "wPositivo" : 29.5
+    }
+  ]
+}

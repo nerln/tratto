@@ -1,0 +1,17 @@
+/*
+ * The Capacitor filesystem and share plugins ask for a Java 21 toolchain by
+ * name. Gradle will not fall back to a newer JDK for a toolchain request, so on
+ * a machine that only has 23 the build stops before it starts. This resolver
+ * lets Gradle fetch the matching JDK into ~/.gradle/jdks by itself, which keeps
+ * both a fresh clone and a CI runner buildable without anyone installing a
+ * second system-wide Java first.
+ */
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+include ':app'
+include ':capacitor-cordova-android-plugins'
+project(':capacitor-cordova-android-plugins').projectDir = new File('./capacitor-cordova-android-plugins/')
+
+apply from: 'capacitor.settings.gradle'

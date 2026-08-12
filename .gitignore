@@ -1,6 +1,37 @@
+# macOS
 .DS_Store
+
+# Xcode
 build/
 DerivedData/
 *.xcuserstate
 xcuserdata/
 *.xcresult
+
+# node / vite / electron-builder
+node_modules/
+cross/dist/
+cross/release/
+*.tsbuildinfo
+
+# Capacitor and Gradle.
+# The android/ project itself is committed, because `npx cap sync` only updates
+# an existing one and CI has to have something to sync into. What is excluded is
+# everything Gradle regenerates, plus local.properties, which holds this Mac's
+# own SDK path and would break every other machine that trusted it.
+cross/android/local.properties
+cross/android/.gradle/
+cross/android/app/src/main/assets/public/
+cross/android/app/src/main/res/xml/config.xml
+.gradle/
+*.apk
+*.aab
+*.keystore
+!cross/android/tratto-debug.keystore
+
+# secrets, never
+*.p12
+*.pfx
+*.jks
+.env
+.env.*

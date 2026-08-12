@@ -1,0 +1,61 @@
+{
+  "name": "tratto",
+  "version": "0.2.0",
+  "description": "A bowel and food diary that records faithfully and refuses to guess.",
+  "license": "MIT",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "electron": "electron .",
+    "pack:win": "npm run build && electron-builder --win --publish never",
+    "pack:linux": "npm run build && electron-builder --linux --publish never",
+    "pack:mac": "npm run build && electron-builder --mac --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
+  },
+  "build": {
+    "appId": "dev.nerln.tratto",
+    "productName": "Tratto",
+    "files": [
+      "dist/**",
+      "electron/**",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": [
+        "portable",
+        "zip"
+      ],
+      "artifactName": "Tratto-${version}-windows-x64.${ext}"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility"
+    },
+    "mac": {
+      "target": [
+        "zip"
+      ]
+    }
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/filesystem": "^8.1.2",
+    "@capacitor/share": "^8.0.1"
+  }
+}

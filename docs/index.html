@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tratto: a bowel diary that refuses to guess</title>
+<meta name="description" content="A bowel and food diary for macOS, iOS, Windows and Android. It records what you enter and will not tell you which food is to blame, because on a personal diary that answer cannot be told apart from chance.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tratto: a bowel diary that refuses to guess">
+<meta property="og:description" content="It started as a data science assignment in 2020. The score turned out to correlate with itself. Six years later, here is the version that says so.">
+<meta property="og:url" content="https://nerln.github.io/tratto/">
+<meta property="og:image" content="https://nerln.github.io/tratto/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<header class="hero">
+  <p class="kicker">macOS · iOS · Windows · Android</p>
+  <h1>Tratto</h1>
+  <p class="lede">A bowel and food diary that records faithfully and will not tell you which food is to blame.</p>
+  <p class="sub">The refusal is the feature. On the numbers a personal diary produces, that answer cannot be told apart from chance, and an app that names a culprit anyway is confidently wrong.</p>
+  <p class="cta">
+    <a class="button" href="https://github.com/nerln/tratto/releases">Downloads</a>
+    <a class="button button-quiet" href="https://github.com/nerln/tratto">Source</a>
+    <a class="button button-quiet" href="./notes.html">Notes &amp; citations</a>
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>It began as coursework, and the coursework was wrong</h2>
+
+  <p>In 2020 I kept a diary for 68 days and wrote it up for a data science exam. The introduction still opens the file:</p>
+
+  <blockquote lang="en">
+    <p>For the last few years my gut has not been healthy, and I became convinced that specific foods or meals were doing me harm. Holding that conviction, I went through a range of tests and medical appointments, many of them proctological. So I asked myself whether, by tracking what I eat and how I go to the bathroom, it would be possible to work out whether and which foods were hurting me.</p>
+    <footer>The 2020 write-up, translated.</footer>
+  </blockquote>
+
+  <p>It was a reasonable question. The method was not. I built a daily score out of how many times I went, how the stool looked and how much it hurt beforehand, then handed that score to every food I had eaten that day. Then I checked whether the score was any good:</p>
+
+  <blockquote lang="en" class="damning">
+    <p>I conclude the score is reasonably reliable, since it correlates with mean consistency and somewhat with prior discomfort.</p>
+    <footer>Also the 2020 write-up.</footer>
+  </blockquote>
+
+  <p>The score was <em>computed from</em> mean consistency and prior discomfort. Pearson put it at 0.84, which is the number you get when something correlates with itself. I graded my own homework and gave it a good mark.</p>
+
+  <p>There was a second problem, quieter and worse. Eighty-three foods went into that comparison. Seven of them appeared in at least ten meals. And only 26 days out of 68 had as many as three meals written down, so on most days what I had eaten was largely unknown. The statistics were never the bottleneck.</p>
+
+  <p class="aside">To its credit, 2020-me noticed something was off: <span lang="en">"I really do not think fennel is doing me any harm, but I think I happened to eat it on days that did not score well."</span> That is collinearity, described correctly and then walked past.</p>
+</section>
+
+<section>
+  <h2>What the data actually supports</h2>
+
+  <p>Before rebuilding anything I re-measured the old diary. These are not assumptions carried over from a textbook; they are computed from those 68 days, and the script is in the repository.</p>
+
+  <table class="numbers">
+    <caption>Measured on the 2020 diary</caption>
+    <tbody>
+      <tr><th scope="row">Standard deviation of stool consistency</th><td>0.91 on a 0 to 5 scale</td><td>the outcome does vary; the fear that it was flat was wrong</td></tr>
+      <tr><th scope="row">Share of variance between days</th><td>57%</td><td>the other 43% is noise between movements on the same day</td></tr>
+      <tr><th scope="row">Autocorrelation at one day</th><td>+0.51</td><td>consecutive days are not independent observations</td></tr>
+      <tr><th scope="row">Autocorrelation at three days</th><td>+0.16</td><td>which is where a four-day washout comes from, rather than from a protocol</td></tr>
+      <tr><th scope="row">Inseparable ingredient pairs</th><td>one</td><td>lactose-free milk and puffed rice: breakfast</td></tr>
+      <tr><th scope="row">Ingredients with ten or more exposures</th><td>19 of 142</td><td>the set that could be looked at at all</td></tr>
+      <tr><th scope="row">Days with three meals recorded</th><td>26 of 68</td><td>the actual reason it failed</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>So what does it do</h2>
+
+  <div class="cols">
+    <div>
+      <h3>It records</h3>
+      <p>Three taps for a bathroom visit: open, pick the form from seven drawings, save. Meals get typed or dictated in plain language and matched against a closed vocabulary of 142 ingredients, in English or Italian. One question a day, at night: worst abdominal pain in the last 24 hours.</p>
+      <p>And it records absence. In 2020 breakfast was written down 25 times in 59 days, not out of laziness but because a trip to the bathroom is memorable and a breakfast identical to every other one is not. A slot answered "nothing" is data. A slot left blank is a hole.</p>
+    </div>
+    <div>
+      <h3>It shows how noisy you are</h3>
+      <p>How complete the diary is, how the forms are distributed, how much the numbers move on their own, and how far apart two days have to be before they stop resembling each other. That last figure is what a washout would have to respect.</p>
+      <p>What it never shows is a ranking of foods. Not a shortlist, not a "suspects" tab, not a p-value next to an ingredient.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>And then, if the numbers allow it, a comparison</h2>
+
+  <p>Passive observation cannot produce the evidence, so phase two stops observing and starts arranging. You pick one ingredient and one to compare it against; the app lays out alternating blocks of days with a gap in between and randomises the order inside each pair. The structure follows published reintroduction protocols. The block lengths do not: they come from your own autocorrelation, and from the fact that in the published blinded challenge lactose symptoms only appear on day three, so a three-day block is cut off before they could show.</p>
+
+  <p>Before you agree to spend two months, the app tells you the one number that matters, and it is not the effect size:</p>
+
+  <p class="figure">With six pairs and a two-sided hypothesis the test needs <strong>six agreements out of six</strong>. So even for a food that genuinely affects you in eight pairs out of ten, the chance of reaching a significant result is <strong>26%</strong>. With five pairs or fewer, nothing can be significant at all. Nine is the first size that tolerates a single disagreement.</p>
+
+  <p>The plan is then frozen: the hypothesis, the outcome, the decision rule and the block order go into a canonical text and its SHA-256 is stored. Change any of them afterwards and the analysis refuses to run. That is the only way a preregistration means anything when the experimenter and the subject are the same person.</p>
+
+  <p>There is no placebo, and the app says so rather than implying otherwise. Whole foods cannot be blinded; you will know which block is which. The comparison ingredient is something you do not suspect, so that expectation has something to be measured against. It is needed because in the published blinded challenge an inert control triggered symptoms in about a quarter of patients.</p>
+</section>
+
+<section>
+  <h2>The same numbers on every platform</h2>
+
+  <p>The Apple version is written in Swift, the Windows and Android versions share a TypeScript core. Two implementations of the same exact statistics are an excellent way to drift apart quietly, so neither is trusted alone: the Swift test suite writes a file of golden numbers and the TypeScript suite has to reproduce it digit for digit, Wilcoxon with tied ranks and the 64-bit block shuffle included. A p-value computed on a phone is the same p-value computed on a laptop.</p>
+
+  <div class="downloads">
+    <div><h3>macOS &amp; iOS</h3><p>SwiftUI and SwiftData. Build it from source; it is not on the App Store.</p></div>
+    <div><h3>Windows</h3><p>A portable build and a zip. Unsigned, so SmartScreen will warn you.</p></div>
+    <div><h3>Android</h3><p>A debug APK. You will need to allow installation from unknown sources.</p></div>
+  </div>
+  <p class="cta"><a class="button" href="https://github.com/nerln/tratto/releases">Go to the releases</a></p>
+</section>
+
+<section>
+  <h2>Who this is actually for</h2>
+
+  <p>Finding the culprit is not the only reason to keep a diary, and in most of the situations where one is asked for, it is not the question. Before a gastroenterology appointment, where the clinician needs what happened rather than what you remember. Inside an elimination and reintroduction plan run with a dietitian, where the diary is the record of the protocol. When the trigger is already known, and what matters is adherence. Before and after a treatment, where the point is the change and not the cause.</p>
+
+  <p>In all of those a faithful record is the entire job, and the value is not inference: it is that the entry carries a real timestamp instead of being reconstructed the evening before. That difference has been measured: <cite>Stone et al., BMJ 2002</cite> put reported adherence to a paper diary at 90% and actual adherence at 11%.</p>
+</section>
+
+<footer>
+  <p>Tratto records what you enter and shows counts and summaries of it. It is not a medical device, it does not diagnose, and it does not replace a clinician. Talk to a doctor or a dietitian before changing what you eat, and do it <em>before</em> cutting anything out: self-managed elimination makes coeliac serology unusable, and that door does not reopen.</p>
+  <p class="links">
+    <a href="./notes.html">Notes, sources and the things we could not verify</a> ·
+    <a href="https://github.com/nerln/tratto">Source</a> ·
+    <a href="https://github.com/nerln/Progetto-fondamenti-Nerelli">The 2020 original</a> ·
+    MIT
+  </p>
+</footer>
+
+</main>
+</body>
+</html>

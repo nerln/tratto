@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace = "dev.nerln.tratto"
+    compileSdk = rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "dev.nerln.tratto"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        aaptOptions {
+             // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
+             // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
+            ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    /*
+     * A checked-in debug key, on purpose.
+     *
+     * Android installs no unsigned APK, ever. Left alone, Gradle signs the debug
+     * build with ~/.android/debug.keystore, which every machine generates for
+     * itself: a build from this Mac and a build from a CI runner would carry two
+     * different identities, and installing the second over the first fails with
+     * INSTALL_FAILED_UPDATE_INCOMPATIBLE until the user deletes their diary.
+     *
+     * So the identity is pinned to a key in the repository. It protects nothing
+     * and is not meant to: the password is the Android debug convention, and
+     * anyone can rebuild this app. What it buys is that an update installs over
+     * the previous version instead of demanding an uninstall. A release key, if
+     * there ever is one, does not live here.
+     */
+    signingConfigs {
+        debug {
+            storeFile file('../tratto-debug.keystore')
+            storePassword 'android'
+            keyAlias 'trattodebug'
+            keyPassword 'android'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir{
+        dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
+    implementation "androidx.core:core-splashscreen:$coreSplashScreenVersion"
+    implementation project(':capacitor-android')
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.build.gradle'
+
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}

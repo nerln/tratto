@@ -1,0 +1,11 @@
+{
+  "appId": "dev.nerln.tratto",
+  "appName": "Tratto",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}
