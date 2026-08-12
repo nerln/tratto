@@ -74,15 +74,17 @@ jobs:
       # SmartScreen, and Azure Artifact Signing is closed to individual
       # developers outside the US and Canada. Paying would buy nothing here.
       #
-      # The retry is not superstition. app-builder downloads these artifacts
-      # through DownloadNoRetry, so a single EOF on a 1.3 MB file takes the
-      # whole build with it, which is exactly how the first run of this
-      # workflow died.
+      # electronDist points at what npm ci already downloaded. Without it,
+      # app-builder fetches the same 115 MB Electron runtime a second time from
+      # GitHub releases, through a code path with no retry: one EOF and the job
+      # is over, which is how the first two runs of this workflow died. The
+      # retry that remains covers the small NSIS archives.
       - name: Package
         shell: bash
         run: |
           for attempt in 1 2 3; do
-            if npx electron-builder --win portable zip --publish never; then
+            if npx electron-builder --win portable zip --publish never \
+                 -c.electronDist=node_modules/electron/dist; then
               exit 0
             fi
             echo "attempt $attempt failed"
